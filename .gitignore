@@ -1,0 +1,23 @@
+node_modules/
+dist/
+dev-dist/
+.vite/
+.DS_Store
+*.log
+
+# `src/styles/tokens/`, `public/fonts/`, `public/favicon.svg` e `public/icones/`
+# SÃO derivados, e mesmo assim ficam versionados. A razão é a mesma da landing:
+# a máquina de build (Vercel, CI) não enxerga o `.design-sync/ds-bundle/` local,
+# e `scripts/sync-ds.mjs` conta com a última cópia sincronizada no repositório
+# para não falhar ali. `npm run icones` também não roda no build, e sem os PNGs
+# versionados o manifesto do PWA aponta para arquivo que não existe.
+#
+# Regenere com `npm run sync:ds` e `npm run icones` antes de commitar mudança de
+# design. Em divergência, `00-fundacao/identidade-visual/` vence.
+
+# Gerado pelo vite-plugin-pwa no build, junto do dist.
+public/sw.js
+public/workbox-*.js
+
+# Relatórios e capturas da verificação local.
+test-results/

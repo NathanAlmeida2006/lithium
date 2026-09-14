@@ -1,0 +1,14 @@
+/* LG-15 · Recibo. Fonte: layouts-globais/15-recibo.md
+   No app o que sobrevive é a lista catalogada: índice em colchetes, fio entre
+   itens, tabular-nums. O bloco de preço sai inteiro. */
+.lista { display: flex; flex-direction: column; }
+.lista > li {
+  display: grid;
+  grid-template-columns: var(--space-7) 1fr;
+  gap: var(--space-3);
+  padding-block: var(--space-3);
+  border-top: var(--hairline) solid var(--line);
+}
+.lista__indice { color: var(--silver); line-height: 1.4; font-variant-numeric: tabular-nums; }
+.lista__texto { color: var(--bone); }
+.lista__texto--secundario { color: var(--silver); }

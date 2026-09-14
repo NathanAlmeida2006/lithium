@@ -1,0 +1,37 @@
+/* LG-25 · Tabela de sessão
+   Fonte: layouts-globais/25-tabela-de-sessao.md
+   Aprovado em teste de navegador em 07/09/2026. Em divergência, o catálogo vence. */
+
+.sessao-tabela{display:flex;flex-direction:column;gap:var(--space-3);
+  margin-top:var(--space-5)}
+.sessao-tabela__cabeca{display:none}
+.linha-exercicio{display:flex;flex-direction:column;gap:var(--space-3);
+  padding:var(--space-4);background:var(--surface-1);
+  border:var(--hairline) solid var(--line)}
+.linha-exercicio__topo{display:flex;align-items:baseline;gap:var(--space-3)}
+.linha-exercicio__indice{color:var(--acento);flex:none;
+  font-variant-numeric:tabular-nums}
+.linha-exercicio__nome{color:var(--bone);text-transform:none;letter-spacing:0}
+.linha-exercicio__troca{display:block;color:var(--silver);margin-top:var(--space-1)}
+.linha-exercicio__numeros{display:grid;grid-template-columns:repeat(3,1fr);
+  gap:var(--space-3);padding-top:var(--space-3);
+  border-top:var(--hairline) solid var(--line)}
+.dado{display:flex;flex-direction:column;gap:var(--space-1)}
+.dado__rotulo{color:var(--silver)}
+.dado__valor{color:var(--bone);font-variant-numeric:tabular-nums}
+
+@media (min-width:640px){
+  .sessao-tabela{gap:0}
+  .sessao-tabela__cabeca,.linha-exercicio{display:grid;
+    grid-template-columns:var(--space-6) 1fr 4rem 5rem 5rem;
+    align-items:center;gap:var(--space-4);padding:var(--space-4) var(--space-3)}
+  .sessao-tabela__cabeca{color:var(--silver);padding-block:var(--space-2);
+    border-bottom:var(--hairline) solid var(--line-strong)}
+  .linha-exercicio{border:0;border-bottom:var(--hairline) solid var(--line);
+    background:var(--void)}
+  .linha-exercicio:nth-child(even){background:var(--surface-1)}
+  .linha-exercicio__topo{display:contents}
+  .linha-exercicio__numeros{display:contents}
+  .dado{display:block}.dado__rotulo{display:none}
+  .linha-exercicio__troca{margin-top:0}
+}

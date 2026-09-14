@@ -1,0 +1,41 @@
+/* LG-02 · Painel de tela cheia. Fonte: layouts-globais/02-painel-de-tela-cheia.md
+   No app ele é a CAPA DA SESSÃO: mesma headline em escala de arquitetura, sem
+   o botão de checkout e sem os números crus da venda. */
+.capa {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-block: var(--space-9);
+  background: var(--void);
+  color: var(--bone);
+  overflow: clip;
+}
+.capa__kicker { color: var(--silver); margin-bottom: var(--space-3); }
+
+.capa__titulo {
+  /* A Secundária assina, anuncia e rotula. Sem declarar aqui, a headline
+     herda a Terciária do body e a capa perde a assinatura. */
+  font-family: var(--font-secundaria);
+  font-weight: var(--peso-black);
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  line-height: 0.88;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: var(--bone);
+  margin-block: var(--space-2);
+  font-size: clamp(44px, 13vw, 108px);
+}
+
+/* Cada linha é um recorte e o texto sobe de dentro dele. Folga nos dois lados:
+   embaixo o ponto e a haste do C, em cima o acento, que com entrelinha abaixo
+   de 1 sai da caixa de linha. */
+.linha { display: block; overflow: clip; padding-block: 0.2em 0.04em; margin-block: -0.2em -0.04em; }
+.linha__texto { display: block; will-change: transform; }
+
+.capa__corpo { color: var(--silver); max-width: var(--medida-max); margin-top: var(--space-4); }
+.capa__fio { width: 100%; height: 1px; background: var(--line-strong); border: 0; margin: var(--space-4) 0 0; }
+
+@media (min-width: 1024px) { .capa__titulo { font-size: clamp(72px, 9vw, 160px); } }

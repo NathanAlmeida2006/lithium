@@ -1,0 +1,809 @@
+{
+  "schemaVersion": 2,
+  "sourceHash": "0e4ca06c8172c1b77ee5dec1c85612ccb6ffb91b500072370834c06459b40e7f",
+  "protocolo": "sono",
+  "nome": "Cuidado com o sono",
+  "sessoes": [
+    {
+      "id": "s00-abertura",
+      "numero": 0,
+      "nome": "Abertura",
+      "objetivo": "Leva o leitor da porta do roadmap Cuidado com o Sono até as duas ações de hoje à noite: o fast travel, como\nusar, por que um protocolo e não mais um Reel, e a narrativa da uma da manhã que termina na tese do volume: o\nsono é a vantagem desleal que ninguém do grupo está usando.",
+      "modulos": [
+        {
+          "id": "modulo-01-fast-travel",
+          "titulo": "Fast travel",
+          "objetivo": "O leitor encontra qualquer sessão ou anexo do Kit em dois toques, de qualquer ponto do app.",
+          "tipo": "consulta",
+          "kit": true,
+          "fonte": "cuidado-com-o-sono/sessao-00-abertura/modulo-01-fast-travel.md",
+          "texto": "Protocolo 03 · Cuidado com o Sono\n\n**Aba \"sessões\":**\n\n| # | Sessão | Linha |\n| - | ------ | ----- |\n| 00 | Abertura | Por onde começar, e por que dormir é vantagem |\n| 01 | Sua primeira vitória | Duas ações antes de dormir hoje |\n| 02 | A vantagem desleal | O que acontece com o shape enquanto você dorme |\n| 03 | A Âncora | A hierarquia do que importa e o plano de 4 semanas |\n| 04 | A noite: do jogo à cama | Encerrar sem abolir |\n| 05 | Os sabotadores | Cafeína, álcool e os despertares |\n| 06 | O fim de semana | A balada dentro do protocolo |\n| 07 | O diário e a noite seguinte | Medir sem aparelho, voltar sem culpa |\n| 08 | O treino de olhos fechados | Descanso como identidade |\n| 09 | Fechamento | A madrugada de quem constrói, o checklist e as fontes |\n\n**Aba \"o Kit\":**\n\n- Diário de 1 minuto (anexo A7) → sessão 07\n- Checklist semanal (anexo A2) → sessão 09\n\n**Aba \"fontes\":** as 17 fontes (sessão 09).\n\n**Troca de roadmap:** Hipertrofia · Dieta Básica · **Cuidado com o Sono**.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-02-como-usar",
+          "titulo": "Como usar este protocolo",
+          "objetivo": "O leitor entende que o protocolo é sistema e não sermão, e sai com a sessão que responde à noite dele hoje.",
+          "tipo": "leitura",
+          "kit": true,
+          "fonte": "cuidado-com-o-sono/sessao-00-abertura/modulo-02-como-usar.md",
+          "texto": "As orientações\ndeste protocolo são de higiene do sono, não tratamento. Insônia persistente, ronco alto com pausas na\nrespiração, sonolência diurna incapacitante e sono não reparador apesar de horas suficientes são sinais de\ndistúrbio do sono e pedem avaliação médica: nenhuma rotina caseira resolve isso.\n\nEste protocolo é um sistema, não um sermão. Ninguém vai mandar você dormir\nàs 22h, acordar às 5h ou vender o setup.\n\nToda sessão termina com um card **Faça isto hoje à noite**: a menor ação concreta\nexecutável na mesma noite. Só de seguir os cards, o protocolo já está rodando.\n\nOs `[n]` são as fontes científicas. Toque em qualquer um e a fonte abre. Nada de\nbiohack nem de pulseira mágica: só o que a ciência do sono mediu de verdade.\n\n| A sua noite | Vai para |\n| ----------- | -------- |\n| Quer começar hoje? | Sessão 1. Duas ações para executar ainda hoje à noite, sem comprar nada. |\n| Não está convencido de que sono importa? | Sessão 2. São os números mais surpreendentes da coleção inteira. |\n| Vai montar sua rotina? | Sessões 3 a 6: a Âncora, o plano de 4 semanas, a noite real (com jogos e calls dentro) e o fim de semana (com balada dentro). |\n| Teve uma noite ruim ou um fim de semana pesado? | Sessão 7. Regra objetiva, zero culpa. |\n| Quer o diário de 1 minuto? | No Kit, para deixar ao lado da cama. |\n| Quer fechar a semana? | Checklist semanal, no Kit. |\n\n**Nota da coleção** . Este é o volume 03, o multiplicador dos outros dois: o treino\n(Protocolo 01) cria o estímulo, a comida (Protocolo 02) dá o material, e o sono é onde a obra acontece.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-03-por-que-isto",
+          "titulo": "Por que isto e não mais um Reel",
+          "objetivo": "O leitor reconhece que a solução do sono dele não mora no lugar onde o sono está sendo gasto.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-00-abertura/modulo-03-por-que-isto.md",
+          "texto": "> Meia-noite e meia.\n> Mais um vídeo.\n> Tela a trinta centímetros.\n> O feed não tem fim.\n\nO feed é parte do problema que este protocolo resolve. **Você não vai encontrar a\nsolução para o seu sono no lugar onde ele está sendo gasto**: à meia-noite e meia, rolando mais um vídeo, com\na tela a trinta centímetros do rosto.\n\n| # | Título | Depois (o protocolo) | O feed (riscado) |\n| - | ------ | -------------------- | ---------------- |\n| 01 | Um fim | Isto tem fim. | O feed foi desenhado para não ter fim, e a única forma de sair dele é decidir sair, decisão que fica mais difícil exatamente na hora em que você mais precisa tomá-la. |\n| 02 | Permanência | A Âncora vai estar no mesmo horário no mês que vem. | Conteúdo de sono no feed troca de moda toda semana, e rotina de sono não sobrevive a moda. |\n| 03 | A sexta-feira | Este protocolo diz que você pode virar a noite no sábado, com teto e regra de volta, na sessão 6. É isso que faz o resto durar. | Nenhum vídeo de \"higiene do sono\" ganha visualização dizendo isso. |\n\n**Fecho.** Continue vendo Reels, só que antes da meia-noite. É mais ou menos tudo o que este protocolo vai te\npedir.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-04-a-hora-invisivel",
+          "titulo": "A hora invisível",
+          "objetivo": "O leitor se reconhece na uma da manhã, e troca a culpa (\"dormi demais de novo\") por pertencimento (\"sou a estatística\").",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-00-abertura/modulo-04-a-hora-invisivel.md",
+          "texto": "Uma da manhã. Você conhece essa hora.\n\nO quarto no escuro, menos pelo brilho da tela a um palmo do seu rosto. A call acabou, o jogo fechou, e você foi\npara a cama. Só que não foi, ainda não: está ali há uns quarenta minutos, polegar no automático, vendo edits de\ntreino. Hardstyle acelerado, fisiculturista brasileiro no palco, personagem de anime parado numa pose\nimpossível. O algoritmo sabe exatamente o que você quer ser.\n\nE aí vem aquele pensamento, o de sempre: \"amanhã eu começo pra valer\", a dieta,\no treino, a vida nova. Você deixa o celular na cama, do lado do travesseiro, e dorme. Acorda às nove e pouco com\na sensação de quem não dormiu, se arrasta pela manhã, e ainda se cobra por isso: \"dormi demais de novo\".\n\nSó que essa madrugada tem um outro lado, e ele não passa no feed.\n\n> E antes que a culpa de sempre aponte o dedo: se as suas noites são bagunçadas, você não é o problema. Você é a\n> estatística.\n\n**Evidência (duas linhas):**\n\n- Sete em cada dez brasileiros da sua idade relatam dormir mal (dado de imprensa)[17]; entre universitários, os\n  estudos encontram até dois em cada três[16].\n- É uma epidemia geracional, e ela tem protocolo. **O seu começa hoje à noite, sem comprar absolutamente nada.**",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-05-a-vantagem-desleal",
+          "titulo": "A vantagem desleal",
+          "objetivo": "O leitor sai da abertura com a tese do volume: o sono é a vantagem que ninguém do grupo está usando.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-00-abertura/modulo-05-a-vantagem-desleal.md",
+          "texto": "Enquanto você assistia àqueles edits, o mundo fitness inteiro brigava nos\ncomentários sobre proteína, sobre a marca do whey, sobre o horário do shake, sobre treinar de manhã ou à noite.\nTodo mundo disputando os detalhes de dezesseis horas do dia.\n\nE ninguém, ninguém mesmo, olhando para as outras oito: as horas em que o corpo\nmonta o que o treino encomendou, a fome do dia seguinte é regulada e o treino de ontem vira o ombro de amanhã.\nAs horas em que o shape acontece.\n\n**Oito ** · *as horas em que o shape acontece, e ninguém do seu grupo está usando*\n\n> O sono é a vantagem desleal que ninguém do seu grupo está usando, nem os seus amigos que treinam sério. Eles\n> contam grama de proteína e dormem de qualquer jeito.\n\n**Fecho.** Você vai fazer diferente. A estética que você persegue de olhos abertos se constrói de olhos fechados.",
+          "acoes": [],
+          "acaoRegistro": null
+        }
+      ]
+    },
+    {
+      "id": "s01-primeira-vitoria",
+      "numero": 1,
+      "nome": "Sua primeira vitória",
+      "objetivo": "Sem fisiologia: o retrato honesto da noite atual em cinco perguntas, os dois alarmes fixos (Última chamada e\nÂncora) e a regra do corte de cafeína para amanhã. Em 10 minutos, os dois primeiros passos estão dados com o\ncelular que já está na mão.",
+      "modulos": [
+        {
+          "id": "modulo-01-valor-antes-de-teoria",
+          "titulo": "Valor antes de teoria",
+          "objetivo": "O leitor aceita o trato: duas ações de dois minutos hoje à noite, e os números depois.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-01-primeira-vitoria/modulo-01-valor-antes-de-teoria.md",
+          "texto": "Sem fisiologia ainda. Duas ações de dois minutos, executáveis hoje à noite, e o retrato honesto da sua noite atual.\n\n**Números crus:** `2` alarmes · `1` decisão · `0` compras\n\nEste é o pilar que você nunca levou a sério, e é normal:\nninguém te apresentou os números. Eles vêm na sessão 2, e vão te surpreender.\n\n**Hoje ** · *duas ações de dois minutos, executáveis antes de dormir*\n\nO trato da coleção vale aqui também: **valor antes de teoria.** Em 10\nminutos de leitura, você terá dado os dois primeiros passos do protocolo, com o celular que já está na sua mão.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-02-o-retrato-da-sua-noite",
+          "titulo": "O retrato da sua noite",
+          "objetivo": "O leitor faz o diagnóstico da semana em cinco perguntas, e entende que cada sim é hábito com mecanismo, não traço de personalidade.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-01-primeira-vitoria/modulo-02-o-retrato-da-sua-noite.md",
+          "texto": "Antes de qualquer ajuste, o diagnóstico: cinco perguntas sobre a semana que você acabou de viver.\nResponda com honestidade: nada disto sai do seu aparelho, e nada é guardado se você não quiser.\n\n1. Você vai para a cama e fica no celular por mais de meia hora antes de dormir? · *sessão 4*\n2. Acorda no meio da noite e demora a voltar a dormir? · *sessão 5*\n3. Toma café, refrigerante de cola ou energético depois das 17h? · *sessão 5*\n4. No fim de semana, dorme e acorda 3 horas ou mais fora do seu horário de semana? · *sessão 6*\n5. Acorda sem sensação de ter descansado, mesmo tendo ficado bastante tempo na cama? · *sessão 3*\n\n**Resultado (aparece ao marcar 3 ou mais).** Bem-vindo ao clube, literalmente: é o retrato da maioria da sua\ngeração[16][17].\n\n**Fecho (a Virada).** Nenhum desses cinco itens **é traço da sua personalidade: são hábitos**, cada um com um\nmecanismo conhecido, um ajuste e uma sessão neste protocolo.\n\n**Nota de segurança** (aparece junto do item 5, se marcado): sono que não descansa **apesar de horas\nsuficientes**, se persiste, é um dos sinais que o aviso de saúde manda levar a um médico. O protocolo cuida de\nhábito, não de tratamento.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-03-os-dois-alarmes",
+          "titulo": "Os dois alarmes",
+          "objetivo": "O leitor cria, no celular, os dois alarmes fixos do protocolo, e sabe o que cada um significa.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-01-primeira-vitoria/modulo-03-os-dois-alarmes.md",
+          "texto": "Pegue o celular (ele está aí mesmo) e crie dois alarmes fixos. São 2 minutos.\n\n1. **Alarme 1 · Última chamada · 00h00, todos os dias úteis.**\n   É o alarme de encerramento da noite: quando tocar, é o último round, o fim da call, o episódio que não\n   recomeça. Você ainda não vai mudar nada além disso, só instalar o sinal. O que fazer entre ele e a cama vira\n   método na sessão 4.\n\n\n2. **Alarme 2 · A Âncora · 9h00, todos os dias úteis.**\n   É o alarme de acordar sempre no mesmo horário, o mais importante do protocolo inteiro, pelo motivo científico\n   mais forte deste protocolo (sessão 3). Já era mais ou menos o seu horário? Ótimo: agora é oficial, com toque\n   e tudo.\n\n\n**Nota dos horários.** 00h00 e 9h00 são os horários de quem o protocolo descreve. Se a sua vida real já tem\noutros, use os seus: a regra não é o número, é ser fixo.\n\n**Fecho.** Repare no que o protocolo não pediu: não pediu para dormir mais cedo, não pediu para largar o jogo,\nnão tocou na sua noite. Dois alarmes. **É o degrau de hoje.**\n\n**Legenda:** o sinal, não a mudança: por ora o protocolo só instala os dois horários.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-04-o-corte-de-amanha",
+          "titulo": "O corte de amanhã",
+          "objetivo": "O leitor decide hoje a regra binária da cafeína, válida a partir de amanhã.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-01-primeira-vitoria/modulo-04-o-corte-de-amanha.md",
+          "texto": "A segunda ação é uma decisão, tomada agora para valer amanhã.\n\n**Selo:**\n\n- **Verbo:** Corte.\n- **Condição:** A partir de amanhã, nada de cafeína depois das **16h**: café, energético, refrigerante de cola,\n  pré-treino. Antes das 16h, consumo livre, como sempre.\n- **O que não existe:** Sem exceção de terça, sem \"só um golinho\".\n- **Registro:** `[antes das 16h, sim · depois, não]`\n\n**16h ** · *depois disso, nada de cafeína*\n\nPor que 16h, e o que a cafeína estava fazendo com as suas noites, a sessão 5 mostra com\num estudo que impressiona. Adiantando: até o café das 18h30 estava roubando mais de uma hora do seu sono, sem você\nsentir[9].\n\nPor ora, só marque o horário. É uma regra binária.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-05-o-que-esperar",
+          "titulo": "O que esperar",
+          "objetivo": "O leitor começa sem esperar milagre em três dias, e fecha a sessão com os dois alarmes e a decisão do corte.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-01-primeira-vitoria/modulo-05-o-que-esperar.md",
+          "texto": "Este protocolo não promete \"sono dos deuses em 3 dias\", e quem promete\nisso está te vendendo alguma coisa. Ele trabalha em **escala de semanas, não de dias**, e a sessão 7 te dá os\nmarcos honestos do que sentir e quando.\n\n**Regularidade ** · *a fundação de tudo. Guarde a palavra: ela volta em todas as\nsessões.*",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-05-o-que-esperar-pratica",
+          "titulo": "Faça isto hoje à noite",
+          "tipo": "pratica",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-01-primeira-vitoria/modulo-05-o-que-esperar.md",
+          "texto": "Dois alarmes e uma decisão. Nada além disso: o resto do protocolo entra nas sessões seguintes, um degrau\npor vez.\n\n1. Crie os dois alarmes: \"Última chamada\" (00h00) e \"A Âncora\" (9h00), dias úteis.\n2. Decida o corte de cafeína de amanhã: depois das 16h, nada.\n3. Decida agora que amanhã você levanta no primeiro toque da Âncora: a primeira vitória do dia é não negociar com\n   a soneca.",
+          "acoes": [
+            "Crie os dois alarmes: \"Última chamada\" (00h00) e \"A Âncora\" (9h00), dias úteis.",
+            "Decida o corte de cafeína de amanhã: depois das 16h, nada.",
+            "Decida agora que amanhã você levanta no primeiro toque da Âncora: a primeira vitória do dia é não negociar com\n   a soneca."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s02-a-vantagem-desleal",
+      "numero": 2,
+      "nome": "A vantagem desleal",
+      "objetivo": "Traz os números que mudam como o leitor vê a cama: o treino encomenda, a obra acontece à noite. Quatro números\n(testosterona, construção muscular, partição de gordura e músculo, apetite), o bônus de desempenho, o mito \"durmo\nquando morrer\" e a estatística de quem dorme mal aos 20 e poucos.",
+      "modulos": [
+        {
+          "id": "modulo-01-a-obra-acontece-a-noite",
+          "titulo": "A obra acontece à noite",
+          "objetivo": "O leitor troca \"o treino constrói músculo\" por \"o treino encomenda; a obra acontece à noite\".",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-02-a-vantagem-desleal/modulo-01-a-obra-acontece-a-noite.md",
+          "texto": "O shape não é construído na academia. A academia faz o pedido; a obra acontece à noite, e esta sessão traz os números.\n\nO treino não constrói músculo. Calma, a frase continua: o treino **encomenda**\nmúsculo. A série pesada cria o estímulo, o dano controlado, o recado de que o corpo precisa ficar mais forte.\n\n**Obra ** · *o treino encomenda; a obra acontece à noite*\n\nMas a obra em si (liberar os hormônios de construção, sintetizar proteína nova,\nreparar fibra) acontece depois, com prioridade durante o sono. **Treinar sem dormir é assinar o contrato da obra e\nmandar os pedreiros embora.**\n\nIsso não é metáfora motivacional: é fisiologia medida em laboratório. Os quatro\nmódulos seguintes trazem os quatro números que mudam como você vê a cama.\n\n**Régua · registre a noite.** Uma marca por noite dormida dentro da janela do protocolo. A ficha é o dado; a\nmemória não é.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-02-numero-1-testosterona",
+          "titulo": "Nº 1 · a testosterona despenca",
+          "objetivo": "O leitor guarda o primeiro número: uma semana de sono curto derrubou a testosterona de homens jovens ao nível de alguém 10 a 15 anos mais velho.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-02-a-vantagem-desleal/modulo-02-numero-1-testosterona.md",
+          "texto": "`(nº 1 de 4 · uma semana de sono curto)`\n\nUma semana de noites ruins envelheceu esses caras\numa década.\n\n**Evidência:**\n\n- **Dado:** menos de 5 horas por noite, durante uma semana · **o que significa:** pesquisadores pegaram homens\n  jovens e saudáveis (a sua idade, o seu perfil) e limitaram o sono deles a isso · **de onde veio:** [2].\n- **Destaque (placar):** 10 a 15 anos · *a testosterona diurna caiu a níveis equivalentes aos de alguém 10 a 15\n  anos mais velho*[2].\n\n**Ressalva :**\n\n- O estudo mediu uma semana de restrição em homens jovens saudáveis.\n- Ele não mediu a sua noite, e o número descreve o grupo deles, não o seu hormônio.\n\n**Fecho.** É o hormônio que ajuda a construir seu shape, e ele é pago em horas de sono.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-03-numero-2-construcao",
+          "titulo": "Nº 2 · a construção muscular desliga",
+          "objetivo": "O leitor guarda o segundo número: uma única noite em claro já reduziu a síntese de proteína muscular em cerca de 18%.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-02-a-vantagem-desleal/modulo-03-numero-2-construcao.md",
+          "texto": "`(nº 2 de 4 · uma única noite em claro)`\n\nCada noite em claro é um dia de obra parada.\n\n**Evidência:**\n\n- **Dado:** cinco noites de 4 horas · **o que significa:** a síntese de proteína muscular, o processo literal de\n  montar músculo novo, despencou com o sono restrito, mesmo com exercício intenso no meio · **de onde veio:** [5].\n- **Destaque (placar):** cerca de 18% · *a queda na construção muscular depois de uma única noite em claro*, com o\n  cortisol (hormônio do desgaste) subindo e a testosterona caindo[6].\n\n**Ressalva :**\n\n- Os 18% vêm de uma noite **inteira sem dormir**, e não de uma noite curta comum.\n- O que se aproveita para a sua noite é a direção: sono cortado atrapalha a obra, e cortado por dias seguidos\n  atrapalha mesmo com treino.\n\n**síntese de proteína muscular:** o processo de montar proteína nova no músculo. É a obra da\nsessão, medida em laboratório.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-04-numero-3-particao",
+          "titulo": "Nº 3 · o corpo queima músculo em vez de gordura",
+          "objetivo": "O leitor guarda o número mais importante do volume para ele: com a mesma dieta, dormir pouco mudou de onde o peso saiu.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-02-a-vantagem-desleal/modulo-04-numero-3-particao.md",
+          "texto": "`(nº 3 de 4 · 8,5h contra 5,5h, mesma dieta)`\n\nDormir mal é ensinar o corpo a segurar a barriga\ne desmontar o braço.\n\n**Evidência:**\n\n- **Dado:** 8,5 horas contra 5,5 horas por noite · **o que significa:** num estudo de referência, adultos fizeram a\n  mesma dieta, mudando só o sono, e perderam o mesmo peso na balança · **de onde veio:** [3].\n- **Destaque (placar):** 55% · *quanto a perda de gordura caiu dormindo pouco; a de músculo subiu 60%*[3].\n\n**Ressalva :**\n\n- O estudo foi em adultos em dieta de emagrecimento.\n- O princípio da partição vale para você, mas os números exatos são do contexto deles.\n\n**partição:** de onde sai o peso que muda: gordura ou músculo.\n\n**Fecho (a Virada).** Este é o número mais importante do protocolo para você. O \"falso magro\" que dorme mal não\nestá condenado pela genética: **está repetindo, sem saber, a noite que o mantém falso magro.**",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-05-numero-4-apetite",
+          "titulo": "Nº 4 · a fome do dia seguinte",
+          "objetivo": "O leitor liga a vontade de ultraprocessado da tarde à noite anterior.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-02-a-vantagem-desleal/modulo-05-numero-4-apetite.md",
+          "texto": "`(nº 4 de 4 · leptina, grelina e a fome do dia seguinte)`\n\nDormir bem é controle de apetite grátis.\n\n**Evidência (três placares pequenos e um grande):**\n\n| Dado | O que significa |\n| ---- | --------------- |\n| 18% a menos de leptina | o hormônio que diz \"estou satisfeito\" |\n| 28% a mais de grelina | o hormônio que diz \"come\" |\n| 24% a mais de fome | medida no dia seguinte |\n\n- **Destaque (placar):** 33 a 45% · *o quanto subiu o apetite por comida calórica e cheia de carboidrato*, em homens\n  jovens com sono restrito[4].\n\n**Ressalva :**\n\n- O estudo mediu homens jovens saudáveis com o sono encurtado.\n- Os percentuais são do grupo deles; o que vale para você é a direção.\n\n**Ponte (a Virada).** Aquela vontade incontrolável de ultraprocessado nos intervalos, que o Protocolo 02 combate?\n**Ela não é falta de força de vontade: é fabricada, em parte, pela sua noite anterior.**",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-06-o-bonus-do-desempenho",
+          "titulo": "O bônus do desempenho",
+          "objetivo": "O leitor vê que dormir mais melhorou o desempenho de atletas de verdade, sem suplemento nem treino secreto.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-02-a-vantagem-desleal/modulo-06-o-bonus-do-desempenho.md",
+          "texto": "Sem suplemento novo. Cama.\n\nsono estendido a cerca de 10 horas · sprints mais rápidos · +9% de acerto nos arremessos\n· reação mais rápida · humor melhor\n\n**Evidência:**\n\n- **Dado:** cerca de 10 horas por noite, por algumas semanas · **o que significa:** jogadores universitários de\n  basquete, atletas de verdade e treinando pesado, estenderam o sono até isso · **de onde veio:** [7].\n- **Destaque (placar):** +9% · *de acerto nos arremessos*, com sprints e reação mais rápidos e humor melhor[7].\n\n**Ressalva :**\n\n- O estudo foi com jogadores de basquete universitários, monitorados.\n- O ganho medido é o deles; para você, a direção é a mesma, e a cama é de graça.\n\n**Fecho · a vantagem desleal.** É por isso que este protocolo se chama vantagem desleal: enquanto seu grupo inteiro\nbriga por 30 gramas de proteína e pela marca do whey, **as 8 horas que decidem hormônio, construção, apetite e\ndesempenho estão aí, de graça, sem concorrência nenhuma.**",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-07-mito-durmo-quando-morrer",
+          "titulo": "Mito: durmo quando morrer",
+          "objetivo": "O leitor derruba o \"dormir é perda de tempo\" com os quatro números, e para de se culpar por acordar às 9h.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-02-a-vantagem-desleal/modulo-07-mito-durmo-quando-morrer.md",
+          "texto": "- **Objeção:** \"Dormir é perda de tempo. Durmo quando morrer: a noite é minha.\"\n- **Resposta (parceiro de noite):** A privação de sono derruba a testosterona a nível de quem tem 10 a 15 anos a\n  mais[2], corta a construção muscular em cerca de 18% numa única noite em claro[6], faz o corpo perder músculo em\n  vez de gordura[3] e programa a fome por besteira no dia seguinte[4]. **Dormir não é o oposto de evoluir: é a\n  metade invisível do treino.**\n\nE tem o corolário, que vale dizer com a mesma força: dormir o suficiente não é preguiça. A\nculpa que você sente ao acordar às 9h (\"dormi demais de novo\") está mirando o alvo errado.\n\nO problema das suas manhãs nunca foi a hora de acordar, foi a qualidade do que veio antes: o scroll, a cafeína das\n19h, o horário aleatório. Acordar às 9h destruído é o que o protocolo conserta; acordar às 9h descansado é o\nprotocolo funcionando.\n\n**Fecho:** Acordar às 9h descansado é o protocolo funcionando.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-08-voce-nao-esta-sozinho",
+          "titulo": "Você não está sozinho nessa",
+          "objetivo": "O leitor troca \"eu que sou bagunçado\" por \"eu sou a média\", e fecha a sessão com três ações.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-02-a-vantagem-desleal/modulo-08-voce-nao-esta-sozinho.md",
+          "texto": "Dormir mal aos 20 e poucos é regra, não exceção. A sensação de ser o único bagunçado do grupo é\nfalsa, e os números mostram.\n\n- **Objeção:** \"Todo mundo dorme normal, menos eu. Eu que sou bagunçado.\"\n- **Resposta (parceiro de noite):** Revisões com universitários encontram de 43% a 66% de \"maus dormidores\"[16];\n  estudos populacionais brasileiros confirmam alta prevalência de sintomas de insônia[15]; e a imprensa nacional\n  reporta que cerca de 70% dos brasileiros de 18 a 24 anos relatam má qualidade de sono[17]. É uma epidemia\n  geracional, com celular, streaming, energético e horário social empurrando todo mundo na mesma direção. **Você\n  não é o defeituoso do grupo: você é a média.** A diferença é que agora você tem o protocolo, e a média não tem.\n\n**Nota de limite** : a faixa de 43% a 66% vem de uma referência incompleta e deve\nser lida como ordem de grandeza; os 70% são dado de imprensa, pareado com as fontes 15 e 16.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-08-voce-nao-esta-sozinho-pratica",
+          "titulo": "Faça isto hoje à noite",
+          "tipo": "pratica",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-02-a-vantagem-desleal/modulo-08-voce-nao-esta-sozinho.md",
+          "texto": "Três ações, e a vantagem começa a sair do papel.\n\n1. Confira: os dois alarmes da sessão 1 estão ativos? Hoje é a segunda noite deles.\n2. Releia o Nº 3 dos quatro números e anote a frase na sua ficha: \"Dormir mal é segurar barriga e desmontar braço.\"\n3. Conte a um amigo do treino o dado da testosterona, porque explicar é o jeito mais rápido de acreditar (e de\n   plantar a vantagem no grupo).",
+          "acoes": [
+            "Confira: os dois alarmes da sessão 1 estão ativos? Hoje é a segunda noite deles.",
+            "Releia o Nº 3 dos quatro números e anote a frase na sua ficha: \"Dormir mal é segurar barriga e desmontar braço.\"",
+            "Conte a um amigo do treino o dado da testosterona, porque explicar é o jeito mais rápido de acreditar (e de\n   plantar a vantagem no grupo)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s03-a-ancora",
+      "numero": 3,
+      "nome": "A Âncora",
+      "objetivo": "Troca as 17 dicas do feed por uma hierarquia de 4 andares (regularidade, duração, desligamento, todo o resto),\numa regra-mãe (acordar sempre no mesmo horário, a Âncora) e um plano de 4 semanas que muda uma coisa por vez.",
+      "modulos": [
+        {
+          "id": "modulo-01-uma-regra-sustenta-as-outras",
+          "titulo": "Uma regra sustenta as outras",
+          "objetivo": "O leitor troca a lista de dicas por uma ordem, e entende por que o protocolo ancora no acordar.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-03-a-ancora/modulo-01-uma-regra-sustenta-as-outras.md",
+          "texto": "Você esperava uma lista de 17 dicas. Vai receber uma hierarquia de 4 andares, uma regra-mãe e um plano de 4 semanas que muda uma coisa por vez.\n\n**Números crus:** `4` andares · `1` regra-mãe · `4` semanas\n\nO feed trata sono como coleção de truques soltos: chá disso, banho daquilo, 10 apps,\n17 dicas. Uma lista sem ordem de importância não diz por onde começar, e quem não sabe por onde começar não\ncomeça. A ciência organiza tudo em andares.\n\nDe tudo que este protocolo pede, uma regra sustenta as outras, e por isso ela\nfoi a primeira ação da sessão 1.\n\n**9h ** · *o mesmo horário, todo dia útil, inclusive depois de noite ruim*\n\nPor que ancorar no acordar e não no dormir? Porque **adormecer não é\ndecisão** (você não escolhe apagar às 00h40), **mas levantar é.**\n\nA hierarquia põe as dicas em ordem de importância: regularidade, duração, desligamento e,\nsó no fim, todo o resto. O andar 1 é o primeiro, e é o de graça.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-02-o-predio-de-quatro-andares",
+          "titulo": "O prédio de quatro andares",
+          "objetivo": "O leitor lê o prédio de baixo para cima e sabe que nada do andar 4 compensa um andar 1 bagunçado.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-03-a-ancora/modulo-02-o-predio-de-quatro-andares.md",
+          "texto": "\"Pare de se afogar em dicas.\"\n\n| Marca | Andar | Nome | Evidência ou nota |\n| ----- | ----- | ---- | ----------------- |\n| 1 | Andar 1 · a fundação | Regularidade | Dormir e acordar em horários consistentes. Numa coorte prospectiva, a regularidade previu risco melhor do que a duração[11]. |\n| 2 | Andar 2 · a estrutura | Duração suficiente | 7 horas ou mais por noite; a faixa saudável é de 7 a 9 horas (consenso oficial)[1]. |\n| 3 | Andar 3 · o acabamento | Desligamento e ambiente | A transição da noite agitada para a cama: o celular, a luz e o quarto em modo noite. |\n| 4 | Andar 4 · o detalhe | Todo o resto | Fases do sono em minúcia, cronotipos, suplemento, pulseira, colchão. Refinamento, quando não é marketing. |\n\n**Caixa · grátis.** O andar 1 não custa nada: nenhum app, nenhuma pulseira, nenhum colchão novo. Só horário.\n\n**Nota do caso comum.** Se você passa bem mais tempo na cama do que dormindo, não precisa de mais cama: precisa\nconverter cama em sono, e isso é o andar 3.\n\n**Nota da coorte (ressalva).** A regularidade é a aposta deste protocolo, e não uma promessa dele: a coorte mediu\nassociação, não causa. É por isso que ela vem primeiro, e não por isso que ela é garantida.\n\n**Nota da coleção.** O prédio é o mesmo diagrama do Protocolo 02, com um andar a mais. Leia de baixo para cima:\nfundação, estrutura, acabamento, detalhe. Quem começa pelo detalhe reforma um prédio sem fundação.\n\n**Faixa:** Nada do andar 4 compensa um andar 1 bagunçado.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-03-a-regularidade-e-a-aposta",
+          "titulo": "A regularidade é a aposta",
+          "objetivo": "O leitor sabe o que o estudo da regularidade mostrou, e o que ele não mostrou.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-03-a-ancora/modulo-03-a-regularidade-e-a-aposta.md",
+          "texto": "andar 1 · regularidade · a fundação, de graça ·\nandar 2 · duração suficiente · 7 a 9 horas · andar 3 · desligamento e ambiente · sessões 4 e 5 · andar 4 · todo o\nresto · quando não é marketing\n\nA regularidade do sono previu risco melhor\ndo que a própria duração.\n\n**Evidência:**\n\n- **Dado:** uma coorte prospectiva gigante · **o que significa:** é o achado mais estratégico da ciência recente\n  do sono: horários consistentes previram risco de mortalidade melhor do que as horas dormidas · **de onde veio:**\n  [11].\n- **Dado:** 7 horas ou mais · **o que significa:** o consenso oficial da medicina do sono para adultos; 6 ou menos\n  é insuficiente, e para a sua idade a faixa saudável é de 7 a 9 horas · **de onde veio:** [1].\n\n**Ressalva :**\n\n- Vale saber o que esse estudo é: ele acompanhou muita gente e mediu uma associação, ou seja, regularidade anda\n  junto com viver mais.\n- Ele não testou se mudar o seu horário muda o seu risco, e ninguém honesto pode afirmar isso a partir dele. É o\n  motivo pelo qual a regularidade é a aposta deste protocolo, e não uma promessa dele.\n\n**ritmo circadiano:** o relógio interno de cerca de 24 horas que decide quando seu corpo\nlibera os hormônios de alerta e de sono. Ele funciona como um relógio de verdade: ajustado pela regularidade,\nquebrado pela bagunça de horários. Todo o protocolo é, no fundo, um acerto de relógio.\n\n**Fecho.** O andar 3 é onde moram o celular, a luz e a rotina de encerramento (sessão 4) e os sabotadores\nquímicos (sessão 5). O andar 4 é refinamento, quando não é puro marketing: suplemento \"do sono\", pulseira, colchão\nhigh-tech, banho gelado. **Nada do andar 4 compensa um andar 1 bagunçado, e o andar 1 é de graça.**",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-04-ancora",
+          "titulo": "Âncora",
+          "objetivo": "O leitor sabe a regra-mãe inteira, em cinco selos, e por que ela não é \"clube das 5h\".",
+          "tipo": "leitura",
+          "kit": true,
+          "fonte": "cuidado-com-o-sono/sessao-03-a-ancora/modulo-04-ancora.md",
+          "texto": "Âncora · palavras de apoio: *mesmo horário*\n\n1. 9h todo dia útil\n2. Inclusive depois de noite ruim\n3. Fim de semana: teto de +2h\n4. Deitar até 00h30\n5. Levantar não se negocia\n\n**Corpo · por que o acordar, e não o dormir.** Adormecer não é decisão: você não *escolhe* apagar às 00h40.\nLevantar é. O protocolo te pede a única coisa que está sob seu controle e deixa a biologia entregar o resto:\nacordando sempre no mesmo horário, a pressão de sono se acumula no ritmo certo e o corpo passa a pedir a cama\nperto do horário-alvo. Deitar, você deita no horário-alvo; mas **é o levantar que não se negocia**, nem com a\nsoneca.\n\n**Corpo · não é clube das 5h.** A Âncora não tem nada a ver com \"clube das 5h\" nem com rotina de CEO de LinkedIn.\nÉ o seu horário, o que a sua vida real já tinha, só que agora fixo. O que aquela coorte mediu não foi quem acorda\nmais cedo: foi quem acorda **igual**[11].\n\n**A regra-mãe** : **Acorde às 9h todos os dias úteis, inclusive depois\nde noite ruim.** No fim de semana, teto de +2h (sessão 6). O horário de acordar é o ponteiro que este protocolo\nescolheu mover primeiro: fixá-lo é o que puxa o resto da noite para o lugar ao longo das semanas.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-05-o-plano-de-4-semanas",
+          "titulo": "O plano de 4 semanas",
+          "objetivo": "O leitor sabe o que entra em cada semana, que nada sai quando a próxima etapa chega, e quando pode avançar.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-03-a-ancora/modulo-05-o-plano-de-4-semanas.md",
+          "texto": "\"O plano de\" / \"4 semanas\" / \"cumulativo\"\n\nUma mudança por semana: cada degrau vira hábito antes de o próximo chegar. Em 4 semanas o sistema inteiro\nestá de pé; das semanas 5 a 12, ele roda em manutenção junto com o programa do Protocolo 01.\n\n**Régua:** doze marcas, com as semanas 1 a 4 separadas das 5 a 12 por um espaço.\n\n**Estados (cinco cards):**\n\n| Capa | Faixa | Nome | Texto |\n| ---- | ----- | ---- | ----- |\n| 1 | semana | Âncora e corte | Acordar na Âncora todos os dias úteis, cafeína só até as 16h e o diário de 1 minuto. · sessões 1, 3, 5 e 7 |\n| 2 | semana | Encerramento | O alarme da Última chamada ativo de verdade: rotina de desligamento de 30 minutos entre a noite e a cama, deitar até 00h30. · sessão 4 |\n| 3 | semana | Cama limpa | O protocolo do celular (degraus 1 e 2) e o quarto em modo noite ao deitar. · sessão 4 |\n| 4 | semana | Fim de semana | As regras do sábado, do domingo e da segunda-feira. · sessão 6 |\n| 5 a 12 | semanas | Manutenção | Tudo acima rodando, o degrau 3 do celular (opcional) e os marcos da sessão 7. · sessão 7 |\n\n**Regra de trânsito · 5 dos últimos 7 dias** . Só avance quando o degrau atual saiu em pelo\nmenos 5 dos últimos 7 dias: o diário mostra. Precisou de duas semanas na mesma etapa? Use duas: **o calendário do\nprotocolo é seu.**\n\nReforma geral é o formato que você já abandonou, em treino, em dieta e em tudo.\nUma mudança por semana é o que sobrevive à segunda semana. A unidade de medida é a semana, não a noite. Uma noite\nruim não reprova ninguém.\n\n**Fecho (pergunta do 06):** Você está na semana 1. Cada linha entra e fica: nenhuma sai quando a próxima chega.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-06-o-que-nunca-vai-te-pedir",
+          "titulo": "O que o protocolo nunca vai te pedir",
+          "objetivo": "O leitor lê o contrato de realismo: cinco coisas que o protocolo não vai pedir, e as duas notas que fecham o contrato.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-03-a-ancora/modulo-06-o-que-nunca-vai-te-pedir.md",
+          "texto": "| # | Nome (nunca vai pedir) | Fala | Onde |\n| - | ---------------------- | ---- | ---- |\n| 1 | Deitar antes de 00h30 em dia útil | Sua noite social (calls, jogos, série) existe e fica. | [a sessão 4] |\n| 2 | Acordar antes das 9h | A Âncora é a sua âncora, não a de um influencer de produtividade. | [a Âncora] |\n| 3 | Abolir a balada de sábado | Ela entra no protocolo, não sai da sua vida. | [a sessão 6] |\n| 4 | Comprar qualquer coisa | Sem pulseira, sem app pago, sem colchão novo, sem suplemento. | [o andar 1] |\n| 5 | Perfeição | A unidade de medida é a semana, e ela já vem com margem de erro embutida. | [a sessão 7] |\n\n1. **O fim de semana tem regras próprias.** Sábado, domingo e segunda-feira estão na sessão 6, com teto de +2h.\n2. **Custo zero, por requisito.** O protocolo inteiro roda com despertador de celular e papel.\n\n**Fecho.** Nada aqui depende de acordar mais cedo do que a sua vida real permite, de abrir mão da noite social ou\nde comprar equipamento.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-07-faca-isto-hoje-a-noite",
+          "titulo": "Faça isto hoje à noite",
+          "objetivo": "O leitor sai com o plano à mão, o alarme da Âncora vencendo a soneca e o diário pronto para a primeira linha.",
+          "tipo": "pratica",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-03-a-ancora/modulo-07-faca-isto-hoje-a-noite.md",
+          "texto": "Faça isto hoje à noite\n\nTrês ações, e a semana 1 começa amanhã cedo.\n\n**Ações:**\n\n1. Salve o plano de 4 semanas nos favoritos (ele está no fast travel): você está na semana 1.\n2. Ajuste o alarme da Âncora para tocar longe do alcance do braço, se a soneca costuma te vencer. (Spoiler da sessão\n   4: isso vai virar regra de qualquer jeito.)\n3. Deixe o diário pronto ao lado da cama (papel ou o diário do app) para a primeira linha de amanhã: deitou,\n   levantou, como acordou de 1 a 5. A sessão 7 explica; começar não precisa de explicação.\n\n**Diário · semana 1** (espelho do diário de 1 minuto): segunda a domingo, com \"deitou\", \"levantou\" e \"como acordou\n(1 a 5)\".\n\nSemana fechada com 5 dos 7 dias? Avance.",
+          "acoes": [
+            "Salve o plano de 4 semanas nos favoritos (ele está no fast travel): você está na semana 1.",
+            "Ajuste o alarme da Âncora para tocar longe do alcance do braço, se a soneca costuma te vencer. (Spoiler da sessão\n   4: isso vai virar regra de qualquer jeito.)",
+            "Deixe o diário pronto ao lado da cama (papel ou o diário do app) para a primeira linha de amanhã: deitou,\n   levantou, como acordou de 1 a 5. A sessão 7 explica; começar não precisa de explicação."
+          ],
+          "acaoRegistro": null
+        }
+      ]
+    },
+    {
+      "id": "s04-do-jogo-a-cama",
+      "numero": 4,
+      "nome": "A noite: do jogo à cama",
+      "objetivo": "Instala o encerramento sem tocar no jogo, na call ou na série: um procedimento de descida de 30 minutos que começa\nna Última chamada, a luz que avisa o relógio, o celular que desce por degraus e o quarto-setup em modo noite.",
+      "modulos": [
+        {
+          "id": "modulo-01-a-aterrissagem",
+          "titulo": "A aterrissagem",
+          "objetivo": "O leitor troca \"minha noite é o problema\" por \"falta um fim para ela\", e tem a rotina de desligamento em lista.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-04-do-jogo-a-cama/modulo-01-a-aterrissagem.md",
+          "texto": "Sua noite não é o problema. A ausência de um fim para ela é.\n\nEsta sessão instala o encerramento, sem tocar no jogo, na call ou na série. Sua noite é\nboa: call com os amigos, jogo, série. Ela é parte da sua vida social, e este protocolo não vai mexer nela, porque\nestá no contrato da sessão 3.\n\nO problema é que ela não termina: ela se arrasta. O jogo vira \"só mais uma\", a série\nvira \"próximo episódio em 5, 4, 3...\", e quando você finalmente deita, leva a noite junto, na forma de um cérebro a\n200 km/h e um celular na mão.\n\nO problema não é a noite, é a aterrissagem.\n\n**Aterrissagem ** · *avião nenhum aterrissa a 900 km/h*\n\nExiste um procedimento de descida: gradual, padronizado, chato de propósito. Sua\nnoite precisa de um. O nome dele é rotina de desligamento, dura 30 minutos, e começa quando o alarme Última chamada\ntoca.\n\n**Última chamada, 00h00** . O alarme toca, o round acaba, a call encerra, o episódio pausa. Os\namigos estranham na primeira semana e se acostumam na segunda.\n\n*Desligar*\n\n- Alarme da Última chamada\n- Monitor off\n- TV off\n- Luz principal off\n- LEDs off\n- Luz baixa e quente\n\n*Descer*\n\n- Água no criado\n- Xixi e escova\n- Descompressão\n- Sem tela grande\n- Não Perturbe\n- Cama até 00h30",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-02-o-procedimento-de-descida",
+          "titulo": "O procedimento de descida",
+          "objetivo": "O leitor executa a descida em quatro etapas cronometradas, e sabe o que acontece com a luz, o criado e as notificações em cada uma.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-04-do-jogo-a-cama/modulo-02-o-procedimento-de-descida.md",
+          "texto": "\"Sua noite precisa de um procedimento de descida.\"\n\n| Marca | Horário | Etapa | O que fazer |\n| ----- | ------- | ----- | ----------- |\n| 1 | 00h00 | O alarme toca | Último round, fim da call (\"galera, deu pra mim\"), pausa no episódio. |\n| 2 | 00h00 a 00h10 · 10 min | Desligar o cockpit | Monitor, TV, luz principal e LEDs do setup. Água no criado, xixi, escova de dente. |\n| 3 | 00h10 a 00h25 · 15 min | Descompressão | Sem tela grande. Analógico e monótono: mochila do treino, alongamento, música calma, leitura em papel. |\n| 4 | 00h25 a 00h30 · 5 min | Cama | A luz apaga, o celular fica conforme o seu degrau, cabeça no travesseiro. |\n\n- **Luz:** só uma luz baixa e quente.\n- **Criado-mudo:** água servida antes de deitar.\n- **Notificações:** no silencioso.\n\nQualquer coisa analógica e monótona serve na descompressão: arrumar a mochila do\ntreino de amanhã, alongamento leve de cinco minutos, música calma, ler alguma coisa em papel. É a planagem final, e o\ncorpo entende o padrão em poucos dias.\n\n**Caixa · 00h30:** cabeça no travesseiro, dentro da meta.\n\n**Nota da Última chamada.** O alarme das 00h00 se chama Última chamada. Ele não pede permissão ao jogo, à call nem\nao próximo episódio. Nas duas primeiras semanas, ele é a única regra nova da noite.\n\n**Nota do celular.** Celular de tela para baixo no criado. A partir do degrau 3, ele carrega do outro lado do quarto,\nna mesa do setup.\n\n**Fecho (a Virada):** A rotina não encurta a sua noite. Ela dá um fim a ela, e é esse fim que devolve a manhã.\n\n**Faixa:** Não é negociação, é procedimento.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-03-a-luz-avisa-o-relogio",
+          "titulo": "A luz avisa o relógio",
+          "objetivo": "O leitor sabe por que escurecer o quarto meia hora antes é avisar a biologia, e o que conta como luz.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-04-do-jogo-a-cama/modulo-03-a-luz-avisa-o-relogio.md",
+          "texto": "> Monitor.\n> TV.\n> Luz principal.\n> Fita de LED.\n> Luz RGB do setup.\n> Standby na régua.\n> Notificações.\n\nLegenda: meia hora antes de deitar, o quarto já está mais escuro do que o resto da casa.\n\nSeu relógio interno lê luz forte à noite como \"ainda é dia\" e segura a melatonina,\no hormônio que abre a porta do sono[8]. **Escurecer o ambiente meia hora antes é avisar a biologia de que a\naterrissagem começou.**\n\nLuz baixa e quente basta: abajur, luminária de cabeceira, a luz do corredor. Escuro\nabsoluto não é requisito às 00h10.\n\nLED aceso conta como luz: standby do monitor e da TV, fita de LED, carregador piscando no\ncanto.\n\n**Glossário · melatonina.** O hormônio que o seu próprio cérebro libera quando escurece, sinalizando \"hora de dormir\".\nVocê não precisa comprá-la em gota: precisa parar de bloqueá-la com luz e tela na cara.\n\n**Fecho.** E não: este protocolo não recomenda suplementar melatonina como solução universal, porque resolver o hábito\nvem antes de mascarar o sintoma.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-04-mito-o-celular-me-relaxa",
+          "titulo": "Mito: o celular me relaxa",
+          "objetivo": "O leitor separa a sensação (relaxa) do efeito medido (acelera), e sabe onde o scroll pode continuar.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-04-do-jogo-a-cama/modulo-04-mito-o-celular-me-relaxa.md",
+          "texto": "Uma hora de scroll deitado cobra juros até depois do\ncafé.\n\n**Evidência:**\n\n- **Dado:** aparelho emissor de luz na cama, contra ler papel · **o que significa:** derrubou a melatonina, atrasou o\n  relógio biológico, aumentou o tempo para adormecer, reduziu o sono REM e deixou a pessoa mais lenta na manhã\n  seguinte · **de onde veio:** [8].\n- **Destaque (placar, em palavras):** acelerador com cara de freio · *a sensação é de freio; o efeito medido é de\n  acelerador.*\n\n**Ressalva :**\n\n- O estudo mediu leitores eletrônicos em laboratório, com iluminação controlada; a queda exata no seu quarto depende\n  do brilho, da distância e da hora.\n- O que a evidência sustenta com firmeza é a direção, e a direção basta.\n\nO hábito que mais aparece nas suas noites é a hora ou mais de scroll deitado, e a ciência\nmediu esse hábito com precisão.\n\n- **Objeção:** \"Mexer no celular na cama me relaxa. É meu jeito de desligar.\"\n- **Resposta (parceiro de noite):** A tela na cama derruba o hormônio do sono e empurra seu relógio para mais tarde[8].\n  A sensação de relaxar é real, mas o efeito fisiológico é o oposto. **Desligar de verdade é o que a rotina de 30\n  minutos faz**, e o scroll pode continuar existindo antes dela, fora da cama.\n\n`o que se sente` · `o que o corpo faz`",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-05-degrau-nao-penhasco",
+          "titulo": "Degrau, não penhasco",
+          "objetivo": "O leitor sabe os três degraus do celular, em que semana cada um entra, e que ficar no degrau 2 já é mudança enorme.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-04-do-jogo-a-cama/modulo-05-degrau-nao-penhasco.md",
+          "texto": "Abstinência total no dia 1 é o tipo de regra que dura três noites. O protocolo desce por degraus, um\npor vez, cada um valendo cerca de 1 a 2 semanas. O degrau 1 entra na semana 3 do plano.\n\nágua · despertador da Âncora · celular de tela para baixo\n\n| # | Título | Depois | Hoje (riscado) | Quando |\n| - | ------ | ------ | -------------- | ------ |\n| 01 | O timer | O scroll na cama continua permitido, mas com teto de 20 minutos (timer de verdade, no relógio do celular), tela no brilho mínimo e modo noturno. Timer tocou: celular de tela para baixo no criado. | scroll sem fim na cama | semana 3 |\n| 02 | O scroll sai da cama | Quer rolar o feed? Legítimo, mas na cadeira do setup, não deitado. A cama vira lugar de uma coisa só (tá, de até duas): o cérebro reaprende que deitou é dormir. O celular ainda dorme no criado. | rolar o feed deitado | 1 a 2 semanas depois |\n| 03 | O celular dorme longe | Opcional. Carregador na mesa do setup, do outro lado do quarto. O alarme da Âncora continua funcionando, e melhor: desligar o despertador passa a exigir sair da cama, e a soneca morre de morte natural. | celular do lado do travesseiro | semana 5 em diante |\n\n**Fecho.** Escolheu ficar para sempre no degrau 2? **Combinado.** Já é uma mudança enorme em relação à hora de scroll\ndeitado.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-06-o-quarto-setup-em-modo-noite",
+          "titulo": "O quarto-setup em modo noite",
+          "objetivo": "O leitor vira as cinco chaves do quarto na rotina de desligamento, sem desmontar nem comprar nada.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-04-do-jogo-a-cama/modulo-06-o-quarto-setup-em-modo-noite.md",
+          "texto": "Seu quarto é um centro de comando: PC, TV, LEDs, standby piscando em três cantos. Ele fica, porque é seu\npatrimônio e seu lazer.\n\n| # | Nome | Fala | Onde |\n| - | ---- | ---- | ---- |\n| 1 | Monitor e TV desligados de verdade | Standby com LED aceso conta como luz, e o botão ou o filtro de linha resolve de graça. | [ao deitar] |\n| 2 | Fita de LED e luz RGB off | Luz colorida forte à noite é sinal de \"dia\" para o relógio[8]. | [na rotina de desligamento] |\n| 3 | O máximo de escuro sem comprar nada | Cortina bem fechada, porta encostada, celular de tela para baixo. | [ao deitar] |\n| 4 | Notificações em Não Perturbe | A partir da Última chamada, porque o grupo do Discord sobrevive até a Âncora sem você. | [a partir de 00h00] |\n| 5 | Temperatura no confortável possível | Ventilador vale; quarto abafado briga com o sono. | [a noite inteira] |\n\nO ajuste é um interruptor de contexto, não uma reforma: de dia e na noite social,\ncockpit ligado; ao deitar, modo noite. **Nada sai do lugar, nada é desmontado e nada precisa ser comprado**: o que\nmuda é o estado dos aparelhos entre a Última chamada e a hora de acordar.\n\n**Nota.** Máscara de dormir é upgrade opcional de baixo custo, não requisito do protocolo.\n\n**Nota de fonte.** `[8]` é a referência única desta sessão para luz, melatonina e tela na cama.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-07-faca-isto-hoje-a-noite",
+          "titulo": "Faça isto hoje à noite",
+          "objetivo": "O leitor programa o Não Perturbe, instala o degrau da semana dele e roda a descida uma vez, cronometrada.",
+          "tipo": "pratica",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-04-do-jogo-a-cama/modulo-07-faca-isto-hoje-a-noite.md",
+          "texto": "Faça isto hoje à noite\n\nTrês ações. O jogo continua, a call continua, a série continua: o que muda é que agora elas terminam.\n\n1. Ative o Não Perturbe programado da Última chamada até a Âncora (2 minutos nas configurações, dura para sempre).\n2. Se você já está na semana 3, instale o degrau 1 agora, antes de deitar: timer de 20 minutos e brilho mínimo.\n3. Rode a rotina de desligamento uma vez, hoje, cronometrada, mesmo que ainda esteja na semana 1 do plano. Ensaio\n   conta.\n\n**A meta é uma só:** cabeça no travesseiro até 00h30.\n\n**Sete noites · marque o que rodou:** Seg · Ter · Qua · Qui · Sex · Sáb · Dom",
+          "acoes": [
+            "Ative o Não Perturbe programado da Última chamada até a Âncora (2 minutos nas configurações, dura para sempre).",
+            "Se você já está na semana 3, instale o degrau 1 agora, antes de deitar: timer de 20 minutos e brilho mínimo.",
+            "Rode a rotina de desligamento uma vez, hoje, cronometrada, mesmo que ainda esteja na semana 1 do plano. Ensaio\n   conta."
+          ],
+          "acaoRegistro": null
+        }
+      ]
+    },
+    {
+      "id": "s05-os-sabotadores",
+      "numero": 5,
+      "nome": "Os sabotadores",
+      "objetivo": "Mostra o mecanismo dos três sabotadores que fragmentam a noite por dentro (a cafeína que não se sente agindo, o\nálcool que finge ajudar e os despertares que parecem aleatórios), repõe a regra do corte com o porquê à mostra, e diz\ncom honestidade quando o problema pede médico e não protocolo.",
+      "modulos": [
+        {
+          "id": "modulo-01-o-que-encolhe-a-noite",
+          "titulo": "O que encolhe a noite",
+          "objetivo": "O leitor conhece os três sabotadores e entende que a regra sem o porquê não sobrevive à primeira tarde de sono.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-05-os-sabotadores/modulo-01-o-que-encolhe-a-noite.md",
+          "texto": "Três coisas fragmentam sua noite por dentro: a cafeína que você não vê agindo, o álcool que finge ajudar e os despertares que parecem aleatórios, mas não são.\n\n**Números crus:** `3` sabotadores · `6` horas de alcance · `5` suspeitos\n\nO que encolhe a noite sem pedir licença.\n\n**Seis ** · *as horas de alcance da cafeína que você não sente agindo*\n\nVocê já sabe a regra (sessão 1: corte às 16h). Falta o porquê, e sem ele a regra não sobrevive\nà primeira tarde de sono no estágio.\n\nA sensação de que a bebida \"ajuda a dormir\" tem explicação, e tem pegadinha: o álcool acelera\no apagar e cobra na segunda metade da noite.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-02-cafeina-6-horas-de-alcance",
+          "titulo": "Cafeína: 6 horas de alcance",
+          "objetivo": "O leitor sabe que cafeína tomada até 6 horas antes de deitar cortou mais de uma hora de sono, sem a pessoa notar.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-05-os-sabotadores/modulo-02-cafeina-6-horas-de-alcance.md",
+          "texto": "Mesmo a dose de 6 horas antes cortou mais de 1 hora de\nsono.\n\n**Evidência:**\n\n- **Dado:** três horários testados · **o que significa:** num estudo controlado, participantes tomaram uma dose forte de\n  cafeína na hora de deitar, 3 horas antes e 6 horas antes · **de onde veio:** [9].\n- **Destaque (placar):** mais de 1 hora · *de sono cortada pela dose de 6 horas antes, medida por aparelho*[9].\n\n**Ressalva :**\n\n- O estudo usou uma dose forte de cafeína; um café comum tem menos, e o efeito exato no seu caso depende da dose e de\n  você.\n- O que ele mostra com firmeza é o **alcance**: 6 horas antes ainda contam.\n\nOs participantes não perceberam: o sono encolheu sem a pessoa notar que a causa era o café\nde horas atrás.\n\n- **Objeção:** \"Café não me afeta. Tomo energético às 20h e durmo normal.\"\n- **Resposta (parceiro de noite):** \"Dormir\" você dorme, mas a cafeína consumida até 6 horas antes de deitar rouba mais de\n  1 hora de sono real, de um jeito que a própria pessoa não percebe[9]. **Você não sente o roubo; sente a consequência:**\n  acordar quebrado às 9h e culpar a genética, a segunda-feira, a vida.\n\n**Fecho:** A regra você já tem desde a sessão 1. Este módulo entrega o mecanismo, e é ele que faz a regra sobreviver.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-03-a-regra-do-corte",
+          "titulo": "A regra do corte",
+          "objetivo": "O leitor reencontra a regra do corte, agora com o mecanismo à mostra, a lista completa do que entra nela e a folga que ela dá.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-05-os-sabotadores/modulo-03-a-regra-do-corte.md",
+          "texto": "`(a mesma regra da sessão 1 · agora com o mecanismo à mostra)`\n\n**Selo (a mesma peça da sessão 1):**\n\n- **Verbo:** Corte.\n- **Condição:** Cafeína só até as **16h**. Para quem deita perto de 00h30, isso dá folga além das 6 horas do estudo[9].\n- **O que não existe:** Sem exceção de terça, sem \"só um golinho\", sem pré-treino cafeinado à noite.\n- **Registro:** `[antes das 16h, sim · depois, não]`\n\ncafé · energético · refrigerante de cola · chá preto e mate · pré-treino com cafeína\n\n**16h ** · *o corte que o estudo das 6 horas explica*\n\nTreine sem pré-treino cafeinado, porque sua energia da noite vem de ter dormido, não da lata.\nCom as semanas de protocolo, você vai sentir isso na prática.\n\n**Fecho (a Virada):** A repetição é o método: a regra volta, o porquê fica.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-04-alcool-o-falso-amigo",
+          "titulo": "Álcool: o falso amigo do sono",
+          "objetivo": "O leitor separa o que o álcool faz na primeira metade da noite (acelera o apagar) do que faz na segunda (cobra).",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-05-os-sabotadores/modulo-04-alcool-o-falso-amigo.md",
+          "texto": "Você não dorme melhor com álcool. Você apaga mais rápido e\ndorme pior.\n\n**Evidência:**\n\n- **Dado:** acelera o apagar · **o que significa:** o álcool de fato reduz o tempo para adormecer, e é daí que vem a\n  sensação de que a bebida \"ajuda a dormir\" · **de onde veio:** [10].\n- **Destaque (placar, em palavras):** a segunda metade · *é onde ele cobra: fragmenta o sono, multiplica despertares e\n  suprime o sono REM, com efeito proporcional à dose*[10].\n\nfragmenta o sono · multiplica despertares · suprime o sono\nREM · efeito proporcional à dose\n\n**Ressalva :**\n\n- O efeito cresce com a dose, então a noite de uma dose não é a noite de muitas.\n- As regras práticas do álcool (dose, horário, redução de danos) estão na sessão 6, dentro do plano do sábado, que é onde\n  elas pertencem.\n\n**Glossário · REM.** A fase do sono dos sonhos, essencial para memória, humor e recuperação do cérebro. É uma das partes\nmais valiosas da noite, e é justamente a que o álcool corta primeiro[10].\n\n**Fecho.** Por isso você acorda no domingo com cara de quem brigou a noite toda: fisiologicamente, brigou.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-05-os-suspeitos",
+          "titulo": "Os suspeitos",
+          "objetivo": "O leitor liga cada tipo de despertar a um mecanismo e a uma regra que já conhece, e escolhe o suspeito nº 1 da semana.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-05-os-sabotadores/modulo-05-os-suspeitos.md",
+          "texto": "Você não precisa de um \"tratamento para despertares\"; precisa das regras que já está instalando.\n\n. Acordar no meio da noite e custar a voltar é uma das suas queixas, e a boa notícia\né que muitos despertares têm causas controláveis, todas já mapeadas neste protocolo. Cinco suspeitos, cinco mecanismos,\ncinco regras que você já conhece. Nenhum deles pede tratamento novo.\n\n**Tabela · os suspeitos:**\n\n| # | Suspeito | Mecanismo | Regra que resolve |\n| - | -------- | --------- | ----------------- |\n| 1 | Cafeína tardia | segura o sono leve e quebradiço[9] | o corte às 16h · sessões 1 e 5 |\n| 2 | Álcool | fragmenta a segunda metade da noite[10] | as Regras do Sábado · sessão 6 |\n| 3 | Tela na cama | melatonina suprimida, relógio atrasado[8] | os degraus do celular · sessão 4 |\n| 4 | Horário bagunçado | relógio interno sem referência | a Âncora · sessão 3 |\n| 5 | Luz e notificação de madrugada | micro-despertares viram despertares completos | modo noite e Não Perturbe · sessão 4 |\n\nCom as causas saindo, a expectativa é que os despertares diminuam. Se não diminuírem depois de semanas, o próximo\nmódulo diz quando procurar avaliação.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-06-quando-procurar-avaliacao",
+          "titulo": "Quando procurar avaliação",
+          "objetivo": "O leitor reconhece os sinais que pedem médico, e sabe quais deles não esperam o protocolo.",
+          "tipo": "leitura",
+          "kit": true,
+          "fonte": "cuidado-com-o-sono/sessao-05-os-sabotadores/modulo-06-quando-procurar-avaliacao.md",
+          "texto": "Quando procurar avaliação\n\nEste é um protocolo educacional de hábitos, não um consultório. Algumas coisas não\ncompetem com ele: pedem outra ferramenta.\n\n- sufoco ou engasgo ao acordar, com despertares frequentes;\n- ronco alto e irregular, relatado por outras pessoas, principalmente com pausas na respiração.\n\n- sonolência que atrapalha o dia, mesmo com horas adequadas de cama;\n- insônia que não cede, igual com todas as regras rodando.\n\nUm médico, de preferência com experiência em sono.\n\nIsso não é fracasso do protocolo nem seu. É o protocolo te encaminhando para a ferramenta certa.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-07-faca-isto-hoje-a-noite",
+          "titulo": "Faça isto hoje à noite",
+          "objetivo": "O leitor confere a cafeína de hoje, tira o pré-treino da noite da mochila e escolhe o suspeito nº 1 da semana.",
+          "tipo": "pratica",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-05-os-sabotadores/modulo-07-faca-isto-hoje-a-noite.md",
+          "texto": "Faça isto hoje à noite\n\nTrês movimentos.\n\n**Ações:**\n\n1. Confira o horário da sua última cafeína de hoje. Passou das 16h? Sem culpa: anote no diário e observe a noite. O\n   protocolo adora um experimento involuntário.\n\n2. Tire o pré-treino cafeinado da mochila do treino noturno, se usa. A partir de amanhã ele é item de treino de manhã, ou\n   aposentado.\n3. Releia a tabela dos suspeitos e marque qual é o seu provável nº 1. É ele que seu diário vai vigiar esta semana.\n\n*Sabotadores*\n\n- Última cafeína até 16h\n- Sem energético\n- Sem cola\n- Sem chá preto ou mate\n- Sem pré-treino\n- Sem álcool\n\n*A noite*\n\n- Modo noite\n- Não Perturbe\n- Tela fora da cama\n- Âncora cumprida\n- Deitar perto de 00h30\n- Suspeito nº 1 vigiado\n\n**Micro-registro:** a seguir, o fim de semana: álcool, hora de deitar e o dia que mais desmonta a semana.",
+          "acoes": [
+            "Confira o horário da sua última cafeína de hoje. Passou das 16h? Sem culpa: anote no diário e observe a noite. O\n   protocolo adora um experimento involuntário.",
+            "Tire o pré-treino cafeinado da mochila do treino noturno, se usa. A partir de amanhã ele é item de treino de manhã, ou\n   aposentado.",
+            "Releia a tabela dos suspeitos e marque qual é o seu provável nº 1. É ele que seu diário vai vigiar esta semana."
+          ],
+          "acaoRegistro": null
+        }
+      ]
+    },
+    {
+      "id": "s06-o-fim-de-semana",
+      "numero": 6,
+      "nome": "O fim de semana",
+      "objetivo": "Põe o sábado dentro do protocolo sem tocar na festa: o jetlag social (a viagem de toda sexta sem sair da cidade), o mito\nde recuperar dormindo até meio-dia, as 4 Regras do Sábado, a Regra do Domingo (teto de +2h, cochilo curto e cedo) e a\nsegunda-feira como dia de retorno.",
+      "modulos": [
+        {
+          "id": "modulo-01-a-excecao-controlada",
+          "titulo": "A exceção controlada",
+          "objetivo": "O leitor sabe que a balada fica, e que as regras da sessão servem para baratear o custo dela, não para domá-la.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-06-o-fim-de-semana/modulo-01-a-excecao-controlada.md",
+          "texto": "O sábado à noite é sagrado, o protocolo sabe e não vai tocar nele. O que ele vai fazer é impedir que uma noite de festa custe a semana inteira.\n\nSábado: a exceção controlada.\n\n**Duas ** · *as horas de teto que separam o seu sábado da sua semana inteira*\n\nA balada fica. As regras desta sessão **não são para domar a noite: são para baratear o custo dela.**\n\nE a maioria delas é invisível para quem está com você: ninguém na mesa percebe um teto de alarme.\n\n**Duas horas de teto** . O sábado não muda. O que muda é o preço que ele cobra da sua semana.\n\n**Nesta sessão** (âncoras): o jetlag social · as 4 Regras do Sábado · a Regra do Domingo · a segunda-feira.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-02-a-viagem-de-toda-sexta",
+          "titulo": "A viagem de toda sexta",
+          "objetivo": "O leitor entende o jetlag social como uma viagem de fuso, e mede a própria.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-06-o-fim-de-semana/modulo-02-a-viagem-de-toda-sexta.md",
+          "texto": "\"Você viaja todo fim de semana sem sair da cidade.\"\n\n| Marca | Esquerda | Direita |\n| ----- | -------- | ------- |\n| 1 | **Semana · deitar** · 00h30 | **Sábado · dormir** · 3h |\n| 2 | **Semana · Âncora** · 9h | **Domingo · acordar** · 12h |\n| 3 | **A diferença** · +3h | **Sentido da viagem** · oeste |\n| 4 | **Milhas acumuladas** · zero | · |\n\nFisiologicamente, seu corpo faz uma viagem de avião para o oeste toda sexta e volta\ntoda segunda, sem milhas, só com a ressaca de fuso. E o custo não é só a segunda-feira arrastada: estudos populacionais\nassociam jetlag social maior a **pior perfil metabólico e mais gordura corporal**[13].\n\n**Glossário · jetlag social.** A diferença entre o seu relógio biológico e o horário que a vida social impõe[12].\n\nQuanto menor a diferença entre o fim de semana e a semana, menor o custo no relógio. É\ndisso que tratam as três regras seguintes.\n\n**Faixa:** Sem milhas, só com a ressaca de fuso.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-03-mito-dormir-ate-meio-dia",
+          "titulo": "Mito: dormir até meio-dia recupera",
+          "objetivo": "O leitor para de tratar a manhã de domingo esticada como recuperação.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-06-o-fim-de-semana/modulo-03-mito-dormir-ate-meio-dia.md",
+          "texto": "> Sexta · o fuso começa.\n> Sábado · 3h na cama.\n> Domingo · acordar meio-dia.\n> Domingo à noite · insônia.\n> Segunda · a cobrança.\n\nLegenda: a manhã de domingo esticada, o gesto que parece recuperação e opera como atraso.\n\n- **Objeção:** \"Dormindo até meio-dia no domingo eu recupero o sono da balada. É meu jeito de zerar.\"\n- **Resposta (parceiro de noite):** É a frase mais razoável do fim de semana, e é a que mais custa. O sono perdido na\n  madrugada de sábado não volta na manhã de domingo: **o que volta é o atraso, maior do que antes.**\n\n1. Esticar a manhã de domingo não \"zera\": aprofunda o fuso.\n2. Seu relógio atrasa ainda mais, a noite de domingo vira insônia de véspera de prova, e a segunda amanhece pior[12].\n3. A recuperação real é o cochilo curto e cedo e a cama no horário normal, não a manhã esticada.\n4. O domingo tem regra própria, e ela protege justamente a noite que abre sua semana.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-04-as-4-regras-do-sabado",
+          "titulo": "As 4 Regras do Sábado",
+          "objetivo": "O leitor define as quatro regras antes de sair, e sai com o alarme do sábado e o teto de doses decididos.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-06-o-fim-de-semana/modulo-04-as-4-regras-do-sabado.md",
+          "texto": "Sábado · palavras de apoio: *custo menor*\n\n1. Segure a Âncora (+2h)\n2. Cafeína cortada às 16h\n3. A dose define o estrago\n4. Chegou às 3h: modo noite expresso\n5. A balada fica\n\n**Corpo · defina antes de sair:**\n\n1. **Segure a Âncora de manhã (teto de +2h).** Acordar até cerca de 11h no sábado mantém o relógio no lugar e, de bônus, te\n   deixa com sono de verdade na hora certa do domingo.\n2. **Cafeína continua cortada às 16h.** Energético para \"aguentar a balada\" às 23h é pagar duas vezes: a noite de sábado fica\n   mais cara, e a de domingo também[9].\n3. **Álcool: a dose define o estrago.** O sono pós-festa já vai ser pior, e o quanto pior é a dose que decide[10]. Menos doses\n   e água intercalada, madrugada menos fragmentada.\n4. **Chegou às 3h? Modo noite expresso.** Água, xixi, tela desligada, cama direto. O scroll pós-balada é a única parte da noite\n   que não te deu nada: corte ele, não a festa.\n\n**Corpo · a maioria é invisível.** Nenhuma das quatro exige sair mais cedo, beber refrigerante ou explicar nada a ninguém. Um\nalarme, um horário de corte e um copo de água entre as doses não aparecem na mesa.\n\n**Nota do par.** As regras de álcool e dieta estão no Protocolo 02: mesmo evento, dois bolsos. Este card é o par do card das\nRegras do Sábado de lá, e os dois trabalham na mesma noite.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-05-a-regra-do-domingo",
+          "titulo": "A Regra do Domingo",
+          "objetivo": "O leitor acorda no domingo até a Âncora mais 2 horas, e paga o sono atrasado com cochilo curto e cedo.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-06-o-fim-de-semana/modulo-05-a-regra-do-domingo.md",
+          "texto": "**Selo:**\n\n- **Verbo:** Teto.\n- **Condição:** Acorde no máximo **2 horas depois da Âncora**, até cerca de 11h. Vai doer menos do que parece: você foi dormir\n  às 3h, não às 7h.\n- **O que não existe:** Sono atrasado não se paga com a manhã inteira. Se paga com cochilo curto e cedo: até cerca de 30\n  minutos, antes das 17h.\n- **Registro:** `[Âncora + 2h · cochilo curto e cedo]`\n\n**11h ** · *o teto de duas horas depois da Âncora, e nem uma a mais*\n\n(declaração de escolha). Não é número mágico: é o compromisso entre a fisiologia (que pediria\nzero) e a sua vida real (que pediria +4h). **Duas horas de folga seguram os dois lados.** Quanto menor a diferença entre o fim\nde semana e a semana, menor o custo no relógio[11][12][13].\n\nA noite de domingo é a mais importante da semana: rotina de desligamento caprichada, cama no\nhorário-alvo. É ela que decide se a segunda começa no lucro ou no prejuízo.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-06-a-segunda-feira",
+          "titulo": "A segunda-feira",
+          "objetivo": "O leitor vive a segunda como um dia normal, com três itens e nenhuma compensação.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-06-o-fim-de-semana/modulo-06-a-segunda-feira.md",
+          "texto": "A segunda-feira tem uma fama que ela não merece. O que você sentia às segundas **nunca foi \"ódio de\nsegunda\": era o fuso da viagem** que o fim de semana te fez fazer.\n\nCom as regras do sábado e do domingo rodando, a segunda vira só... um dia. O plano dela é curto, e\né curto de propósito.\n\n| # | Título | Depois | Hoje (riscado) | Lastro |\n| - | ------ | ------ | -------------- | ------ |\n| 01 | Âncora normal | 9h, sem soneca extra. É a referência que o relógio precisa depois do fim de semana. | soneca extra na segunda | escolha do protocolo |\n| 02 | Treino no horário de sempre | O Protocolo 01 não muda por causa de sábado, e o exercício, aliás, melhora o sono da própria segunda. | pular o treino por causa do sábado | [14] |\n| 03 | Cama no horário normal | Sem compensação heroica: o acerto vem da regularidade, não do exagero pontual. | \"vou dormir às 22h hoje pra recuperar\", que termina rolando na cama e concluindo errado que \"nada funciona\" | [11] |\n\n**Fecho:** O resto da segunda é só segunda.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-07-faca-isto-hoje-a-noite",
+          "titulo": "Faça isto hoje à noite",
+          "objetivo": "O leitor define hoje o preço do próximo fim de semana: card salvo, alarme ajustado e, se for domingo, a rotina caprichada.",
+          "tipo": "pratica",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-06-o-fim-de-semana/modulo-07-faca-isto-hoje-a-noite.md",
+          "texto": "Faça isto hoje à noite\n\nO sábado não muda. O que muda é o preço que ele cobra da sua semana, e o preço se define antes, com decisões pequenas\no suficiente para caberem em cinco minutos de hoje.\n\n1. Salve o card das 4 Regras do Sábado no álbum favorito, ao lado do card irmão do Protocolo 02: os dois trabalham juntos na\n   mesma noite.\n2. Ajuste o alarme do fim de semana agora: sábado e domingo às 11h (a Âncora + 2h). Um alarme a menos para lembrar depois.\n   · o horário mostrado é a Âncora do leitor mais 2 horas\n3. Se hoje for domingo, capriche na rotina de desligamento: a noite de hoje é a mais importante da semana.",
+          "acoes": [
+            "Salve o card das 4 Regras do Sábado no álbum favorito, ao lado do card irmão do Protocolo 02: os dois trabalham juntos na\n   mesma noite.",
+            "Ajuste o alarme do fim de semana agora: sábado e domingo às 11h (a Âncora + 2h). Um alarme a menos para lembrar depois.\n   · o horário mostrado é a Âncora do leitor mais 2 horas",
+            "Se hoje for domingo, capriche na rotina de desligamento: a noite de hoje é a mais importante da semana."
+          ],
+          "acaoRegistro": null
+        }
+      ]
+    },
+    {
+      "id": "s07-o-diario-e-a-noite-seguinte",
+      "numero": 7,
+      "nome": "O diário e a noite seguinte",
+      "objetivo": "Entrega o placar de 1 minuto por manhã (o diário de sono, anexo A7), os três marcos honestos das 12 semanas, a Regra da\nNoite Seguinte (o anti-espiral) e o placar semanal do Sistema de Retomada.",
+      "modulos": [
+        {
+          "id": "modulo-01-um-minuto-por-manha",
+          "titulo": "Um minuto por manhã",
+          "objetivo": "O leitor aceita um placar de 1 minuto por manhã, subjetivo e suficiente, no lugar de qualquer aparelho.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-07-o-diario-e-a-noite-seguinte/modulo-01-um-minuto-por-manha.md",
+          "texto": "Um placar de 1 minuto por dia, três marcos honestos e a regra que impede uma noite ruim de virar uma semana perdida.\n\n**Números crus:** `1` minuto · `3` campos · `3` marcos\n\nVocê não tem smartwatch e não precisa de um: o seu placar é um diário simples, que leva 1 minuto por\nmanhã, no papel ou aqui no app.\n\nOs mesmos três campos do papel e uma palavra. Sem sensor, sem notificação, sem gráfico,\nsem nota. É o anti-app dentro do app: você anota, e é só.\n\n**Minuto ** · *o placar inteiro cabe em um por manhã*\n\nO \"acordei de 1 a 5\" é o seu medidor de qualidade sem aparelho: subjetivo, sim, e suficiente, **porque é\nvocê quem tem que acordar bem, não um gráfico.**\n\n**O que vem a seguir** (âncoras): o diário · os três marcos · a Regra da Noite Seguinte · o placar semanal do Sistema de Retomada.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-02-diario-de-sono",
+          "titulo": "Diário de sono",
+          "objetivo": "O leitor anota a noite em 1 minuto, todas as manhãs, e o diário devolve a semana em forma de placar.",
+          "tipo": "leitura",
+          "kit": true,
+          "fonte": "cuidado-com-o-sono/sessao-07-o-diario-e-a-noite-seguinte/modulo-02-diario-de-sono.md",
+          "texto": "Registre a data em que acordou, quando deitou, quando levantou e como acordou, de 1 a 5. Uma observação curta ajuda a lembrar o contexto.\n\nOs horários informam o tempo na cama. Eles não medem, sozinhos, o tempo efetivamente dormido. O diário fica disponível no Kit e no dashboard.",
+          "acoes": [],
+          "acaoRegistro": "sono"
+        },
+        {
+          "id": "modulo-03-os-tres-marcos",
+          "titulo": "Os três marcos",
+          "objetivo": "O leitor sabe o que esperar, e o que não esperar, nas semanas 1, 4 e 12.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-07-o-diario-e-a-noite-seguinte/modulo-03-os-tres-marcos.md",
+          "texto": "deitei às · levantei às · acordei de 1 a 5 · obs., uma palavra\n\nLegenda: três campos, sete linhas, uma semana. O resto do painel de sono do mercado é ruído.\n\n\"Três marcos\" / \"honestos\"\n\nEste protocolo é de semanas, por desenho. Quem promete dias está vendendo.\n\n**Régua:** doze marcas, com 1, 4 e 12 destacadas por forma.\n\n**Estados (três cards):**\n\n| Capa | Faixa | Nome | Texto |\n| ---- | ----- | ---- | ----- |\n| 1 | semana | O marco do sistema | Não espere acordar renovado; espere o sistema de pé: Âncora respeitada, corte de cafeína rodando, diário preenchido. Se a semana 1 te der só isso, ela cumpriu a função. |\n| 4 | semana | O marco da sensação | Com as 4 etapas implantadas, procure no diário e no corpo: mais dias \"4\" do que \"2\" na escala, menos tempo rolando na cama antes de dormir, menos sono à tarde no estágio, mais energia nas sessões do Protocolo 01[7]. São os primeiros juros da vantagem desleal, perceptíveis sem nenhum aparelho. |\n| 12 | semana | O marco da identidade | O diário conta a história: semanas regulares, fins de semana com teto respeitado, segundas normais. É o sistema completo (treino do Protocolo 01, proteína do Protocolo 02 e noites que constroem em vez de sabotar[2][3][5]) que ninguém do seu grupo está rodando inteiro. |\n\n**Fecho · por que três campos e não vinte.** A regularidade é a aposta nº 1 deste protocolo, pelo motivo da sessão 3, onde ela\npreviu risco melhor que a duração[11], e é exatamente ela que \"deitei\" e \"levantei\" tornam visível.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-04-a-regra-da-noite-seguinte",
+          "titulo": "A Regra da Noite Seguinte",
+          "objetivo": "O leitor responde a qualquer noite ruim com uma linha, e sabe o que a compensação custa.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-07-o-diario-e-a-noite-seguinte/modulo-04-a-regra-da-noite-seguinte.md",
+          "texto": "Vai acontecer: noite péssima, seja insônia boba, jogo que valeu a pena, ansiedade, sei lá. **O perigo\nnunca foi a noite ruim; foi o que você fazia depois dela**: esticar a manhã, empilhar energético, virar a madrugada seguinte \"para\ncompensar o atraso\", e em três dias o relógio estava em fuso de novo.\n\n**Selo:**\n\n- **Verbo:** Ponto.\n- **Condição:** Depois de qualquer noite ruim: Âncora normal no dia seguinte.\n- **O que não existe:** Sem esticar a manhã. Sem soneca de 3 horas à tarde (curta e cedo, se precisar). Sem dose extra de cafeína\n  depois das 16h. Sem deitar às 21h \"para recuperar\": você deita no horário normal, com sono de verdade acumulado, e a noite\n  seguinte tende a ser das boas.\n- **Registro:** `[a Regra da Noite Seguinte · o anti-espiral]`\n\n**Ponto ** · *Âncora normal no dia seguinte. Ponto.*\n\nUma noite ruim custa um dia mediano. A tentativa de compensá-la é que custa a semana.\n\n**Nota da coleção.** Este é o anti-espiral do protocolo, par da tabela de retorno do Protocolo 01 e da Regra do Dia Seguinte do\nProtocolo 02: a quebra já tem resposta escrita, nos três protocolos.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-05-o-sistema-de-retomada",
+          "titulo": "O Sistema de Retomada",
+          "objetivo": "O leitor conta a semana (Âncora nos dias úteis e fim de semana no teto), e conhece o nome do desenho na versão do Protocolo 03.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-07-o-diario-e-a-noite-seguinte/modulo-05-o-sistema-de-retomada.md",
+          "texto": "Âncora nos 5 dias úteis · fim de semana dentro do teto de +2h · a balada de sábado já está\ndentro · a unidade é a semana, nunca a noite\n\nO Sistema de Retomada\n\n1. A quebra já tem resposta escrita\n2. O placar é semanal\n3. A quebra vira dado, não veredito\n\n**Corpo · o placar.** **Semana verde:** Âncora respeitada nos 5 dias úteis e fim de semana dentro do teto de +2h. A balada de\nsábado já está dentro do desenho: ela não desconta ponto. **Semana amarela:** 4 dias úteis na Âncora; ela soma, não zera.\n\nUma noite fora não invalida a semana; um fim de semana intenso não invalida o mês. Anote no diário (uma palavra na coluna Obs.),\naplique a Regra da Noite Seguinte e siga. Perfeição não existe neste placar por definição: o protocolo foi desenhado com a sua\nvida dentro, e a sua vida tem sexta, sábado e imprevisto.\n\n**Corpo · as três regras.** Esse desenho tem nome, e vale a pena saber qual, porque ele é a peça que os outros métodos não têm. O\n**Sistema de Retomada** são três regras que trabalham juntas, e as três estão nos três protocolos do Lithium:\n\n1. **A quebra já tem resposta escrita.** Aqui é a Regra da Noite Seguinte: Âncora normal no dia seguinte, ponto. Você não decide\n   nada no seu pior dia: a decisão foi tomada meses antes, com a cabeça fria, e está escrita.\n2. **O placar é semanal, nunca a sequência.** A Âncora nos cinco dias úteis fecha a semana verde; o fim de semana tem teto, não\n   tem falta.\n3. **A quebra vira dado, não veredito.** Anota o que houve em uma linha, aplica a regra e segue. O registro existe para acelerar a\n   próxima retomada.\n\n**Fecho.** O sistema conta com a semana ruim desde o primeiro dia. É por isso que ele sobrevive a ela, e é o que separa este ciclo\nde todos os que você já abandonou.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-06-faca-isto-hoje-a-noite",
+          "titulo": "Faça isto hoje à noite",
+          "objetivo": "O leitor deixa a regra escrita, o diário pronto ao lado da cama e os check-ins das semanas 4 e 12 marcados.",
+          "tipo": "pratica",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-07-o-diario-e-a-noite-seguinte/modulo-06-faca-isto-hoje-a-noite.md",
+          "texto": "Faça isto hoje à noite\n\nTrês ações. Cinco dias úteis com a Âncora respeitada fecham a semana; o fim de semana tem teto, não tem falta.\n\n**Ações:**\n\n1. Escreva a Regra da Noite Seguinte na última linha do diário: \"Noite ruim → Âncora normal. Ponto.\"\n2. Monte o diário da semana (copie a tabela ou desenhe 4 colunas no papel, ou use o diário do app) e deixe ao lado da cama, junto\n   da caneta.\n3. Marque no calendário os check-ins das semanas 4 e 12: são os dias de reler os três marcos e conferir onde você chegou.\n   · as duas datas calculadas a partir da primeira linha do diário, para copiar\n\n**Semana verde · Âncora respeitada** (sete caixas): Seg · Ter · Qua · Qui · Sex · Sáb · Dom",
+          "acoes": [
+            "Escreva a Regra da Noite Seguinte na última linha do diário: \"Noite ruim → Âncora normal. Ponto.\"",
+            "Monte o diário da semana (copie a tabela ou desenhe 4 colunas no papel, ou use o diário do app) e deixe ao lado da cama, junto\n   da caneta.",
+            "Marque no calendário os check-ins das semanas 4 e 12: são os dias de reler os três marcos e conferir onde você chegou.\n   · as duas datas calculadas a partir da primeira linha do diário, para copiar"
+          ],
+          "acaoRegistro": null
+        }
+      ]
+    },
+    {
+      "id": "s08-o-treino-de-olhos-fechados",
+      "numero": 8,
+      "nome": "O treino de olhos fechados",
+      "objetivo": "Desmonta a última peça (descansar é fraqueza): o ciclo acorda tarde, se cobra, foge, dorme mal, acorda tarde é mecanismo e não\ncaráter; o descanso é a metade invisível do treino; e o sono fecha o triângulo com Hipertrofia e Dieta Básica.",
+      "modulos": [
+        {
+          "id": "modulo-01-descansar-nao-e-fraqueza",
+          "titulo": "Descansar não é fraqueza",
+          "objetivo": "O leitor reconhece a sequência que girava sozinha, e chega à última peça a desmontar.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-08-o-treino-de-olhos-fechados/modulo-01-descansar-nao-e-fraqueza.md",
+          "texto": "Falta desmontar a última peça: a ideia de que descansar é fraqueza.\n\nEla estava de cabeça para baixo o tempo todo. Reconhece a sequência? Acorda tarde e se cobra. A\ncobrança vira frustração, a frustração pede fuga (jogo até mais tarde, scroll até o dedo doer), a fuga rouba a noite, a noite ruim\nentrega outra manhã de culpa.\n\nDescansar não é fraqueza.\n\n**Ciclo ** · *acorda tarde, se cobra, foge, dorme mal, acorda tarde*\n\nO ciclo girava sozinho, e cada volta confirmava a história que você contava sobre si\nmesmo:\n\n> \"eu sou bagunçado mesmo, eu não funciono\"",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-02-tinha-mecanismo",
+          "titulo": "Tinha mecanismo, não defeito de caráter",
+          "objetivo": "O leitor vê o próprio ciclo peça por peça, cada peça com um mecanismo que tem nome, e as seis peças do sistema que o quebram.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-08-o-treino-de-olhos-fechados/modulo-02-tinha-mecanismo.md",
+          "texto": "\"Tinha mecanismo, não defeito de caráter.\"\n\n| Marca | Nó | Cota | Texto |\n| ----- | -- | ---- | ----- |\n| 1 | Acorda tarde | horário | 9h sempre foi um horário legítimo. O que faltava era o que vinha antes dele. |\n| 2 | Se cobra | culpa | A cobrança mirava o alvo errado: o horário de acordar, e não a noite anterior. |\n| 3 | Foge | fuga | Jogo até mais tarde, scroll até o dedo doer. A fuga rouba a noite. |\n| 4 | Noite ruim | mecanismo | Cafeína de 6 horas de alcance[9], tela suprimindo melatonina[8], relógio sem Âncora. |\n| 5 | Manhã de culpa | custo | A \"preguiça de domingo\" tinha nome técnico e custo medido: jetlag social[12][13]. |\n\n**A volta se fecha:** e a manhã de culpa vira, de novo, \"acorda tarde\".\n\nPrecisava de um sistema, e agora ele está instalado. Nenhuma peça exige força\nde vontade heroica; todas foram desenhadas para a sua vida real, com jogo, call e balada dentro.\n\n**Caixa · o sistema** (seis peças, cada uma com o lugar): dois alarmes (sessão 1) · um corte de cafeína (sessões 1 e 5) · uma rotina\nde 30 minutos (sessão 4) · três degraus (sessão 4) · quatro regras de fim de semana (sessão 6) · um diário de 1 minuto (sessão 7)\n\n**Assinatura:** Mecanismo, não caráter.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-03-descanso-renomeado",
+          "titulo": "Descanso renomeado",
+          "objetivo": "O leitor passa a ver o notebook fechado à meia-noite como a parte do treino que ninguém vê.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-08-o-treino-de-olhos-fechados/modulo-03-descanso-renomeado.md",
+          "texto": "> Na cultura do seu feed, dormir é o que os fracos fazem, enquanto os fortes \"pagam o preço\". A fisiologia diz o contrário, com\n> todos os números da sessão 2.\n\nHormônio de construção, síntese de músculo, partição de gordura e desempenho: tudo depende do que acontece\ndormindo[2][3][5][6][7].\n\n**Invisível ** · *dormir bem não é preguiça, é a metade invisível do treino*\n\nNos arcos que você admira, essa cena existe e você nunca reparou: o protagonista que treina\naté cair e então descansa de verdade, porque o poder do arco seguinte é forjado na recuperação do anterior.\n\nQuando você fechar o notebook à meia-noite, no meio da pressão dos amigos por \"só mais uma\", **você\nnão está desistindo da noite: está fazendo a parte do treino que ninguém vê.**",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-04-as-pecas-do-triangulo",
+          "titulo": "As peças do triângulo",
+          "objetivo": "O leitor vê o sono como a terceira peça de um sistema só, e entra nos outros dois roadmaps.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-08-o-treino-de-olhos-fechados/modulo-04-as-pecas-do-triangulo.md",
+          "texto": "Treino encomenda · comida abastece · **sono constrói**\n\ntreino · estímulo · Protocolo 01 · comida · matéria-prima · Protocolo 02 · sono ·\nconstrução · Protocolo 03\n\ndois alarmes · um corte de cafeína · rotina de 30 minutos · três degraus · quatro regras de\nfim de semana · diário de 1 minuto\n\n**Capas :**\n\n1. **Protocolo 01 · Hipertrofia** → abre o roadmap Hipertrofia\n2. **Protocolo 02 · Dieta Básica** → abre o roadmap Dieta Básica\n\n**Ponte 01 · treino.** O estímulo que este sono transforma em músculo está no Protocolo 01 · Hipertrofia, e a relação é de mão dupla:\ntreinar também melhora o sono, com efeito documentado em meta-análise[14].\n\n**Ponte 02 · dieta.** O apetite que a sua noite regula (lembra dos 33 a 45% a mais de apetite por comida calórica quando o sono\nfalta?[4]) é o mesmo que o Protocolo 02 · Dieta Básica organiza de dia. Dormir bem é o modo mais fácil de seguir a dieta.\n\n**Fecho.** Um pilar puxa o outro. São três volumes de um sistema só, e nenhum funciona inteiro sem os outros dois.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-05-faca-isto-hoje-a-noite",
+          "titulo": "Faça isto hoje à noite",
+          "objetivo": "O leitor escreve a frase da identidade, decide de antemão a resposta à próxima volta do ciclo e confere os três protocolos.",
+          "tipo": "pratica",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-08-o-treino-de-olhos-fechados/modulo-05-faca-isto-hoje-a-noite.md",
+          "texto": "Faça isto hoje à noite\n\nTrês decisões. Nenhuma peça exige força de vontade heroica: marque as três hoje, e amanhã o sistema já roda sem você\npensar nele.\n\n**Ações:**\n\n1. Escreva na primeira página do diário: \"Dormir é a metade invisível do treino.\"\n2. Identifique a sua próxima volta do ciclo culpa e fuga (todo mundo tem uma chegando) e decida agora a resposta: Regra da Noite\n   Seguinte, sem julgamento.\n\n3. Confira se os três protocolos estão rodando. Se algum ainda não, a sessão 1 dele leva 10 minutos, que é o padrão da casa.",
+          "acoes": [
+            "Escreva na primeira página do diário: \"Dormir é a metade invisível do treino.\"",
+            "Identifique a sua próxima volta do ciclo culpa e fuga (todo mundo tem uma chegando) e decida agora a resposta: Regra da Noite\n   Seguinte, sem julgamento.",
+            "Confira se os três protocolos estão rodando. Se algum ainda não, a sessão 1 dele leva 10 minutos, que é o padrão da casa."
+          ],
+          "acaoRegistro": null
+        }
+      ]
+    },
+    {
+      "id": "s09-fechamento",
+      "numero": 9,
+      "nome": "Fechamento",
+      "objetivo": "Fecha o roadmap e a coleção: a narrativa da madrugada de quem constrói, o checklist semanal do protocolo (anexo A2) e as fontes.",
+      "modulos": [
+        {
+          "id": "modulo-01-a-madrugada-de-quem-constroi",
+          "titulo": "A madrugada de quem constrói",
+          "objetivo": "O leitor escolhe, sem ninguém pedir, a versão que está dormindo agora.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "cuidado-com-o-sono/sessao-09-fechamento/modulo-01-a-madrugada-de-quem-constroi.md",
+          "texto": "Boa noite. É a coisa mais produtiva que você vai fazer hoje.\n\nDaqui a doze semanas, existe uma versão sua que ainda mora na 1h da manhã: polegar no automático,\nedits dos outros brilhando na cara, prometendo que segunda-feira agora vai. Ela não é fraca nem perdida; ela só continua pagando,\ntoda madrugada, um imposto que ninguém nunca explicou para ela.\n\nE existe a outra versão, a que está dormindo agora. Não porque virou monge: a call de quinta continua até\n23h30, o sábado continua terminando às 3h, o setup continua no quarto com as luzes que você escolheu. Mas a noite dela tem um fim\ncom procedimento, o café dela tem horário, o domingo dela tem teto, e o relógio interno, depois de anos de fuso, finalmente sabe que\nhoras são.\n\nNão porque virou monge.\n\nO diário na cabeceira mostra semanas verdes com a letra cada vez mais preguiçosa, porque anotar \"acordei:\n4\" todo dia vai ficando sem graça. Essa versão acorda na Âncora e o corpo simplesmente... liga. O estágio à tarde parou de precisar de\nenergético. O treino das 19h rende de um jeito que a ficha do Protocolo 01 registra.\n\n**Fechados ** · *a estética que você persegue de olhos abertos se constrói de olhos fechados*\n\n> A estética que te trouxe até esta coleção importa, sempre importou, e você nunca mais precisa se desculpar por isso. Ela está sendo\n> construída agora, esta noite, de olhos fechados.\n\nSe os amigos perguntarem do treino, do whey, da rotina, você vai contar, e ninguém vai\nacreditar na parte mais importante: que a vantagem era a mais barata, a mais antiga e a que estava na cara de todo mundo. **Que\nenquanto o grupo inteiro brigava pelas dezesseis horas do dia, você venceu nas outras oito.**\n\n**Números crus do fechamento (a entrega):** `2` alarmes · `30` minutos de descida · `1` minuto de diário",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-02-checklist-semanal",
+          "titulo": "Checklist semanal",
+          "objetivo": "O leitor fecha a semana em dez verificações e sabe se ela foi verde.",
+          "tipo": "leitura",
+          "kit": true,
+          "fonte": "cuidado-com-o-sono/sessao-09-fechamento/modulo-02-checklist-semanal.md",
+          "texto": "Checklist semanal do protocolo · semana ___ · meta: semana verde\n\n**Itens:**\n\n1. **Âncora respeitada** nos 5 dias úteis (levantei perto da Âncora)\n2. **Corte de cafeína (16h)** cumprido todos os dias\n3. **Rotina de desligamento** rodou nas noites de semana (alarme da Última chamada → cama em 30 minutos)\n4. **Degrau atual do celular** mantido (1, 2 ou 3)\n5. Sábado: **4 Regras do Sábado** aplicadas (se teve rolê)\n6. Domingo: acordei até a Âncora + 2h · cochilo (se houve) curto e cedo\n7. **Noite de domingo** com desligamento caprichado\n8. **Diário preenchido** os 7 dias (1 minuto por manhã)\n9. Noite ruim (se houve) → **Regra da Noite Seguinte** aplicada, sem compensação\n10. Semana 4 ou 12? **Conferir os três marcos**",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-03-fontes-1-a-9",
+          "titulo": "Fontes 1 a 9",
+          "objetivo": "Quem toca numa chamada `[n]` encontra a referência completa em um toque, e volta ao mesmo ponto.",
+          "tipo": "consulta",
+          "kit": true,
+          "fonte": "cuidado-com-o-sono/sessao-09-fechamento/modulo-03-fontes-1-a-9.md",
+          "texto": "1. Watson NF, Badr MS, Belenky G, et al. *Recommended Amount of Sleep for a Healthy Adult: A Joint Consensus Statement of the American\n   Academy of Sleep Medicine and Sleep Research Society.* **Sleep.** 2015;38(6):843 a 844. DOI: 10.5665/sleep.4716\n2. Leproult R, Van Cauter E. *Effect of 1 Week of Sleep Restriction on Testosterone Levels in Young Healthy Men.* **JAMA.**\n   2011;305(21):2173 a 2174. DOI: 10.1001/jama.2011.710\n3. Nedeltcheva AV, Kilkus JM, Imperial J, Schoeller DA, Penev PD. *Insufficient Sleep Undermines Dietary Efforts to Reduce Adiposity.*\n   **Ann Intern Med.** 2010;153(7):435 a 441. DOI: 10.7326/0003-4819-153-7-201010050-00006\n4. Spiegel K, Tasali E, Penev P, Van Cauter E. *Brief Communication: Sleep Curtailment in Healthy Young Men Is Associated with Decreased\n   Leptin Levels, Elevated Ghrelin Levels, and Increased Hunger and Appetite.* **Ann Intern Med.** 2004;141(11):846 a 850. DOI:\n   10.7326/0003-4819-141-11-200412070-00008\n5. Saner NJ, Lee MJ, Pitchford NW, et al. *The effect of sleep restriction, with or without high-intensity interval exercise, on\n   myofibrillar protein synthesis in healthy young men.* **J Physiol.** 2020;598(8):1523 a 1536. DOI: 10.1113/JP278828\n6. Lamon S, Morabito A, Arentson-Lantz E, et al. *The effect of acute sleep deprivation on skeletal muscle protein synthesis and the\n   hormonal environment.* **Physiol Rep.** 2021;9(1):e14660. DOI: 10.14814/phy2.14660\n7. Mah CD, Mah KE, Kezirian EJ, Dement WC. *The Effects of Sleep Extension on the Athletic Performance of Collegiate Basketball\n   Players.* **Sleep.** 2011;34(7):943 a 950. DOI: 10.5665/SLEEP.1132\n8. Chang AM, Aeschbach D, Duffy JF, Czeisler CA. *Evening use of light-emitting eReaders negatively affects sleep, circadian timing, and\n   next-morning alertness.* **Proc Natl Acad Sci USA.** 2015;112(4):1232 a 1237. DOI: 10.1073/pnas.1418490112\n9. Drake C, Roehrs T, Shambroom J, Roth T. *Caffeine Effects on Sleep Taken 0, 3, or 6 Hours before Going to Bed.* **J Clin Sleep\n   Med.** 2013;9(11):1195 a 1200. DOI: 10.5664/jcsm.3170",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-04-fontes-10-a-17",
+          "titulo": "Fontes 10 a 17",
+          "objetivo": "Fechar a lista com os limites das três fontes frágeis visíveis no próprio item, e ligar os temas que cruzam os roadmaps.",
+          "tipo": "consulta",
+          "kit": true,
+          "fonte": "cuidado-com-o-sono/sessao-09-fechamento/modulo-04-fontes-10-a-17.md",
+          "texto": "10. Ebrahim IO, Shapiro CM, Williams AJ, Fenwick PB. *Alcohol and Sleep I: Effects on Normal Sleep.* **Alcohol Clin Exp Res.**\n    2013;37(4):539 a 549. DOI: 10.1111/acer.12006\n11. Windred DP, Burns AC, Lane JM, et al. *Sleep regularity is a stronger predictor of mortality risk than sleep duration: A prospective\n    cohort study.* **Sleep.** 2024;47(1):zsad253. DOI: 10.1093/sleep/zsad253\n12. Wittmann M, Dinich J, Merrow M, Roenneberg T. *Social jetlag: misalignment of biological and social time.* **Chronobiol Int.**\n    2006;23(1 e 2):497 a 509. DOI: 10.1080/07420520500545979\n13. Roenneberg T, Allebrandt KV, Merrow M, Vetter C. *Social jetlag and obesity.* **Curr Biol.** 2012;22(10):939 a 943. DOI:\n    10.1016/j.cub.2012.03.038\n14. Kredlow MA, Capozzoli MC, Hearon BA, Calkins AW, Otto MW. *The effects of physical activity on sleep: a meta-analytic review.* **J\n    Behav Med.** 2015;38(3):427 a 449. DOI: 10.1007/s10865-015-9617-6\n15. Castro LS, Poyares D, Leger D, Bittencourt L, Tufik S. *Objective prevalence of insomnia in the São Paulo, Brazil epidemiologic sleep\n    study (EPISONO).* **Ann Neurol.** 2013. PMID: 23720241.\n    **Nota de limite:** identificada pelo PMID; volume, páginas e DOI não constam desta edição.\n16. *Prevalência em universitários:* revisão sistemática e meta-análise de sono ruim, sintomas de insônia e estresse em estudantes de\n    graduação. **Sleep Medicine Reviews**, cerca de 2022 (43% a 66% de \"maus dormidores\" pelo PSQI).\n    **Nota de limite:** referência incompleta; autoria, ano exato e volume não constam desta edição. A faixa citada deve ser lida como\n    ordem de grandeza.\n17. CNN Brasil. \"Mais de 70% dos brasileiros sofrem com alterações no sono.\"\n    **Nota de limite:** fonte de imprensa (dado dos 18 a 24 anos, herdado da pesquisa da persona), citada como tal e pareada com as\n    fontes primárias 15 e 16, conforme o dossiê.\n\n- Álcool, construção muscular e dieta → Dieta Básica, sessão 07 (Parr 2014; as Regras do Sábado).\n- Ultraprocessados e apetite → Dieta Básica, sessão 01 (Hall 2019).\n- Recuperação, destreino e desempenho → Hipertrofia, sessões 02 e 07.",
+          "acoes": [],
+          "acaoRegistro": null
+        }
+      ]
+    }
+  ]
+}

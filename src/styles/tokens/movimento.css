@@ -1,0 +1,38 @@
+/* ============================================================================
+   SIGILO · Movimento
+   Fonte canônica: estrutura-visual-geral.md §10 e §11
+
+   Assinatura de movimento: o CORTE SECO. Revelações de marca - sigilo,
+   celebração, carimbo de conclusão - usam steps(2) ou steps(3), nunca
+   transição contínua. É o idioma de impressão do cartaz aplicado ao tempo.
+   ========================================================================== */
+
+:root {
+  --motion-fast: 120ms;   /* estados de botão, marcadores */
+  --motion-base: 180ms;   /* entrada de cards, troca de aba */
+  --motion-slow: 280ms;   /* painéis, diálogos, esqueletos */
+
+  /* Celebração de recorde e meta batida - §10.
+     O valor é da §10; o bloco de tokens da §11 não o nomeia. */
+  --motion-celebracao: 320ms;
+
+  --ease-default: cubic-bezier(0.2, 0, 0, 1);
+
+  /* Curvas de corte seco - a assinatura. Use nas revelações de marca. */
+  --ease-corte-2: steps(2);
+  --ease-corte-3: steps(3);
+}
+
+/* Motion nunca comunica sozinho. Com prefers-reduced-motion, tudo vira
+   opacidade - regra literal de §10. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-property: opacity !important;
+    transition-duration: var(--motion-fast) !important;
+    scroll-behavior: auto !important;
+  }
+}

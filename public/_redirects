@@ -1,0 +1,10 @@
+# Roteamento estático do Cloudflare Pages.
+#
+# O app é multipágina: um documento por protocolo, e a navegação dentro dele é
+# rolagem e âncora. Não há rota de SPA para reescrever, então aqui só moram os
+# atalhos sem `.html`, que é como um link compartilhado costuma chegar.
+
+/treino        /hipertrofia.html   301
+/hipertrofia   /hipertrofia.html   301
+/dieta         /dieta.html         301
+/sono          /sono.html          301

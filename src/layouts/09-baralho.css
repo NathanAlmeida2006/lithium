@@ -1,0 +1,23 @@
+/* LG-09 · Baralho de cartas empilhadas. Fonte: layouts-globais/09-baralho-de-cartas.md
+   Um acento por card, e é o índice. `overflow: clip` no ancestral, nunca
+   `hidden`: `hidden` desliga `position: sticky` em todo descendente. */
+.baralho { --degrau: var(--space-6); display: flex; flex-direction: column; gap: var(--space-4); }
+
+.carta {
+  position: sticky;
+  top: calc(var(--space-4) + var(--ordem, 0) * var(--degrau));
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-5);
+  background: var(--surface-1);
+  border: var(--hairline) solid var(--line-strong);
+}
+.carta__indice { color: var(--acento); font-variant-numeric: tabular-nums; }
+.carta__titulo { color: var(--bone); text-transform: none; letter-spacing: 0; }
+.carta__texto { color: var(--bone); }
+.carta__nota { color: var(--silver); }
+
+@media (min-width: 768px) { .carta { padding: var(--space-6); } }
+@media (prefers-reduced-motion: reduce) { .carta { position: static; } }

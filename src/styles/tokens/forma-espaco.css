@@ -1,0 +1,36 @@
+/* ============================================================================
+   SIGILO · Forma e espaço
+   Fonte canônica: estrutura-visual-geral.md §5 e §11
+
+   Elevação é fio, nunca sombra. Canto reto, sem exceção.
+   ========================================================================== */
+
+:root {
+  /* ---- Espaçamento · base 4px - §5 --------------------------------------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+
+  /* ---- Forma - §5 e §11 --------------------------------------------------
+     Raio 0 sem exceção. O único 2px permitido é alvo de toque. */
+  --radius: 0;
+  --radius-touch: 2px;
+  --hairline: 1px;
+
+  /* ---- Textura - §5 e §8.1 ----------------------------------------------
+     Grão de 8 a 15% em superfície de marca. NUNCA sobre texto corrido. */
+  --grain-opacity: 0.10;
+}
+
+/* Zero sombra em todo o sistema - regra literal de §11.
+   Elevação se faz com cor de superfície + fio de 1px. */
+* {
+  box-shadow: none;
+  text-shadow: none;
+}

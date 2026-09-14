@@ -1,0 +1,41 @@
+# Cabeçalhos do Cloudflare Pages.
+#
+# A CSP inteira vive AQUI, e não em meta tag. Duas razões, e a primeira é
+# obrigação: `frame-ancestors` é ignorada quando chega por meta, e o navegador
+# avisa no console. A segunda é que a plataforma injeta cabeçalho de forma
+# nativa, então manter a política em dois lugares só cria a chance de eles
+# divergirem.
+#
+# Cada linha vale para TODAS as rotas por causa do `/*`.
+
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=(), usb=(), interest-cohort=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Resource-Policy: same-origin
+
+# O service worker nunca pode vir do cache: é ele que atualiza todo o resto.
+/sw.js
+  Cache-Control: no-cache
+/registerSW.js
+  Cache-Control: no-cache
+
+# O manifesto muda pouco, mas muda: uma hora de cache basta.
+/manifest.webmanifest
+  Cache-Control: public, max-age=3600
+
+# Nome com hash de conteúdo: imutável, um ano.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+/icones/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# As mídias dos exercícios: imutáveis, e o service worker ainda as guarda em
+# Cache Storage por cima disto.
+/midias/*
+  Cache-Control: public, max-age=31536000, immutable

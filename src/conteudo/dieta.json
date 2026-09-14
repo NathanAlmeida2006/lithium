@@ -1,0 +1,802 @@
+{
+  "schemaVersion": 2,
+  "sourceHash": "b8b4b2dff0286ae9e1fd16cdeba3a8751c9811df4df50a9596a21141d72969a5",
+  "protocolo": "dieta",
+  "nome": "Dieta básica",
+  "sessoes": [
+    {
+      "id": "s00-abertura",
+      "numero": 0,
+      "nome": "Abertura",
+      "objetivo": "Leva o leitor da porta do roadmap Dieta Básica até a primeira troca: o fast travel, o aviso de\nsaúde, como usar sem ler na ordem, por que um protocolo e não mais conteúdo de nutrição, e a\nnarrativa da cozinha das quatro da tarde.",
+      "modulos": [
+        {
+          "id": "modulo-01-fast-travel",
+          "titulo": "Fast travel",
+          "objetivo": "O leitor encontra qualquer sessão ou anexo do Kit em dois toques, e troca de roadmap sem perder o lugar.",
+          "tipo": "consulta",
+          "kit": true,
+          "fonte": "dieta-basica/sessao-00-abertura/modulo-01-fast-travel.md",
+          "texto": "Protocolo 02 · Dieta Básica\n\n**Aba \"sessões\":**\n\n| # | Sessão | Linha |\n| - | ------ | ----- |\n| 00 | Abertura | Por onde começar, e para quem isto não é |\n| 01 | Sua primeira vitória | O dano não está onde você pensa |\n| 02 | A hierarquia do que importa | Calorias, proteína e o resto |\n| 03 | Seus números do dia | Sem balança de cozinha, sem neurose |\n| 04 | O prato da casa | Negociando com quem cozinha |\n| 05 | Cardápio de estagiário | Proteína barata e lanches prontos de decisão |\n| 06 | Suplementos: só dois | E um deles é comida em pó |\n| 07 | O sábado e o dia seguinte | A semana com a balada dentro |\n| 08 | Seu arco passa pela cozinha | Consistência como identidade |\n| 09 | Fechamento | A mesa posta, e as fontes |\n\nA sessão 07 leva a marca **releitura obrigatória**, em texto.\n\n**Aba \"o Kit\":**\n\n- Script da conversa em casa (anexo A5) → sessão 04\n- Kit de lanches (anexo A6) → sessão 05\n- Checklist semanal (anexo A2) → **pendente** (sem página no PDF; a linha não aparece até existir)\n\n**Aba \"fontes\":** as 14 fontes (sessão 09).\n\n**Troca de roadmap** (topo do painel, os três protocolos do app): Hipertrofia · **Dieta Básica** ·\nCuidado com o Sono.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-02-antes-de-comecar",
+          "titulo": "Antes de começar",
+          "objetivo": "O leitor sabe o que o material é e não é, quando procurar um médico, quando parar, e para quem o protocolo não foi escrito.",
+          "tipo": "leitura",
+          "kit": true,
+          "fonte": "dieta-basica/sessao-00-abertura/modulo-02-antes-de-comecar.md",
+          "texto": "Antes de começar, leia esta tela inteira.\n\nEste material tem caráter educacional. Ele não é consulta, não é diagnóstico, não é\nprescrição e não substitui o acompanhamento de profissionais de saúde. Prescrição de dieta é\natribuição privativa do nutricionista (Lei nº 8.234/1991) e prescrição de exercício é atribuição do\nprofissional de educação física (Lei nº 9.696/1998). Nenhum dos autores exerce essas profissões, e\nnada aqui foi escrito para o seu caso individual.\n\n**Procure um médico antes de iniciar** se você se enquadra em qualquer item desta lista:\nhipertensão; diabetes; doença renal; doença hepática; doença cardíaca ou arritmia; gestação,\npós-parto ou amamentação; histórico de transtorno alimentar; uso contínuo de qualquer medicação;\nalergia ou intolerância alimentar; cirurgia nos últimos seis meses; lesão osteomuscular em\ninvestigação ou tratamento; doença respiratória; distúrbio do sono já diagnosticado. A lista não é\nexaustiva: na dúvida sobre a sua própria condição, a resposta é procurar avaliação.\n\n**Este material foi escrito para pessoas com 18 anos ou mais.** Abaixo dessa idade, treino, dieta e\nrotina de sono precisam de acompanhamento profissional direto, porque envolvem crescimento em curso.\n\n**Interrompa e procure atendimento** se aparecer: dor no peito, falta de ar desproporcional ao\nesforço, tontura, desmaio ou quase-desmaio, palpitação, dor articular que persiste por mais de uma\nsemana, dor que piora a cada sessão, urina muito escura após treino, febre, ou qualquer sintoma novo\nque você não consegue explicar. Interromper não é desistir. É a única decisão que preserva a\npossibilidade de continuar.\n\n**Este material não é para todo mundo, por segurança.** Ele não serve para quem busca preparação\nesportiva de competição, para quem está em tratamento de qualquer condição clínica sem liberação da\nequipe que o acompanha, para quem tem ou já teve transtorno alimentar, nem para quem procura\nemagrecimento rápido ou resultado com prazo marcado. Se você está em algum desses casos, o caminho\nútil é um profissional que possa olhar para você, e não um material escrito para o caso geral.\n\n**E não é para todo mundo por desenho, o que é outra coisa.** Este protocolo foi escrito para uma\npessoa específica: alguém entre 18 e 25 anos, começando praticamente do zero, com pouco dinheiro e\npouco tempo, que quer um caminho único para seguir em vez de um cardápio de opções para escolher.\nTudo aqui é consequência disso. Então ele não vai servir bem para você se:\n\n- você já treina ou já segue dieta com consistência há mais de seis meses: o conteúdo vai parecer\n  básico, porque é básico de propósito;\n- você quer um plano feito para o seu caso: este é escrito para o caso geral, e a lei reserva o\n  plano individual a quem pode avaliar você;\n- você quer escolher entre variações, cardápios e alternativas: aqui há um caminho só, e recusar o\n  cardápio é a decisão central do produto;\n- você procura resultado com prazo marcado ou está atrás de suplemento, \"hack\" e atalho: nada disso\n  aparece neste protocolo, e não é esquecimento.\n\nNenhum desses casos é um problema seu. É só um desencontro entre o que você precisa e o que este\nprotocolo se propôs a ser, e é mais honesto dizer isso agora do que na sessão 7.\n\nAs quantidades deste protocolo são referências gerais para adultos\nsaudáveis, e não uma dieta individualizada. Restrição alimentar, dieta terapêutica e ajuste para\nqualquer condição clínica são atribuição do nutricionista. Nenhum suplemento citado aqui é\nnecessário, e nenhum substitui refeição.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-03-como-usar",
+          "titulo": "Como usar este protocolo",
+          "objetivo": "O leitor entende que não precisa ler na ordem, conhece o Kit e sai com a sessão que responde à pergunta dele hoje.",
+          "tipo": "leitura",
+          "kit": true,
+          "fonte": "dieta-basica/sessao-00-abertura/modulo-03-como-usar.md",
+          "texto": "Este protocolo é um sistema, não um livro de receitas nem uma lista de\nproibições.\n\nToda sessão termina com um card **Faça isto hoje**: a menor ação alimentar\nconcreta, executável no mesmo dia. Só de seguir os cards, o protocolo já está rodando.\n\nOs `[n]` são as fontes científicas de cada afirmação. Toque em qualquer\num e a fonte abre. Você não precisa ler nenhuma; elas existem para você saber que nada aqui é achismo\nnem moda de guru.\n\nO script da conversa em casa e o kit de lanches são anexos, marcados no fast\ntravel: são as telas que você vai fotografar.\n\n| A sua pergunta | Vai para |\n| -------------- | -------- |\n| Quer melhorar sua alimentação hoje? | Sessão 1. Em 10 minutos você aplica a primeira troca, sem calcular nada. |\n| Quer entender a lógica? | Sessão 2: a hierarquia do que importa. Quase tudo que o feed discute fica no andar de cima, o do acabamento. |\n| Vai montar seu dia a dia? | Sessões 3 a 6: números simples, prato da casa, lanches e os únicos dois suplementos que valem seu dinheiro. |\n| Saiu da linha no fim de semana? | Sessão 7, que existe exatamente para isso: sem jejum punitivo, sem \"segunda eu recomeço\". |\n| Vai ter conversa em casa? | O script, no Kit. |\n| Precisa resolver o lanche? | O kit de lanches, no Kit, feito para ficar na porta da geladeira. |\n\n**Nota de fronteira** . Este é o volume 02 de uma coleção. O treino que este\ncombustível sustenta está no Protocolo 01 · Hipertrofia; o sono que transforma tudo em resultado, no\nProtocolo 03 · Cuidado com o Sono. Os dois estão aqui no app.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-04-informado-demais",
+          "titulo": "Informado demais, organizado de menos",
+          "objetivo": "O leitor troca \"sou mal informado\" por \"sou informado demais e organizado de menos\", e vê as três coisas que só um sistema entrega.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-00-abertura/modulo-04-informado-demais.md",
+          "texto": "> Carboidrato à noite engorda. · Carboidrato à noite não engorda.\n> Jejum intermitente. · Seis refeições por dia.\n> Déficit é a única coisa. · Caloria não importa.\n> Corte o glúten. · Glúten não é o problema.\n> Café da manhã reforçado. · Pule o café da manhã.\n\nLegenda: dez vidas de conteúdo de nutrição, todas na mesma tarde.\n\nVocê já viu conteúdo de nutrição suficiente para dez vidas, e é justamente\nesse o problema. O feed te entrega, na mesma tarde, alguém dizendo que carboidrato à noite engorda e\nalguém dizendo que não; um vídeo sobre jejum e outro sobre seis refeições.\n\nCada um está certo por trinta segundos, e nenhum se encaixa com o outro. **Você não está mal\ninformado: você está informado demais e organizado de menos.**\n\n| # | Título | Depois (o protocolo) | O feed (riscado) |\n| - | ------ | -------------------- | ---------------- |\n| 01 | Hierarquia | A sessão 2 diz o que importa muito, o que importa pouco e o que não importa, e é essa ordem que decide resultado. | Um Reel precisa que cada assunto pareça urgente, então nunca vai te entregar uma ordem. |\n| 02 | Permanência | A tabela de blocos vai estar igual no mês que vem. | O feed mostra uma tendência nova toda semana, e por isso nunca vira rotina. |\n| 03 | O sábado | A sessão 7 diz que vai ter balada e está tudo bem, e é a sessão que salva o resto. | Nenhum conteúdo de dieta viraliza dizendo isso. |\n\n**Fecho.** Continue vendo Reels se quiser. Só que agora eles viram entretenimento sobre uma coisa\nque você já está fazendo, em vez de ocuparem o lugar dela.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-05-a-cozinha",
+          "titulo": "A cozinha",
+          "objetivo": "O leitor se reconhece na cena das quatro da tarde, e ouve que a conta que não fecha não é culpa da comida de casa nem da força de vontade dele.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-00-abertura/modulo-05-a-cozinha.md",
+          "texto": "São quatro da tarde numa terça-feira qualquer, e você conhece essa cena\ntambém.\n\nO estágio se arrasta, a atenção sobra, o celular abre sozinho no aplicativo de delivery. Vinte\nminutos depois tem um pacote na portaria: salgado, refrigerante, alguma coisa doce para \"fechar\".\nVocê come no automático, entre uma planilha e outra, e nem registra direito o sabor.\n\nÀ noite, depois da janta da sua mãe (que estava boa, como sempre), ainda rola\num complemento na frente da tela: biscoito, mais um copo de refrigerante, o que tiver.\n\n> E no dia seguinte, no espelho do banheiro, aquela conta que nunca fecha: \"eu nem como tanto\n> assim... por que a barriga cresce e o braço não?\"\n\nVocê quer um corpo que imponha respeito.\n\nA conta não fecha porque você está olhando para a parcela errada. A\nprimeira sessão prova isso com ciência: o problema **não é o almoço, não é o arroz com feijão, não é\na comida da sua casa.** E não é falta de força de vontade sua.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-06-construcao",
+          "titulo": "Construção",
+          "objetivo": "O leitor entende que o físico que admira se constrói na cozinha que ele já tem, e que o que faltava era sistema.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-00-abertura/modulo-06-construcao.md",
+          "texto": "**Palavra-monumento de abertura:** Construção\n\nOmbro que preenche a camiseta, braço que aparece sem flexionar,\ncintura que não te faz escolher o ângulo da foto. A estética importa, sim, e este projeto nunca vai\nfingir o contrário.\n\nMas o físico que você admira nos edits não nasce só na academia. Ele se\nconstrói na cozinha, e a cozinha que você precisa já existe na sua casa, com direito a cozinheira\nmelhor que a da maioria dos marombas que você segue.\n\n> O que faltava não era comida. Era um sistema: o dano real mora nos intervalos, os números que\n> importam são dois, e um sábado de balada tem como não virar pedido de demissão da dieta.\n\n**Intervalos ** · *o dano real não está no prato da sua casa*\n\nDoze semanas de treino estão te esperando no Protocolo 01. Este\nprotocolo é o combustível delas, e ele foi desenhado para a sua vida real: prato da mãe, bolso de\nestagiário, fim de semana com os amigos.\n\n**Fecho:** Sua primeira vitória não precisa nem de fogão.",
+          "acoes": [],
+          "acaoRegistro": null
+        }
+      ]
+    },
+    {
+      "id": "s01-primeira-vitoria",
+      "numero": 1,
+      "nome": "Sua primeira vitória",
+      "objetivo": "Em 10 minutos e sem nenhuma conta: mostra onde está o dano (os intervalos, não o prato da casa),\nderruba o mito da marmita, entrega uma troca para hoje e marca o diagnóstico pela foto para amanhã.",
+      "modulos": [
+        {
+          "id": "modulo-01-o-trato-dos-10-minutos",
+          "titulo": "O trato dos 10 minutos",
+          "objetivo": "O leitor entende o trato: um diagnóstico e uma troca hoje, sem calcular nada.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-01-primeira-vitoria/modulo-01-o-trato-dos-10-minutos.md",
+          "texto": "Todo material de dieta que você já tentou começou pedindo o impossível.\n\n**Números crus:** `10` minutos · `1` troca · `0` contas\n\nCalcular, pesar, cortar, virar outra pessoa a partir de segunda-feira.\n\nAqui o trato é outro: em 10 minutos de leitura, você vai saber exatamente onde\nestá o problema da sua alimentação e sair com **uma única troca** para aplicar hoje.\n\n`(nenhuma conta nesta sessão)`\n\n**Hoje ** · *o diagnóstico e uma troca, sem calcular nada*\n\nSó o diagnóstico que muda tudo, e uma troca que você aplica\nainda hoje. Os números vêm depois (sessão 3), e mesmo eles são mais simples do que você imagina.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-02-mais-500-kcal-por-dia",
+          "titulo": "+500 kcal por dia",
+          "objetivo": "O leitor vê, com o ensaio controlado, que o excedente invisível vem dos intervalos.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-01-primeira-vitoria/modulo-02-mais-500-kcal-por-dia.md",
+          "texto": "> Café. Almoço. Janta.\n\n> Salgado da tarde.\n> Delivery no estágio.\n> Biscoito recheado na madrugada.\n> Refrigerante como água.\n\nLegenda: o pacote que chega na portaria não aparece na conta do dia. É onde ela acontece.\n\n+500 kcal por dia.\n\nCafé, almoço e janta: comida de verdade, feita em casa. Arroz, feijão,\numa mistura, salada quando tem. De graça, na sua mesa, todos os dias.\n\nAí a história muda. Salgado da tarde, delivery no estágio, biscoito\nrecheado na madrugada, refrigerante como água. Tudo escolhido por você, no automático, geralmente sem\nfome de verdade.\n\n**Evidência:**\n\n- **Dado:** cerca de 500 kcal a mais por dia · **o que significa:** comendo à vontade, as mesmas\n  pessoas ingeriram isso a mais na fase ultraprocessada, sem perceber, e ganharam peso · **de onde\n  veio:** num dos experimentos mais rigorosos já feitos sobre o tema, pesquisadores internaram\n  voluntários e controlaram tudo o que comiam: duas fases, uma com dieta de ultraprocessados, outra\n  com comida minimamente processada, iguais em calorias disponíveis, macronutrientes e fibra[5].\n\n**ultraprocessado:** o produto de fábrica feito para ser irresistível e rápido\nde comer: salgadinho, biscoito recheado, refrigerante, lanche de fast-food, salsicha. Não é \"veneno\":\né comida desenhada para você comer mais dela sem notar. O problema não é moral, é matemático.\n\n**Fecho (a Virada).** Quinhentas calorias extras por dia, invisíveis, sem prazer proporcional e sem\nsaciedade. É exatamente isso que os seus intervalos estão fazendo, e é por isso que a barriga cresce\nenquanto o braço não: **caloria extra sem treino e sem proteína vira gordura, não músculo.**",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-03-a-edicao-pontual",
+          "titulo": "A edição pontual",
+          "objetivo": "O leitor para de culpar a comida de casa e aceita uma edição pontual no lugar de uma vida nova.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-01-primeira-vitoria/modulo-03-a-edicao-pontual.md",
+          "texto": "Você não precisa de uma vida nova.\n\nPrecisa de uma edição pontual, nos intervalos que estão sabotando o resto do dia. Quem sai\nsão algumas escolhas que você faz sozinho.\n\n- **Objeção:** \"O problema é a comida da minha casa. Pra ter shape eu ia precisar de marmita de frango\n  com batata-doce.\"\n- **Resposta (parceiro de mesa):** O excedente invisível vem dos ultraprocessados dos intervalos\n  (cerca de 500 kcal a mais por dia sem perceber, comprovado em ensaio controlado[5]), não do prato da\n  família. Quem sai são algumas escolhas que você faz sozinho, no automático.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-04-a-troca-de-hoje",
+          "titulo": "A troca de hoje",
+          "objetivo": "O leitor escolhe o pior intervalo dele e uma das três trocas para usar hoje.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-01-primeira-vitoria/modulo-04-a-troca-de-hoje.md",
+          "texto": "**Passo 1 · escolha o seu pior intervalo.** Para a maioria, é o lanche da tarde (no estágio) ou o\n\"complemento\" da noite.\n\n\n| # | Título | Depois | No lugar de (riscado) |\n| - | ------ | ------ | --------------------- |\n| 01 | Ovos mexidos com pão | 2 ou 3 ovos mexidos com pão, feitos em 5 minutos, saciedade de horas. | o salgado da tarde |\n| 02 | Vitamina de padaria | Copo grande de leite integral batido com banana e aveia: praticamente um shake de academia. | o refrigerante com biscoito |\n| 03 | Sanduíche de queijo com ovo | Ou frango desfiado, se tiver sobra do almoço. | o delivery no estágio |\n\n**Por que funcionam sem contar caloria.** Além de tirarem da frente um ultraprocessado que empurra\nvocê a comer mais[5], todas têm proteína de verdade, e proteína é o nutriente que mais sacia, com\nefeito documentado sobre hormônios de apetite e ingestão total[13].\n\n**Fecho (a Virada).** Você troca as calorias invisíveis que viram barriga por comida que constrói\nmúsculo e ainda mata a fome da noite. **Mesmo estômago, resultado oposto.**\n\n**Nota:** O cardápio completo, com custos, está na sessão 5.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-05-o-diagnostico-pela-foto",
+          "titulo": "O diagnóstico pela foto",
+          "objetivo": "O leitor sabe fazer, amanhã, o álbum de um dia e as duas perguntas que transformam o álbum em mapa.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-01-primeira-vitoria/modulo-05-o-diagnostico-pela-foto.md",
+          "texto": "Você já fotografa prato, e agora a câmera vira ferramenta.\nAmanhã, fotografe tudo o que você comer e beber no dia. Tudo: o café, o salgado, o refrigerante no\ncopo, a colherada de paçoca.\n\nÀ noite, passe o álbum e responda duas perguntas. Esse álbum de um dia vale mais\nque qualquer questionário: é o seu \"antes\" alimentar, com a honestidade que só a câmera tem. **Guarde\nessas fotos**, porque no fim do protocolo você vai querer revê-las.\n\n*O dia*\n\n1. **Fotografe tudo amanhã.** Comida e bebida, do café ao último copo.\n2. **Num dia normal.** Não escolha um dia melhor do que os outros.\n3. **Sem contar nada.** Nenhuma caloria, nenhuma balança, nenhum app.\n4. **Sem mudar nada.** O diagnóstico só serve se for honesto.\n\n*A noite*\n\n5. **Passe o álbum à noite.** Uma foto por vez, do começo ao fim do dia.\n6. **Quais fotos são das refeições da casa?** Essas ficam.\n7. **Quais são escolhas suas, nos intervalos?** Aí está seu mapa de obras.\n\n- quantas fotos foram das refeições da casa: ___\n- quantas foram escolhas suas, nos intervalos: ___\n- o seu mapa de obras (os intervalos, em uma linha): ___",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-06-faca-isto-hoje",
+          "titulo": "Faça isto hoje",
+          "objetivo": "O leitor fecha a sessão com a despensa conferida, a foto de amanhã programada e a troca aplicada.",
+          "tipo": "pratica",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-01-primeira-vitoria/modulo-06-faca-isto-hoje.md",
+          "texto": "Faça isto hoje\n\nTrês tarefas, nenhuma delas exige comprar nada novo hoje. Marque quando cumprir: o card\nfecha quando os três quadrados estão marcados.\n\n**Ações:**\n\n1. Confira na despensa: tem ovos, leite, pão e banana em casa? Se faltar algo, entra na próxima\n   compra.\n2. Programe o dia da foto: amanhã, fotografe tudo o que comer e beber.\n3. Aplique a troca no seu pior intervalo (ovos, vitamina ou sanduíche: escolha uma).\n\n\n**Hoje ** · *o diagnóstico e uma troca, sem calcular nada*\n\n**Faixa (lembrete, não ação):** Amanhã, a foto · *um dia normal, sem mudar nada. O álbum é o seu\n\"antes\".*",
+          "acoes": [
+            "Confira na despensa: tem ovos, leite, pão e banana em casa? Se faltar algo, entra na próxima\n   compra.",
+            "Programe o dia da foto: amanhã, fotografe tudo o que comer e beber.",
+            "Aplique a troca no seu pior intervalo (ovos, vitamina ou sanduíche: escolha uma)."
+          ],
+          "acaoRegistro": null
+        }
+      ]
+    },
+    {
+      "id": "s02-a-hierarquia-do-que-importa",
+      "numero": 2,
+      "nome": "A hierarquia do que importa",
+      "objetivo": "Organiza toda a nutrição para ganho de massa num prédio de três andares: calorias (a fundação),\nproteína (a estrutura) e todo o resto (o acabamento). Derruba o mito do cronômetro de refeições e\nmostra que a dieta que vence é a que se mantém.",
+      "modulos": [
+        {
+          "id": "modulo-01-tres-andares",
+          "titulo": "Três andares",
+          "objetivo": "O leitor aceita a troca: dominar dois números e ignorar o resto com a consciência tranquila.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-02-a-hierarquia-do-que-importa/modulo-01-tres-andares.md",
+          "texto": "Toda a nutrição para ganho de massa cabe num prédio de três andares, e a ordem é inegociável.\n\n**Números crus:** `3` andares · `2` números · `1` ordem\n\nO iniciante gasta toda a energia no terceiro andar, discutindo jejum\ne horário de shake no grupo do WhatsApp, enquanto a fundação e a estrutura ficam ao acaso. Este\nprotocolo inverte: **você vai dominar dois números e ignorar o resto** com a consciência tranquila.\n\nO andar 1 decide se o peso se move e em que direção. O andar 2\ndecide a qualidade do que você ganha. O andar 3 é acabamento, e somado dá um efeito pequeno perto dos\ndois de baixo.\n\n**Três ** · *três andares, e você só cuida dos dois de baixo*\n\n- horário das refeições\n- comer de 3 em 3 horas\n- shake na janela pós-treino\n- glúten sem doença celíaca\n- tipo de carboidrato\n- low carb × low fat\n- jejum\n- ordem dos alimentos\n\nO terceiro andar tem um morador famoso que precisa ser despejado logo,\nporque é o que mais rouba a sua liberdade: o cronômetro. Ele é despejado no módulo 04.\n\n**Comece pela fundação** : escreva no topo da sua anotação de dieta: \"Andar 1:\ncalorias. Andar 2: proteína. O resto é acabamento.\"",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-02-o-predio",
+          "titulo": "O prédio",
+          "objetivo": "O leitor lê o prédio de baixo para cima e sabe o que cada andar decide.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-02-a-hierarquia-do-que-importa/modulo-02-o-predio.md",
+          "texto": "\"Toda a nutrição para ganho de massa cabe em três andares.\"\n\n| Marca | Andar | Rótulo | Texto |\n| ----- | ----- | ------ | ----- |\n| 1 | Andar 1 · a fundação | Calorias totais | O balanço entre o que você come e o que gasta governa o peso: para ganhar massa, é preciso comer um pouco acima do gasto. |\n| 2 | Andar 2 · a estrutura | Proteína diária | Dentro das calorias, a proteína decide a qualidade do que você ganha, e é o único número que você vai realmente acompanhar neste protocolo. |\n| 3 | Andar 3 · o acabamento | Todo o resto | Existe, mas só depois que os dois de baixo estão de pé. |\n\n\n\n- **Horário das refeições** · não decide o resultado[1]\n- **De 3 em 3 horas** · sem benefício robusto[6]\n- **Janela pós-treino** · dura horas, não 30 minutos[7]\n- **Low carb × low fat** · diferença pequena[3][10]\n\n**Nota das chamadas.** As chamadas do andar 3 reúnem os achados de [1][3][6][7][10]. Nenhum deles nega o\nefeito; todos o colocam abaixo de calorias e proteína.\n\n**Glossário · superávit.** Comer um pouco mais do que o corpo gasta no dia. É a única forma de dar\nmaterial para o corpo construir tecido novo. O tamanho do \"um pouco\" está na sessão 3.\n\n**Fecho · a ordem é inegociável.** O iniciante inverte a ordem e discute acabamento numa obra sem\nfundação. **Dois números e nada mais.**\n\n**Faixa:** Domine dois números e ignore o resto.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-03-calorias-proteina-o-resto",
+          "titulo": "Calorias, proteína, o resto",
+          "objetivo": "O leitor vê a discussão do grupo inteira no andar 3, e guarda as três frases que resumem os andares.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-02-a-hierarquia-do-que-importa/modulo-03-calorias-proteina-o-resto.md",
+          "texto": "> Jejum intermitente.\n> Horário do shake.\n> Comer de 3 em 3 horas.\n> Tipo de carboidrato.\n> Low carb × low fat.\n> Glúten sem doença celíaca.\n> Janela pós-treino.\n> Ordem dos alimentos no prato.\n\nLegenda: a discussão do grupo acontece toda no terceiro andar, enquanto a fundação e a estrutura ficam\nao acaso.\n\n**Três frases, uma por andar:**\n\n1. **Andar 1 · calorias totais.** Sem superávit, não há construção; com ele em excesso, a sobra vira\n   gordura. É o andar que decide se o peso se move e em que direção.\n2. **Andar 2 · proteína diária.** É o material de construção do músculo e o nutriente que mais segura a\n   fome[13].\n3. **Andar 3 · todo o resto.** Tudo isso mora aqui em cima, e somado dá um efeito pequeno perto dos dois\n   andares de baixo.\n\n**Fecho (a Virada).** Nenhum andar de cima sustenta o de baixo. **O problema nunca foi a dieta errada:\nfoi discutir acabamento numa obra sem fundação.**",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-04-mito-de-3-em-3-horas",
+          "titulo": "Mito: de 3 em 3 horas",
+          "objetivo": "O leitor aposenta o cronômetro de refeições e confia no total do dia.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-02-a-hierarquia-do-que-importa/modulo-04-mito-de-3-em-3-horas.md",
+          "texto": "- **Objeção:** \"Tem que comer de 3 em 3 horas e tomar o shake em 30 minutos depois do treino, senão o\n  treino foi perdido.\"\n- **Resposta (parceiro de mesa):** A meta-análise sobre frequência de refeições não encontrou benefício\n  robusto de comer mais vezes ao dia para a composição corporal[6]. E a \"janela anabólica\" pós-treino dura\n  horas, não 30 minutos: o corpo continua sensível à proteína por muito tempo depois do estímulo[7].\n\n**Fecho (a Virada).** O que decide o resultado é o total do dia. **Coma 3, 4 ou 5 vezes: escolha pelo\nseu conforto, não pelo cronômetro.**\n\n> Sem marmita térmica.\n> Sem comer no meio da aula.\n> Sem correr do vestiário.\n> Café da manhã, almoço, janta, um ou dois lanches.\n\nCafé da manhã, almoço, janta e um ou dois lanches dão conta\nperfeitamente, desde que o total do dia feche. Acerte o total primeiro; a distribuição acontece quase\nsozinha quando café, almoço, janta e um lanche têm proteína (e é exatamente assim que a sessão 3 organiza\no seu dia).\n\n**Ressalva honesta** . Existe um refinamento: espalhar a proteína em 3 a 4 momentos\ndo dia, com uma porção decente em cada, parece otimizar um pouco a resposta do músculo[3][4]. Note o\nverbo: *otimizar, não decidir.*",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-05-o-campeonato-ja-foi-feito",
+          "titulo": "O campeonato já foi feito",
+          "objetivo": "O leitor para de escolher time de dieta e aceita um método único, desenhado para ser mantido.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-02-a-hierarquia-do-que-importa/modulo-05-o-campeonato-ja-foi-feito.md",
+          "texto": "> O método que você mantém por meses vence a dieta perfeita que você abandona na segunda semana.\n\n**Evidência:**\n\n- **Dado:** diferenças pequenas · **o que significa:** uma meta-análise no JAMA comparou as dietas\n  nomeadas mais populares (low carb, jejum intermitente, cetogênica e outras) e encontrou diferenças\n  pequenas entre elas · **de onde veio:** [10].\n- **Destaque (placar):** a aderência · *foi o que previu o sucesso* · a recomendação final dos autores é\n  quase uma piada de tão simples: a melhor dieta é a que a pessoa consegue seguir[10].\n\n**Ressalva :**\n\n- O estudo comparou programas de emagrecimento em adultos com sobrepeso, não fase de ganho em quem\n  treina.\n- O que se aproveita aqui é o achado sobre aderência, não os números de perda de peso.\n\nTalvez você espere que um protocolo de dieta escolha um time. A ciência já\nfez esse campeonato. Por isso este protocolo não te oferece um menu de abordagens para escolher: te\noferece **um único método**, desenhado sobre o que você já tem (o prato da casa) e sobre o que você\nconsegue sustentar (minutos por dia, zero proibição absoluta).",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-06-faca-isto-hoje",
+          "titulo": "Faça isto hoje",
+          "objetivo": "O leitor grava os dois números no topo da anotação, aposenta um cronômetro e encontra, nas fotos, os momentos de proteína que já existem.",
+          "tipo": "pratica",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-02-a-hierarquia-do-que-importa/modulo-06-faca-isto-hoje.md",
+          "texto": "Faça isto hoje\n\nTrês ações, e os dois andares de baixo começam a aparecer no seu dia.\n\n**Ações:**\n\n1. Escreva no topo da sua anotação de dieta: \"Andar 1: calorias. Andar 2: proteína. O resto é\n   acabamento.\"\n2. Aposente oficialmente uma regra de cronômetro que você carregava: a de 3 em 3 horas ou a dos 30\n   minutos.\n\n3. Reveja as fotos do seu dia (sessão 1) e marque: em quais momentos entrou proteína de verdade? Esses\n   são os andares 2 já prontos.\n\n\n**Fecho:** Dois números de pé sustentam qualquer acabamento.",
+          "acoes": [
+            "Escreva no topo da sua anotação de dieta: \"Andar 1: calorias. Andar 2: proteína. O resto é\n   acabamento.\"",
+            "Aposente oficialmente uma regra de cronômetro que você carregava: a de 3 em 3 horas ou a dos 30\n   minutos.",
+            "Reveja as fotos do seu dia (sessão 1) e marque: em quais momentos entrou proteína de verdade? Esses\n   são os andares 2 já prontos."
+          ],
+          "acaoRegistro": null
+        }
+      ]
+    },
+    {
+      "id": "s03-seus-numeros-do-dia",
+      "numero": 3,
+      "nome": "Seus números do dia",
+      "objetivo": "É a operação inteira do protocolo. O número 1 é a meta de proteína contada em blocos, com uma tabela de\nporções que a mão mede e um traço por bloco. O número 2 é a Regra da Balança: uma pesagem por semana, a\ntendência de duas semanas e no máximo um ajuste por vez.",
+      "modulos": [
+        {
+          "id": "modulo-01-dois-numeros",
+          "titulo": "Dois números",
+          "objetivo": "O leitor sabe quais são os dois números do protocolo e quanto tempo cada um custa.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-03-seus-numeros-do-dia/modulo-01-dois-numeros.md",
+          "texto": "Um que você confere em segundos por dia, outro que a balança do banheiro confere por você uma vez por semana.\n\n**Números crus:** `2` números · `0` balança de cozinha · `1` pesagem por semana\n\nNenhuma balança de cozinha. Nenhum aplicativo de contagem.\n\nEsta sessão é a operação inteira do protocolo: uma meta de proteína contada em blocos, uma tabela de\nporções que a mão mede e uma regra de balança que faz o ajuste no seu lugar.\n\n**Bloco ** · *25 a 30 g de proteína, medidos pela palma da mão*\n\n**Os dois números:**\n\n- **Número 1 · a meta de proteína.** Você conta blocos, marca um traço por bloco e confere no fim do dia.\n  Leva menos de um minuto.\n- **Número 2 · o superávit.** Uma pesagem por semana, comparada com as duas anteriores, decide se algo\n  muda. No máximo um ajuste por vez.\n\n- módulos 02 a 05 montam o número 1: por que ninguém conta caloria direito, qual é a sua meta e como os\n  blocos substituem a balança de cozinha;\n- módulos 06 e 07 montam o número 2;\n- módulo 08 diz o que ignorar e onde anotar.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-02-a-ilusao-de-precisao",
+          "titulo": "A ilusão de precisão",
+          "objetivo": "O leitor tira das costas a obrigação de contar calorias com precisão, e entende por que a balança do banheiro entra no lugar da planilha.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-03-seus-numeros-do-dia/modulo-02-a-ilusao-de-precisao.md",
+          "texto": "O registro errava em quase metade.\n\n**Evidência:**\n\n- **Dado:** cerca de 1.000 kcal por dia · **o que significa:** era o que as pessoas tinham convicção de\n  comer · **de onde veio:** um estudo clássico comparou o que as pessoas relatavam comer com o que de fato\n  comiam, medido pelo padrão-ouro de laboratório[12].\n- **Destaque (placar):** cerca de 2.000 kcal · *era o consumo real* · e as pessoas estavam se esforçando.\n\n**Ressalva :**\n\n- O estudo foi feito em pessoas com obesidade.\n- Ele é usado aqui para o fenômeno geral, a imprecisão de quem registra o que come, e não para os números\n  de ninguém em particular.\n\nA lição não é \"as pessoas mentem\": é que **contagem exata de calorias é uma ilusão\nde precisão.**\n\n1. Rótulos têm margem de erro.\n2. Porções variam.\n3. Ninguém pesa arroz a vida inteira.\n4. Perseguir a casa decimal é trabalho de neurótico com resultado de chute.\n\nPor isso este protocolo adota um princípio que vai contra tudo que os\n\"monitores de macro\" do feed pregam: você vai operar com aproximações honestas e deixar a balança do\nbanheiro, que mede o resultado real e não a intenção, corrigir a rota. É mais simples e mais correto.\n\n**Fecho:** A balança do banheiro entra no lugar da planilha: ela mede o que aconteceu, não o que deveria\nter acontecido.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-03-a-sua-meta",
+          "titulo": "A sua meta",
+          "objetivo": "O leitor acha a própria linha na tabela e sai com a meta de proteína em blocos.",
+          "tipo": "leitura",
+          "kit": true,
+          "fonte": "dieta-basica/sessao-03-seus-numeros-do-dia/modulo-03-a-sua-meta.md",
+          "texto": "A ciência é incomumente unânime aqui.\n\n**Evidência (três fontes, uma faixa):**\n\n| Fonte | O que diz |\n| ----- | --------- |\n| posicionamento oficial da nutrição esportiva[1] | 1,4 a 2,0 g de proteína por quilo de peso por dia, para quem treina |\n| a maior meta-análise sobre o tema[2] | o ganho de massa magra satura em torno de 1,6 g/kg/dia |\n| a revisão específica de fase de ganho[4] | 1,6 a 2,2 g/kg |\n\n**Destaque (placar):** cerca de 1,6 a 2,0 g por quilo · *do seu peso, todos os dias* · sem conta na\ncabeça: é só usar a tabela.\n\nUm cara de 68 kg cai na meta de cerca de 110 a 135 g por dia, uns 130 g\nnum dia bom. Parece muito? Na sessão 4 você vai ver que o prato da casa, levemente ajustado, mais um\nlanche proteico, chega lá sem esforço heroico.\n\n**Tabela · peso, meta por dia, blocos:**\n\n| # | Peso | Meta por dia | Blocos |\n| - | ---- | ------------ | ------ |\n| 01 | cerca de 55 kg | 90 a 110 g | 4 |\n| 02 | cerca de 60 kg | 95 a 120 g | 4 |\n| 03 | cerca de 65 kg | 105 a 130 g | 4 a 5 |\n| 04 | cerca de 70 kg | 110 a 140 g | 5 |\n| 05 | cerca de 75 kg | 120 a 150 g | 5 |\n| 06 | cerca de 80 kg | 130 a 160 g | 5 a 6 |\n| 07 | 85 kg ou mais | 135 a 170 g | 6 |\n\nConforme seu peso subir ao longo dos meses, a meta sobe junto: **recalibre na tabela a cada 5\nkg.**",
+          "acoes": [],
+          "acaoRegistro": "metas"
+        },
+        {
+          "id": "modulo-04-o-metodo-dos-blocos",
+          "titulo": "O método dos blocos",
+          "objetivo": "O leitor sabe quanto vale cada porção comum em blocos, usando a mão como medida.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-03-seus-numeros-do-dia/modulo-04-o-metodo-dos-blocos.md",
+          "texto": "Contar gramas de proteína exigiria pesar comida. Em vez disso, você vai\ncontar blocos: **1 bloco é cerca de 25 a 30 g de proteína**, em porções visuais que a mão mede[14].\n\nA unidade oficial do protocolo é a palma da mão, e o arroz com\nfeijão do prato brasileiro ainda entra de bônus da casa: um prato normal já vale cerca de ⅓ de bloco.\n\n**Tabela · oito alimentos, uma medida visual cada:**\n\n| # | Alimento | 1 bloco é | Nota |\n| - | -------- | --------- | ---- |\n| 01 | Filé de frango | 1 palma da mão (sem os dedos), dedo de espessura | · |\n| 02 | Carne bovina (bife ou moída) | 1 palma da mão | · |\n| 03 | Peixe ou sardinha | 1 palma, ou 1 lata e meia | · |\n| 04 | Ovos | 4 unidades | 3 ovos são ¾ de bloco; arredonde com um copo de leite |\n| 05 | Leite integral | 3 copos de 250 ml | 2 copos são ⅔ de bloco |\n| 06 | Queijo minas ou muçarela | 1 fatia grossa como a palma (cerca de 100 g) | · |\n| 07 | Whey protein | 1 dose cheia (1 scoop) | · |\n| 08 | Arroz e feijão do prato brasileiro | · | um prato normal é cerca de ⅓ de bloco: o \"bônus da casa\" |\n\nNenhum precisa de balança: a mão que você já tem resolve a conta.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-05-tracos-nao-gramas",
+          "titulo": "Traços, não gramas",
+          "objetivo": "O leitor opera o número 1 todo dia: um traço por bloco, conferência no fim do dia, dia verde.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-03-seus-numeros-do-dia/modulo-05-tracos-nao-gramas.md",
+          "texto": "> Sua meta é X blocos.\n> Comeu uma porção de 1 bloco? Marque 1 traço.\n> No papel, na nota do celular, onde quiser.\n> Fim do dia: bateu os traços? Dia verde.\n\nA conferência leva menos de 1 minuto, e o método inteiro do dia, uns 5.\n\n(declaração de escolha). **Escolhemos a aproximação em vez da precisão**\nporque registro alimentar erra muito mesmo quando a pessoa se esforça[12], e aproximação consistente é o\nque se consegue manter.\n\n**macros:** os três macronutrientes (proteína, carboidrato, gordura). Métodos\ntradicionais mandam contar os três. Aqui você conta um, a proteína, em blocos; os outros dois se ajeitam\ndentro do prato da casa e da Regra da Balança.\n\n**Distribuição na prática** : 1 bloco no café, 1 a 2 no almoço, 1 no lanche, 1 a 2 na\njanta. Nenhum cronômetro envolvido: só o dia normal da sua casa, com proteína presente em cada parada.\n\n**Blocos de hoje**\n\n**Fecho:** Um número por dia, um por semana. Nada além disso entra na sua cabeça.",
+          "acoes": [],
+          "acaoRegistro": "dieta"
+        },
+        {
+          "id": "modulo-06-o-superavit-dos-estudos",
+          "titulo": "O superávit dos estudos",
+          "objetivo": "O leitor sabe que o superávit do ganho magro é pequeno, e que mais que isso vira gordura com pressa.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-03-seus-numeros-do-dia/modulo-06-o-superavit-dos-estudos.md",
+          "texto": "Mais que isso é gordura com pressa.\n\n**Evidência (lista em três partes):**\n\n- **Dado:** cerca de 10 a 20% acima da manutenção · **o que significa:** é o superávit que a evidência\n  para ganho magro recomenda · **de onde veio:** [4].\n- **Dado:** cerca de 0,25 a 0,5% do peso por semana · **o que significa:** é o ganho que esse superávit\n  mira · **de onde veio:** [4].\n- **Destaque (placar):** cerca de 150 a 350 g · *na balança por semana, para um corpo de cerca de 68 kg*.\n\n- **Objeção:** \"Pra ganhar massa é só comer igual um animal. Bulking é liberou geral.\"\n- **Resposta (parceiro de mesa):** O músculo cresce num ritmo biológico limitado (o Protocolo 01 mostra\n  os números). Superávit agressivo não acelera o músculo: acelera a gordura, exatamente na barriga que\n  você quer controlar. Ganho magro documentado: superávit de cerca de 10 a 20% e cerca de 0,25 a 0,5% do\n  peso por semana[4].\n\n**bulking:** a fase de comer acima do gasto para ganhar peso. No feed ela virou\nlicença para comer qualquer coisa; aqui ela é um superávit pequeno.\n\n**Fecho.** E você não vai calcular manutenção nem contar calorias. Qualquer cálculo de manutenção é\nestimativa, e a sua só aparece na prática[4]. **A Regra da Balança, no próximo módulo, faz o ajuste no seu\nlugar.**",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-07-a-regra-da-balanca",
+          "titulo": "A Regra da Balança",
+          "objetivo": "O leitor pesa-se uma vez por semana, compara com as duas anteriores e faz no máximo um ajuste.",
+          "tipo": "leitura",
+          "kit": true,
+          "fonte": "dieta-basica/sessao-03-seus-numeros-do-dia/modulo-07-a-regra-da-balanca.md",
+          "texto": "A Regra da Balança · palavras de apoio: *um ajuste*\n\n| Marca | Condição | O que fazer |\n| ----- | -------- | ----------- |\n| 1 | **1 vez por semana** | **Mesmo dia, mesma hora**: de manhã, depois do banheiro. E anote. |\n| 2 | **Subiu cerca de 200 a 300 g por semana?** | **Não mude nada.** Perfeito. |\n| 3 | **Subiu menos, ou nada, por 2 semanas seguidas?** | **+1 lanche reforçado por dia** (sessão 5), e siga. |\n| 4 | **Subiu mais de cerca de 500 g por semana, por 2 semanas seguidas?** | **Corte o extra mais fácil**: a bebida calórica do dia ou o ultraprocessado remanescente. E siga. |\n\n**Leitura entre as linhas** (nota da interpretação): entre 300 e 500 g por semana, nenhuma linha manda\nmudar: siga.\n\n(declaração de escolha). **Escolhemos calibrar pelo resultado, e\nnão pela equação**, porque a balança mede o que aconteceu e a equação só chuta o que deveria\nacontecer[4].\n\nFora isso, a balança não tem voto: um dia estranho não\nsignifica nada, porque a tendência de 2 semanas é que manda. É o superávit dos estudos[4], operado sem\nnenhuma conta. Você come o padrão do protocolo, a balança dá o veredito semanal, você faz no máximo **um**\najuste por vez. Piloto automático.\n\n**Registro:** peso desta semana ___ kg",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-08-o-que-nao-controlar",
+          "titulo": "O que não controlar",
+          "objetivo": "O leitor sabe as cinco preocupações que ficam proibidas de virar neurose, e as duas linhas que ficam no papel.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-03-seus-numeros-do-dia/modulo-08-o-que-nao-controlar.md",
+          "texto": "Tão importante quanto o que fazer é o que fica oficialmente proibido de virar preocupação,\nporque é daqui que nasce o \"neurótico da marmita\", e ele é sempre o primeiro a abandonar.\n\n| # | Nome | Fala | Onde |\n| - | ---- | ---- | ---- |\n| 1 | Pesagem diária | O peso flutua com água, sal e intestino; pesar todo dia é assinar um gerador de ansiedade. 1 vez por semana. | [a Regra da Balança · sessão 3] |\n| 2 | Precisão de gramas | Blocos são aproximações por design[12]. \"Mais ou menos 1 palma\" é a unidade oficial. | [o método dos blocos · sessão 3] |\n| 3 | Refeição perfeita | Não existe. Existe dia que fecha os blocos e dia que não, e a semana absorve os dois. | [o placar semanal · sessão 7] |\n| 4 | Compensação punitiva | Comeu além no sábado? Não corta domingo, não pula café, não \"paga\" na esteira. A Regra do Dia Seguinte é a única resposta autorizada. | [a Regra do Dia Seguinte · sessão 7] |\n| 5 | Comida \"limpa\" contra \"suja\" | Comida não tem ficha criminal. Tem frequência e contexto, e é só isso que o método gerencia. | [o prato da casa · sessão 4] |\n\n1. **Traços de blocos de proteína.** Todo dia, conforme come. Papel, nota do celular, planilha ou o\n   contador do app, à sua escolha.\n2. **Peso corporal.** 1 vez por semana, no mesmo lugar. É o mesmo número que o Protocolo 01 já te pediu:\n   **um registro serve aos dois.**\n\n**Linha opcional:** a foto do prato, quando você quiser conferir uma porção, no álbum que você já tem.\n\n**Fecho.** Sem assinatura, sem balança de cozinha, sem aplicativo de contagem. Se um dia você quiser\nrefinar, a balança de cozinha entra como upgrade opcional, nunca como requisito. Papel e caneta rodam o\nmétodo inteiro; o app só guarda o que você quiser anotar.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-09-faca-isto-hoje",
+          "titulo": "Faça isto hoje",
+          "objetivo": "O leitor sai da sessão com a meta em blocos anotada, os blocos de hoje contados e o dia da pesagem marcado.",
+          "tipo": "pratica",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-03-seus-numeros-do-dia/modulo-09-faca-isto-hoje.md",
+          "texto": "Faça isto hoje\n\nPreencha as três linhas e a sessão está operando.\n\n**Ações:**\n\n1. Ache sua linha na tabela de peso e anote sua meta em blocos.\n\n2. Conte os blocos de hoje pelos traços (vale reconstituir pelas fotos da sessão 1). Ficou longe da meta?\n   Normal: o sistema começa amanhã.\n\n3. Defina o dia e a hora oficiais da pesagem semanal (sugestão: sexta de manhã) e coloque lembrete no\n   celular.\n\n\n**Caixa · minha meta:** peso de hoje ___ kg · meta em blocos ___ · dia e hora da pesagem ___\n\n**Fecho · um ajuste por vez.** A sessão 4 monta o dia inteiro em cima desses números; a sessão 5 traz o\nlanche reforçado, caso a balança peça.",
+          "acoes": [
+            "Ache sua linha na tabela de peso e anote sua meta em blocos.",
+            "Conte os blocos de hoje pelos traços (vale reconstituir pelas fotos da sessão 1). Ficou longe da meta?\n   Normal: o sistema começa amanhã.",
+            "Defina o dia e a hora oficiais da pesagem semanal (sugestão: sexta de manhã) e coloque lembrete no\n   celular."
+          ],
+          "acaoRegistro": null
+        }
+      ]
+    },
+    {
+      "id": "s04-o-prato-da-casa",
+      "numero": 4,
+      "nome": "O prato da casa",
+      "objetivo": "Proíbe a marmita paralela por método e faz da comida de casa a fundação: o prato ajustado (a mistura\ncomo protagonista), a conversa com quem cozinha (três princípios, o script e o menu de pedidos) e o dia\ninteiro montado com o que a casa já produz.",
+      "modulos": [
+        {
+          "id": "modulo-01-a-fundacao-ja-esta-na-mesa",
+          "titulo": "A fundação já está na mesa",
+          "objetivo": "O leitor desiste da marmita paralela e entende que o que falta ao prato de casa é só tamanho de mistura.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-04-o-prato-da-casa/modulo-01-a-fundacao-ja-esta-na-mesa.md",
+          "texto": "Você não vai cozinhar um cardápio paralelo. Vai ajustar, junto com quem cozinha, o prato que já está na mesa.\n\n**Números crus:** `3` refeições que a casa já faz · `0` panela nova · `2` pedidos\n\nÉ mais barato, e é o que você consegue manter. Métodos que mandam o\niniciante preparar as próprias marmitas \"fit\" enquanto a família come outra coisa morrem em duas semanas:\npor logística, por custo e por transformar cada refeição num ato de resistência.\n\n(declaração de escolha). Este protocolo proíbe esse caminho por método:\nnada de \"comida de dieta\" separada. **A fundação da sua dieta são as três refeições que a sua casa já\nfaz.**\n\n**Casa ** · *a fundação da sua dieta são as três refeições que a sua casa já faz*\n\nO que falta ao prato típico, em geral, é só tamanho de mistura: a porção de\nfrango, carne ou ovo é pensada para acompanhar, e você precisa dela como protagonista.\n\n**O que vem a seguir** (lista de âncoras): o prato ajustado · antes do script · o script · o menu de\najustes · o dia montado.\n\n- Li o prato ajustado\n- Apliquei o prato\n- Escolhi 2 pedidos\n- Ovos na lista de compras\n- Marquei a conversa\n- Leite na lista de compras\n- Tive a conversa\n- Curinga proteico combinado",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-02-o-prato-ajustado",
+          "titulo": "O prato ajustado",
+          "objetivo": "O leitor monta o prato de sempre com a mistura ocupando um quarto, medida pela palma, sem pesar nada.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-04-o-prato-da-casa/modulo-02-o-prato-ajustado.md",
+          "texto": "\"Porção reposicionada, não cardápio novo.\"\n\n| Marca | Esquerda | Direita |\n| ----- | -------- | ------- |\n| 1 | **A mistura** · cerca de ¼ do prato | **Feijão** · de sempre |\n| 2 | **Medida de mão** · 1 palma e meia | **Bônus da casa** · cerca de +10 g de proteína[14] |\n| 3 | **Arroz** · de sempre | **Salada** · o que houver |\n| 4 | **Ingrediente novo ou panela extra** · nenhum | · |\n\n**O prato ajustado** . O prato de sempre, com a mistura ocupando cerca de ¼ do prato\n(1 palma e meia), mais arroz e feijão de sempre, mais o que a casa fizer. Só isso.\n\nA porção de frango, carne ou ovo é pensada para acompanhar. Você\nprecisa dela como protagonista: **mesma comida, outro tamanho.**\n\nNenhuma diretriz de nutrição esportiva exige alimentos\nespeciais, porque o que importa é bater proteína e calorias com comida comum[1][2][4]. E o prato\nbrasileiro padrão já nasce bom para isso: arroz com feijão é uma dupla proteica subestimada, porque a\ncombinação fecha um bom perfil de aminoácidos e adiciona cerca de 10 g de proteína num prato normal, o\n\"bônus da casa\" da tabela de blocos[14]. Fibra e custo baixo vêm junto.\n\n**Nota do diagrama.** O diagrama é uma regra visual, não uma medida de laboratório. A mão é sua, então a\nporção escala com o seu tamanho, que é exatamente o que uma dieta caseira precisa fazer.\n\n**Fecho:** Sem pesar nada. Sem panela extra. Se a mistura do almoço já ocupa um quarto do prato, o prato\najustado está cumprido; o resto da sessão é sobre conseguir isso sem cozinhar duas vezes.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-03-antes-do-script",
+          "titulo": "Antes do script",
+          "objetivo": "O leitor sabe as três regras de pedir direito antes de abrir a boca em casa.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-04-o-prato-da-casa/modulo-03-antes-do-script.md",
+          "texto": "Sua mãe cozinha três vezes por dia. Ela é o recurso mais subaproveitado do seu projeto\nfísico, e vale mais que qualquer pote de whey.\n\nE provavelmente ela toparia ajudar, se você pedisse direito. **\"Pedir direito\" tem técnica**, e a técnica\ncabe em três princípios.\n\n| # | Título | Depois | Não assim (riscado) |\n| - | ------ | ------ | ------------------- |\n| 01 | Peça ajuste, não revolução | Você não está pedindo cardápio novo: está pedindo um pouco mais do que já existe, como mais dois ovos no café ou uma porção maior de frango no almoço. Pedido pequeno, sim fácil. | pedir um cardápio novo |\n| 02 | Explique o porquê em uma frase | Quem entende o objetivo vira aliada. | chegar com a exigência sem explicação, que vira resistência (com razão) |\n| 03 | Ofereça contrapartida | Ajuda na compra do mês, louça do jantar, o que fizer sentido aí. Ajuste de porção dá trabalho e custa dinheiro, e reconhecer isso é metade da negociação. | pedir sem oferecer nada |\n\n**Fecho.** A contrapartida não é gentileza: **é o que torna o pedido sustentável.**\n\n**Nota de custo** : o teste de bolso da sessão 5 estima quanto o ajuste soma à conta da\ncasa; o valor é referência de julho de 2026, a conferir.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-04-o-script",
+          "titulo": "O script",
+          "objetivo": "O leitor tem a frase pronta da conversa, com a estrutura dos três princípios, para adaptar e usar.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-04-o-prato-da-casa/modulo-04-o-script.md",
+          "texto": "- **Verbo:** O script.\n- **Script:**\n\n  > \"Mãe, comecei um programa de treino sério, de 12 semanas, com protocolo e tudo. A parte da comida é\n  > simples: eu preciso de mais proteína no dia, e a comida daqui de casa já é a base perfeita. Queria só\n  > dois ajustes: escolha 2 da lista. Eu ajudo com contrapartida, e em uns 3 meses você vai ser a primeira\n  > a notar a diferença.\"\n\n- **O que não existe:** Não tem cardápio novo, não tem panela extra e não tem exigência.\n- **Registro:** `[adapte as palavras · mantenha a estrutura]`\n\n1. \"comecei um programa... a comida daqui de casa já é a base perfeita\" · **explica o porquê**\n2. \"só dois ajustes: escolha 2 da lista\" · **pede ajuste, não revolução**\n3. \"eu ajudo com contrapartida\" · **oferece contrapartida**",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-05-menu-de-ajustes",
+          "titulo": "Menu de ajustes",
+          "objetivo": "O leitor escolhe dois pedidos de baixo esforço para levar à conversa.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-04-o-prato-da-casa/modulo-05-menu-de-ajustes.md",
+          "texto": "| # | Nome | Fala | Esforço | O que rende |\n| - | ---- | ---- | ------- | ----------- |\n| 1 | Dobrar os ovos do café | De 2 para 4 ovos, ou incluir ovo se não havia. | mínimo | [+½ bloco logo cedo] |\n| 2 | Mistura 50% maior | No almoço e na janta, ou \"carne pensada para sobrar\". | baixo, mesma panela | [almoço e janta viram 1 bloco e meio a 2 cada] |\n| 3 | O curinga proteico | Uma travessa de frango desfiado ou carne moída pronta na geladeira, feita 2 vezes por semana. Recheia sanduíche e engorda qualquer prato. | médio, mas rende a semana | [curinga da semana] |\n| 4 | Ovos cozidos de plantão | Meia dúzia na geladeira. | mínimo | [lanche de bolso instantâneo] |\n| 5 | Leite integral sempre na lista | É compra, não preparo. | zero | [1 copo é ⅓ de bloco, a qualquer hora] |\n\n**Se a resposta for \"não dá\"** . Sem drama. A sessão 5 te dá autonomia completa nos\nlanches, e os ajustes de porção você mesmo faz na hora de se servir: mais mistura, arroz e feijão de\nsempre. **A conversa é um acelerador, não um pré-requisito.**\n\n**Palavra de apoio:** Apenas ajuste.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-06-o-dia-montado",
+          "titulo": "O dia montado",
+          "objetivo": "O leitor vê um dia de 5 blocos inteiro feito só com a comida de casa, e marca cada momento quando ele acontece.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-04-o-prato-da-casa/modulo-06-o-dia-montado.md",
+          "texto": "Juntando prato ajustado e blocos, um dia típico fica assim. O exemplo é para meta de 5\nblocos, e não pede nenhuma refeição fora do que a casa já cozinha.\n\nSem marmita e sem refeição \"de dieta\": a casa fazendo o que já faz, com você, pela\nprimeira vez, sabendo o que está fazendo. Os blocos são estimativa de trabalho, não pesagem: some os\nchecks no fim do dia e compare com a sua meta.\n\n· frase: \"Marque cada um quando ele acontecer de verdade.\"\n\n1. **Café.** 3 a 4 ovos mexidos, pão e 1 copo de leite · cerca de 1 bloco\n2. **Almoço.** Prato da casa com mistura de 1 palma e meia, arroz e feijão · cerca de 1 bloco e meio\n3. **Lanche da tarde.** 1 opção do cardápio de intervalos (sessão 5) · cerca de 1 bloco\n4. **Janta.** Prato da casa, mistura protagonista · cerca de 1 bloco e meio\n\n**Total do dia:** cerca de 5 blocos.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-07-faca-isto-hoje",
+          "titulo": "Faça isto hoje",
+          "objetivo": "O leitor sai com a lista de compras ajustada, a conversa marcada e o prato ajustado aplicado.",
+          "tipo": "pratica",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-04-o-prato-da-casa/modulo-07-faca-isto-hoje.md",
+          "texto": "Faça isto hoje\n\nTrês ações. A conversa pode ser outro dia; marcá-la é hoje.\n\n1. Adicione à lista de compras da casa: ovos (bandeja grande), leite integral e a carne do \"curinga\n   proteico\".\n2. Escolha seus 2 pedidos da tabela e marque a conversa com quem cozinha.\n\n3. Aplique o prato ajustado na próxima refeição da casa, na hora de se servir: mistura de 1 palma e meia,\n   resto igual.",
+          "acoes": [
+            "Adicione à lista de compras da casa: ovos (bandeja grande), leite integral e a carne do \"curinga\n   proteico\".",
+            "Escolha seus 2 pedidos da tabela e marque a conversa com quem cozinha.",
+            "Aplique o prato ajustado na próxima refeição da casa, na hora de se servir: mistura de 1 palma e meia,\n   resto igual."
+          ],
+          "acaoRegistro": null
+        }
+      ]
+    },
+    {
+      "id": "s05-cardapio-de-estagiario",
+      "numero": 5,
+      "nome": "Cardápio de estagiário",
+      "objetivo": "Resolve o bolso e o intervalo: o ranking da proteína barata, o teste de bolso da compra da semana, os oito\nlanches prontos de decisão (kit estágio e kit casa) e as cinco regras do menos-pior para o dia em que o\ndelivery vence.",
+      "modulos": [
+        {
+          "id": "modulo-01-decidir-uma-vez",
+          "titulo": "Decidir uma vez",
+          "objetivo": "O leitor troca \"força de vontade às 16h\" por uma decisão tomada no domingo.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-05-cardapio-de-estagiario/modulo-01-decidir-uma-vez.md",
+          "texto": "Proteína boa é a mais barata do supermercado comum, e seus intervalos vão virar decisões prontas, não testes de força de vontade.\n\n**Números crus:** `8` lanches prontos · `1` decisão por semana · `5` regras do menos-pior\n\nA sessão 1 provou: seu dano mora nos intervalos[5]. A solução **não é \"ter força\nde vontade às 16h\"**, porque força de vontade às 16h de uma terça não existe, em ninguém. **A solução é\ndecidir uma vez, no domingo, e nunca mais decidir**: quando bater a fome do intervalo, você executa uma\nopção da lista.\n\n**Ovo ** · *o melhor preço por proteína do país*\n\nO ranking desta sessão não tem item de boutique: é a bandeja de ovos, o\nfrango, a carne moída e a caixinha de leite.\n\nCabe no orçamento de estagiário com academia e creatina dentro. O que não cabe\nsão os suplementos que a sessão 6 vai te desaconselhar.\n\n**O que vem a seguir** (âncoras): o ranking · o teste de bolso · os lanches prontos · o guia do menos-pior.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-02-o-ranking-da-proteina-barata",
+          "titulo": "O ranking da proteína barata",
+          "objetivo": "O leitor sabe quais oito alimentos entregam proteína pelo menor custo, medido por bloco.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-05-cardapio-de-estagiario/modulo-02-o-ranking-da-proteina-barata.md",
+          "texto": "Ninguém constrói shape com salmão e \"cookie fit\". A proteína com melhor\ncusto-benefício do Brasil é a de sempre[1][2][4][14].\n\no custo é medido **por bloco de proteína** (cerca de 25 a 30 g), e\nnão por quilo de embalagem. Os quatro primeiros resolvem a semana inteira.\n\n**Tabela · oito alimentos:**\n\n| # | Alimento | Custo por bloco | Porção | Nota |\n| - | -------- | --------------- | ------ | ---- |\n| 1º | Ovo | cerca de R$ 4 | 4 ovos | versátil, de bolso (cozido) |\n| 2º | Frango (peito ou sobrecoxa) | cerca de R$ 3 a 5 | 1 palma | o curinga: assado, desfiado, em cubos |\n| 3º | Carne moída (patinho ou acém) | cerca de R$ 5 a 7 | 1 palma | rende, mistura com tudo, aceita corte mais barato |\n| 4º | Leite integral | cerca de R$ 5 a 6 | 3 copos | proteína que se bebe; base das vitaminas |\n| 5º | Sardinha em lata | cerca de R$ 8 a 10 | 1 lata e meia | estoque de emergência, com ômega-3 de brinde |\n| 6º | Queijo minas ou muçarela | cerca de R$ 7 a 9 | 1 fatia grossa | turbina sanduíche e café |\n| 7º | Iogurte natural | cerca de R$ 8 a 10 | · | lanche pronto, dupla com fruta e aveia |\n| 8º | Whey protein | cerca de R$ 4 a 6 por dose | 1 dose | prático, mas é o 8º, não o 1º (sessão 6) |\n\nO ranking manda na lista de compras.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-03-o-teste-de-bolso",
+          "titulo": "O teste de bolso",
+          "objetivo": "O leitor vê que a meta de proteína cabe no orçamento de estagiário, e que pagar a diferença pode ser a contrapartida da conversa em casa.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-05-cardapio-de-estagiario/modulo-03-o-teste-de-bolso.md",
+          "texto": "- **Identificação:** Compra da semana · meta de 5 blocos por dia\n- **Selo:** `[referência jul/2026]`\n- **Itens:**\n  1. Bandeja de ovos · cerca de R$ 4 o bloco, quatro ovos\n  2. Frango, peito ou sobrecoxa · cerca de R$ 3 a 5 o bloco\n  3. Carne moída · cerca de R$ 5 a 7 o bloco, aceita corte mais barato\n  4. Leite integral · cerca de R$ 5 a 6 por três copos\n- **Também entram:** sardinha em lata, queijo minas ou muçarela, iogurte natural, fruta, pão e aveia.\n- **Total:** R$ · **5 a 8** · *por dia, a mais na conta da família*\n\n**Coluna \"o depois\"** , três passos:\n\n1. Uma meta de 5 blocos por dia, montada nos itens do topo do ranking e no que a casa já compra, adiciona\n   algo como R$ 5 a 8 por dia à conta.\n2. Bancar essa diferença pode ser justamente o seu papel na negociação da sessão 4: você não pede uma\n   compra diferente, você paga a parte que é sua.\n3. Cabe no orçamento de estagiário com academia e creatina dentro, porque nenhum item do topo da tabela é\n   item de boutique.\n\n**Micro-registro:** O que não cabe: os suplementos que a sessão 6 vai te desaconselhar.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-04-kit-estagio",
+          "titulo": "Kit estágio",
+          "objetivo": "O leitor conhece os quatro lanches que funcionam fora de casa e escolhe dois como oficiais.",
+          "tipo": "leitura",
+          "kit": true,
+          "fonte": "dieta-basica/sessao-05-cardapio-de-estagiario/modulo-04-kit-estagio.md",
+          "texto": "| # | Nome | Fala | Blocos | Onde |\n| - | ---- | ---- | ------ | ---- |\n| 1 | Ovos cozidos de bolso | Dois ou três, cozidos em casa, mais uma fruta. | cerca de ¾ | [na mochila] |\n| 2 | Sanduíche de frango desfiado | O curinga da geladeira, feito de manhã e levado pronto. | cerca de 1 | [na mochila] |\n| 3 | Lata de sardinha e pão | Fica na gaveta da mesa e sobrevive a qualquer semana. | cerca de ¾ | [na gaveta do estágio] |\n| 4 | Leite de caixinha e banana | Padaria ou mercadinho resolve. É o quebra-galho do dia que fugiu do roteiro. | cerca de ⅓ | [na padaria do caminho] |\n\nA solução não é ter força de vontade às 16h. A solução é decidir\numa vez, no domingo, e nunca mais decidir: quando bater a fome do intervalo, você executa uma opção da\nlista. **Sem escolha na hora, o automático antigo não tem por onde entrar.**",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-05-kit-casa",
+          "titulo": "Kit casa",
+          "objetivo": "O leitor conhece os quatro lanches de casa e escolhe um como oficial.",
+          "tipo": "leitura",
+          "kit": true,
+          "fonte": "dieta-basica/sessao-05-cardapio-de-estagiario/modulo-05-kit-casa.md",
+          "texto": "**Cards:**\n\n| # | Nome | Fala | Blocos | Onde |\n| - | ---- | ---- | ------ | ---- |\n| 1 | Ovos mexidos com pão | Dois ou três ovos, cinco minutos de frigideira. | cerca de ¾ | [fogão] |\n| 2 | Vitamina de leite, banana e aveia | Liquidificador. Com uma dose de whey, vira 1 bloco e meio. | cerca de ⅔ a 1 e meio | [liquidificador] |\n| 3 | Iogurte natural, fruta e aveia | Fruta picada por cima. Montagem em dois minutos. | cerca de ½ | [geladeira] |\n| 4 | Prato requentado em versão mini | A janta ou o almoço de ontem. O lanche mais subestimado do Brasil. | cerca de 1 | [micro-ondas] |\n\nTodos têm proteína, e proteína tem saciedade documentada[13]: a fome não volta\nem uma hora, como voltava com o salgado. Todos custam menos que um delivery. Nenhum exige habilidade de\ncozinha.\n\n**Fecho:** Oito lanches, nenhuma decisão às quatro da tarde.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-06-quando-o-delivery-vence",
+          "titulo": "Quando o delivery vence",
+          "objetivo": "O leitor pede delivery pelas cinco regras do menos-pior e conta o pedido como refeição, não como falha.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-05-cardapio-de-estagiario/modulo-06-quando-o-delivery-vence.md",
+          "texto": "> Reunião que atravessa o lanche.\n> Dia exausto.\n> Rolê que termina em fast-food.\n> Geladeira vazia na segunda.\n> Viagem e estrada.\n\nVai acontecer, e o protocolo não finge que não. Entre o ideal e o desastre\nexiste um meio que salva a semana, e a semana salva é o que conta[10].\n\n| # | Título | Depois | No lugar de (riscado) |\n| - | ------ | ------ | --------------------- |\n| 01 | Proteína visível primeiro | Escolha a opção com carne ou frango de verdade em destaque: hambúrguer com carne de verdade antes de salgado; prato feito antes de lanche. Um pedido com proteína compete com seus blocos; um sem, só empilha calorias. | o salgado |\n| 02 | Bebida não gasta orçamento | Água, refrigerante zero ou suco natural pequeno. A bebida açucarada é a caloria que passa mais despercebida do pedido, exatamente o mecanismo do excedente invisível[5]. | a bebida açucarada |\n| 03 | Tamanho padrão | Nunca o combo turbinado: o \"por mais R$ 5\" é onde moram as calorias que você nem nota que comeu. | o combo turbinado |\n| 04 | Sem sobremesa embutida | Se quiser doce, que seja uma decisão à parte, tomada em outro momento. | o item de rodapé no carrinho |\n| 05 | Conta como refeição | Pediu seguindo as regras? O dia segue normal, blocos contando. | contar o pedido como falha |\n\n**Fecho.** As regras valem para qualquer cardápio de aplicativo, sem exigir que você conheça o prato. **A\nregra 5 é a mais importante.** Culpa não é ingrediente deste método. A Regra do Dia Seguinte, se precisar\ndela, está na sessão 7.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-07-faca-isto-hoje",
+          "titulo": "Faça isto hoje",
+          "objetivo": "O leitor sai com as cinco regras salvas, a lista do kit estágio pronta e os três lanches oficiais escolhidos.",
+          "tipo": "pratica",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-05-cardapio-de-estagiario/modulo-07-faca-isto-hoje.md",
+          "texto": "Faça isto hoje\n\nTrês ações, e o intervalo das quatro da tarde já está decidido.\n\n**Ações:**\n\n1. Salve as 5 regras do menos-pior num print: elas trabalham exatamente nos dias em que você não vai querer\n   abrir o app.\n2. Escreva hoje a lista do kit estágio para a próxima ida ao mercado: bandeja de ovos, 2 latas de\n   sardinha, pão. Pouco dinheiro, e desarma a semana inteira.\n   · lista marcável (abaixo)\n3. Escolha seus 3 lanches oficiais (2 do kit estágio, 1 do kit casa) e anote na sua ficha: essas são suas\n   decisões prontas.\n\n\n- Bandeja de ovos\n- 2 latas de sardinha\n- Pão\n- Frango\n- Carne moída\n- Leite integral\n- Iogurte natural\n- Queijo\n- Aveia\n- Fruta da semana",
+          "acoes": [
+            "Salve as 5 regras do menos-pior num print: elas trabalham exatamente nos dias em que você não vai querer\n   abrir o app.",
+            "Escreva hoje a lista do kit estágio para a próxima ida ao mercado: bandeja de ovos, 2 latas de\n   sardinha, pão. Pouco dinheiro, e desarma a semana inteira.\n   · lista marcável (abaixo)",
+            "Escolha seus 3 lanches oficiais (2 do kit estágio, 1 do kit casa) e anote na sua ficha: essas são suas\n   decisões prontas."
+          ],
+          "acaoRegistro": null
+        }
+      ]
+    },
+    {
+      "id": "s06-suplementos-so-dois",
+      "numero": 6,
+      "nome": "Suplementos: só dois",
+      "objetivo": "Separa os dois itens da prateleira que sobram (creatina monoidratada, que adiciona algo, e whey, que é\ncomida em pó) e devolve o dinheiro do resto. Derruba o mito da creatina e o mito do stack.",
+      "modulos": [
+        {
+          "id": "modulo-01-so-dois",
+          "titulo": "Só dois",
+          "objetivo": "O leitor coloca o suplemento no andar de cima, e sabe que só dois potes têm lugar no protocolo.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-06-suplementos-so-dois/modulo-01-so-dois.md",
+          "texto": "A prateleira de suplementos é quase toda marketing. Esta sessão separa os dois itens que sobram e te devolve o dinheiro do resto.\n\n**Números crus:** `2` potes · `1` deles é comida em pó · `0` obrigatórios\n\nAntes de qualquer pote, uma ordem de importância: suplemento é o\nacabamento do terceiro andar. Ele **suplementa**, ou seja, completa o que a comida não fechou, e não\nsubstitui fundação nenhuma.\n\nDois itens têm custo-benefício real e defensável para o seu perfil, e só dois:\ncreatina monoidratada, o único que realmente adiciona algo, e whey protein, que é comida em pó e só isso.\n\n**Dois ** · *creatina e whey, e um deles é comida em pó*\n\nQuem bate os blocos comendo comida não precisa de nenhum pó para\ncrescer[1][2]. Essa é a hierarquia honesta, e ela vem antes de qualquer rótulo.\n\n**Linha do aviso** : *nenhum suplemento citado aqui é necessário, e nenhum\nsubstitui refeição · ler o aviso de saúde*\n\n**O que vem a seguir** (âncoras): o protocolo da creatina · o lugar exato do whey · a lista do dinheiro de\nvolta.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-02-creatina",
+          "titulo": "Creatina",
+          "objetivo": "O leitor sabe o protocolo de uso da creatina inteiro, em cinco selos: dose, frequência, sem saturação, sem ciclo, qual comprar.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-06-suplementos-so-dois/modulo-02-creatina.md",
+          "texto": "Creatina · palavras de apoio: *sem misticismo*\n\n1. 3 a 5 g por dia\n2. Todos os dias\n3. Sem saturação\n4. Sem ciclo\n5. Monoidratada comum\n\n**Corpo · o suplemento mais estudado.** É o suplemento mais estudado da nutrição esportiva, com eficácia\ncomprovada para desempenho de alta intensidade e ganho de massa magra[8]. E o protocolo de uso é ridículo\nde simples: **3 a 5 g por dia** , todos os dias, em dia de treino e de descanso, no\nhorário que você lembrar. Junte com uma refeição para virar hábito.\n\nSem fase de saturação obrigatória: ela só antecipa o efeito em alguns dias. Sem ciclos, sem \"janela\".\n\n**Corpo · a turbinada.** Monoidratada comum, a mais barata da farmácia. As versões \"turbinadas\" não\nmostraram vantagem sobre ela[8]: nome novo, rótulo mais caro, e nenhum ganho a mais que justifique o preço.\n\nÉ a única recomendação de compra desta sessão, e ela cabe numa colher de chá.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-03-comida-em-po",
+          "titulo": "Comida em pó, e só isso",
+          "objetivo": "O leitor vê o whey como conveniência opcional, e sabe as cinco regras de uso.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-06-suplementos-so-dois/modulo-03-comida-em-po.md",
+          "texto": "> Proteína de leite concentrada.\n> Comida, em forma de pó.\n> 1 bloco inteiro por shake.\n> 30 segundos de preparo.\n> Bom para o lanche ou a vitamina.\n\n> Anabolizante de loja.\n> Obrigatório.\n> Substituto de refeição.\n> Precisa ser isolado.\n> Precisa ser hidrolisado.\n\nLegenda: um bloco inteiro de proteína em trinta segundos. É esse o serviço que você está comprando.\n\nSuplemento é o acabamento do terceiro andar. Ele completa o que a comida não\nfechou e não substitui fundação nenhuma, nem a do prato, nem a do treino.\n\nQuem bate os blocos comendo comida não precisa de nenhum pó para crescer[1][2]. **Se o dia fecha na\nproteína, o whey é opcional para sempre.**\n\n**Cinco regras de uso:**\n\n1. **A conveniência é o único motivo de compra:** 1 bloco inteiro num shake de 30 segundos[1][2].\n2. **Use no lanche ou na vitamina**, quando a comida não couber no dia.\n3. **Nenhum horário mágico:** o shake serve onde ele encaixa na sua rotina.\n4. **Concentrado básico**, o mais barato que você achar em pote fechado.\n5. **Se sobrar dinheiro depois do pote**, ele vale mais no ranking da proteína barata (sessão 5).\n\n**Fecho.** O whey não é anabolizante de loja: é proteína de leite concentrada, útil exclusivamente pela\nconveniência. \"Isolado hidrolisado premium\" é refinamento que seu bolso não deve a ninguém.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-04-mito-creatina",
+          "titulo": "Mito: creatina é quase bomba",
+          "objetivo": "O leitor separa creatina de esteroide, entende o susto do exame de creatinina e sabe o que dizer na coleta.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-06-suplementos-so-dois/modulo-04-mito-creatina.md",
+          "texto": "- **Objeção:** \"Creatina é quase bomba. Incha, detona o rim, depois que para perde tudo.\"\n- **Resposta (parceiro de mesa):** Creatina não tem nada a ver com esteroide: é um composto que seu corpo\n  já produz e que existe na carne que você come. O posicionamento oficial da nutrição esportiva, revisando\n  décadas de estudos, é categórico: não há evidência de dano em pessoas saudáveis mesmo em usos longos (até\n  30 g por dia por 5 anos em monitoramento)[8].\n\nNasce de um mal-entendido: a creatina eleva a creatinina, um simples marcador\nde exame, sem indicar dano renal real[8].\n\n**Glossário · creatinina.** Subproduto normal do metabolismo muscular que os médicos usam como régua do rim.\nMais creatina circulando deixa a régua marcando um pouco mais alto, sem o rim ter mudado.\n\nO peso que ela adiciona é água dentro do músculo: hidratação funcional, não inchaço\nestético.\n\n**Na hora do exame** . Se um dia fizer exame, avise que suplementa creatina, e o médico\najusta a leitura. *Uma frase na hora da coleta resolve o susto que o exame daria depois.*\n\n**Linha de segurança** : *\"em pessoas saudáveis\" quer dizer isso mesmo: doença\nrenal está na lista do aviso de saúde de procurar um médico antes de iniciar.*",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-05-nao-obrigado",
+          "titulo": "Não, obrigado",
+          "objetivo": "O leitor tem a resposta pronta para qualquer pote que não seja creatina ou whey.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-06-suplementos-so-dois/modulo-05-nao-obrigado.md",
+          "texto": "- **Verbo:** Não, obrigado.\n- **Condição:** A regra para qualquer pote que te oferecerem: se não é creatina nem whey, a resposta padrão\n  é \"não, obrigado\", e o dinheiro vai para o ranking da sessão 5, onde cada real vira bloco de verdade.\n- **O que não existe:** Não tem BCAA, não tem termogênico, não tem \"pré-treino milagroso\" e não tem stack de\n  guru.\n- **Registro:** `[não é creatina nem whey · não, obrigado]`\n\nLegenda: duas palavras que economizam mais do que qualquer promoção de stack.\n\n- **Objeção:** \"Pra crescer precisa de stack: BCAA, termogênico, pré-treino, glutamina, ZMA...\"\n- **Resposta (parceiro de mesa):** Com a proteína diária no alvo, BCAA é redundância cara: os aminoácidos\n  isolados não sustentam a construção muscular sem os demais, que a proteína completa já entrega[9].\n  Termogênicos, \"pré-treinos milagrosos\" e stacks de guru não têm custo-benefício defensável para iniciante,\n  e são o jeito mais rápido de transformar orçamento de comida em xixi caro.\n\n**Fecho · o teste.** O teste é sempre o mesmo: o pote adiciona algo que a comida não adiciona? **Se a\nresposta demora, é não.**\n\n**Uma linha sobre cafeína** : o cafezinho antes do treino é legítimo e barato. Se o treino é\nà noite, vale a regra do corte do Protocolo 03: cafeína só até as 16h.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-06-faca-isto-hoje",
+          "titulo": "Faça isto hoje",
+          "objetivo": "O leitor grava a frase da hierarquia, faz a conta do pote e fixa o horário da creatina.",
+          "tipo": "pratica",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-06-suplementos-so-dois/modulo-06-faca-isto-hoje.md",
+          "texto": "Faça isto hoje\n\nTrês tarefas. Nenhuma exige comprar nada hoje.\n\n1. **A frase na ficha.** Escreva na ficha: \"Suplemento é acabamento. Bloco é fundação.\"\n2. **A conta do pote.** Some quanto você gastaria (ou gasta) por mês com suplementos fora da dupla creatina\n   e whey, e realoque mentalmente para o ranking da proteína barata.\n\n3. **O horário fixo.** Se você usa creatina, defina o horário fixo: 3 a 5 g junto do almoço, todo dia, com\n   um lembrete no celular por 2 semanas até virar automático.\n\n\n**Checklist da semana** (só para quem usa creatina): Seg · Ter · Qua · Qui · Sex · Sáb · Dom · Reposição do\npote\n\n**Micro-registro:** o mito 7 morre aqui. A seguir: o sábado e o dia seguinte.",
+          "acoes": [
+            "**A frase na ficha.** Escreva na ficha: \"Suplemento é acabamento. Bloco é fundação.\"",
+            "**A conta do pote.** Some quanto você gastaria (ou gasta) por mês com suplementos fora da dupla creatina\n   e whey, e realoque mentalmente para o ranking da proteína barata.",
+            "**O horário fixo.** Se você usa creatina, defina o horário fixo: 3 a 5 g junto do almoço, todo dia, com\n   um lembrete no celular por 2 semanas até virar automático."
+          ],
+          "acaoRegistro": null
+        }
+      ]
+    },
+    {
+      "id": "s07-o-sabado-e-o-dia-seguinte",
+      "numero": 7,
+      "nome": "O sábado e o dia seguinte",
+      "objetivo": "Põe a balada dentro do plano: o que a ciência mediu sobre álcool (sem terrorismo), as 5 Regras do Sábado\ndefinidas antes de sair, a Regra do Dia Seguinte (a única resposta autorizada), o placar semanal de 5 dias\nem 7, e o nome do desenho inteiro: Sistema de Retomada.",
+      "modulos": [
+        {
+          "id": "modulo-01-a-balada-esta-no-plano",
+          "titulo": "A balada está no plano",
+          "objetivo": "O leitor aceita a balada como linha do plano, e sabe que as regras são decididas sóbrio, antes de sair.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-07-o-sabado-e-o-dia-seguinte/modulo-01-a-balada-esta-no-plano.md",
+          "texto": "Toda dieta que você abandonou morreu num fim de semana. Esta sessão foi escrita para o sábado existir e a dieta sobreviver a ele.\n\nSábado à noite tem bar, festa, álcool e fast-food na volta. Qualquer método que finja\no contrário, que prescreva frango com batata-doce às 21h de sábado, não é método: é ficção. E você já sabe\ncomo a ficção termina: no domingo de culpa, no \"saiu da dieta\", no abandono da segunda-feira.\n\nEste protocolo faz diferente: a balada está no planejamento.\n\n**Sábado ** · *está no planejamento, não fora dele*\n\nA semana foi desenhada com 6 dias e meio de sistema e uma noite de exceção\ncontrolada. **A balada não é o erro do plano: ela é uma linha do plano**, escrita antes de você sair de casa.\n\n\"Controlada\" não significa comportada. Significa com regras de\nredução de dano que você define antes de sair, quando ainda é você quem decide.\n\n**A balada está no plano** . Nenhuma regra desta sessão pede que você fique em casa.\nTodas pedem que a decisão seja tomada sóbrio, algumas horas antes de ela precisar ser tomada.\n\n**Nesta sessão** (âncoras): a ciência da noite, sem terrorismo · as 5 Regras do Sábado · a Regra do Dia\nSeguinte · o placar é semanal · o Sistema de Retomada.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-02-a-dose-decide",
+          "titulo": "A dose decide",
+          "objetivo": "O leitor sabe o que o estudo mediu, o que ele não mediu, e que a única variável da noite na mão dele é a dose.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-07-o-sabado-e-o-dia-seguinte/modulo-02-a-dose-decide.md",
+          "texto": "Você não controla a noite. Controla a dose.\n\n**Evidência:**\n\n- **Dado:** cerca de 37% a menos · **o que significa:** numa dose alta, equivalente a um porre de verdade, o\n  álcool pós-treino reduziu a construção muscular nessa proporção · **de onde veio:** [11].\n- **Destaque (placar):** cerca de 24% a menos · *mesmo com proteína junto* · [11].\n\n**Ressalva :**\n\n- O estudo testou dose de porre. Dose moderada é outra conversa, e ninguém mediu a sua noite.\n- Isso não se lê como \"nunca beba\". Lê-se assim: a dose importa, e o número que você escreve antes de sair\n  é o que separa uma exceção controlada de uma semana desfeita.\n\nVocê não controla quem chama, a que hora acaba, nem o que\na cozinha do lugar serve. Controla a dose:\n\n1. Ela é decidida sóbrio, horas antes.\n2. Ela é contável: doses têm número.\n3. Ela é o que a ciência mediu[11], e não a hora, o lugar ou a companhia.\n\n**Fecho.** Sem terrorismo e sem promessa: a sessão não vende a noite sem custo. **Ela coloca o custo no\npapel para você escolher qual pagar.**",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-03-as-5-regras-do-sabado",
+          "titulo": "As 5 Regras do Sábado",
+          "objetivo": "O leitor define as cinco regras da noite antes de sair, e sai com o teto de doses e o lanche da volta escolhidos.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-07-o-sabado-e-o-dia-seguinte/modulo-03-as-5-regras-do-sabado.md",
+          "texto": "Sábado · palavras de apoio: *defina agora*\n\n1. Jante antes, com proteína\n2. Teto de doses, definido sóbrio\n3. Água entre as doses\n4. Drink doce é sobremesa\n5. O lanche da volta já está escolhido\n\n**Corpo · antes de sair:**\n\n1. **Jante em casa, com proteína, antes do rolê.** Estômago forrado e menos ataque à lanchonete às 3h[13].\n2. **Defina seu teto de doses agora, sóbrio.** O número é seu; a regra é existir um número.\n\n3. **Intercale com água.** Um copo entre as doses: corta caloria e dá ritmo à noite, e ninguém percebe.\n4. **Drinks açucarados são sobremesa disfarçada.** Cerveja, ou destilado com refrigerante zero ou água com\n   gás, rendem a noite com menos calorias.\n5. **O lanche da volta é decisão de agora.** Escolha a versão simples, hambúrguer normal em vez do combo\n   triplo, pelas regras do menos-pior da sessão 5.\n\n\n**Corpo · decidir às 3h da manhã não é decidir.** Às 3h da manhã, com álcool no sangue, você não está\ndecidindo: está executando a decisão que alguém tomou por você. **Que esse alguém seja você, mais cedo, com\na cabeça fria.**\n\n**Faixa:** Salve este card. Ele trabalha à noite, quando o app está fechado.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-04-a-regra-do-dia-seguinte",
+          "titulo": "A Regra do Dia Seguinte",
+          "objetivo": "O leitor responde a qualquer excesso com uma linha: a próxima refeição volta ao normal.",
+          "tipo": "leitura",
+          "kit": true,
+          "fonte": "dieta-basica/sessao-07-o-sabado-e-o-dia-seguinte/modulo-04-a-regra-do-dia-seguinte.md",
+          "texto": "Chegou o domingo. Talvez você tenha seguido as 5 Regras do Sábado, talvez não. Em qualquer um\ndos casos, existe uma única resposta autorizada, e ela cabe numa linha.\n\n**Selo:**\n\n- **Verbo:** Normal.\n- **Condição:** A próxima refeição volta ao normal. Só isso.\n- **O que não existe:** Sem jejum de castigo. Sem \"só salada\" no domingo. Sem dobrar o treino de segunda.\n  Sem \"semana que vem eu recomeço\".\n- **Registro:** `[a Regra do Dia Seguinte · a única resposta autorizada]`\n\nO almoço de domingo é um almoço normal do protocolo, prato ajustado e\nblocos contando, como se o sábado tivesse sido uma terça qualquer.\n\nSeu resultado é decidido pela média de semanas e meses. É o que a melhor\nevidência sobre dietas mostra: o preditor é a aderência ao longo do tempo, acima da pontuação de qualquer\ndia isolado[10]. Uma noite de excesso é um pontinho fora da curva.\n\nO que transforma o pontinho em desastre é a reação a ele: o jejum punitivo que desregula a fome, o \"já era\"\nque cancela a semana, o recomeço eternamente marcado para segunda.\n\n**aderência:** a porcentagem do tempo em que você consegue seguir o plano. É o maior\npreditor de resultado que a ciência de dietas conhece[10], acima do tipo de dieta e acima da perfeição de\nqualquer dia isolado.\n\n**Fecho (a Virada):** O deslize não quebra a dieta; o processamento do deslize é que quebra.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-05-cinco-de-sete-e-vitoria",
+          "titulo": "5 de 7 é vitória",
+          "objetivo": "O leitor conta a semana (5 dias verdes em 7), com o sábado já dentro da conta.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-07-o-sabado-e-o-dia-seguinte/modulo-05-cinco-de-sete-e-vitoria.md",
+          "texto": "\"5 de 7\" / \"é\" / \"vitória\"\n\nA meta é bater seus blocos em 5 a 6 dos 7 dias. Semana com 5 ou mais dias verdes é **semana\nverde**, ponto.\n\n**Régua:** sete marcas, uma por dia, de segunda a domingo; a marca 7 com a etiqueta \"sábado já dentro\".\n\n**Estados (três cards):**\n\n| Capa | Faixa | Nome | Texto |\n| ---- | ----- | ---- | ----- |\n| 1 | refeição | Uma refeição ruim | Não estraga o dia. Os outros blocos do dia continuam valendo. |\n| 1 | dia | Um dia ruim | Não estraga a semana. Os outros 6 dias continuam valendo. O placar não zera por um quadradinho. |\n| 7 | o sábado | O dia 7 | O sábado já está absorvido na conta: ele é o dia 7. Nada nele precisa ser compensado, porque nada nele foi surpresa. |\n\nIgual ao treino, que o Protocolo 01 mede por semana e não por\nsequência, a dieta tem uma única unidade de medida: a semana.\n\n**Fecho (pergunta do 06).** No fim de 12 semanas, quem bateu 5 a 6 de 7 chegou mais longe do que o\nperfeccionista que fez 7 de 7 por duas semanas e sumiu. Não é filosofia motivacional: **é a lógica da\naderência**[10]. Anote o dia como foi e siga: sem apagar, sem compensar, sem drama.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-06-o-sistema-de-retomada",
+          "titulo": "O Sistema de Retomada",
+          "objetivo": "O leitor conhece o nome do desenho e as três regras dele, na versão do Protocolo 02.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-07-o-sabado-e-o-dia-seguinte/modulo-06-o-sistema-de-retomada.md",
+          "texto": "O Sistema de Retomada\n\n1. A quebra já tem resposta escrita\n2. O placar é semanal\n3. A quebra vira dado, não veredito\n\n**Corpo.** Esse desenho tem nome, e vale a pena saber qual, porque ele é a peça que os outros métodos não\ntêm. O **Sistema de Retomada** são três regras que trabalham juntas, e as três estão nos três protocolos do\nLithium:\n\n1. **A quebra já tem resposta escrita.** Aqui é a Regra do Dia Seguinte: a próxima refeição volta ao\n   normal. Você não decide nada no seu pior dia: a decisão foi tomada meses antes, com a cabeça fria, e está\n   escrita.\n2. **O placar é semanal, nunca a sequência.** Cinco ou seis dias de sete fecham a semana verde: o sábado já\n   está dentro da conta.\n3. **A quebra vira dado, não veredito.** Anota o que houve em uma linha, aplica a regra e segue. O registro\n   existe para acelerar a próxima retomada.\n\n**Fecho.** O sistema conta com a semana ruim desde o primeiro dia. É por isso que ele sobrevive a ela, e é o\nque separa este ciclo de todos os que você já abandonou. **Nenhuma das três pede força de vontade no pior\ndia: as três já estavam escritas antes dele.**",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-07-faca-isto-hoje",
+          "titulo": "Faça isto hoje",
+          "objetivo": "O leitor sai com o card do sábado salvo, a regra escrita na ficha e o placar da semana à vista.",
+          "tipo": "pratica",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-07-o-sabado-e-o-dia-seguinte/modulo-07-faca-isto-hoje.md",
+          "texto": "Faça isto hoje\n\nTrês tarefas, dez minutos.\n\n**Ações:**\n\n1. Salve o card das 5 Regras do Sábado e deixe no álbum favorito. Ele trabalha à noite, quando o app está\n   fechado.\n2. Escreva a Regra do Dia Seguinte na sua ficha: \"A próxima refeição volta ao normal.\"\n3. Desenhe o placar da semana em qualquer papel: 7 quadradinhos, meta de 5. Cole onde você vê todo dia.\n\n**Placar da semana** (proposta 15, `semana`): Segunda · Terça · Quarta · Quinta · Sexta · Sábado · Domingo ·\nmeta: 5 ✓\n\n**Fecho:** A próxima refeição volta ao normal. A semana continua valendo. O sistema conta com a semana ruim\ndesde o primeiro dia.",
+          "acoes": [
+            "Salve o card das 5 Regras do Sábado e deixe no álbum favorito. Ele trabalha à noite, quando o app está\n   fechado.",
+            "Escreva a Regra do Dia Seguinte na sua ficha: \"A próxima refeição volta ao normal.\"",
+            "Desenhe o placar da semana em qualquer papel: 7 quadradinhos, meta de 5. Cole onde você vê todo dia."
+          ],
+          "acaoRegistro": null
+        }
+      ]
+    },
+    {
+      "id": "s08-seu-arco-passa-pela-cozinha",
+      "numero": 8,
+      "nome": "Seu arco passa pela cozinha",
+      "objetivo": "Fecha o conteúdo com identidade: desmonta, peça por peça, a crença \"dieta é coisa de quem tem tempo,\ndinheiro e mente muito forte\", troca a batalha pela soma silenciosa dos traços, e abre as pontes para\nHipertrofia e Cuidado com o Sono.",
+      "modulos": [
+        {
+          "id": "modulo-01-cozinha",
+          "titulo": "Cozinha",
+          "objetivo": "O leitor ouve a própria objeção em voz alta, no momento em que ela já não tem onde se apoiar.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-08-seu-arco-passa-pela-cozinha/modulo-01-cozinha.md",
+          "texto": "\"Dieta é coisa de quem tem tempo, dinheiro e\nmente muito forte.\"\n\nVocê chegou à sessão em que essa frase não tem mais onde se apoiar. Ela entrou com você neste\nprotocolo parecendo bom senso; sai daqui desmontada peça por peça, sem que nenhuma das três peças tenha\nresistido ao método inteiro posto na mesa.\n\n**Cozinha ** · *o arco passa por ela, e ela já existe na sua casa*\n\nCom o método inteiro na mesa, a crença fica assim: três peças, três respostas, nenhuma delas\ndependendo da sua força de vontade.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-02-a-objecao-desmontada",
+          "titulo": "A objeção, desmontada",
+          "objetivo": "O leitor responde, com o método, a cada uma das três peças da objeção.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-08-seu-arco-passa-pela-cozinha/modulo-02-a-objecao-desmontada.md",
+          "texto": "A objeção, desmontada peça por peça\n\n1. **\"Dieta é coisa de quem tem tempo.\"**\n   O método são traços de blocos ao longo do dia e uma pesagem semanal: minutos, sem cronômetro de\n   refeições[6][7][12].\n\n2. **\"Dieta é coisa de quem tem dinheiro.\"**\n   A fundação é o prato que sua casa já cozinha, mais a proteína mais barata do supermercado comum. Os únicos\n   suplementos que o protocolo aceita são dois, e nenhum é obrigatório[1][4][8].\n\n3. **\"Dieta é coisa de quem tem mente muito forte.\"**\n   O sistema foi desenhado exatamente para dispensá-la: decisões prontas nos intervalos, sábado com regras,\n   deslize com protocolo de retorno. A ciência mostra que vence a aderência a um método simples, não a\n   disciplina de ferro[10].\n\n**Fecho (a Virada):** A frase não descrevia a dieta. Descrevia as dietas erradas.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-03-traco",
+          "titulo": "Traço",
+          "objetivo": "O leitor reconhece a mudança silenciosa: a comida deixa de ser campo de batalha, e cada traço é uma vitória.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-08-seu-arco-passa-pela-cozinha/modulo-03-traco.md",
+          "texto": "> Tem uma mudança silenciosa acontecendo quando você roda esse sistema por semanas, e ela vale mais que\n> qualquer número: a comida deixa de ser um campo de batalha.\n\nO lanche da tarde não é mais uma queda de braço com a própria força de vontade: é\numa decisão que você já tomou no domingo. O sábado virou o dia 7 de um placar que já contava com ele, e o\nprato da casa virou a fundação que sua mãe, agora aliada, ajuda a sustentar.\n\n**Traço ** · *cinco ou seis pequenas vitórias por dia, uma por traço*\n\nOs arcos de superação que você admira têm sempre um capítulo pouco\nfilmado: aquele em que o protagonista aprende que o poder se constrói nos dias comuns, no arroz de todo dia,\nno ovo mexido das 16h, na dose de creatina que ninguém posta. É o capítulo menos glamouroso e o mais\ndecisivo. **Você está nele agora.**\n\nE diferente do treino, que acontece 3 vezes por semana, a alimentação te dá\n5 ou 6 pequenas vitórias por dia. Cada traço de bloco é uma. O arco avança em silêncio, refeição a refeição, e\ncom as semanas o espelho vai contar tudo o que os traços somaram.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-04-o-triangulo-completo",
+          "titulo": "O triângulo completo",
+          "objetivo": "O leitor vê as três peças (estímulo, combustível, recuperação) e entra nos outros dois roadmaps.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-08-seu-arco-passa-pela-cozinha/modulo-04-o-triangulo-completo.md",
+          "texto": "O triângulo completo\n\n- Treino · Protocolo 01\n- Dieta · este protocolo\n- Sono · Protocolo 03\n\n**Capas :**\n\n1. **Protocolo 01 · Hipertrofia** → abre o roadmap Hipertrofia\n2. **Protocolo 03 · Cuidado com o Sono** → abre o roadmap Cuidado com o Sono\n\n**Ponte 01 · treino.** A comida deste protocolo é material de construção; quem transforma material em obra é\no estímulo do Protocolo 01 · Hipertrofia, as 12 semanas que este combustível sustenta.\n\n**Ponte 03 · sono.** É dormindo que o corpo assenta cada tijolo, porque recuperação, hormônios e até o\ncontrole da fome passam pela noite. O Protocolo 03 · Cuidado com o Sono é a peça que fecha o triângulo.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-05-faca-isto-hoje",
+          "titulo": "Faça isto hoje",
+          "objetivo": "O leitor risca a objeção, conta a meta para alguém de casa e confere se o Protocolo 01 está rodando.",
+          "tipo": "pratica",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-08-seu-arco-passa-pela-cozinha/modulo-05-faca-isto-hoje.md",
+          "texto": "Faça isto hoje\n\nAnote antes de seguir.\n\n**Ações:**\n\n1. Releia a objeção do início desta sessão em voz alta e risque-a da sua lista de desculpas.\n2. Conte para alguém da casa qual é sua meta de blocos e seu dia de pesagem.\n\n3. Confira se o Protocolo 01 já está rodando. Se ainda não, a sessão 1 dele te dá o primeiro treino em 10\n   minutos.\n\n**Micro-registro:** o fecho desta sessão não está neste card. Está no próximo módulo.",
+          "acoes": [
+            "Releia a objeção do início desta sessão em voz alta e risque-a da sua lista de desculpas.",
+            "Conte para alguém da casa qual é sua meta de blocos e seu dia de pesagem.",
+            "Confira se o Protocolo 01 já está rodando. Se ainda não, a sessão 1 dele te dá o primeiro treino em 10\n   minutos."
+          ],
+          "acaoRegistro": null
+        }
+      ]
+    },
+    {
+      "id": "s09-fechamento",
+      "numero": 9,
+      "nome": "Fechamento",
+      "objetivo": "Fecha o roadmap com a narrativa da mesa posta de domingo e a lista das fontes, e manda o leitor para o\nProtocolo 03.",
+      "modulos": [
+        {
+          "id": "modulo-01-a-mesa-posta",
+          "titulo": "A mesa posta",
+          "objetivo": "O leitor se vê à mesa de domingo daqui a três meses, sem ninguém achando que ele está de dieta.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "dieta-basica/sessao-09-fechamento/modulo-01-a-mesa-posta.md",
+          "texto": "A gente se vê no Protocolo 03, porque agora falta só aprender a dormir como quem cresce.\n\nDaqui a três meses, tem um almoço de domingo na sua casa.\n\nO prato é o de sempre: arroz, feijão, a mistura que sua mãe fez, com a porção maior agora, porque isso virou o\nnormal da casa faz tempo. Ninguém na mesa acha que você \"está de dieta\". Você não está: você só come de um\njeito que tem direção.\n\nA noite de sábado aconteceu (bar, risada, o lanche da volta escolhido em 10\nsegundos pelas regras que você nem precisa mais consultar) e o domingo amanheceu sem culpa nenhuma, porque a\npróxima refeição voltou ao normal, como sempre volta.\n\nNinguém na mesa acha que você está de dieta.\n\n**Mesa ** · *a mesa da sua casa, a que sempre esteve aí*\n\nNa sexta, a balança marcou mais um degrau da subida lenta que você\naprendeu a querer: gramas por semana, cintura no lugar, camiseta assentando diferente no ombro. Seu grupo\nnotou antes de você contar.\n\n> \"Tá diferente, hein\", e você só sorri, porque a resposta é longa demais para o churrasco: cinco traços num\n> papel, uma conversa com a sua mãe, uma bandeja de ovos e uma regra que cabe numa linha.\n\n**Fecho.** A estética que te trouxe até aqui está vindo: nos números, nas fotos, no espelho que você parou de\nevitar. E está vindo do jeito que ninguém te vendeu: **por uma mesa posta, em vez de uma dieta de guerreiro.**\n\n**Números crus do fechamento (a entrega):** `5` blocos por dia · `1` pesagem por semana · `5` de 7",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-03-fontes-1-a-7",
+          "titulo": "Fontes 1 a 7",
+          "objetivo": "Quem toca numa chamada `[n]` encontra a referência completa em um toque, e volta ao mesmo ponto.",
+          "tipo": "consulta",
+          "kit": true,
+          "fonte": "dieta-basica/sessao-09-fechamento/modulo-03-fontes-1-a-7.md",
+          "texto": "1. Jäger R, Kerksick CM, Campbell BI, et al. *International Society of Sports Nutrition Position Stand:\n   protein and exercise.* **J Int Soc Sports Nutr.** 2017;14:20. DOI: 10.1186/s12970-017-0177-8\n2. Morton RW, Murphy KT, McKellar SR, et al. *A systematic review, meta-analysis and meta-regression of the\n   effect of protein supplementation on resistance training-induced gains in muscle mass and strength in\n   healthy adults.* **Br J Sports Med.** 2018;52(6):376 a 384. DOI: 10.1136/bjsports-2017-097608\n3. Schoenfeld BJ, Aragon AA. *How much protein can the body use in a single meal for muscle-building?\n   Implications for daily protein distribution.* **J Int Soc Sports Nutr.** 2018;15:10. DOI:\n   10.1186/s12970-018-0215-1\n4. Iraki J, Fitschen P, Espinar S, Helms E. *Nutrition Recommendations for Bodybuilders in the Off-Season: A\n   Narrative Review.* **Sports (Basel).** 2019;7(7):154. DOI: 10.3390/sports7070154\n5. Hall KD, Ayuketah A, Brychta R, et al. *Ultra-Processed Diets Cause Excess Calorie Intake and Weight Gain:\n   An Inpatient Randomized Controlled Trial of Ad Libitum Food Intake.* **Cell Metab.** 2019;30(1):67 a 77.e3.\n   DOI: 10.1016/j.cmet.2019.05.008\n6. Schoenfeld BJ, Aragon AA, Krieger JW. *Effects of meal frequency on weight loss and body composition: a\n   meta-analysis.* **Nutr Rev.** 2015;73(2):69 a 82. DOI: 10.1093/nutrit/nuu017\n7. Aragon AA, Schoenfeld BJ. *Nutrient timing revisited: is there a post-exercise anabolic window?* **J Int\n   Soc Sports Nutr.** 2013;10:5. DOI: 10.1186/1550-2783-10-5",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-04-fontes-8-a-14",
+          "titulo": "Fontes 8 a 14",
+          "objetivo": "Fechar a lista, com os limites de uso de duas fontes visíveis no próprio item.",
+          "tipo": "consulta",
+          "kit": true,
+          "fonte": "dieta-basica/sessao-09-fechamento/modulo-04-fontes-8-a-14.md",
+          "texto": "8. Kreider RB, Kalman DS, Antonio J, et al. *International Society of Sports Nutrition position stand: safety\n   and efficacy of creatine supplementation in exercise, sport, and medicine.* **J Int Soc Sports Nutr.**\n   2017;14:18. DOI: 10.1186/s12970-017-0173-z\n9. Wolfe RR. *Branched-chain amino acids and muscle protein synthesis in humans: myth or reality?* **J Int Soc\n   Sports Nutr.** 2017;14:30. DOI: 10.1186/s12970-017-0184-9\n10. Johnston BC, Kanters S, Bandayrel K, et al. *Comparison of Weight Loss Among Named Diet Programs in\n    Overweight and Obese Adults: A Meta-analysis.* **JAMA.** 2014;312(9):923 a 933. DOI:\n    10.1001/jama.2014.10397\n11. Parr EB, Camera DM, Areta JL, et al. *Alcohol Ingestion Impairs Maximal Post-Exercise Rates of\n    Myofibrillar Protein Synthesis following a Single Bout of Concurrent Training.* **PLoS One.**\n    2014;9(2):e88384. DOI: 10.1371/journal.pone.0088384\n12. Lichtman SW, Pisarska K, Berman ER, et al. *Discrepancy between Self-Reported and Actual Caloric Intake and\n    Exercise in Obese Subjects.* **N Engl J Med.** 1992;327(27):1893 a 1898. DOI: 10.1056/NEJM199212313272701\n    **Nota de limite:** população com obesidade; usada para o fenômeno geral da imprecisão do autorregistro,\n    conforme a ressalva do dossiê.\n13. Leidy HJ, Clifton PM, Astrup A, et al. *The role of protein in weight loss and maintenance.* **Am J Clin\n    Nutr.** 2015;101(6):1320S a 1329S. DOI: 10.3945/ajcn.114.084038\n14. NEPA/Unicamp. *TACO: Tabela Brasileira de Composição de Alimentos.* 4ª ed. Campinas: NEPA-Unicamp; 2011.\n    **Nota de limite:** fonte adicionada na redação para os valores de proteína por porção da tabela de blocos e\n    do ranking de custo; cada valor citado deve ser conferido contra a TACO antes do fechamento e registrado no\n    dossiê.",
+          "acoes": [],
+          "acaoRegistro": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,869 @@
+{
+  "schemaVersion": 2,
+  "sourceHash": "f81c517e8d2fe7543e8863850fe0e9796417ac6f75b3e411c74451bd5cd2b930",
+  "protocolo": "hipertrofia",
+  "nome": "Hipertrofia",
+  "sessoes": [
+    {
+      "id": "s00-abertura",
+      "numero": 0,
+      "nome": "Abertura",
+      "objetivo": "Leva o leitor da porta do app até a primeira sessão de conteúdo sem pedir nada além de\natenção: onde ele está (fast travel), o que o protocolo não é (aviso de saúde), como usar sem\nler na ordem, e a promessa única, contada pela cena do espelho.",
+      "modulos": [
+        {
+          "id": "modulo-01-fast-travel",
+          "titulo": "Fast travel",
+          "objetivo": "O leitor encontra qualquer sessão, ou qualquer anexo do Kit, em dois toques, de qualquer ponto do app.",
+          "tipo": "consulta",
+          "kit": true,
+          "fonte": "hipertrofia/sessao-00-abertura/modulo-01-fast-travel.md",
+          "texto": "Protocolo 01 · Hipertrofia\n\n**Aba \"sessões\"**, cada item com número, nome e uma linha:\n\n| # | Sessão | Linha |\n| - | ------ | ----- |\n| 00 | Abertura | Por onde começar, e para quem isto não é |\n| 01 | Sua primeira vitória | O treino de hoje, pronto em 10 minutos |\n| 02 | Como o músculo cresce | E por que o básico vence |\n| 03 | O programa | 12 semanas, 3 treinos por semana |\n| 04 | Execução sem medo | O guia de cada exercício |\n| 05 | Progressão no piloto automático | A regra que decide por você |\n| 06 | O caderno de vitórias | O mínimo que você precisa anotar |\n| 07 | O plano de retorno | A sessão que você vai reler |\n| 08 | Seu arco começa agora | Consistência como identidade |\n| 09 | Fechamento | Daqui a doze semanas, e as fontes |\n\nA sessão 07 leva a marca **releitura obrigatória**, em texto, abaixo da linha.\n\n**Aba \"o Kit\"**, cada anexo leva direto ao módulo:\n\n- Ficha de treino → sessão 06\n- Tabela de substituições → sessão 03\n- Tabela de retorno → sessão 07\n\n**Aba \"fontes\":** a lista das 24 fontes (sessão 09).",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-02-antes-de-comecar",
+          "titulo": "Antes de começar",
+          "objetivo": "O leitor sabe o que o material é e não é, e confere se deve falar com um médico antes.",
+          "tipo": "leitura",
+          "kit": true,
+          "fonte": "hipertrofia/sessao-00-abertura/modulo-02-antes-de-comecar.md",
+          "texto": "Antes de começar, leia esta tela inteira.\n\nEste material tem caráter educacional. Ele não é consulta, não é diagnóstico,\nnão é prescrição e não substitui o acompanhamento de profissionais de saúde.\n\nPrescrição de dieta é atribuição privativa do nutricionista (Lei nº 8.234/1991) e\nprescrição de exercício é atribuição do profissional de educação física (Lei nº 9.696/1998).\nNenhum dos autores exerce essas profissões, e nada aqui foi escrito para o seu caso\nindividual.\n\nProcure um médico antes de iniciar se você se enquadra em qualquer item desta\nlista:\n\n- hipertensão\n- diabetes\n- doença renal\n- doença hepática\n- doença cardíaca ou arritmia\n- gestação, pós-parto ou amamentação\n- histórico de transtorno alimentar\n- uso contínuo de qualquer medicação\n- alergia ou intolerância alimentar\n- cirurgia nos últimos seis meses\n- lesão osteomuscular em investigação ou tratamento\n- doença respiratória\n- distúrbio do sono já diagnosticado\n\nA lista não é exaustiva: na dúvida sobre a sua própria condição, a resposta é procurar\navaliação.\n\nEste material foi escrito para pessoas com 18 anos ou mais. Abaixo dessa idade,\ntreino, dieta e rotina de sono precisam de acompanhamento profissional direto, porque envolvem\ncrescimento em curso.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-03-quando-parar",
+          "titulo": "Quando parar e para quem não é",
+          "objetivo": "O leitor sabe quais sinais interrompem o treino, e se reconhece (ou não) na pessoa para quem o protocolo foi escrito.",
+          "tipo": "leitura",
+          "kit": true,
+          "fonte": "hipertrofia/sessao-00-abertura/modulo-03-quando-parar.md",
+          "texto": "Interrompa e procure atendimento se aparecer:\n\n- dor no peito\n- falta de ar desproporcional ao esforço\n- tontura\n- desmaio ou quase-desmaio\n- palpitação\n- dor articular que persiste por mais de uma semana\n- dor que piora a cada sessão\n- urina muito escura após treino\n- febre\n- qualquer sintoma novo que você não consegue explicar\n\nInterromper não é desistir. É a única decisão que preserva a possibilidade de continuar.\n\nEste material não é para todo mundo, por segurança.\n\nEle não serve para quem busca preparação esportiva de competição, para quem está em tratamento\nde qualquer condição clínica sem liberação da equipe que o acompanha, para quem tem ou já teve\ntranstorno alimentar, nem para quem procura emagrecimento rápido ou resultado com prazo\nmarcado. Se você está em algum desses casos, o caminho útil é um profissional que possa olhar\npara você, e não um material escrito para o caso geral.\n\nE não é para todo mundo por desenho, o que é outra coisa.\n\nEste protocolo foi escrito para uma pessoa específica: alguém entre 18 e 25 anos, começando\npraticamente do zero, com pouco dinheiro e pouco tempo, que quer um caminho único para seguir\nem vez de um cardápio de opções para escolher. Tudo aqui é consequência disso. Então ele não\nvai servir bem para você se:\n\n- você já treina ou já segue dieta com consistência há mais de seis meses: o conteúdo vai\n  parecer básico, porque é básico de propósito;\n- você quer um plano feito para o seu caso: este é escrito para o caso geral, e a lei reserva o\n  plano individual a quem pode avaliar você;\n- você quer escolher entre variações, cardápios e alternativas: aqui há um caminho só, e\n  recusar o cardápio é a decisão central do produto;\n- você procura resultado com prazo marcado ou está atrás de suplemento, \"hack\" e atalho: nada\n  disso aparece neste protocolo, e não é esquecimento.\n\nNenhum desses casos é um problema seu. É só um desencontro entre o que você precisa e o que\neste protocolo se propôs a ser, e é mais honesto dizer isso agora do que na sessão 7.\n\nOs exercícios deste protocolo pressupõem ausência de restrição médica ao\nesforço físico. Trabalhe sempre dentro da amplitude que você controla, e trate dor articular\ncomo sinal de parada daquele exercício, nunca como etapa do processo.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-04-como-usar",
+          "titulo": "Como usar este protocolo",
+          "objetivo": "O leitor entende que não precisa ler na ordem, e sai com a sessão que responde à pergunta dele hoje.",
+          "tipo": "leitura",
+          "kit": true,
+          "fonte": "hipertrofia/sessao-00-abertura/modulo-04-como-usar.md",
+          "texto": "Este protocolo é um sistema, não uma enciclopédia. Você não\nprecisa decorar nada e não precisa ler tudo hoje.\n\nToda sessão termina com um card **Faça isto hoje**: a menor ação\nconcreta que você executa no mesmo dia. Se você só fizer o que está nesses cards, o protocolo\njá está funcionando.\n\nOs `[n]` ao longo do texto são as fontes científicas de cada\nafirmação. Toque em qualquer um e a fonte abre; toque em fechar e você volta ao mesmo ponto.\nVocê não precisa abrir nenhuma: elas existem para você saber que nada aqui é achismo.\n\nNa Jornada, siga a sequência. Para consulta rápida, use o Kit:\n\n| A sua pergunta | Vai para |\n| -------------- | -------- |\n| Quer treinar hoje? | Sessão 1. Em 10 minutos você sai com o primeiro treino pronto. |\n| Quer entender por que funciona? | Sessão 2. |\n| Vai montar sua semana? | Sessões 3 a 6, o manual do programa. |\n| Quebrou a rotina? | Sessão 7, que existe exatamente para isso. Sem culpa, só o caminho de volta. |\n| Vai registrar a série? | Ficha de treino, no Kit. |\n| Faltou equipamento, ou faltou você? | Tabela de substituições e tabela de retorno, no Kit. |\n\n**Checagem rápida (opcional):** \"Qual sessão você abre se faltar uma semana inteira?\"\nResposta revelada ao tocar: sessão 7, o plano de retorno.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-05-por-que-um-protocolo",
+          "titulo": "Por que um protocolo e não mais um vídeo",
+          "objetivo": "O leitor reconhece que o problema dele nunca foi falta de informação, e vê três coisas que só um sistema entrega.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-00-abertura/modulo-05-por-que-um-protocolo.md",
+          "texto": "> Centenas de vídeos já vistos.\n> Sabe o que é agachamento.\n> Já ouviu falar em progressão.\n> Oito \"treino para iniciante\" salvos.\n> Nenhum deles virou treino.\n\nO problema nunca foi falta de informação. Foi excesso dela, sem\nordem. Um Reel te entrega um exercício ótimo e nenhum lugar para encaixá-lo. O próximo te\nentrega outro, que contradiz o primeiro.\n\nVocê termina com trinta peças soltas de quebra-cabeças diferentes e a sensação de que ainda\nfalta descobrir alguma coisa. **Não falta: o que falta é ordem**, e ordem um feed não tem como\nte dar, porque ele foi feito para nunca terminar.\n\n(baralho, três cartas):\n\n| # | Título | Depois (o protocolo) | Hoje, riscado (o feed) |\n| - | ------ | -------------------- | ---------------------- |\n| 01 | Tem fim | Começo, meio e fim. Doze semanas, três treinos, uma regra de progressão. Quando acabar, acabou, e você vai saber o que fez. | O feed foi feito para nunca terminar. |\n| 02 | Não muda quando você fecha | A tabela do Treino A vai estar igual amanhã e daqui a dois meses. | O feed nunca mostra a mesma coisa duas vezes, e por isso nunca vira rotina. |\n| 03 | Conta com a sua falha | Existe uma sessão inteira sobre a semana em que você não vai treinar: a sessão 7. | Nenhum vídeo motivacional fala da semana ruim. |\n\nVocê vai continuar vendo Reels, e tudo bem: ninguém aqui vai pedir que\nlargue o celular. Só que agora eles passam a ser entretenimento sobre um assunto que você já\nestá fazendo, em vez de substituto de fazer.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-06-espelho",
+          "titulo": "Espelho",
+          "objetivo": "O leitor se reconhece na cena, sem julgamento, e ouve em voz alta que querer estética é legítimo.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-00-abertura/modulo-06-espelho.md",
+          "texto": "Você conhece essa cena. O banho tomado, o quarto meio escuro, e o\nespelho te pega de surpresa.\n\nVocê estica as costas, força uma pose discreta, procura um ângulo. Na foto do grupo, você já\nsabe qual vai ser sua posição: braço cruzado, meio atrás de alguém, camiseta folgada.\n\nNão chega a ser drama. É um incômodo baixinho e constante, que você aprendeu a administrar.\n\nE tem o resto: o amigo que treina há dois anos e apareceu no churrasco\ncom outra cara. Depois você abre o Instagram e vê físicos que parecem impossíveis.\n\nVocê assiste, sente aquela pontada de \"eu queria isso\", e em seguida a voz que desmonta tudo:\n\"não tenho genética\", \"natural não cresce\", \"eu sempre desisto mesmo\".\n\n> Então vamos falar claro: você quer um corpo que imponha respeito. Querer estética não é\n> vaidade fútil. É querer se olhar no espelho sem negociar o ângulo, vestir a camiseta que\n> hoje fica no armário, entrar na praia sem ensaiar postura.\n\n**Palavra final:** Respeito. · legenda: *é querer que o lado de fora conte a história certa\nsobre você.*",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-07-sistema",
+          "titulo": "Sistema",
+          "objetivo": "O leitor troca o diagnóstico (\"não tenho genética\") pelo mecanismo (\"não tenho sistema\") e sabe o que as doze semanas vão provar.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-00-abertura/modulo-07-sistema.md",
+          "texto": "> Aqui vai a única promessa deste protocolo, e ela é diferente das que você já ouviu:\n> você não tem genética ruim. Você não tem um sistema.\n\nVocê já teve motivação, várias vezes. Ela durou\nduas, quatro, seis semanas, e morreu no primeiro tropeço.\n\nO problema nunca foi você ser fraco. É que **motivação não é estrutura.**\n\nEste protocolo é a estrutura. Um caminho único:\n\n- 3 treinos por semana, de 60 a 75 minutos cada;\n- exercícios básicos;\n- uma regra de progressão que decide por você;\n- e a parte que nenhum treino do feed te deu: um plano de retorno para quando a vida\n  atropelar.\n\nPorque ela vai atropelar, e o programa já conta com isso.\n\n(régua):\n\nDoze semanas não deixam ninguém pronto, e não é isso que elas fazem aqui. Elas servem para\nvocê provar a si mesmo, com números anotados e fotos comparadas, que seu corpo responde, e que\no veredito que você deu contra si mesmo estava errado.\n\n**Fecho:** Seu arco de treinamento começa na sessão 1.",
+          "acoes": [],
+          "acaoRegistro": null
+        }
+      ]
+    },
+    {
+      "id": "s01-primeira-vitoria",
+      "numero": 1,
+      "nome": "Sua primeira vitória",
+      "objetivo": "Cumpre o princípio \"vitória nos primeiros 10 minutos\" . Sem teoria:\no leitor sai com o Treino A em mãos, sabe escolher o peso de hoje, sabe o que levar e marca a\nprimeira sessão no calendário.",
+      "modulos": [
+        {
+          "id": "modulo-01-o-trato-dos-10-minutos",
+          "titulo": "O trato dos 10 minutos",
+          "objetivo": "O leitor entende o trato: primeiro o treino, depois o porquê.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-01-primeira-vitoria/modulo-01-o-trato-dos-10-minutos.md",
+          "texto": "Sem teoria ainda. Aqui começa o seu primeiro treino; o resto do protocolo explica o porquê depois.\n\n `10` minutos · `6` exercícios · `1` treino\n\nA maioria dos materiais de treino começa com 40 páginas de\nfisiologia. Você já abandonou materiais assim, e com razão: quem promete resultado e entrega\nlição de casa está adiando o que interessa.\n\n`). Aqui o trato é outro: em 10 minutos\nvocê terá o Treino A anotado e saberá exatamente o que fazer com ele hoje. Ou amanhã, se a\nacademia já fechou: vale igual.\n\nA ciência completa do método vem nas próximas sessões, quando você já estiver em movimento.\n\n**Hoje ** · *o treino de hoje, pronto em 10 minutos*",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-02-composicao-do-treino-a",
+          "titulo": "A composição do Treino A",
+          "objetivo": "O leitor sabe quais são os seis exercícios, como aquecer, como escolher o peso de hoje e quando parar a série.",
+          "tipo": "leitura",
+          "kit": true,
+          "fonte": "hipertrofia/sessao-01-primeira-vitoria/modulo-02-composicao-do-treino-a.md",
+          "texto": "`):\n\n> Agachamento goblet\n> Supino reto com halteres\n> Remada sentada na máquina\n> Desenvolvimento de ombros\n> Rosca direta com halteres\n> Prancha\n\nLegenda: Halteres, um banco e uma máquina de remada. É todo o equipamento que o Treino A pede.\n\nEste é o primeiro dos três treinos da semana. Os outros dois\nchegam na sessão 3. Ele trabalha o corpo inteiro numa sessão; o motivo vem nas próximas\nsessões.\n\n5 minutos de esteira ou bike em ritmo leve, mais 1 série de\naquecimento do exercício 1 com metade do peso, só para o corpo acordar.\n\nPegue um peso com que você consiga fazer 12\nrepetições com técnica decente e ainda sobrando umas 3 no tanque.\n\n- Ficou fácil demais? Sobe um pouco na próxima série.\n- Ficou impossível chegar em 10? Desce.\n\nNas duas primeiras semanas, **errar o peso para baixo é acerto**: seu único trabalho agora é\naprender o movimento e anotar os números.\n\nPare a série quando faltarem umas 2 a 3 repetições boas para a\n<dfn>falha</dfn> total. Ir até \"não aguentar mais\" não cresce mais músculo do que parar um pouco\nantes[9], e treinar sem heroísmo é o que deixa a técnica segura e você inteiro para a próxima\nsessão.\n\n**falha:** \"falha\" é o ponto em que você não consegue completar mais\nnenhuma repetição com técnica. Você quase nunca vai até lá neste protocolo, e isso é\nplanejado, não preguiça.\n\n**Nota lateral:** São 2 séries, não 3. A terceira entra na semana 3 (sessão 3).\n\n**Checagem rápida (opcional):** \"Você fez 12 repetições e sobraram 5 no tanque. O que muda na\npróxima série?\" · resposta ao tocar: *sobe um pouco o peso.*",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-03-treino-a",
+          "titulo": "Treino A",
+          "objetivo": "O leitor tem o Treino A da semana 1 e 2 à mão, legível no celular dentro da academia.",
+          "tipo": "leitura",
+          "kit": true,
+          "fonte": "hipertrofia/sessao-01-primeira-vitoria/modulo-03-treino-a.md",
+          "texto": "Nestas duas primeiras semanas você mira o **topo**\nda faixa, as 12 repetições, porque é onde o peso é mais leve e a técnica tem mais chance de\nassentar. São 2 séries, não 3: a terceira entra na semana 3.\n\n| # | Exercício | Exceção | Séries | Repetições | Descanso |\n| - | --------- | ------- | ------ | ---------- | -------- |\n| 01 | Agachamento goblet | na fase 3: agachamento na barra | 2 | 10 a 12 | 2 a 3 min |\n| 02 | Supino reto com halteres | · | 2 | 10 a 12 | 2 a 3 min |\n| 03 | Remada sentada na máquina | · | 2 | 10 a 12 | 2 a 3 min |\n| 04 | Desenvolvimento de ombros com halteres (sentado) | · | 2 | 10 a 12 | 2 min |\n| 05 | Rosca direta com halteres | · | 2 | 10 a 12 | 90 s |\n| 06 | Prancha | a partir da semana 3: 3 séries | 2 | 20 a 40 s | 90 s |\n\nAnote o peso usado e as repetições de cada série. Esses números decidem o treino da\npróxima sessão.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-04-uma-linha-por-exercicio",
+          "titulo": "Uma linha por exercício",
+          "objetivo": "Para cada exercício, o leitor tem o gesto em uma frase, o substituto se o aparelho estiver ocupado e o ponto de partida do peso.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-01-primeira-vitoria/modulo-04-uma-linha-por-exercicio.md",
+          "texto": "O ponto de partida é um chute, e é para ser. Ele existe só para você não\nficar parado na frente do rack decidindo. Na primeira série, a regra assume: deu 12 com folga,\nsobe na próxima; não chegou a 10, desce. Em duas séries você já achou o seu peso, e **é esse\nnúmero, não o daqui, que vai para a ficha.**\n\n| # | Nome | Fala (o gesto) | Governa | Onde (se estiver ocupado) |\n| - | ---- | -------------- | ------- | ------------------------- |\n| 01 | Goblet | Halter colado ao peito; quadril para trás, como quem senta num banquinho baixo; sobe empurrando o chão com o pé inteiro. | halter de 8 a 10 kg | leg press 45° |\n| 02 | Supino com halteres | Escápulas \"guardadas no bolso de trás\"; desça contando mil e um, mil e dois. | 8 a 10 kg em cada mão | supino na máquina |\n| 03 | Remada máquina | O tronco fica quieto, quem viaja é o cotovelo, que vai para trás, rente ao corpo. | a 2ª ou 3ª placa da pilha | remada baixa na polia |\n| 04 | Desenvolvimento | Halteres na linha das orelhas; sobe até quase encostar um no outro, sem arquear a lombar. | 6 a 8 kg em cada mão | desenvolvimento na máquina |\n| 05 | Rosca direta | Cotovelos colados no tronco: eles não viajam para a frente. | 6 a 8 kg em cada mão | rosca alternada |\n| 06 | Prancha | Corpo em linha reta, glúteo e abdômen apertados. Tremer é normal; desabar o quadril, não. | o próprio corpo | abdominal na máquina |\n\nCada card já traz o substituto. A lista\ncompleta, com uma segunda opção para cada, está na tabela de substituições da sessão 3. Não\nimprovise além dela: o substituto certo mantém o treino comparável de uma semana para a\noutra, e **comparável é o que faz você progredir.**\n\n**Nota:** A sessão 4 abre cada um desses gestos em passo a passo, com o erro comum e a\nautocorreção. Leia quando quiser. Hoje você não precisa dela para treinar.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-05-checklist-do-primeiro-dia",
+          "titulo": "Checklist do primeiro dia",
+          "objetivo": "O leitor chega na academia com o que precisa e com as duas regras que salvam o dia 1.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-01-primeira-vitoria/modulo-05-checklist-do-primeiro-dia.md",
+          "texto": "Ao fim de cada exercício, anote o peso usado e quantas repetições\nvocê fez em cada série. Na ficha do app, no papel, nas notas do celular: o meio não importa (a\nsessão 6 organiza isso).\n\nEsses números são a matéria-prima do método inteiro: na próxima sessão, eles dizem se você sobe\no peso ou repete. **Sem eles, você treina no escuro.**\n\n**Checklist** · título \"Checklist do primeiro dia\" · frase: \"Sete itens: dois na mochila, três\nna chegada e as duas regras que salvam o dia 1.\"\n\n*Na mochila*\n\n1. Garrafa de água, toalha pequena, fone.\n2. O Treino A à mão (a tabela da sessão 1 abre sem internet).\n\n*Na chegada*\n\n3. Faça o aquecimento de 5 minutos na esteira e use esse tempo para localizar os halteres, as\n   máquinas de remada e os bancos.\n4. Não sabe regular um banco ou uma máquina? Pergunte ao instrutor. É o trabalho dele, e ele faz\n   isso 30 vezes por dia. O julgamento que você teme mora muito mais na sua cabeça do que no\n   salão.\n5. Aparelho ocupado? Use o substituto do card ou inverta a ordem de dois exercícios. O treino\n   não quebra por isso.\n\n*As duas regras*\n\n6. Anote peso e repetições ainda na academia, série por série, antes de sair do aparelho.\n7. Regra de ouro do dia 1: técnica leve e números anotados valem mais do que carga pesada. Você\n   não está lá para impressionar ninguém hoje, está lá para começar o placar.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-06-paisagem",
+          "titulo": "Paisagem",
+          "objetivo": "Desarmar o medo de ser julgado na academia antes da primeira sessão (persona §10: o medo de errar na frente dos outros é barreira de frequência, não preguiça).",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-01-primeira-vitoria/modulo-06-paisagem.md",
+          "texto": "> Todo mundo naquela academia, incluindo o monstro do supino, já foi o iniciante perdido\n> procurando onde regula o banco. Ninguém está olhando para você. Estão todos olhando para o\n> próprio treino.\n\nE para o próprio celular. Os primeiros dias têm um desconforto de \"não é meu\nlugar\" que **não é um fato, é um sintoma**, e ele evapora com frequência.\n\n**Paisagem ** · *em três semanas, o corredor dos halteres vira\npaisagem familiar.*",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-07-faca-isto-hoje",
+          "titulo": "Faça isto hoje",
+          "objetivo": "O leitor fecha a sessão com três ações feitas hoje, e nenhuma delas é treinar: são as que fazem o treino acontecer.",
+          "tipo": "pratica",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-01-primeira-vitoria/modulo-07-faca-isto-hoje.md",
+          "texto": "Faça isto hoje\n\nTrês tarefas fecham a sessão. Nenhuma delas é treinar: são as que fazem o treino\nacontecer.\n\n1. Salve a tabela do Treino A: print da tela ou deixe a sessão 1 marcada no fast travel.\n2. Separe a mochila (água, toalha, fone) e deixe pronta.\n3. Marque no calendário o dia e o horário da primeira sessão. Se puder, nas suas janelas reais:\n   fim da manhã ou início da noite.\n\n\nApenas faça.",
+          "acoes": [
+            "Salve a tabela do Treino A: print da tela ou deixe a sessão 1 marcada no fast travel.",
+            "Separe a mochila (água, toalha, fone) e deixe pronta.",
+            "Marque no calendário o dia e o horário da primeira sessão. Se puder, nas suas janelas reais:\n   fim da manhã ou início da noite."
+          ],
+          "acaoRegistro": null
+        }
+      ]
+    },
+    {
+      "id": "s02-como-o-musculo-cresce",
+      "numero": 2,
+      "nome": "Como o músculo cresce",
+      "objetivo": "Entrega o porquê que a sessão 01 adiou. Um gatilho só (tensão mecânica que progride), dois\nmitos derrubados com fonte (trocar de treino, sair destruído) e a conta que cabe na vida real:\n4 a 5 horas por semana.",
+      "modulos": [
+        {
+          "id": "modulo-01-o-gatilho",
+          "titulo": "O gatilho",
+          "objetivo": "O leitor nomeia o gatilho do crescimento: tensão mecânica que aumenta ao longo das semanas.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-02-como-o-musculo-cresce/modulo-01-o-gatilho.md",
+          "texto": "Existe um único gatilho que faz músculo crescer. Quando você entende qual é, metade do que o feed te vendeu desmonta sozinho.\n\nMúsculo é um tecido econômico: ele só cresce se for **obrigado**.\n\nE o que o obriga, segundo a fisiologia, é principalmente uma coisa: a tensão mecânica, a força\nque a fibra muscular precisa produzir contra uma resistência.\n\nQuando essa tensão se repete e aumenta ao longo das semanas, o corpo\nentende o recado (\"isso vai continuar acontecendo\") e investe em construir mais músculo[3].\n\n**Tensão ** · *a força que a fibra produz contra uma resistência*\n\nEsse \"aumentar ao longo das semanas\" tem nome: **sobrecarga\nprogressiva**. É o princípio inteiro do método em uma frase, e é o que o próximo módulo escreve\ngrande.\n\nTodo o resto (qual aparelho, qual pegada, qual \"técnica avançada de influencer\") é detalhe\ndiante disso.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-02-faca-o-basico",
+          "titulo": "Faça o básico",
+          "objetivo": "O leitor guarda o método numa frase que cabe num post-it, e sabe por que anota tudo.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-02-como-o-musculo-cresce/modulo-02-faca-o-basico.md",
+          "texto": "`):\n\n> Tensão mecânica.\n> Exercícios fixos.\n> Números anotados.\n> Meses de repetição.\n\n**Faça o básico. ** · *nenhum aparelho secreto. Carga, movimento\ndominado, número anotado.*\n\n> Anote os números, e faça um pouco mais difícil na próxima vez. Repita por meses.\n\nNão existe exercício secreto: existe carga subindo num\nmovimento que você domina.\n\nÉ **medível**, e é por isso que a ficha existe: o número da semana passada é a única prova de\nque a tensão progrediu.\n\n**sobrecarga progressiva:** aumentar aos poucos a dificuldade (mais peso\nou mais repetições) do mesmo exercício, sessão após sessão. É o motor do protocolo, e é\nmedível: por isso você vai anotar tudo.\n\n**Checagem rápida (opcional):** \"Semana passada: 10 kg × 10. Hoje: 10 kg × 11. Houve\nprogressão?\" · resposta: *sim. Mais repetições com o mesmo peso também é sobrecarga\nprogressiva.*",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-03-mito-trocar-de-treino",
+          "titulo": "Mito: trocar de treino sempre",
+          "objetivo": "O leitor entende que trocar de treino zera a comparação, e que a vontade de novidade tem outro destino no programa.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-02-como-o-musculo-cresce/modulo-03-mito-trocar-de-treino.md",
+          "texto": "Se o gatilho é tensão progressiva, você\nprecisa comparar hoje com a semana passada. E só dá para comparar o que se repete.\n\nÉ aqui que mora o erro que provavelmente te acompanhou até agora: trocar\nde treino a cada empolgação nova.\n\nCada troca zera o placar. Você nunca fica tempo suficiente num movimento para ficar forte nele,\nentão a tensão nunca progride, então o corpo nunca recebe o recado.\n\nUm grupo treinando com exercícios fixos contra um grupo\nvariando exercícios aleatoriamente a cada sessão. Resultado: a variação aleatória não gerou mais\nmúsculo, e ainda atrapalhou um dos músculos medidos[11].\n\n- **Objeção (voz do leitor):** \"Tem que trocar de treino sempre, pra 'confundir' o músculo.\"\n- **Resposta (quem: parceiro de treino):** Músculo não se confunde: se adapta. Crescer exige\n  consistência e sobrecarga progressiva; variar aleatoriamente impede a progressão mensurável e\n  não produziu mais hipertrofia em teste direto[3][11]. Variedade aqui é controlada: nas\n  transições planejadas do programa e na lista fechada de substitutos.\n\nPor isso o protocolo trava a\nvariação: os exercícios são fixos por fases, e as mudanças acontecem só nas transições\nplanejadas (sessão 3). **A sua vontade de trocar não é defeito; é sede de novidade**, e o\nprograma dá conta dela de outro jeito: com números novos toda semana.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-04-mito-sair-destruido",
+          "titulo": "Mito: sair destruído",
+          "objetivo": "O leitor para de usar dor muscular como termômetro, e sabe qual é o termômetro de verdade.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-02-como-o-musculo-cresce/modulo-04-mito-sair-destruido.md",
+          "texto": "Segunda crença que precisa cair hoje: \"se não saí destruído, não\nvaleu\".\n\nA dor muscular tardia, aquela que aparece de 24 a 48 horas depois, é sinal de **novidade, não de\ncrescimento**. Ela depende de quão inédito foi o movimento, do seu histórico e até de tecido\nconjuntivo. Músculos crescem com pouca dor, e treinos muito doloridos não geram mais hipertrofia\npor serem doloridos[12].\n\nAliás, boa parte do \"inchaço\" das primeiras semanas de treino é edema de\nreparo (o músculo se defendendo do susto) e não fibra nova. A construção de verdade engrena\ndepois que o corpo se acostuma[23].\n\n- **Objeção:** \"Se não saí destruído, dolorido, da academia, não valeu.\"\n- **Resposta (parceiro de treino):** Dor tardia não é indicador válido de estímulo nem de\n  crescimento[12]. O termômetro do progresso é outro, e é frio: a carga anotada subindo ao longo\n  das semanas e o físico mudando nas fotos mensais[23].\n\nIsso liberta você de duas armadilhas:\n\n- a de sair no dia 1 destruído, e faltar três dias por causa disso;\n- a de achar que um treino tranquilo \"não contou\".\n\nContou: se os números foram anotados e a técnica foi boa, o estímulo aconteceu.\n\n**Checagem rápida (opcional):** \"Treinei, anotei tudo, técnica boa, e no dia seguinte não senti\nnada. O treino contou?\" · resposta: *contou.*",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-05-voce-precisa-de-menos",
+          "titulo": "Você precisa de menos",
+          "objetivo": "O leitor aceita que 3 treinos por semana não são uma versão pobre do ideal: são o que funciona e o que se sustenta.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-02-como-o-musculo-cresce/modulo-05-voce-precisa-de-menos.md",
+          "texto": "> Você precisa de menos do que pensava. O inimigo nunca foi treinar 3 vezes por semana. Foi parar.\n\n| Dado | O que significa | Fonte |\n| ---- | --------------- | ----- |\n| 2 a 3× por semana | a frequência oficial para cada músculo | [1][2] |\n| 1 série | já gera ganho: é o piso do estímulo | [21] |\n| mesmo resultado | mesmo volume semanal, distribuído em mais dias, dá o mesmo resultado | [5][6] |\n| as primeiras séries | são as que mais rendem, por série | [4][5] |\n| 137 revisões | é a base da conclusão mais recente | [1] |\n| 30.000 pessoas | participaram dos estudos reunidos nela | [1] |\n\n**Nota metodológica.** Essa última é o alicerce deste protocolo: depois de décadas medindo tudo,\na ciência chegou onde você precisava. Um programa que você consegue sustentar importa mais do\nque perseguir os números \"perfeitos\" de séries, cargas e frequências[1]. Mais dias é questão de\nagenda, não de estímulo.\n\n**Destaque final:** 4 a 5 horas · *por semana, o que cabe na sua vida* · (declaração de escolha:\né a disponibilidade real da persona, não um número de estudo).\n\n**Ressalva :**\n\n- Suas 4 a 5 horas são o treino que funciona.\n- Não uma versão pobre do treino ideal: o que cabe na sua vida por meses seguidos.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-06-faca-isto-hoje",
+          "titulo": "Faça isto hoje",
+          "objetivo": "O leitor grava o gatilho na ficha, apaga a tentação de trocar de treino e avalia a própria técnica do Treino A.",
+          "tipo": "pratica",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-02-como-o-musculo-cresce/modulo-06-faca-isto-hoje.md",
+          "texto": "Faça isto hoje\n\nTrês ações, hoje, antes de seguir. A sessão 3 abre com o programa oficial.\n\n**Ações:**\n\n1. Escreva no topo da sua ficha: \"O gatilho é carga subindo, não dor nem novidade.\"\n2. Se você tem um treino antigo guardado \"pra variar\", apague. O programa oficial chega na\n   próxima sessão.\n3. Já fez o Treino A? Marque como foi a técnica de cada exercício.\n\n   preciso de ajuda**\n\n**Termômetro do progresso** (lembrete fixo no pé do card): carga anotada subindo ao longo das\nsemanas · fotos mensais.",
+          "acoes": [
+            "Escreva no topo da sua ficha: \"O gatilho é carga subindo, não dor nem novidade.\"",
+            "Se você tem um treino antigo guardado \"pra variar\", apague. O programa oficial chega na\n   próxima sessão.",
+            "Já fez o Treino A? Marque como foi a técnica de cada exercício."
+          ],
+          "acaoRegistro": null
+        }
+      ]
+    },
+    {
+      "id": "s03-o-programa",
+      "numero": 3,
+      "nome": "O programa",
+      "objetivo": "É o manual do programa: as regras que valem as 12 semanas, a semana real, as três fases, o\nportão que libera a barra, os quatro treinos completos e a tabela de substituições. É a sessão\nmais consultada do roadmap, e a mais densa em dados.",
+      "modulos": [
+        {
+          "id": "modulo-01-um-caminho-unico",
+          "titulo": "Um caminho único",
+          "objetivo": "O leitor sabe o que muda e o que não muda nas 12 semanas, e marca os três dias antes de seguir.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-03-o-programa/modulo-01-um-caminho-unico.md",
+          "texto": "Você não decide nada: só executa e anota.\n\n**Números crus:** `12` semanas · `3` sessões por semana · `60 a 75` minutos\n\nDoze semanas, três sessões por semana, uma lista fechada de\nexercícios e uma ficha para anotar.\n\nO que muda ao longo do caminho está escrito aqui:\n\n- duas fases de transição;\n- um portão de competência que não é o calendário;\n- uma lista fechada de substitutos para o dia em que o aparelho estiver ocupado.\n\nFora disso, nada muda: nem exercício, nem ordem, nem número de sessões.\n\n**Programa ** · *um caminho único, sem menu de opções*\n\nO programa não pede que você escolha. Pede que você **apareça três vezes\npor semana** e registre o que aconteceu.\n\n- 3 sessões obrigatórias por semana (Treinos A, B e C) e 1 opcional (Treino D). Nunca mais que 4,\n  nem nas semanas de empolgação.\n- 60 a 75 minutos por sessão, incluindo aquecimento.\n- Corpo inteiro em cada sessão, 8 a 12 repetições na maioria dos exercícios.\n\nDefina seus 3 dias e horários antes de\nabrir a sessão 4. Sem data no calendário, o programa é leitura; com data, é treino.\n\n**Registro das 12 semanas:** a régua de doze marcas.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-02-as-regras-do-jogo",
+          "titulo": "As regras do jogo",
+          "objetivo": "O leitor conhece as sete regras que valem as 12 semanas, e guarda a frase de comando de cada uma.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-03-o-programa/modulo-02-as-regras-do-jogo.md",
+          "texto": "Sete regras. As seis primeiras desenham a sessão; a sétima encerra qualquer\ndiscussão sobre técnica.\n\nElas valem para as 12 semanas inteiras. Não são preferência de treinador: são o contorno dentro\ndo qual o programa funciona, e nenhuma depende de como você acordou hoje. Leia a justificativa\numa vez; depois basta a frase.\n\nSe alguma entrar em conflito com o que você viu no feed, a regra vence: o feed não sabe em que\nsemana você está, nem quantas sessões você já registrou.\n\n| # | Título | Depois | Hoje (riscado) | Lastro |\n| - | ------ | ------ | -------------- | ------ |\n| 01 | 3 sessões por semana, mais 1 opcional | Treinos A, B e C obrigatórios, Treino D opcional. Nunca mais que 4. | treinar todo dia nas semanas de empolgação | escolha do protocolo |\n| 02 | 60 a 75 minutos por sessão | Incluindo aquecimento. Passou disso, você está descansando demais ou conversando demais (sem julgamento, mas o cronômetro ajuda). | sessão que passa de 75 minutos | escolha do protocolo |\n| 03 | Corpo inteiro em cada sessão | Cada músculo é estimulado 2 a 3 vezes por semana, como a recomendação oficial pede. Se você faltar a uma sessão, nenhum músculo fica órfão: o programa perdoa faltas por arquitetura. | o \"dia do peito\" | [1][2] |\n| 04 | 8 a 12 repetições | Na maioria dos exercícios; a tabela manda, e alguns pedem 12 a 15. O músculo cresce de forma parecida numa faixa enorme de cargas, desde que o esforço seja real. | carregar a academia nas costas | [1][2][8] |\n| 05 | 2 a 3 minutos de descanso | Nos exercícios grandes. Descansar mais te deixa mais forte na série seguinte. | descansar pouco até ficar ofegante | [10] |\n| 06 | 1 a 2 repetições no tanque | Em cada série, exceto nas duas primeiras semanas, que rodam de propósito mais folgadas. | ir até não aguentar mais | [9] |\n\n- **Verbo:** Encerra.\n- **Condição:** Técnica quebrando, série encerrada. Em qualquer fase, em qualquer exercício, com\n  qualquer carga.\n- **O que não existe:** Não tem \"só mais uma\", não tem repetição roubada que conta, e não tem\n  carga que justifique.\n- **Registro:** `[técnica quebrou · série acabou]`",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-03-a-semana-na-vida-real",
+          "titulo": "A semana na vida real",
+          "objetivo": "O leitor monta a própria semana com três treinos e um dia livre entre eles, sabendo o que fazer se perder a segunda.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-03-o-programa/modulo-03-a-semana-na-vida-real.md",
+          "texto": "\"O programa foi desenhado para a sua semana de verdade, não para a semana de um\natleta profissional.\"\n\n| Marca | Esquerda | Direita |\n| ----- | -------- | ------- |\n| 1 | **Segunda** · Treino A | **Terça** · livre |\n| 2 | **Quarta** · Treino B | **Quinta** · livre |\n| 3 | **Sexta** · Treino C | **Sábado** · livre: *a noite é sua, e o programa já sabe* |\n| 4 | **Domingo** · Treino D, opcional | · |\n\n**Fecho do palco:**\n\n**As janelas que funcionam.** Fim da manhã (10h a 12h) ou início da noite (19h a 21h). A da manhã\né a mais protegida: nenhum rolê começa às 10h30 de uma terça.\n\nEscolha as duas janelas na semana 1 e repita nas outras onze. **Horário fixo economiza a decisão\nque faz você desistir na porta.**\n\n**1 dia livre.** Perdeu a segunda? O trio A-B-C desliza: terça, quinta e sábado de manhã. A única\nregra fixa é pelo menos um dia livre entre sessões. Ela continua valendo quando o trio desliza, e\nvale também na semana em que você repõe uma sessão perdida.\n\n**Fora da zona de risco.** Nenhuma sessão obrigatória depende do sábado à noite ou do domingo. Fim\nde semana ruim de sono e dieta não derruba o treino, que foi posicionado fora da zona de risco de\npropósito.\n\n**O Treino D.** Só entra a partir da semana 5, se as 3 obrigatórias estiverem acontecendo com\nfolga. A reposição de A, B ou C vem primeiro, sempre. O Treino D não compensa sessão perdida.\n\n**Minha semana** (ficha): escolha seus três dias e sua janela.\n\n**Fecho:** Nenhuma sessão obrigatória depende do fim de semana.",
+          "acoes": [],
+          "acaoRegistro": "metas"
+        },
+        {
+          "id": "modulo-04-as-tres-fases",
+          "titulo": "As três fases",
+          "objetivo": "O leitor sabe em que fase está pela semana, o que muda em cada uma e o que nunca muda.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-03-o-programa/modulo-04-as-tres-fases.md",
+          "texto": "\"O programa\" / \"muda de cara\" / \"três vezes\"\n\nSempre nas transições planejadas. Fora delas, nada de trocar exercício: a exceção\noficial é a **tabela de substituições**.\n\n**Régua:** doze marcas, agrupadas visualmente em 2 · 6 · 4.\n\n**Estados (três cards):**\n\n| Capa | Faixa | Nome | Texto |\n| ---- | ----- | ---- | ----- |\n| 1 e 2 | semanas | Fase 1 · Aprender | 2 séries por exercício, no topo da faixa que a tabela indicar. Nos exercícios medidos em segundos, comece pelo piso da faixa. Pesos conservadores, 3 repetições no tanque. Objetivo: técnica sólida e números de base anotados. Aqui você está calibrando o placar, não disputando ele. |\n| 3 a 8 | semanas | Fase 2 · Construir | Sobe para 3 séries, na faixa cheia, 1 a 2 no tanque. A Regra do 12 assume o volante: a cada sessão, ela decide se o peso sobe ou repete. É a fase em que os números começam a contar história. |\n| 9 a 12 | semanas | Fase 3 · Consolidar | Mesmas 3 séries, mesma faixa, mesma regra, com as duas únicas trocas do programa: agachamento goblet → agachamento na barra, e supino máquina (Treino C) → supino reto com barra. |\n\nNa troca 01, o agachamento vai para a barra no Smith\nou livre, com o instrutor conferindo o setup no primeiro dia. Na troca 02, o supino vai para a\nbarra dentro da gaiola, com as travas reguladas; o setup completo está no guia \"Empurrar\" da\nsessão 4.\n\nEssas trocas não são variedade por tédio: são a formatura. Depois de 8 semanas dominando as\nversões de aprendizado, você ganha as clássicas, e leva junto toda a força que construiu.\n\n**Fecho (pergunta do 06):** O que não muda: a ordem dos exercícios, o número de sessões e a lista\nem si. Trocar exercício fora da transição apaga a única coisa que o programa mede: **a comparação\ncom a sua própria sessão anterior.**",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-05-o-portao-da-fase-3",
+          "titulo": "O portão da fase 3",
+          "objetivo": "O leitor sabe que competência, e não calendário, libera a barra, e sabe o que fazer se passou em uma troca, nas duas ou em nenhuma.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-03-o-programa/modulo-05-o-portao-da-fase-3.md",
+          "texto": "- **Verbo:** Competência.\n- **Condição:** Para cada uma das duas trocas, o portão é este: nas últimas 4 sessões daquele\n  exercício, as 3 séries saíram completas, na amplitude cheia, sem quebra de técnica, em **pelo\n  menos 3 delas**.\n- **O que não existe:** Chegar na semana 9 não é a senha.\n- **Registro:** `[competência · não calendário]`\n\n(dois cartões lado a lado no monitor):\n\n- **Troca 01:** agachamento goblet → agachamento na barra. No Smith ou livre, com o instrutor\n  conferindo o setup no primeiro dia.\n- **Troca 02:** supino máquina → supino reto com barra. Dentro da gaiola, travas reguladas; o\n  setup completo está no guia \"Empurrar\".\n\n- **Passou nas duas?** Faz as duas trocas.\n- **Passou em uma só?** Faz uma só. O outro exercício continua na versão de aprendizado, e não há\n  prejuízo nenhum nisso.\n- **Não passou em nenhuma?** Você fica onde está e repete o portão daqui a duas semanas.\n\nTerminar as 12 semanas no goblet e no supino máquina, com carga subindo, é um resultado melhor\ndo que estrear na barra com o padrão ainda torto.\n\nAs duas primeiras sessões com a barra\nsão com a barra vazia. São sessões de calibragem: você está aprendendo onde a barra fica nas\ncostas, onde as travas ficam, como sair da gaiola. Só a partir da terceira sessão a Regra do 12\nvolta a valer para aquele exercício, contando a partir da barra vazia.\n\n| Barra | Peso |\n| ----- | ---- |\n| olímpica | 20 kg |\n| curta | 7 a 12 kg |\n\nSe estiver escrito nela, use o que está escrito; se não, pergunte na recepção. A barra vazia já é\na sua primeira carga.\n\n**Nota da coleção:** É a mesma regra de trânsito do Protocolo 03: só avança quem já assentou o\ndegrau atual.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-06-treino-a",
+          "titulo": "Treino A completo",
+          "objetivo": "O leitor consulta o Treino A das 12 semanas, com a mudança de séries da fase 1 para as fases 2 e 3 visível em cada ficha.",
+          "tipo": "leitura",
+          "kit": true,
+          "fonte": "hipertrofia/sessao-03-o-programa/modulo-06-treino-a.md",
+          "texto": "**Como ler a coluna de séries.** Fase 1 (semanas 1 e 2): 2 séries,\nno topo da faixa de repetições, pesos conservadores, 3 no tanque. Fases 2 e 3 (semanas 3 a 12): 3\nséries, faixa cheia, 1 a 2 no tanque.\n\n| # | Exercício | Exceção | Séries F1 → F2 e F3 | Repetições | Descanso |\n| - | --------- | ------- | ------------------- | ---------- | -------- |\n| 01 | Agachamento goblet | na fase 3: agachamento na barra | 2 → 3 | 8 a 12 | 2 a 3 min |\n| 02 | Supino reto com halteres | · | 2 → 3 | 8 a 12 | 2 a 3 min |\n| 03 | Remada sentada na máquina | · | 2 → 3 | 8 a 12 | 2 a 3 min |\n| 04 | Desenvolvimento de ombros com halteres (sentado) | · | 2 → 3 | 8 a 12 | 2 min |\n| 05 | Rosca direta com halteres | · | 2 → 3 | 8 a 12 | 90 s |\n| 06 | Prancha | medida em segundos | 2 → 3 | 20 a 40 s | 90 s |\n\nAnote peso e repetições de cada série na ficha de treino.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-07-treino-b",
+          "titulo": "Treino B",
+          "objetivo": "O leitor consulta o Treino B e sabe onde começa o extra de postura do programa.",
+          "tipo": "leitura",
+          "kit": true,
+          "fonte": "hipertrofia/sessao-03-o-programa/modulo-07-treino-b.md",
+          "texto": "As séries seguem a mesma regra do Treino A: 2 na fase 1, 3 nas fases\n2 e 3. **Atenção às repetições:** face pull e panturrilha pedem faixas mais altas.\n\n| # | Exercício | Séries F1 → F2 e F3 | Repetições | Descanso |\n| - | --------- | ------------------- | ---------- | -------- |\n| 01 | Levantamento terra romeno com halteres | 2 → 3 | 8 a 12 | 2 a 3 min |\n| 02 | Puxada na frente (polia) | 2 → 3 | 8 a 12 | 2 a 3 min |\n| 03 | Supino inclinado com halteres | 2 → 3 | 8 a 12 | 2 a 3 min |\n| 04 | Face pull na polia | 2 → 3 | 12 a 15 | 90 s |\n| 05 | Tríceps na polia (corda) | 2 → 3 | 8 a 12 | 90 s |\n| 06 | Panturrilha em pé | 2 → 3 | 10 a 15 | 90 s |\n\nO face pull e a puxada fortalecem exatamente a\nmusculatura que 6 horas por dia de computador enfraquece: parte alta das costas e escápulas[24].\nÉ um bônus, não uma promessa (o Treino D explica o tamanho do efeito).",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-08-treino-c",
+          "titulo": "Treino C",
+          "objetivo": "O leitor consulta o Treino C e sabe que é daqui que sai a segunda troca planejada.",
+          "tipo": "leitura",
+          "kit": true,
+          "fonte": "hipertrofia/sessao-03-o-programa/modulo-08-treino-c.md",
+          "texto": "Mesma regra de séries dos Treinos A e B. O supino na máquina muda na\nfase 3, **se o portão estiver aprovado**.\n\n| # | Exercício | Exceção | Séries F1 → F2 e F3 | Repetições | Descanso |\n| - | --------- | ------- | ------------------- | ---------- | -------- |\n| 01 | Leg press 45° | · | 2 → 3 | 8 a 12 | 2 a 3 min |\n| 02 | Remada unilateral com halter (\"serrote\") | · | 2 → 3 | 8 a 12 | 2 a 3 min |\n| 03 | Supino na máquina | na fase 3, com o portão aprovado: supino reto com barra | 2 → 3 | 8 a 12 | 2 a 3 min |\n| 04 | Elevação lateral com halteres | · | 2 → 3 | 12 a 15 | 90 s |\n| 05 | Cadeira flexora | · | 2 → 3 | 10 a 12 | 90 s |\n| 06 | Abdominal (crunch no solo ou máquina) | · | 2 → 3 | 10 a 15 | 90 s |\n\nO supino na máquina vira supino reto com barra na\nfase 3, se o portão da fase 3 estiver aprovado. Até lá, ele continua como está.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-09-treino-d",
+          "titulo": "Treino D",
+          "objetivo": "O leitor sabe que o Treino D é opcional, a partir da semana 5, e que ele nunca compensa sessão perdida.",
+          "tipo": "leitura",
+          "kit": true,
+          "fonte": "hipertrofia/sessao-03-o-programa/modulo-09-treino-d.md",
+          "texto": "**Condição  · Regra do Treino D.** Só a partir da semana 5, e\nsó se as 3 obrigatórias estiverem acontecendo com folga. Ele não compensa sessão perdida: a\nreposição de A, B ou C vem primeiro.\n\nSessão leve de 40 a 50 minutos para pontos que você quer dar carinho extra,\nsem tocar nos básicos (eles descansam).\n\n| # | Exercício | Séries | Repetições ou tempo |\n| - | --------- | ------ | ------------------- |\n| 01 | Elevação lateral com halteres | 3 | 12 a 15 |\n| 02 | Face pull na polia | 3 | 12 a 15 |\n| 03 | Rosca alternada com halteres | 3 | 10 a 12 |\n| 04 | Tríceps francês com halter | 3 | 10 a 12 |\n| 05 | Panturrilha sentado | 3 | 12 a 15 |\n| 06 | Caminhada inclinada na esteira | 1 | 15 a 20 min |\n\nO face pull, as remadas e a puxada, que aparecem a semana\ninteira, fortalecem a musculatura que 6 horas por dia de computador enfraquece. Exercício de\nfortalecimento ajuda a melhorar ombros caídos e cabeça projetada em quem trabalha sentado, **com\nefeito real, porém modesto**[24].\n\nTraduzindo: este programa não é tratamento postural, mas ombros mais fortes atrás tendem a\nsignificar uma silhueta mais aberta. É um bônus, não uma promessa.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-10-substituicoes-oficiais",
+          "titulo": "Substituições oficiais",
+          "objetivo": "O leitor resolve um aparelho ocupado sem improvisar, e fecha a sessão com a semana 1 marcada.",
+          "tipo": "leitura",
+          "kit": true,
+          "fonte": "hipertrofia/sessao-03-o-programa/modulo-10-substituicoes-oficiais.md",
+          "texto": "Aparelho ocupado ou sua academia não tem? Use o substituto, e volte ao\ntitular quando puder. **A lista é fechada de propósito**: é a válvula de escape que resolve o dia\nsem reabrir a porta do \"inventar a roda\"[11].\n\nTodo substituto repete o padrão de movimento do titular:\nempurrar continua empurrando, puxar continua puxando, dobradiça de quadril continua dobradiça de\nquadril.\n\nTrocar terra romeno por cadeira flexora pareceria razoável (ambos \"fazem posterior\"), mas apaga o\npadrão inteiro: um é o quadril dobrando com a coluna firme, o outro é o joelho flexionando\nsentado. Você perderia justamente o movimento que o programa está te ensinando.\n\n**Tabela · 18 titulares**, agrupados pelo padrão de movimento:\n\n| Padrão | Titular | Substituto 1 | Substituto 2 |\n| ------ | ------- | ------------ | ------------ |\n| Agachar | Agachamento goblet | Leg press 45° | Agachamento no Smith |\n| Agachar | Agachamento na barra (fase 3) | Agachamento no Smith | Agachamento goblet |\n| Agachar | Leg press 45° | Hack machine | Agachamento goblet |\n| Empurrar | Supino reto com halteres | Supino na máquina | Crucifixo na máquina (peck deck) |\n| Empurrar | Supino na máquina | Supino com halteres | Flexão de braços |\n| Empurrar | Supino inclinado com halteres | Supino inclinado máquina | Crucifixo na máquina (peck deck) |\n| Empurrar na vertical | Desenvolvimento com halteres | Desenvolvimento na máquina | Desenvolvimento no Smith |\n| Empurrar na vertical | Elevação lateral | Elevação lateral na polia | Elevação lateral na máquina |\n| Empurrar na vertical | Face pull | Crucifixo inverso com halteres | Crucifixo inverso na máquina |\n| Puxar | Remada sentada na máquina | Remada baixa na polia (triângulo) | Remada curvada com halteres |\n| Puxar | Remada unilateral (serrote) | Remada sentada na máquina | Remada curvada com halteres |\n| Puxar | Puxada na frente | Puxada com triângulo | Barra fixa assistida (graviton) |\n| Dobradiça | Levantamento terra romeno | Terra romeno no Smith | Extensão lombar no banco 45° |\n| Dobradiça | Cadeira flexora | Mesa flexora | Flexora em pé (unilateral) |\n| Acessórios | Rosca direta | Rosca alternada | Rosca na polia |\n| Acessórios | Tríceps corda | Tríceps barra na polia | Tríceps francês com halter |\n| Acessórios | Panturrilha em pé | Panturrilha no leg press | Panturrilha sentado |\n| Acessórios | Prancha | Abdominal máquina | Elevação de pernas |\n\nSe o titular e os dois substitutos estiverem todos ocupados, pule o\nexercício e siga o treino. É melhor do que improvisar um padrão que ninguém te ensinou.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-10-substituicoes-oficiais-pratica",
+          "titulo": "Faça isto hoje",
+          "tipo": "pratica",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-03-o-programa/modulo-10-substituicoes-oficiais.md",
+          "texto": "Três ações e a semana 1 sai do papel.\n\n1. Salve as tabelas dos Treinos A, B e C no celular: print, ou confira que elas abrem no app sem\n   internet.\n2. Defina seus 3 dias e horários da semana 1 (sugestão: seg/qua/sex, 10h30 ou 19h30) e coloque no\n   calendário do celular com alarme.\n\n3. Confira na sua academia se algum titular não existe, e já marque o substituto na sua ficha.",
+          "acoes": [
+            "Salve as tabelas dos Treinos A, B e C no celular: print, ou confira que elas abrem no app sem\n   internet.",
+            "Defina seus 3 dias e horários da semana 1 (sugestão: seg/qua/sex, 10h30 ou 19h30) e coloque no\n   calendário do celular com alarme.",
+            "Confira na sua academia se algum titular não existe, e já marque o substituto na sua ficha."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s04-execucao-sem-medo",
+      "numero": 4,
+      "nome": "Execução sem medo",
+      "objetivo": "É o amigo que corrige sem julgar, antes de qualquer um ver. Seis guias, um por padrão de\nmovimento, cada um com o gesto do titular em três passos, os pontos de contato, o erro comum com\na autocorreção, o substituto e a versão da fase 3. Fecha com as três perguntas que todo iniciante\nfaz no salão.",
+      "modulos": [
+        {
+          "id": "modulo-01-tecnica-segura",
+          "titulo": "Técnica segura",
+          "objetivo": "O leitor troca \"técnica perfeita\" por \"técnica segura e repetível\", e escolhe por qual guia começar.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-04-execucao-sem-medo/modulo-01-tecnica-segura.md",
+          "texto": "O medo de errar na frente dos outros derruba mais treinos do que a preguiça.\n\nEsta sessão é o amigo que corrige sem julgar, antes de qualquer\num ver.\n\nOs ajustes finos vêm com as semanas. O que você precisa no início é do \"certo o suficiente\", e é\nisso que os guias entregam, organizados pelos 6 padrões de movimento do programa.\n\n**Segura ** · *técnica boa não é técnica perfeita, é segura e repetível*\n\n(a Virada). Técnica boa **não é técnica perfeita**: é\ntécnica segura, repetível e cada vez melhor. O que reprova uma série não é a falta de perfeição. É\no peso que decide a amplitude, a descida que cai sozinha e a repetição que sai deformada para\ncaber.\n\nCada padrão tem um exercício titular, um substituto de máquina e\na versão com barra da fase 3. Estude o titular; os outros dois herdam a mesma mecânica.\n\n| Padrão | Titular |\n| ------ | ------- |\n| Agachar | agachamento goblet |\n| Empurrar | supino com halteres |\n| Puxar | remada sentada na máquina |\n| Dobradiça | terra romeno com halteres |\n| Empurrar na vertical e ombros | desenvolvimento, elevação lateral, face pull |\n| Acessórios | braços, panturrilha e core |\n\nEscolha os 2 exercícios que mais te\nintimidam e releia só os guias deles. Filme 1 série de agachamento goblet de lado e compare com o\npasso a passo.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-02-agachar",
+          "titulo": "Agachar",
+          "objetivo": "O leitor executa o agachamento goblet em três passos, sabe onde sentir cada um e corrige o erro comum sozinho.",
+          "tipo": "leitura",
+          "kit": true,
+          "fonte": "hipertrofia/sessao-04-execucao-sem-medo/modulo-02-agachar.md",
+          "texto": "| Marca | Passo (esquerda) | Contato (direita) |\n| ----- | ---------------- | ----------------- |\n| 1 | **Passo 01 · pegada.** Segure um halter na vertical, colado ao peito, cotovelos para baixo. Pés na largura dos ombros, pontas levemente para fora. | **Cotovelo.** Aponta para baixo e não abre. O halter fica vertical, encostado no esterno. |\n| 2 | **Passo 02 · descida.** Desça empurrando o quadril para trás e dobrando os joelhos, como quem senta num banquinho baixo. Desça até onde o calcanhar fica no chão e as costas ficam retas. | **Joelho.** Segue a linha da ponta do pé durante toda a descida. Não desaba para dentro. |\n| 3 | **Passo 03 · subida.** Suba empurrando o chão com o pé inteiro. Tronco firme; o halter não balança. | **Calcanhar.** Fica no chão do início ao fim. A profundidade termina onde ele começa a subir. |\n\n**Erro comum** (✕): calcanhar levantando ou joelho desabando para dentro. **Autocorreção:** afaste\num pouco mais os pés e desça só até onde controla; a profundidade cresce com as semanas.\n\n**Palavra-chave · Quadril.** O padrão agachar começa no quadril, não no joelho. Ele vai para trás\nprimeiro, e o joelho apenas acompanha. Se o joelho manda, a barra vira frente de coxa.\n\nProfundidade é consequência de controle. A referência é o calcanhar apoiado e as costas retas, não\no espelho do vizinho.\n\n**Substituto e progressão:**\n\n- **Leg press 45°.** Pés na plataforma, largura dos ombros, na metade de cima da chapa. Destrave,\n  desça controlando até os joelhos apontarem cerca de 90° (sem o quadril descolar do banco).\n  Empurre sem esticar totalmente os joelhos no topo. ✕ Encurtar demais o movimento com carga alta:\n  menos peso, mais amplitude. Só conta o movimento completo.\n- **Agachamento na barra (fase 3).** Barra apoiada no trapézio (não no pescoço), mãos firmes,\n  escápulas apertadas. Tire da gaiola com 2 passos curtos: quadril para trás, peito aberto. ✕\n  Colocar peso antes de dominar o padrão: as 2 primeiras sessões são com a barra vazia ou quase.\n  Você está trocando de movimento, não de carga.\n\n**Nota de segurança.** Na barra, use as travas de segurança da gaiola reguladas na sua altura de\ndescida. Filme uma série de lado sempre que subir carga: a câmera mostra o que o espelho de frente\nesconde.\n\n**Nota do padrão.** O agachamento goblet é o exercício do padrão que atravessa as três fases do\nprograma: titular nas fases 1 e 2, e substituto da barra na fase 3. Se um dia só der para fazer um,\nfaça este.\n\n**Faixa de fecho:** O peso decide a amplitude? Então o peso está grande.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-03-empurrar",
+          "titulo": "Empurrar",
+          "objetivo": "O leitor executa o supino com halteres com a descida controlada, e sabe montar o supino com barra da fase 3 com segurança treinando sozinho.",
+          "tipo": "leitura",
+          "kit": true,
+          "fonte": "hipertrofia/sessao-04-execucao-sem-medo/modulo-03-empurrar.md",
+          "texto": "| Marca | Passo | Contato |\n| ----- | ----- | ------- |\n| 1 | **Passo 01 · montagem.** Deitado, pés firmes no chão, escápulas \"guardadas no bolso de trás\" (peito aberto). | **Escápula.** Apertada contra o banco do início ao fim. É ela que abre o peito e protege o ombro. |\n| 2 | **Passo 02 · subida.** Halteres começam na linha do peito; suba até quase esticar os cotovelos. | **Cotovelo.** Desce até passar levemente da linha do tronco: nem mais, nem menos. |\n| 3 | **Passo 03 · descida.** Desça controlando 2 segundos até os cotovelos passarem levemente da linha do tronco. | Inteiro no chão, dando base. Se a série apertar, você apoia os halteres e sai. |\n\n**Erro comum** (✕): bater os halteres no topo e deixá-los \"cair\" na descida. **Autocorreção:** a\ndescida é metade do exercício; conte \"mil e um, mil e dois\".\n\n**Palavra-chave · Escápula.** Por que halteres primeiro: se a série apertar, você simplesmente apoia\nos halteres, sem barra nenhuma para te prender. O protocolo assume que você treina sozinho.\n\n**Variação e progressão:**\n\n- **Supino inclinado com halteres:** mesma mecânica no banco de 30 a 45°; os halteres sobem na linha\n  da parte alta do peito.\n- **Supino na máquina:** mesma cadência de 2 segundos na descida.\n- **Supino reto com barra (fase 3):** dentro da gaiola, com as travas de segurança reguladas na\n  altura do peito. Regule antes de deitar: com a barra apoiada nelas, deve sobrar um dedo de folga\n  sobre o seu tórax. Se a série falhar, a barra para nas travas e você sai por baixo. Pegada um\n  pouco além dos ombros; a barra toca leve na linha dos mamilos.\n\n**Nota de segurança · sozinho, sem colarinho.** Colarinho prende a anilha na barra, e é exatamente\nisso que você não quer quando não há ninguém por perto. Sem ele, se a barra descer e não subir, dá\npara inclinar para um lado, deixar as anilhas escorregarem e se libertar. É a mesma lógica dos\nhalteres: nada te prende embaixo do peso.\n\n**Nota de segurança · com observador, com colarinho.** Havendo alguém disponível, peça segurança nas\nséries finais. Todo mundo pede, ninguém acha estranho. Com observador, aí sim use colarinhos: eles\nimpedem que as anilhas deslizem enquanto outra pessoa guia a barra.\n\n**Faixa de fecho:** \"Me dá uma força aqui nas últimas?\"",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-04-puxar",
+          "titulo": "Puxar",
+          "objetivo": "O leitor puxa com o cotovelo e não com o corpo, na remada e na puxada.",
+          "tipo": "leitura",
+          "kit": true,
+          "fonte": "hipertrofia/sessao-04-execucao-sem-medo/modulo-04-puxar.md",
+          "texto": "| Marca | Passo | Contato |\n| ----- | ----- | ------- |\n| 1 | **Passo 01 · montagem.** Peito apoiado (se houver apoio), coluna neutra. | **Tronco.** Fica quieto. Quem viaja é o cotovelo: o tronco não acompanha a carga. |\n| 2 | **Passo 02 · puxada.** Puxe os pegadores levando os cotovelos para trás, perto do corpo, até a mão chegar na linha do tronco. | **Cotovelo.** Passa rente ao corpo e aponta para trás. Na puxada, aponta para o chão. |\n| 3 | **Passo 03 · volta.** Volte controlando até os braços esticarem, e deixe as escápulas \"abrirem\" no final. | **Escápula.** Fecha na puxada, abre na volta. Amplitude completa nas duas pontas. |\n\n**Erro comum** (✕): puxar com o corpo inteiro, jogando o tronco para trás. **Autocorreção:**\ndiminua o peso; o tronco fica quieto, quem viaja é o cotovelo.\n\n**Palavra-chave · Cotovelo.** O padrão puxar é medido pelo trajeto do cotovelo. Ele vai para trás e\npara baixo, perto do corpo. A mão só segura; ela não decide nada.\n\n**Variação e progressão:**\n\n- **Puxada na frente (polia).** Pegada um pouco além dos ombros, sentado com as coxas travadas. Puxe\n  a barra até a parte alta do peito, cotovelos apontando para o chão. Suba controlando até esticar.\n  Leve inclinação para trás é normal; balanço, não. ✕ Puxar atrás da nuca ou usar impulso:\n  sempre à frente; se precisou balançar, o peso venceu, reduza.\n- **Remada unilateral (\"serrote\"):** um joelho e uma mão no banco, costas retas como uma mesa; o\n  halter sobe até a linha do quadril, cotovelo rente ao corpo.\n\n**Nota de segurança.** Na puxada, nunca atrás da nuca. Ajuste a trava das coxas antes de escolher a\ncarga: sem ela, o peso levanta você, e o exercício vira balanço.\n\n**Nota do padrão.** Uma remada e uma puxada por semana cobrem o padrão inteiro. Se o dia estiver\ncurto, mantenha a remada. O padrão puxar é o que mais compensa o tempo de cadeira, e ele e o face\npull (guia \"Empurrar na vertical e ombros\") trabalham juntos[24].\n\n**Faixa de fecho:** Se precisou balançar, o peso venceu e você perdeu.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-05-dobradica",
+          "titulo": "Dobradiça",
+          "objetivo": "O leitor dobra no quadril com as costas como tábua, e usa o vídeo de lado como ferramenta.",
+          "tipo": "leitura",
+          "kit": true,
+          "fonte": "hipertrofia/sessao-04-execucao-sem-medo/modulo-05-dobradica.md",
+          "texto": "| Marca | Passo | Contato |\n| ----- | ----- | ------- |\n| 1 | **Passo 01 · posição.** Em pé, halteres na frente das coxas, joelhos destravados (levemente dobrados). | **Costas.** Devem parecer uma tábua inclinando. Se curvarem, o movimento acabou ali. |\n| 2 | **Passo 02 · quadril.** Empurre o quadril **para trás** deixando os halteres deslizarem rente às pernas; as costas ficam retas o tempo todo. | **Joelho.** Destravado, e para aí. Dobrar mais transforma a dobradiça em agachamento. |\n| 3 | **Passo 03 · subida.** Desça até sentir o alongamento atrás da coxa (em geral, altura da canela) e suba apertando o glúteo. | **Halter.** Desliza rente à perna. Longe do corpo, a carga vai toda para a lombar. |\n\n**Erro comum** (✕): transformar em agachamento (dobrar joelho demais) ou curvar as costas.\n**Autocorreção:** filme uma série de lado: as costas devem parecer uma tábua inclinando.\n\n**Palavra-chave · Tábua.** A dobradiça é quadril para trás, não tronco para baixo. As costas mantêm a\nmesma forma do início ao fim. O alongamento atrás da coxa é o sinal de que chegou.\n\n**Substituto e ferramenta:**\n\n- **Cadeira ou mesa flexora:** ajuste o apoio conforme a etiqueta da máquina (ou peça ao instrutor\n  uma vez, que vale por todas); dobre controlando, volte em 2 segundos.\n- **Filmar é ferramenta, não pose.** Todo mundo faz isso. Uma série de lado, do seu canto, resolve em\n  20 segundos a dúvida que você levaria semanas para responder no espelho, e é na dobradiça que ela\n  paga mais.\n\n**Nota de segurança.** Filme de lado, discreto, do seu canto, sem aparecer ninguém. Se a lombar\ncurvar no vídeo, reduza a carga na próxima série, não a amplitude.\n\n**Nota do padrão.** A lombar que curva na dobradiça é um dos dois erros que não doem na hora. Doem\nsemanas depois, com carga em cima. É o padrão que menos perdoa pressa.\n\n**Faixa de fecho:** Filme uma série de lado antes de subir carga.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-06-empurrar-na-vertical",
+          "titulo": "Empurrar na vertical e ombros",
+          "objetivo": "O leitor executa desenvolvimento, elevação lateral e face pull sem impulso, e sabe qual dos três cortar quando falta tempo.",
+          "tipo": "leitura",
+          "kit": true,
+          "fonte": "hipertrofia/sessao-04-execucao-sem-medo/modulo-06-empurrar-na-vertical.md",
+          "texto": "| Marca | Exercício (esquerda) | Erro ou contato (direita) |\n| ----- | -------------------- | ------------------------- |\n| 1 | **01 · Desenvolvimento.** Sentado, encosto a cerca de 80°; halteres na linha das orelhas; suba até quase encostar um no outro; desça até o cotovelo apontar cerca de 90°. | **✕ Erro · lombar.** Arquear a lombar para empurrar. Se precisou, reduza o peso. |\n| 2 | **02 · Elevação lateral.** Cotovelos quase esticados, suba os halteres pelos lados até a linha dos ombros, como quem serve dois copos d'água; desça devagar. | **✕ Erro · balanço.** Balançar o corpo. Se precisou balançar, o peso está grande demais para o exercício. |\n| 3 | **03 · Face pull.** Corda na altura do rosto; puxe as pontas em direção às orelhas, abrindo os cotovelos, apertando as escápulas por 1 segundo. | **Contato · escápula.** Aperta e segura 1 segundo. É aí que o exercício acontece. |\n\n**Faixa do face pull:** O face pull é o exercício mais \"invisível\" do programa, e o que seu tempo de\ncadeira mais agradece[24]. Ninguém vai notar. Seu ombro vai.\n\n**Palavra-chave · Ombro.** Empurrar na vertical exige tronco quieto e lombar neutra. Nenhum dos três\nexercícios usa impulso. Carga pequena, execução limpa, semana após semana.\n\n**Substituto e ajuste:**\n\n- **Desenvolvimento na máquina:** mesma amplitude, encosto regulado para o cotovelo parar em cerca de\n  90° embaixo. Serve quando o ombro está sensível.\n- **Ordem na sessão:** desenvolvimento primeiro, elevação lateral depois, face pull no fim. O peso da\n  elevação lateral é sempre menor do que o orgulho sugere, e é ela que mais denuncia balanço.\n\n**Nota de segurança.** Ombro é articulação de amplitude, não de carga. Ajuste o encosto e a altura da\npolia antes de escolher o peso, e pare a série na repetição em que o corpo começa a ajudar.\n\n**Nota do padrão.** Se sobrou pouco tempo no dia, corte a elevação lateral e mantenha o face pull.\nEle é o que menos aparece e o que mais protege. Os três juntos levam menos de dez minutos no fim da\nsessão.\n\n**Faixa de fecho:** Sem impulso, sem exceção.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-07-acessorios",
+          "titulo": "Acessórios",
+          "objetivo": "O leitor executa os seis acessórios com articulação fixa e trajeto curto, e sabe onde eles entram na sessão.",
+          "tipo": "leitura",
+          "kit": true,
+          "fonte": "hipertrofia/sessao-04-execucao-sem-medo/modulo-07-acessorios.md",
+          "texto": "| Marca | Esquerda | Direita |\n| ----- | -------- | ------- |\n| 1 | **Rosca direta ou alternada.** Cotovelos colados no tronco (eles não viajam para a frente); suba, aperte, desça em 2 segundos. | **Panturrilha.** Amplitude completa: alongar embaixo, subir na ponta, segurar 1 segundo no topo. |\n| 2 | **Tríceps na polia.** Cotovelos fixos ao lado do corpo; só o antebraço se move. | **Prancha.** Corpo em linha reta, glúteo e abdômen apertados; tremer é normal, desabar o quadril não. |\n| 3 | **Tríceps francês.** Halter atrás da cabeça, cotovelos apontando para o teto. | **Crunch.** Tire as escápulas do chão dobrando o tronco, sem puxar o pescoço. |\n\n**Erro comum nos seis** (✕): o cotovelo (ou o quadril) viajando para compensar a carga.\n**Autocorreção:** acessório é peso pequeno e trajeto curto. Se algo além da articulação-alvo se move,\nreduza.\n\n**Palavra-chave · Amplitude.** Acessório mal feito é acessório apressado. Trajeto curto, articulação\nfixa, sem impulso. Aqui a carga é a menos importante das variáveis.\n\n**Onde eles entram:**\n\n- **No fim da sessão, sempre.** Acessório nunca ocupa o lugar de um padrão de movimento: ele fecha o\n  que sobrou de energia depois do trabalho principal.\n- **A regra de execução** é a mesma dos padrões: descida controlada em 2 segundos e amplitude igual\n  na primeira e na última repetição.\n\n**Nota de segurança.** No tríceps francês, comece com o halter mais leve da estante e teste a\namplitude atrás da cabeça antes de subir. É o acessório com maior chance de pinçar o ombro.\n\n**Nota do padrão.** Na prancha, conte o tempo em que o quadril fica na linha, não o tempo total no\nchão. Tremer conta; desabar não. Nenhum acessório exige sala vazia, espelho livre ou coragem.\n\n**Faixa de fecho:** Aperte no topo, desça em dois segundos.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-08-as-tres-perguntas-do-salao",
+          "titulo": "As três perguntas do salão",
+          "objetivo": "O leitor sabe quando uma série contou, o que fazer com dor articular, e responde as duas perguntas sociais do salão sem medo.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-04-execucao-sem-medo/modulo-08-as-tres-perguntas-do-salao.md",
+          "texto": "1. **\"Estou fazendo certo?\"**\n   Cuidado com o atalho \"não dói, então está certo\". As duas coisas que mais cobram caro de\n   iniciante, a lombar que curva na dobradiça e o joelho que desaba para dentro no agachamento,\n   **não doem na hora**. Doem semanas depois, quando já viraram hábito com carga em cima.\n\n   O sinal verde é positivo, não é a ausência de dor. São três critérios, e valem juntos:\n   - ✓ Você controla a descida em 2 segundos, sem deixar o peso cair.\n   - ✓ A última repetição tem a mesma amplitude da primeira: não encurtou para caber.\n   - ✓ Você sente o músculo-alvo trabalhando, não uma articulação reclamando.\n\n   Faltou um dos três? O peso fica onde está nesta sessão. A Regra do 12 só conta repetição que saiu\n   inteira: ela decide quando subir carga, e este sinal decide se aquela série contou.\n\n2. **\"Posso filmar?\"**\n   Pode e deve, de vez em quando: a câmera mostra o que o espelho de frente esconde. Discreto, do\n   seu canto, sem aparecer ninguém. Muita gente na academia faz o mesmo.\n\n3. **\"E se me corrigirem?\"**\n   Na prática quase nunca acontece, e quando acontece quase sempre é alguém genuinamente tentando\n   ajudar. Resposta pronta: \"valeu, vou testar\".\n\nDor articular não é\ndetalhe a ajustar depois. Dor durante o movimento ou no dia seguinte, na articulação e não no\nmúsculo: pare aquele exercício, use o substituto da tabela de substituições e, se continuar depois\nde uma semana, procure avaliação profissional antes de voltar. Isso não é excesso de zelo: é o que\nimpede que uma semana ruim vire três meses parado.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-08-as-tres-perguntas-do-salao-pratica",
+          "titulo": "Faça isto hoje",
+          "tipo": "pratica",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-04-execucao-sem-medo/modulo-08-as-tres-perguntas-do-salao.md",
+          "texto": "Três ações antes da próxima sessão. Nenhuma precisa de academia aberta.\n\n1. Salve a frase de segurança: \"me dá uma força aqui nas últimas?\"\n2. Escolha os 2 exercícios que mais te intimidam e releia só os guias deles antes da próxima sessão.\n\n3. Filme 1 série de agachamento goblet de lado e compare com o passo a passo.",
+          "acoes": [
+            "Salve a frase de segurança: \"me dá uma força aqui nas últimas?\"",
+            "Escolha os 2 exercícios que mais te intimidam e releia só os guias deles antes da próxima sessão.",
+            "Filme 1 série de agachamento goblet de lado e compare com o passo a passo."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s05-progressao",
+      "numero": 5,
+      "nome": "Progressão no piloto automático",
+      "objetivo": "Entrega a regra que decide por você (a Regra do 12), os números honestos de quanto se cresce de\nverdade, os dois mitos de genética e de natural, e o protocolo para quando um exercício travar.",
+      "modulos": [
+        {
+          "id": "modulo-01-uma-regra-decide",
+          "titulo": "Uma regra decide",
+          "objetivo": "O leitor entende que não vai decidir quando subir o peso: uma regra vai.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-05-progressao/modulo-01-uma-regra-decide.md",
+          "texto": "No fim de cada exercício, olhe para as repetições anotadas e aplique a regra.\n\n**Números crus:** `12` repetições · `todas` as séries · `1` salto\n\n- A Regra do 12\n- Quanto você vai crescer de verdade\n- Mito × Realidade: genética · natural não cresce\n- Quando travar: o protocolo de platô\n\nUma regra decide. Você só executa.\n\n**12 ** · *a regra que decide por você*\n\nVocê não vai decidir quando aumentar o peso. Uma regra vai. É ela que transforma treino em\nprogresso, e é simples de caber num post-it.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-02-a-regra-do-12",
+          "titulo": "A Regra do 12",
+          "objetivo": "O leitor aplica a Regra do 12 no fim de cada exercício, incluindo as variantes de faixa alta e de prancha.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-05-progressao/modulo-02-a-regra-do-12.md",
+          "texto": "A grande Regra do 12\n\n> Fez **12 repetições boas em todas as séries** do exercício, com 1 a 2 sobrando no tanque?\n>\n> → **Na próxima sessão, aumente o peso no menor salto que a academia permitir** (em geral 2 kg por\n> halter, ou 5 a 10% na máquina).\n>\n> Não fez? → **Repita o mesmo peso** na próxima sessão.\n\n1. 12 em todas as séries\n2. 1 a 2 no tanque\n3. sobe o menor salto\n4. não fez, repete\n5. repetir não é fracasso\n\n**Virada** . Repetir não é fracasso: é a repetição construindo a força que vai\ndestravar o aumento.\n\n- **Sem 1RM, sem calculadora.** Sem porcentagem de 1RM, sem calculadora, sem intuição. A regra vem\n  direto do princípio de progressão recomendado para iniciantes: bateu o topo da faixa de repetições\n  com folga, a carga sobe de 2 a 10%[2].\n- **As outras réguas.** Nos exercícios de 12 a 15 repetições (elevações, face pull, panturrilha), a\n  régua é 15. Na prancha, quando 40 segundos ficarem tranquilos, adicione uma pequena anilha nas\n  costas.\n- **Se te derrubar para 8, perfeito.** É assim que o ciclo recomeça: você escala de 8 até 12 de novo\n  ao longo das semanas, e cada repetição a mais é progresso registrado, mesmo sem mudar o peso.\n  Primeiro sobem as repetições, depois sobe a carga.\n\n**1RM:** a carga máxima que você levantaria uma única vez. Métodos tradicionais\ncalculam tudo a partir dela. Você não vai testar isso: iniciante não precisa, e a Regra do 12 chega no\nmesmo lugar sem risco.\n\n| Faixa do exercício | A régua |\n| ------------------ | ------- |\n| 8 a 12 repetições | 12 |\n| 12 a 15 repetições | 15 |\n| prancha | 40 segundos tranquilos |\n\n**Checagem rápida (opcional):** \"Supino: 12, 12, 11. Sobe?\" · resposta: *não. As três séries precisam\nchegar em 12. Repita o peso.*",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-03-quanto-voce-vai-crescer",
+          "titulo": "Quanto você vai crescer de verdade",
+          "objetivo": "O leitor tem uma expectativa realista (ordem de grandeza, não meta) e não desiste no primeiro mês achando que parou de funcionar.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-05-progressao/modulo-03-quanto-voce-vai-crescer.md",
+          "texto": "> Aqui a maioria dos infoprodutos mente. Este não vai, porque você já foi queimado por promessa\n> milagrosa e porque os números reais são suficientes.\n\n**Os números reais** `):\n\n- da ordem de 1 kg de massa magra em 3 meses\n- alguns quilos no primeiro ano\n- primeiros sinais visíveis em semanas\n- balança e espelho oscilam no primeiro mês\n\n**Destaque (placar):** ≈ 1 kg · *de massa magra nos três primeiros meses de treino consistente* ·\nfonte: estudos que mediram composição corporal em iniciantes[23].\n\n**Nota metodológica.** Leia esse número como **ordem de grandeza, não como meta**. Ele descreve a\nmédia de grupos, e a diferença entre duas pessoas do mesmo estudo, fazendo o mesmo programa, costuma\nser maior que o próprio intervalo[13][14].\n\n**Ressalva declarada (na hora).** Esse \"cerca de um quilo\" é composto de vários estudos com\niniciantes, e não o resultado de um só. Por isso o texto fala em ordem de grandeza, e não numa faixa\nfechada em decimais. O que tem fonte firme é a variação entre pessoas ser maior que qualquer faixa que\nse publicasse[13][14].\n\nNo primeiro ano somam-se alguns quilos de músculo de verdade, com os\nprimeiros sinais visíveis chegando em semanas: caimento de camiseta, braço preenchendo a manga, costas\nmais largas.\n\nUm aviso que vale ouro: a balança e o espelho oscilam no primeiro\nmês. Parte do \"inchaço\" inicial é edema de adaptação (o músculo reagindo à novidade) e não fibra nova;\na construção real engrena a partir da terceira à décima semana, justamente quando muita gente desiste\nachando que \"parou de funcionar\"[23].\n\n**Fecho :** Você agora sabe o que estava acontecendo: não parou de\nfuncionar, estava começando.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-04-mito-genetica",
+          "titulo": "Mito: genética",
+          "objetivo": "O leitor separa o que a genética define (velocidade e teto) do que ela não define (se ele responde).",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-05-progressao/modulo-04-mito-genetica.md",
+          "texto": "- **Objeção:** \"Corpo top é genética. Sem o dom, não adianta nem tentar.\"\n- **Resposta (parceiro de treino):** A velocidade varia de pessoa para pessoa, e isso é real[13]. Mas\n  \"não-respondedores\" absolutos são raros, e ajustar o estímulo (mais volume, mais consistência)\n  converte quem responde pouco em quem responde[14][15].\n\n**Fecho (a Virada).** Genética define a velocidade e o teto; **não define o \"se\"**. O que define o\n\"se\" é o sistema, e agora você tem um.\n\n**Nota da fonte 15** : estudo em idosos, citado aqui\nsó para o argumento de que ajustar o estímulo converte não-resposta, e não para prever ganhos na sua\nfaixa de idade.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-05-mito-natural-nao-cresce",
+          "titulo": "Mito: natural não cresce",
+          "objetivo": "O leitor troca a referência do feed pelo físico natural-plausível, e sabe que o teto natural foi medido.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-05-progressao/modulo-05-mito-natural-nao-cresce.md",
+          "texto": "Um detalhe estratégico sobre referências: quando quiser\ninspiração, olhe para físicos naturais-plausíveis, o atleta clássico proporcional, não o gigante de\n130 kg. Perseguir um corpo quimicamente impossível é o jeito mais rápido de se sentir fracassado tendo\nsucesso.\n\n**Use como referência o seu próprio físico daqui a um ano.**\n\n- **Objeção:** \"Natural não cresce. Sem bomba eu nunca vou chegar lá.\"\n- **Resposta (parceiro de treino):** Atletas comprovadamente naturais atingem físicos\n  impressionantes, e a ciência inclusive mediu onde fica o teto natural típico: índice de massa magra\n  por altura (FFMI) de até cerca de 25; usuários de esteroides é que ocupam a faixa acima disso[19].\n\n**Fecho (a Virada).** \"Não cresço sem bomba\" confunde \"não fico igual ao monstro hormonizado do feed\"\ncom \"não evoluo\", e **a segunda parte é falsa**. O alvo real é o físico atlético, denso e proporcional\nque naturais constroem em anos. É alcançável. É o deste protocolo.\n\n**FFMI:** a massa magra dividida pela altura ao quadrado. É o número que permite\ncomparar físicos de alturas diferentes.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-06-quando-travar",
+          "titulo": "Quando travar",
+          "objetivo": "O leitor diagnostica um platô em sete verificações e ajusta só o exercício travado, sem reformar o programa.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-05-progressao/modulo-06-quando-travar.md",
+          "texto": "Em algum momento, em geral lá pela fase 3, algum exercício vai empacar: duas,\ntrês sessões seguidas sem conseguir subir repetições.\n\nIsso não é defeito seu nem do programa; é o custo natural de ficar mais forte. **O ajuste é\nmecânico.**\n\nDor muscular não entra nesse diagnóstico: treino sem dor no dia seguinte\nnão é treino que \"parou de funcionar\"[12]. Quem responde isso é o caderno.\n\n**Checklist de platô**  · frase: \"Três passos: confirme o básico, aplique o reset e\nnão transforme platô em reforma. Marque cada item antes de mexer no programa.\"\n\n*Confirme o básico*\n\n1. **Dormiu razoável?** Boa parte dos platôs mora no básico, não no treino.\n2. **Comeu proteína no dia?** Os protocolos irmãos de Dieta e Sono cuidam disso.\n3. **Descansou os 2 a 3 minutos?** Série apressada não é série forte.\n\n*Aplique o reset*\n\n4. **Travou por 3 sessões?** Aí sim é platô, e não um dia ruim.\n5. **Reduziu 10%?** Reset de 10% no peso daquele exercício, só nele. (Escolha do protocolo: um degrau\n   pequeno o bastante para não perder o padrão.)\n6. **Escalou pela Regra do 12?** Você volta ao ponto de trava em poucas semanas, normalmente com força\n   para atravessá-lo.\n\n*Não reforme*\n\n7. **Manteve o resto do programa?** Um exercício travado não é senha para trocar o programa inteiro. O\n   placar continua.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-06-quando-travar-pratica",
+          "titulo": "Faça isto hoje",
+          "tipo": "pratica",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-05-progressao/modulo-06-quando-travar.md",
+          "texto": "Três ações, e a regra passa a morar com você.\n\n1. Escreva a Regra do 12 na primeira página da sua ficha, ou fixe um print na tela do celular.\n2. Anote sua expectativa realista da fase: \"cerca de um quilo de músculo até a semana 12, e é assim\n   mesmo que começa\"[23].\n3. Descubra qual é o menor salto de peso da sua academia (anilhas de 1 kg? halteres de 2 em 2?). Esse\n   número é o tamanho do seu próximo degrau.",
+          "acoes": [
+            "Escreva a Regra do 12 na primeira página da sua ficha, ou fixe um print na tela do celular.",
+            "Anote sua expectativa realista da fase: \"cerca de um quilo de músculo até a semana 12, e é assim\n   mesmo que começa\"[23].",
+            "Descubra qual é o menor salto de peso da sua academia (anilhas de 1 kg? halteres de 2 em 2?). Esse\n   número é o tamanho do seu próximo degrau."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s06-caderno-de-vitorias",
+      "numero": 6,
+      "nome": "O caderno de vitórias",
+      "objetivo": "Fecha o laço do método: o que anotar (três números por sessão, um pelo espelho, um pela balança),\nonde anotar, a ficha em si e os três marcos em que o leitor compara com o próprio passado.",
+      "modulos": [
+        {
+          "id": "modulo-01-placar",
+          "titulo": "Placar",
+          "objetivo": "O leitor entende os dois motivos de anotar: o número que a Regra do 12 lê, e a prova que o espelho demora a dar.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-06-caderno-de-vitorias/modulo-01-placar.md",
+          "texto": "Três números por sessão, um pelo espelho, um pela balança.\n\n**Números crus:** `3` números por sessão · `1` pela balança · `1` pelo espelho\n\nMenos que isso, você treina no escuro. Mais que isso, vira\nburocracia, e burocracia você abandona.\n\nO gatilho do crescimento é carga subindo ao longo das semanas\n(sessão 2). Quem já entrou na academia pensando \"era 14 ou 16 kg?\" sabe que o treino vira chute.\n\nO registro é o que transforma esforço em dado comparável, e **dado comparável é o que a Regra do 12\nconsome para decidir por você.**\n\n**Placar ** · *é difícil se chamar de fracasso na frente de um placar\nsubindo*\n\nMas tem um segundo motivo, e ele é emocional: o caderno é a prova\nmaterial de que está funcionando.\n\nNos dias em que o espelho parecer o mesmo (e o espelho é lento: semanas, não dias[23]), as fichas\nanteriores mostram o goblet que começou com 8 kg e hoje pesa 16.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-02-o-minimo-indispensavel",
+          "titulo": "O mínimo indispensável",
+          "objetivo": "O leitor sabe os três registros, a frequência de cada um e que o meio é escolha dele.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-06-caderno-de-vitorias/modulo-02-o-minimo-indispensavel.md",
+          "texto": "\"Três números por sessão, um pelo espelho, um pela balança.\"\n\n| Marca | O quê (esquerda) | Quando (direita) |\n| ----- | ---------------- | ---------------- |\n| 1 | **Registro 01 · peso e repetições.** De cada série, exercício a exercício. | **Toda sessão.** É o placar da sobrecarga progressiva[3]; é o dado que a Regra do 12 lê. |\n| 2 | **Registro 02 · peso corporal.** | **1 vez por semana.** Mesmo dia, mesma hora, de manhã. Tendência de semanas; pesagem diária só gera ruído e ansiedade. |\n| 3 | **Registro 03 · foto.** | **1 vez por mês.** Mesma pose, mesma luz, mesmo lugar. O espelho de hoje mente; a foto de 30 dias atrás não[23]. |\n\n**Onde:** Anote onde você quiser.\n\nFicha do app, papel, notas do celular, planilha: o protocolo\nfunciona igual em todos, porque o método está nos números, não na ferramenta. A única regra é levar o\nregistro para o treino e **preencher entre as séries**.\n\n**Destaque:** 10 s · *é o que custa a anotação de uma série. O descanso dura 2 a 3 minutos.*\n\n**Fecho:** As redes sociais podem esperar.\n\n**Faixa:** Menos que isso, você treina no escuro.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-03-ficha-de-treino",
+          "titulo": "Ficha de treino",
+          "objetivo": "O leitor registra um treino inteiro no celular, entre as séries, e recebe a sugestão da Regra do 12 para a próxima sessão.",
+          "tipo": "leitura",
+          "kit": true,
+          "fonte": "hipertrofia/sessao-06-caderno-de-vitorias/modulo-03-ficha-de-treino.md",
+          "texto": "Registre cada realização do treino com a data, o exercício, a carga e as repetições de cada série. Na prancha, use segundos.\n\nAgrupe apenas séries com os mesmos valores. Se a carga ou as repetições mudaram, adicione outra linha do exercício. Seus registros podem ser consultados e corrigidos no histórico.",
+          "acoes": [],
+          "acaoRegistro": "treino"
+        },
+        {
+          "id": "modulo-04-tres-marcos",
+          "titulo": "Três marcos, doze semanas",
+          "objetivo": "O leitor sabe o que comparar na semana 1, na 4 e na 12, sempre com o próprio passado.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-06-caderno-de-vitorias/modulo-04-tres-marcos.md",
+          "texto": "\"Três marcos,\" / \"doze semanas\"\n\nTrês comparações, todas com o seu próprio passado, nunca com o físico de ninguém.\n\n**Régua:** doze marcas, com as marcas 1, 4 e 12 destacadas por forma (quadrado cheio ao lado do\nnúmero, como no PDF).\n\n**Estados (três cards):**\n\n| Capa | Faixa | Nome | Texto |\n| ---- | ----- | ---- | ----- |\n| 01 | semana | O marco da base · foto nº 0 | Nada de força ainda: o troféu é ter as 3 sessões feitas, técnica encaminhada e todos os números de base anotados, incluindo a foto nº 0 e o primeiro peso corporal. Você acabou de criar o \"antes\" com que todo o resto será comparado. Tire a foto hoje mesmo se ainda não tirou: daqui a 3 meses você vai agradecer. |\n| 04 | semana | O marco dos números · foto nº 1 | Abra a ficha e compare com a semana 1: as cargas subiram em quase tudo; em iniciantes, esse salto inicial é esperado e rápido. O espelho talvez ainda esteja tímido (lembra do ritmo real da construção?[23]); os números não. **Confie nos números: eles chegam primeiro.** Foto nº 1 ao fim do mês, lado a lado com a nº 0. |\n| 12 | semana | O marco da prova · fotos nº 0 × nº 3 | Três comparações, todas com o seu próprio passado: cargas (semana 1 × semana 12, exercício a exercício), peso corporal (a tendência da linha, não um dia isolado) e as fotos (nº 0 × nº 3). É a prova documentada de que seu corpo responde: o veredito da \"genética ruim\", revisado com evidência sua. |\n\n**Fecho:** Cargas: semana 1 × semana 12, exercício a exercício · Peso corporal: a tendência da linha,\nnão um dia isolado.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-05-faca-isto-hoje",
+          "titulo": "Faça isto hoje",
+          "objetivo": "O leitor escolhe o meio de registro, deixa a primeira pesagem encaminhada e tira a foto nº 0.",
+          "tipo": "pratica",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-06-caderno-de-vitorias/modulo-05-faca-isto-hoje.md",
+          "texto": "Faça isto hoje\n\nTrês itens. Nenhum deles depende de academia aberta.\n\n**Ações:**\n\n1. Escolha seu meio de registro: a ficha do app, papel, notas ou planilha. Se não for o app, copie a\n   ficha modelo.\n\n2. Coloque o lembrete para se pesar amanhã de manhã: é o peso da semana 1.\n\n3. Tire a foto nº 0, na mesma pose que você vai repetir todo mês. Ninguém precisa ver; ela é sua.\n\n**Regra no pé:** 12 boas em todas as séries → próxima sessão sobe o menor salto. Senão → repete. Fim.",
+          "acoes": [
+            "Escolha seu meio de registro: a ficha do app, papel, notas ou planilha. Se não for o app, copie a\n   ficha modelo.",
+            "Coloque o lembrete para se pesar amanhã de manhã: é o peso da semana 1.",
+            "Tire a foto nº 0, na mesma pose que você vai repetir todo mês. Ninguém precisa ver; ela é sua."
+          ],
+          "acaoRegistro": null
+        }
+      ]
+    },
+    {
+      "id": "s07-plano-de-retorno",
+      "numero": 7,
+      "nome": "O plano de retorno",
+      "objetivo": "É a sessão que o leitor vai reler. Diz o que fazer quando a vida atropela: o que faltar não apaga\n(com fonte e com ressalva), o mito que mais matou treino, a tabela de retorno por tempo fora, o placar\nsemanal no lugar da sequência de dias, e o nome do desenho inteiro: **Sistema de Retomada**.",
+      "modulos": [
+        {
+          "id": "modulo-01-a-falha-tem-protocolo",
+          "titulo": "A falha tem protocolo",
+          "objetivo": "O leitor aceita que a semana ruim vai acontecer, e que a resposta a ela já está escrita.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-07-plano-de-retorno/modulo-01-a-falha-tem-protocolo.md",
+          "texto": "Todo plano de treino do mundo te diz o que fazer quando tudo dá certo. Esta sessão te diz o que fazer quando não dá.\n\nÉ quando não dá certo que os seus treinos sempre morreram. Em algum\nponto das 12 semanas, a vida vai atropelar: prova, virose, semana caótica no estágio, desânimo sem\nmotivo nomeável.\n\nA semana que vai dar errado já está no cronograma.\n\n**Retomada ** · *a falha tem protocolo*\n\nIsso **não é pessimismo, é estatística pessoal**: foi exatamente assim que\ntodas as suas tentativas anteriores terminaram. Não no dia da falta. No dia seguinte, quando \"faltei\"\nvirou \"já era\".\n\nA diferença, desta vez, é que a falha tem protocolo. Você não vai precisar\ndecidir nada no seu pior dia: as regras desta sessão já decidiram, meses antes, com a cabeça fria.\n\nGuarde esta sessão como se guarda o\nnúmero do guincho: quase nunca se usa, e é ótimo saber que ele está ali.\n\n**Registro das 12 semanas:** a régua.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-02-perder-musculo-e-lento",
+          "titulo": "Perder músculo é lento",
+          "objetivo": "O leitor sabe, com fonte e com o limite da fonte, que alguns dias fora não apagam o que foi construído.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-07-plano-de-retorno/modulo-02-perder-musculo-e-lento.md",
+          "texto": "> Não apaga o que você construiu.\n> Não derruba o músculo em 3 dias.\n> Não zera a ficha de cargas.\n> Não destrói os mionúcleos.\n> Não apaga a memória epigenética.\n> O que zera é parar de vez.\n\nPerder músculo é lento.\n\n**Evidência (três partes cada):**\n\n1. **Dado:** semanas a meses · **o que significa:** é o prazo da atrofia muscular relevante, nunca os 3\n   dias que você faltou · **de onde veio:** os mionúcleos que você construiu treinando não são perdidos\n   no destreino[18].\n2. **Dado:** o que você construiu não some · **o que significa:** os núcleos que suas fibras ganham\n   quando crescem não desaparecem quando você para[18], e o músculo mantém marcas epigenéticas do\n   período de treino · **de onde veio:** é o que faz o reganho ser mais rápido que o ganho\n   original[16][17].\n3. **Destaque:** reganho mais rápido que o ganho · *é a \"memória muscular\" de verdade, a que foi\n   medida em laboratório.*\n\n**Ressalva :** Um prazo exato para a queda de força, em dias, depende\nde quanto tempo você já treinava e da sua idade, e não fixamos aqui uma fonte primária única para ele.\nO que a evidência sustenta com firmeza é a direção, que é lenta, não o número.\n\n**Fecho.** O medo tem prazo de validade. Três dias fora não são três dias de perda: **são três dias de\ndescanso** que a sua próxima sessão vai agradecer.\n\n**memória muscular:** depois de construir músculo uma vez, reconstruir é mais\nrápido, porque parte da infraestrutura celular fica pronta esperando você voltar. Voltar nunca é\ncomeçar do zero.\n\n**Palavra final:** Não se preocupe.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-03-mito-faltei-perdi-tudo",
+          "titulo": "Mito: faltei, perdi tudo",
+          "objetivo": "O leitor reconhece a conclusão do mito como a única forma real de perder o que construiu.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-07-plano-de-retorno/modulo-03-mito-faltei-perdi-tudo.md",
+          "texto": "Este é o mito que mais treino matou. Ele não erra na biologia por pouco: ele erra na\ndireção inteira, e a conclusão que ele te vende é exatamente a única forma de perder o que você\nconstruiu.\n\n- **Objeção:** \"Faltei uns dias, perdi tudo. Melhor parar de vez.\"\n- **Resposta (parceiro de treino):** Destreino mensurável leva semanas, não dias[18], e a memória\n  muscular (mionúcleos que permanecem e memória epigenética) faz o retorno ser mais rápido do que a\n  ida[16][17][18]. Na conta, o único jeito de \"perder tudo\" é fazer exatamente o que esse mito manda:\n  parar de vez.\n\n**Fecho (a Virada).** O mito descreve um prejuízo de dias para justificar um prejuízo de meses. Trocar\ntrês dias de falta por três anos de nada é o pior negócio da sua vida de treino, e é o negócio que ele\nte oferece.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-04-as-regras-de-retorno",
+          "titulo": "As regras de retorno",
+          "objetivo": "O leitor escolhe a linha certa pelo tempo fora, executa, e não compensa.",
+          "tipo": "leitura",
+          "kit": true,
+          "fonte": "hipertrofia/sessao-07-plano-de-retorno/modulo-04-as-regras-de-retorno.md",
+          "texto": "**Escolha sua situação:** Faltou 1 treino · 1 semana · 2 a 4 semanas · mais de 1 mês\n\n| # | Situação | O que fazer | Não faça (riscado) | Lastro |\n| - | -------- | ----------- | ------------------ | ------ |\n| 01 | Faltou 1 treino | Siga o calendário normal: a próxima sessão é a próxima da sequência (faltou o B? o próximo treino é o B). Se couber reposição na semana com 1 dia de descanso entre sessões, reponha; senão, semana de 2 e vida que segue. | \"Compensar\" dobrando treinos ou espremendo 3 sessões em 3 dias seguidos. | escolha do protocolo |\n| 02 | 1 semana fora | Repita a última semana concluída: mesmos treinos, mesmas cargas da ficha. Vai parecer fácil, e ótimo: é para parecer. Na semana seguinte, Regra do 12 de volta ao normal. | Pular para \"onde você estaria\". O programa não tem atraso a recuperar. | escolha do protocolo |\n| 03 | 2 a 4 semanas fora | Volte para a última semana concluída com 10 a 20% menos carga em tudo. Escale de novo pela Regra do 12, porque a memória muscular faz essa subida ser rápida: em 1 a 3 semanas você está de volta ao ponto, com técnica até melhor. | Testar \"se ainda aguenta\" a carga antiga no primeiro dia. Aguentar, talvez aguente, mas a volta suave é a que continua na semana seguinte. | [16][17] |\n| 04 | Mais de 1 mês fora | Recomece na semana 1 da fase em que parou (parou na fase 2? volta à semana 3), com cerca de 20% menos carga que a sua ficha antiga. As 12 semanas recontam a partir daí, e correm mais rápido que da primeira vez. | Jogar a ficha antiga fora. Ela não é o registro do fracasso: é o mapa que vai acelerar a reconstrução. | [16] |\n\n**A regra por trás das regras** . Quanto maior a pausa, mais suave a volta. Não\nporque você \"regrediu tanto\", mas porque a primeira semana de retorno tem um objetivo só, que é\nacontecer. Carga é problema da segunda semana.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-05-semana-verde-semana-amarela",
+          "titulo": "Semana verde, semana amarela",
+          "objetivo": "O leitor troca a contagem de dias seguidos pelo placar semanal, e trata a semana quebrada como dado.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-07-plano-de-retorno/modulo-05-semana-verde-semana-amarela.md",
+          "texto": "> 47 dias seguidos.\n> Quebrou.\n> Zerou.\n> Recomeça do nada.\n> O corpo responde à média.\n> Troque a sequência pela semana.\n\nApps de hábito te ensinaram a contar streaks, a sequência de dias:\n47 dias seguidos, quebrou, zerou, recomeça do nada. Esse modelo é veneno para treino, porque\ntransforma qualquer tropeço numa página em branco.\n\nO programa de 12 semanas tolera semanas amarelas e sobrevive até a\nsemanas em branco (é para isso que existe a tabela de retorno). O que constrói seu shape é **a média de\nmeses, não a perfeição de nenhuma semana.**\n\n**Placares:**\n\n| Dado | O que significa |\n| ---- | --------------- |\n| 3 | sessões fecham a semana. **Semana verde.** |\n| 2 | sessões: **semana amarela**, que soma, não zera. |\n\n**Declaração da lógica do programa** (no lugar do número): Um trimestre com a maioria das sessões\nfeitas vale mais do que três ciclos perfeitos separados por desistências. É por isso que o programa\nconta semanas, e não dias.\n\n**Caixa · a Virada.** A semana quebrada vira **dado, não veredito**. Anota na ficha o que houve (1\nlinha), aplica a regra da tabela e segue. É exatamente isso que os marombas que você admira fazem há\nanos. Você só nunca viu, porque tropeço não vira post.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-06-retomada",
+          "titulo": "Retomada",
+          "objetivo": "O leitor conhece o nome do desenho (Sistema de Retomada), as três regras dele, e sai com a tabela de retorno à mão.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-07-plano-de-retorno/modulo-06-retomada.md",
+          "texto": "Retomada\n\n1. A quebra já tem resposta\n2. O placar é semanal\n3. A quebra vira dado\n\n**Corpo · o sistema conta com a semana ruim.** Esse desenho tem nome, e vale a pena saber qual, porque\nele é a peça que os outros métodos não têm. O **Sistema de Retomada** são três regras que trabalham\njuntas:\n\n1. **A quebra já tem resposta escrita.** Aqui é a tabela de retorno: escolhe a linha, executa, pronto.\n   Você não decide nada no seu pior dia: a decisão foi tomada meses antes, com a cabeça fria, e está\n   escrita.\n2. **O placar é semanal, nunca a sequência.** Três sessões fecham a semana verde; duas fecham amarela, e\n   amarela soma.\n3. **A quebra vira dado, não veredito.** Anota o que houve em uma linha, aplica a regra e segue. O\n   registro não é a ata do fracasso: é o que faz a próxima retomada ser mais rápida.\n\n**Corpo · as três regras estão nos três protocolos.** O sistema conta com a semana ruim desde o\nprimeiro dia. É por isso que ele sobrevive a ela, e é a diferença real entre este ciclo e todos os que\nvocê já abandonou.\n\nAs mesmas três regras estão nos três protocolos do Lithium: Hipertrofia, Dieta Básica e Cuidado com o\nSono. O que muda é o conteúdo da tabela; a lógica da retomada é a mesma peça.\n\n**Micro-registro de fontes:** fontes [16] [17] [18] · destreino, mionúcleos e memória epigenética",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-06-retomada-pratica",
+          "titulo": "Faça isto hoje",
+          "tipo": "pratica",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-07-plano-de-retorno/modulo-06-retomada.md",
+          "texto": "Três ações. A última só vale se você está no meio de uma pausa.\n\n1. Fotografe a tabela de retorno e deixe no álbum favorito do celular.\n2. Escreva na última página da ficha: \"Faltar não zera. Parar é que zera.\"\n3. Se você está lendo esta sessão no meio de uma pausa: escolha a linha da tabela, marque o treino de\n   volta no calendário e feche o app. É só isso hoje.",
+          "acoes": [
+            "Fotografe a tabela de retorno e deixe no álbum favorito do celular.",
+            "Escreva na última página da ficha: \"Faltar não zera. Parar é que zera.\"",
+            "Se você está lendo esta sessão no meio de uma pausa: escolha a linha da tabela, marque o treino de\n   volta no calendário e feche o app. É só isso hoje."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s08-seu-arco-comeca-agora",
+      "numero": 8,
+      "nome": "Seu arco começa agora",
+      "objetivo": "Fecha o conteúdo com identidade: renomeia o problema de vez (não é genética, é sistema), mostra que\ncada peça do método já foi entregue, traduz disciplina em \"não decidir toda vez\", devolve ao leitor o\ndireito ao salão, e abre as pontes para Dieta Básica e Cuidado com o Sono.",
+      "modulos": [
+        {
+          "id": "modulo-01-o-problema-renomeado",
+          "titulo": "O problema renomeado",
+          "objetivo": "O leitor ouve, de uma vez por todas, que nunca teve genética ruim: não tinha sistema.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-08-seu-arco-comeca-agora/modulo-01-o-problema-renomeado.md",
+          "texto": "Você já admira disciplina há anos: nos personagens, nos atletas, nos amigos. Esta sessão é sobre atravessar a tela.\n\nO problema renomeado, de uma vez por todas.\n\n**Sistema ** · *você nunca teve genética ruim, você não tinha sistema*\n\nEntão o problema fica oficialmente renomeado: você **nunca teve genética ruim.\nVocê não tinha sistema.**\n\nNenhuma peça do quebra-cabeça exige um dom que você não tem. Todas exigem um sistema, e ele\nestá nas suas mãos.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-02-agora-existe",
+          "titulo": "Agora existe",
+          "objetivo": "O leitor revisa, em sete peças, o que a ciência disse e o que o protocolo entregou, cada peça com o lugar dela no app.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-08-seu-arco-comeca-agora/modulo-02-agora-existe.md",
+          "texto": "Repare no padrão das suas tentativas passadas: nunca faltou\nvontade no dia 1. Faltou estrutura no dia 20.\n\nVocê chamava isso de \"não ter genética\", \"não levar jeito\", \"ser desistente\". São três nomes para o\nmesmo diagnóstico errado.\n\n| # | Fala | Nome | Governa | Onde |\n| - | ---- | ---- | ------- | ---- |\n| 1 | Estímulo mecânico suficiente, repetido em intervalo regular.[3] | O gatilho é simples e repetível | o que faz crescer | [na sessão 2] |\n| 2 | O volume mínimo eficaz cabe na sua semana.[1][21] | O necessário é menos do que você temia | quanto treinar | [na sessão 2] |\n| 3 | A biologia de iniciante responde ao primeiro estímulo bem feito.[13][14] | Não responder é raro | a sua resposta | [na sessão 5] |\n| 4 | A semana perdida atrasa o calendário, não o resultado.[16][18] | Suas faltas não apagam nada | a pausa | [na sessão 7] |\n\nLegenda da seção: Nenhum item desta lista depende de um dom.\n\n**Ponte.** O que não existia era: um programa fixo que decide por você, uma regra de progressão que\ndispensa intuição, um registro que prova o progresso quando o espelho demora, e um plano de retorno para\nas semanas ruins.\n\n| # | Título | Depois | Hoje (riscado) | Onde |\n| - | ------ | ------ | -------------- | ---- |\n| 01 | Programa fixo | A ficha decide por você antes de a vontade opinar. | trocar de treino a cada empolgação | sessão 3 |\n| 02 | Regra de progressão e registro | Uma dispensa a intuição; o outro prova o progresso quando o espelho demora. | chutar o peso na frente do rack | sessões 5 e 6 |\n| 03 | Plano de retorno | Escrito antes da semana ruim, para não ser inventado durante ela. | \"faltei, já era\" | sessão 7 |\n\n**Fecho:** Agora existe.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-03-disciplina",
+          "titulo": "Disciplina",
+          "objetivo": "O leitor passa de espectador a protagonista do arco que ele já admira, e troca \"força de vontade\" por \"não decidir toda vez\".",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-08-seu-arco-comeca-agora/modulo-03-disciplina.md",
+          "texto": "> Todo arco de superação tem a mesma anatomia: o protagonista começa fraco demais, encontra um método,\n> atravessa um período longo e sem glamour em que nada parece acontecer, e então o tempo revela o\n> acúmulo.\n\nO método é quase sempre um mestre chato e um treino\nrepetitivo. E o episódio do \"salto de poder\" só existe porque existiram os episódios de treino que\nninguém quer assistir.\n\nVocê sempre se identificou com esses arcos como espectador. A\ndistância entre espectador e protagonista é menor do que parece: é segunda-feira, 19h30, Treino A.\n\nO seu período sem glamour são as 12 semanas deste protocolo, com a vantagem de que o seu tem placar\nanotado e fotos mensais provando o acúmulo que a narrativa promete.\n\n**Disciplina ** · *um nome pomposo para não decidir toda vez*\n\nDisciplina, aliás, é um nome pomposo para algo mais simples: **não decidir toda\nvez.** Você não vai \"ter força de vontade\" 3 vezes por semana: vai ter horário fixo, mochila pronta e uma\nficha que diz exatamente o que fazer. O sistema carrega você nos dias em que a motivação não aparece.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-04-a-academia-tambem-e-sua",
+          "titulo": "A academia também é sua",
+          "objetivo": "O leitor ocupa o salão sem pedir permissão: todo físico que intimida começou pequeno.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-08-seu-arco-comeca-agora/modulo-04-a-academia-tambem-e-sua.md",
+          "texto": "> Permissão.\n> Um shape mínimo.\n> Saber tudo antes de entrar.\n> Esperar o salão esvaziar.\n\nSobre aquele incômodo de treinar perto dos grandes, sentindo que\ntodo mundo nasceu ali menos você: todo físico que te intimida já foi um corpo iniciante segurando\nhalteres pequenos com medo de estar fazendo errado.\n\nSem exceção. O cara do supino de 100 kg tem uma ficha antiga (mental ou real) com 20 kg escritos nela.\n\nÉ por isso que, na prática, quem treina há anos respeita quem está começando: **eles se\nlembram.**\n\n1. A mensalidade é igual.\n2. O direito ao equipamento é igual.\n3. O único ranking que existe de verdade está no seu caderno, comparando você com você.\n4. Em 12 semanas, você será o veterano de alguém que está chegando agora, e vai se lembrar.\n\n**Fecho:** Você não precisa de permissão nem de um shape mínimo para ocupar o salão.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-05-mas-e-agora",
+          "titulo": "Mas e agora?",
+          "objetivo": "O leitor sabe que o treino é o gatilho e a construção acontece fora da academia, entra nos outros dois roadmaps do app, e fecha o conteúdo com a meta das 12 semanas escrita.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-08-seu-arco-comeca-agora/modulo-05-mas-e-agora.md",
+          "texto": "Mas e agora?\n\nO treino é o gatilho, mas a construção acontece fora da academia. Duas pontes, de\numa linha cada, para os protocolos irmãos, aqui no app.\n\n**Capas :**\n\n1. **Protocolo 02 · Dieta Básica** → abre o roadmap Dieta Básica\n2. **Protocolo 03 · Cuidado com o Sono** → abre o roadmap Cuidado com o Sono\n\n**Ponte 1 · comida.** Músculo é feito de proteína, e a ciência aponta cerca de 1,6 g por quilo de peso\ncorporal por dia como o ponto em que o ganho satura[20]. Como chegar lá comendo comida de casa, sem virar\nneurótico da marmita, é o assunto inteiro do Protocolo 02 · Dieta Básica.\n\n**Ponte 2 · sono.** É dormindo que o corpo executa a obra que o treino encomendou. Se você dorme com o\ncelular na mão e acorda quebrado, o Protocolo 03 · Cuidado com o Sono trata exatamente disso, e quase\nninguém do seu grupo está cuidando dessa parte.\n\n**Fecho:** Não precisa dos três perfeitos para começar: o treino puxa os outros dois.",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-05-mas-e-agora-pratica",
+          "titulo": "Faça isto hoje",
+          "tipo": "pratica",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-08-seu-arco-comeca-agora/modulo-05-mas-e-agora.md",
+          "texto": "Três ações para a semana 12 já existir no calendário.\n\n1. Complete por escrito, na primeira página da ficha: \"Daqui a 12 semanas eu quero mostrar para mim\n   mesmo que ______.\"\n\n2. Conte para uma pessoa (o amigo que treina conta em dobro) que você está num protocolo de 12 semanas.\n3. Marque no calendário a data da semana 12 e escreva nela: \"comparar fotos, cargas e peso, só comigo\n   mesmo.\"",
+          "acoes": [
+            "Complete por escrito, na primeira página da ficha: \"Daqui a 12 semanas eu quero mostrar para mim\n   mesmo que ______.\"",
+            "Conte para uma pessoa (o amigo que treina conta em dobro) que você está num protocolo de 12 semanas.",
+            "Marque no calendário a data da semana 12 e escreva nela: \"comparar fotos, cargas e peso, só comigo\n   mesmo.\""
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s09-fechamento",
+      "numero": 9,
+      "nome": "Fechamento",
+      "objetivo": "Fecha o parênteses aberto na sessão 00: a narrativa das duas versões do leitor daqui a doze\nsemanas, e a lista completa das fontes.",
+      "modulos": [
+        {
+          "id": "modulo-01-daqui-a-doze-semanas",
+          "titulo": "Daqui a doze semanas",
+          "objetivo": "O leitor escolhe, sem ninguém pedir, qual das duas versões ele vai ser.",
+          "tipo": "leitura",
+          "kit": false,
+          "fonte": "hipertrofia/sessao-09-fechamento/modulo-01-daqui-a-doze-semanas.md",
+          "texto": "O Treino A está na sessão 1. O seu arco já começou.\n\nDaqui a doze semanas, existe uma versão de você que abriu este\nprotocolo, leu até aqui e fechou, e nada mudou.\n\nO espelho segue exigindo o ângulo certo, a camiseta larga segue de plantão, e o feed segue\nesfregando na sua cara o físico dos outros ao som de hardstyle. Essa versão não é preguiçosa;\nela só continuou esperando o dia em que a motivação viria pronta.\n\nE existe a outra.\n\nA outra não virou capa de revista: doze semanas não fazem isso, e este\nprotocolo não mente para você.\n\n> Só que a mudança que sustenta todas as outras é mais simples: essa versão de você agora é\n> alguém que treina. Não \"está treinando\": é.\n\n**É ** · *não \"está treinando\": é*\n\nSegunda, quarta, sexta, com semana boa e semana amarela, com\nvolta protocolada depois da virose. A estética que você queria está em construção visível (e\ntudo bem querer ela, sempre esteve), mas o respeito que você buscava impor pelo corpo, você\ncomeçou a sentir por outra via: pelo sujeito que aparece.\n\nO placar dela está anotado, e o placar é do que este protocolo\nentrega: o goblet que começou com 8 kg fechou com o dobro. A remada saiu de 3 séries mancando\npara 3 séries limpas. Trinta e tantas sessões no caderno, contando as semanas amarelas e a volta\ndepois da virose.\n\nNa foto nº 3, lado a lado com a nº 0, os ombros contam uma história diferente, e foi ela que\npercebeu primeiro, antes de qualquer elogio. Os elogios vêm depois: um \"tá treinando?\" no\nvestiário, um olhar de segunda a mais na praia, o amigo maromba puxando você para o treino como\nigual.\n\nUm número na balança. Treino\né o estímulo; o que vira músculo visível depende do que entra no prato, e isso é assunto do\nProtocolo 02 · Dieta Básica. Aqui você constrói a força e o hábito. Sem o prato, eles rendem\nmenos, e ninguém aqui vai fingir o contrário.\n\n**Fecho.** A distância entre essas duas versões é uma sessão de 60 minutos, três vezes por semana,\ncom os números anotados. Na verdade, começou quando você chegou até aqui.\n\n**Números crus do fechamento (a entrega):** `12` semanas · `4` treinos · `3` anexos no Kit",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-02-fontes-1-a-10",
+          "titulo": "Fontes 1 a 10",
+          "objetivo": "Quem toca numa chamada `[n]` encontra a referência completa em um toque, e volta ao mesmo ponto.",
+          "tipo": "consulta",
+          "kit": true,
+          "fonte": "hipertrofia/sessao-09-fechamento/modulo-02-fontes-1-a-10.md",
+          "texto": "1. Currier BS, D'Souza AC, Fiatarone Singh MA, et al. *Resistance Training Prescription for\n   Muscle Function, Hypertrophy, and Physical Performance in Healthy Adults: An Overview of\n   Reviews* (ACSM Position Stand). **Med Sci Sports Exerc.** 2026;58(4):851 a 872. DOI:\n   10.1249/MSS.0000000000003897\n2. American College of Sports Medicine (Ratamess NA et al.). *Progression Models in Resistance\n   Training for Healthy Adults* (Position Stand). **Med Sci Sports Exerc.** 2009;41(3):687 a 708.\n   DOI: 10.1249/MSS.0b013e3181915670\n3. Schoenfeld BJ. *The Mechanisms of Muscle Hypertrophy and Their Application to Resistance\n   Training.* **J Strength Cond Res.** 2010;24(10):2857 a 2872. DOI: 10.1519/JSC.0b013e3181e840f3\n4. Schoenfeld BJ, Ogborn D, Krieger JW. *Dose-response relationship between weekly resistance\n   training volume and increases in muscle mass: a systematic review and meta-analysis.* **J\n   Sports Sci.** 2017;35(11):1073 a 1082. DOI: 10.1080/02640414.2016.1210197\n5. Pelland JC, Remmert JF, Robinson ZP, Hinson SR, Zourdos MC. *The Resistance Training Dose\n   Response: Meta-Regressions Exploring the Effects of Weekly Volume and Frequency on Muscle\n   Hypertrophy and Strength Gains.* **Sports Med.** 2026;56(2):481 a 505. DOI:\n   10.1007/s40279-025-02344-w\n6. Schoenfeld BJ, Grgic J, Krieger J. *How many times per week should a muscle be trained to\n   maximize muscle hypertrophy? A systematic review and meta-analysis.* **J Sports Sci.**\n   2019;37(11):1286 a 1295. DOI: 10.1080/02640414.2018.1555906\n7. Schoenfeld BJ, Ogborn D, Krieger JW. *Effects of Resistance Training Frequency on Measures of\n   Muscle Hypertrophy: A Systematic Review and Meta-Analysis.* **Sports Med.**\n   2016;46(11):1689 a 1697. DOI: 10.1007/s40279-016-0543-8\n8. Schoenfeld BJ, Grgic J, Ogborn D, Krieger JW. *Strength and Hypertrophy Adaptations Between\n   Low- vs. High-Load Resistance Training: A Systematic Review and Meta-analysis.* **J Strength\n   Cond Res.** 2017;31(12):3508 a 3523. DOI: 10.1519/JSC.0000000000002200\n9. Refalo MC, Helms ER, Trexler ET, Hamilton DL, Fyfe JJ. *Influence of Resistance Training\n   Proximity-to-Failure on Skeletal Muscle Hypertrophy: A Systematic Review with Meta-analysis.*\n   **Sports Med.** 2023;53(3):649 a 665. DOI: 10.1007/s40279-022-01784-y\n10. Schoenfeld BJ, Pope ZK, Benik FM, et al. *Longer Interset Rest Periods Enhance Muscle Strength\n    and Hypertrophy in Resistance-Trained Men.* **J Strength Cond Res.** 2016;30(7):1805 a 1812.\n    DOI: 10.1519/JSC.0000000000001272",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-03-fontes-11-a-20",
+          "titulo": "Fontes 11 a 20",
+          "objetivo": "Mesmo do módulo 02, para as referências 11 a 20, incluindo a única com nota de limite (15).",
+          "tipo": "consulta",
+          "kit": true,
+          "fonte": "hipertrofia/sessao-09-fechamento/modulo-03-fontes-11-a-20.md",
+          "texto": "11. Baz-Valle E, Schoenfeld BJ, Torres-Unda J, Santos-Concejero J, Balsalobre-Fernández C. *The\n    effects of exercise variation in muscle thickness, maximal strength and motivation in\n    resistance trained men.* **PLoS One.** 2019;14(12):e0226989. DOI: 10.1371/journal.pone.0226989\n12. Schoenfeld BJ, Contreras B. *Is Postexercise Muscle Soreness a Valid Indicator of Muscular\n    Adaptations?* **Strength Cond J.** 2013;35(5):16 a 21. DOI: 10.1519/SSC.0b013e3182a61820\n13. Hubal MJ, Gordish-Dressman H, Thompson PD, et al. *Variability in muscle size and strength\n    gain after unilateral resistance training.* **Med Sci Sports Exerc.** 2005;37(6):964 a 972.\n    DOI: 10.1249/01.mss.0000170469.90461.5f\n14. Roberts MD, Haun CT, Mobley CB, et al. *Physiological Differences Between Low Versus High\n    Skeletal Muscle Hypertrophic Responders to Resistance Exercise Training.* **Front Physiol.**\n    2018;9:834. DOI: 10.3389/fphys.2018.00834\n15. Lixandrão ME, Bamman M, Vechin FC, et al. *Higher resistance training volume offsets muscle\n    hypertrophy nonresponsiveness in older individuals.* **J Appl Physiol.** 2024;136(2):421 a 429.\n    DOI: 10.1152/japplphysiol.00670.2023\n    **Nota de limite:** estudo em idosos; citado apenas para o argumento de que ajustar o estímulo\n    converte não-resposta, e não para prever ganhos na sua faixa de idade.\n16. Seaborne RA, Strauss J, Cocks M, et al. *Human Skeletal Muscle Possesses an Epigenetic Memory\n    of Hypertrophy.* **Sci Rep.** 2018;8:1898. DOI: 10.1038/s41598-018-20287-3\n17. Cumming KT, Reitzner SM, Hanslien M, et al. *Muscle memory in humans: evidence for myonuclear\n    permanence and long-term transcriptional regulation after strength training.* **J Physiol.**\n    2024;602(17):4171 a 4193. DOI: 10.1113/JP285675\n18. Bruusgaard JC, Johansen IB, Egner IM, Rana ZA, Gundersen K. *Myonuclei acquired by overload\n    exercise precede hypertrophy and are not lost on detraining.* **Proc Natl Acad Sci USA.**\n    2010;107(34):15111 a 15116. DOI: 10.1073/pnas.0913935107\n19. Kouri EM, Pope HG Jr, Katz DL, Oliva P. *Fat-free mass index in users and nonusers of\n    anabolic-androgenic steroids.* **Clin J Sport Med.** 1995;5(4):223 a 228. DOI:\n    10.1097/00042752-199510000-00003\n20. Morton RW, Murphy KT, McKellar SR, et al. *A systematic review, meta-analysis and\n    meta-regression of the effect of protein supplementation on resistance training-induced gains\n    in muscle mass and strength in healthy adults.* **Br J Sports Med.** 2018;52(6):376 a 384. DOI:\n    10.1136/bjsports-2017-097608",
+          "acoes": [],
+          "acaoRegistro": null
+        },
+        {
+          "id": "modulo-04-fontes-21-a-24",
+          "titulo": "Fontes 21 a 24",
+          "objetivo": "Fechar a lista e dizer, com a mesma honestidade do texto, onde a evidência é só direção.",
+          "tipo": "consulta",
+          "kit": true,
+          "fonte": "hipertrofia/sessao-09-fechamento/modulo-04-fontes-21-a-24.md",
+          "texto": "21. Androulakis-Korakakis P, Fisher JP, Steele J. *The Minimum Effective Training Dose Required to\n    Increase 1RM Strength in Resistance-Trained Men: A Systematic Review and Meta-Analysis.*\n    **Sports Med.** 2020;50(4):751 a 765. DOI: 10.1007/s40279-019-01236-0\n22. Iversen VM, Norum M, Schoenfeld BJ, Fimland MS. *No Time to Lift? Designing Time-Efficient\n    Training Programs for Strength and Hypertrophy: A Narrative Review.* **Sports Med.**\n    2021;51(10):2079 a 2095. DOI: 10.1007/s40279-021-01490-1\n23. Damas F, Phillips SM, Libardi CA, et al. *Resistance training-induced changes in integrated\n    myofibrillar protein synthesis are related to hypertrophy only after attenuation of muscle\n    damage.* **J Physiol.** 2016;594(18):5209 a 5222. DOI: 10.1113/JP272472\n24. Sepehri S, Sheikhhoseini R, Piri H, Sayyadi P. *The effect of various therapeutic exercises on\n    forward head posture, rounded shoulder, and hyperkyphosis among people with upper crossed\n    syndrome: a systematic review and meta-analysis.* **BMC Musculoskelet Disord.** 2024;25(1):105.\n    DOI: 10.1186/s12891-024-07224-4\n\nEste protocolo prefere dizer\nonde a evidência é firme e onde ela é só direção. Duas afirmações do texto não têm uma fonte\nprimária única atrás delas, e o texto declara isso onde elas aparecem:\n\n- **A ordem de grandeza do ganho de massa magra nos três primeiros meses** (sessão 5) é composta\n  de vários estudos com iniciantes, não o resultado de um, e por isso o texto fala em ordem de\n  grandeza, e não numa faixa fechada em decimais. O que tem fonte primária firme é a variação entre\n  pessoas ser maior que qualquer faixa que se publicasse[13][14].\n- **A linha do tempo do destreino em dias** (sessão 7) não é fixada aqui. O que está sustentado por\n  fonte primária é que os mionúcleos ganhos no treino não são perdidos no destreino[18], e que a\n  memória muscular acelera o retorno[16][17].",
+          "acoes": [],
+          "acaoRegistro": null
+        }
+      ]
+    }
+  ]
+}

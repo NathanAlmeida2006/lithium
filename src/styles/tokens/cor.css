@@ -1,0 +1,65 @@
+/* ============================================================================
+   SIGILO · Cor
+   Fonte canônica: estrutura-visual-geral.md §4 e §11
+
+   Princípio: preto e osso por padrão. Uma cor por vez, e só quando ela
+   significa alguma coisa. Proporção 85% neutro · 12% osso e prata · 3% acento.
+   O acento aparece no MÁXIMO uma vez por tela.
+   ========================================================================== */
+
+:root {
+  /* ---- Modo Sigilo (tema escuro · padrão) - §4.2 ------------------------- */
+  --void: #09090b;         /* fundo global */
+  --surface-1: #121215;    /* painéis e blocos */
+  --surface-2: #1b1b20;    /* inputs, chips, zebrado */
+  --line: #2c2c33;         /* fios, molduras, divisores */
+  --line-strong: #45454f;  /* fio em foco / borda ativa */
+  --silver: #8e8e9a;       /* texto secundário, metal, micro-registro · 6,15:1 */
+  --bone: #ededf0;         /* texto primário, traço do sigilo · 17,0:1 */
+  --bone-pure: #ffffff;    /* SÓ número de placar */
+
+  /* ---- Acentos de protocolo - §4.4 ---------------------------------------
+     Extraídos dos três cartazes aprovados em 03-referencia/estilos/acid-graphics/.
+     Um acento por superfície. Nunca dois na mesma. */
+  --rubro: #d2202c;    /* 01 Hipertrofia · ac3 Azrael  · 3,78:1 sobre --void:
+                          só texto ≥24px e componentes, nunca texto corrente */
+  --praga: #12a150;    /* 02 Dieta Básica · ac2 Peccatum · esmeralda chapado,
+                          NÃO é lima - o verde-lima está proibido */
+  --vigilia: #8b5cf6;  /* 03 Cuidado com o Sono · ac1 Gothic Art */
+
+  /* ---- Semânticas de estado - §4.5 ---------------------------------------
+     Nunca coincidem com acentos de protocolo. Nunca comunicam sozinhas. */
+  --success: #35c46a;
+  --warning: #e8a317;
+  --danger: #ff5a5a;
+
+  /* Acento ativo do contexto. Trocado por protocolo; padrão = 01 Hipertrofia.
+     Convenção herdada de build/estilo.css. */
+  --acento: var(--rubro);
+}
+
+/* ---- Modo Cartaz (tema claro) - §4.3 ---------------------------------------
+   Não é inversão de conveniência: é a versão impressa da mesma identidade,
+   o cartaz ácido no papel-jornal. Os mesmos nomes de token são remapeados.
+   Na §4.3 esses valores aparecem com os nomes --paper, --surface-1-lt,
+   --surface-2-lt, --line-lt, --line-strong-lt, --ink-2 e --ink; o §11 os
+   remapeia sobre os nomes do modo escuro, e é esta a forma vinculante.
+   -------------------------------------------------------------------------- */
+[data-theme="cartaz"] {
+  --void: #edeae3;         /* --paper */
+  --surface-1: #f6f4ef;    /* --surface-1-lt */
+  --surface-2: #e1ddd3;    /* --surface-2-lt */
+  --line: #c6c0b4;         /* --line-lt */
+  --line-strong: #9c9587;  /* --line-strong-lt */
+  --silver: #55524b;       /* --ink-2 · 6,48:1 */
+  --bone: #0b0b0c;         /* --ink · 16,4:1 */
+  --bone-pure: #000000;
+
+  --rubro: #a8101c;        /* 6,34:1 - sem restrição de tamanho no Cartaz */
+  --praga: #0a6e34;
+  --vigilia: #5b2bc4;
+
+  --success: #157a3f;
+  --warning: #8a5a00;
+  --danger: #b3151f;
+}

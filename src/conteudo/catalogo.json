@@ -1,0 +1,1871 @@
+{
+  "hipertrofia": {
+    "protocolo": "hipertrofia",
+    "nome": "Hipertrofia",
+    "sessoes": [
+      {
+        "id": "s00-abertura",
+        "numero": 0,
+        "nome": "Abertura",
+        "modulos": [
+          {
+            "id": "modulo-01-fast-travel",
+            "titulo": "Fast travel",
+            "tipo": "consulta",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-02-antes-de-comecar",
+            "titulo": "Antes de começar",
+            "tipo": "leitura",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-03-quando-parar",
+            "titulo": "Quando parar e para quem não é",
+            "tipo": "leitura",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-04-como-usar",
+            "titulo": "Como usar este protocolo",
+            "tipo": "leitura",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-05-por-que-um-protocolo",
+            "titulo": "Por que um protocolo e não mais um vídeo",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-06-espelho",
+            "titulo": "Espelho",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-07-sistema",
+            "titulo": "Sistema",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          }
+        ]
+      },
+      {
+        "id": "s01-primeira-vitoria",
+        "numero": 1,
+        "nome": "Sua primeira vitória",
+        "modulos": [
+          {
+            "id": "modulo-01-o-trato-dos-10-minutos",
+            "titulo": "O trato dos 10 minutos",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-02-composicao-do-treino-a",
+            "titulo": "A composição do Treino A",
+            "tipo": "leitura",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-03-treino-a",
+            "titulo": "Treino A",
+            "tipo": "leitura",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-04-uma-linha-por-exercicio",
+            "titulo": "Uma linha por exercício",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-05-checklist-do-primeiro-dia",
+            "titulo": "Checklist do primeiro dia",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-06-paisagem",
+            "titulo": "Paisagem",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-07-faca-isto-hoje",
+            "titulo": "Faça isto hoje",
+            "tipo": "pratica",
+            "kit": false,
+            "acoes": [
+              "Salve a tabela do Treino A: print da tela ou deixe a sessão 1 marcada no fast travel.",
+              "Separe a mochila (água, toalha, fone) e deixe pronta.",
+              "Marque no calendário o dia e o horário da primeira sessão. Se puder, nas suas janelas reais:\n   fim da manhã ou início da noite."
+            ],
+            "acaoRegistro": null
+          }
+        ]
+      },
+      {
+        "id": "s02-como-o-musculo-cresce",
+        "numero": 2,
+        "nome": "Como o músculo cresce",
+        "modulos": [
+          {
+            "id": "modulo-01-o-gatilho",
+            "titulo": "O gatilho",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-02-faca-o-basico",
+            "titulo": "Faça o básico",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-03-mito-trocar-de-treino",
+            "titulo": "Mito: trocar de treino sempre",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-04-mito-sair-destruido",
+            "titulo": "Mito: sair destruído",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-05-voce-precisa-de-menos",
+            "titulo": "Você precisa de menos",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-06-faca-isto-hoje",
+            "titulo": "Faça isto hoje",
+            "tipo": "pratica",
+            "kit": false,
+            "acoes": [
+              "Escreva no topo da sua ficha: \"O gatilho é carga subindo, não dor nem novidade.\"",
+              "Se você tem um treino antigo guardado \"pra variar\", apague. O programa oficial chega na\n   próxima sessão.",
+              "Já fez o Treino A? Marque como foi a técnica de cada exercício."
+            ],
+            "acaoRegistro": null
+          }
+        ]
+      },
+      {
+        "id": "s03-o-programa",
+        "numero": 3,
+        "nome": "O programa",
+        "modulos": [
+          {
+            "id": "modulo-01-um-caminho-unico",
+            "titulo": "Um caminho único",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-02-as-regras-do-jogo",
+            "titulo": "As regras do jogo",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-03-a-semana-na-vida-real",
+            "titulo": "A semana na vida real",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": "metas"
+          },
+          {
+            "id": "modulo-04-as-tres-fases",
+            "titulo": "As três fases",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-05-o-portao-da-fase-3",
+            "titulo": "O portão da fase 3",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-06-treino-a",
+            "titulo": "Treino A completo",
+            "tipo": "leitura",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-07-treino-b",
+            "titulo": "Treino B",
+            "tipo": "leitura",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-08-treino-c",
+            "titulo": "Treino C",
+            "tipo": "leitura",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-09-treino-d",
+            "titulo": "Treino D",
+            "tipo": "leitura",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-10-substituicoes-oficiais",
+            "titulo": "Substituições oficiais",
+            "tipo": "leitura",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-10-substituicoes-oficiais-pratica",
+            "titulo": "Faça isto hoje",
+            "tipo": "pratica",
+            "kit": false,
+            "acoes": [
+              "Salve as tabelas dos Treinos A, B e C no celular: print, ou confira que elas abrem no app sem\n   internet.",
+              "Defina seus 3 dias e horários da semana 1 (sugestão: seg/qua/sex, 10h30 ou 19h30) e coloque no\n   calendário do celular com alarme.",
+              "Confira na sua academia se algum titular não existe, e já marque o substituto na sua ficha."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "s04-execucao-sem-medo",
+        "numero": 4,
+        "nome": "Execução sem medo",
+        "modulos": [
+          {
+            "id": "modulo-01-tecnica-segura",
+            "titulo": "Técnica segura",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-02-agachar",
+            "titulo": "Agachar",
+            "tipo": "leitura",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-03-empurrar",
+            "titulo": "Empurrar",
+            "tipo": "leitura",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-04-puxar",
+            "titulo": "Puxar",
+            "tipo": "leitura",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-05-dobradica",
+            "titulo": "Dobradiça",
+            "tipo": "leitura",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-06-empurrar-na-vertical",
+            "titulo": "Empurrar na vertical e ombros",
+            "tipo": "leitura",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-07-acessorios",
+            "titulo": "Acessórios",
+            "tipo": "leitura",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-08-as-tres-perguntas-do-salao",
+            "titulo": "As três perguntas do salão",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-08-as-tres-perguntas-do-salao-pratica",
+            "titulo": "Faça isto hoje",
+            "tipo": "pratica",
+            "kit": false,
+            "acoes": [
+              "Salve a frase de segurança: \"me dá uma força aqui nas últimas?\"",
+              "Escolha os 2 exercícios que mais te intimidam e releia só os guias deles antes da próxima sessão.",
+              "Filme 1 série de agachamento goblet de lado e compare com o passo a passo."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "s05-progressao",
+        "numero": 5,
+        "nome": "Progressão no piloto automático",
+        "modulos": [
+          {
+            "id": "modulo-01-uma-regra-decide",
+            "titulo": "Uma regra decide",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-02-a-regra-do-12",
+            "titulo": "A Regra do 12",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-03-quanto-voce-vai-crescer",
+            "titulo": "Quanto você vai crescer de verdade",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-04-mito-genetica",
+            "titulo": "Mito: genética",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-05-mito-natural-nao-cresce",
+            "titulo": "Mito: natural não cresce",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-06-quando-travar",
+            "titulo": "Quando travar",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-06-quando-travar-pratica",
+            "titulo": "Faça isto hoje",
+            "tipo": "pratica",
+            "kit": false,
+            "acoes": [
+              "Escreva a Regra do 12 na primeira página da sua ficha, ou fixe um print na tela do celular.",
+              "Anote sua expectativa realista da fase: \"cerca de um quilo de músculo até a semana 12, e é assim\n   mesmo que começa\"[23].",
+              "Descubra qual é o menor salto de peso da sua academia (anilhas de 1 kg? halteres de 2 em 2?). Esse\n   número é o tamanho do seu próximo degrau."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "s06-caderno-de-vitorias",
+        "numero": 6,
+        "nome": "O caderno de vitórias",
+        "modulos": [
+          {
+            "id": "modulo-01-placar",
+            "titulo": "Placar",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-02-o-minimo-indispensavel",
+            "titulo": "O mínimo indispensável",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-03-ficha-de-treino",
+            "titulo": "Ficha de treino",
+            "tipo": "leitura",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": "treino"
+          },
+          {
+            "id": "modulo-04-tres-marcos",
+            "titulo": "Três marcos, doze semanas",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-05-faca-isto-hoje",
+            "titulo": "Faça isto hoje",
+            "tipo": "pratica",
+            "kit": false,
+            "acoes": [
+              "Escolha seu meio de registro: a ficha do app, papel, notas ou planilha. Se não for o app, copie a\n   ficha modelo.",
+              "Coloque o lembrete para se pesar amanhã de manhã: é o peso da semana 1.",
+              "Tire a foto nº 0, na mesma pose que você vai repetir todo mês. Ninguém precisa ver; ela é sua."
+            ],
+            "acaoRegistro": null
+          }
+        ]
+      },
+      {
+        "id": "s07-plano-de-retorno",
+        "numero": 7,
+        "nome": "O plano de retorno",
+        "modulos": [
+          {
+            "id": "modulo-01-a-falha-tem-protocolo",
+            "titulo": "A falha tem protocolo",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-02-perder-musculo-e-lento",
+            "titulo": "Perder músculo é lento",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-03-mito-faltei-perdi-tudo",
+            "titulo": "Mito: faltei, perdi tudo",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-04-as-regras-de-retorno",
+            "titulo": "As regras de retorno",
+            "tipo": "leitura",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-05-semana-verde-semana-amarela",
+            "titulo": "Semana verde, semana amarela",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-06-retomada",
+            "titulo": "Retomada",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-06-retomada-pratica",
+            "titulo": "Faça isto hoje",
+            "tipo": "pratica",
+            "kit": false,
+            "acoes": [
+              "Fotografe a tabela de retorno e deixe no álbum favorito do celular.",
+              "Escreva na última página da ficha: \"Faltar não zera. Parar é que zera.\"",
+              "Se você está lendo esta sessão no meio de uma pausa: escolha a linha da tabela, marque o treino de\n   volta no calendário e feche o app. É só isso hoje."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "s08-seu-arco-comeca-agora",
+        "numero": 8,
+        "nome": "Seu arco começa agora",
+        "modulos": [
+          {
+            "id": "modulo-01-o-problema-renomeado",
+            "titulo": "O problema renomeado",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-02-agora-existe",
+            "titulo": "Agora existe",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-03-disciplina",
+            "titulo": "Disciplina",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-04-a-academia-tambem-e-sua",
+            "titulo": "A academia também é sua",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-05-mas-e-agora",
+            "titulo": "Mas e agora?",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-05-mas-e-agora-pratica",
+            "titulo": "Faça isto hoje",
+            "tipo": "pratica",
+            "kit": false,
+            "acoes": [
+              "Complete por escrito, na primeira página da ficha: \"Daqui a 12 semanas eu quero mostrar para mim\n   mesmo que ______.\"",
+              "Conte para uma pessoa (o amigo que treina conta em dobro) que você está num protocolo de 12 semanas.",
+              "Marque no calendário a data da semana 12 e escreva nela: \"comparar fotos, cargas e peso, só comigo\n   mesmo.\""
+            ]
+          }
+        ]
+      },
+      {
+        "id": "s09-fechamento",
+        "numero": 9,
+        "nome": "Fechamento",
+        "modulos": [
+          {
+            "id": "modulo-01-daqui-a-doze-semanas",
+            "titulo": "Daqui a doze semanas",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-02-fontes-1-a-10",
+            "titulo": "Fontes 1 a 10",
+            "tipo": "consulta",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-03-fontes-11-a-20",
+            "titulo": "Fontes 11 a 20",
+            "tipo": "consulta",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-04-fontes-21-a-24",
+            "titulo": "Fontes 21 a 24",
+            "tipo": "consulta",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          }
+        ]
+      }
+    ]
+  },
+  "dieta": {
+    "protocolo": "dieta",
+    "nome": "Dieta básica",
+    "sessoes": [
+      {
+        "id": "s00-abertura",
+        "numero": 0,
+        "nome": "Abertura",
+        "modulos": [
+          {
+            "id": "modulo-01-fast-travel",
+            "titulo": "Fast travel",
+            "tipo": "consulta",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-02-antes-de-comecar",
+            "titulo": "Antes de começar",
+            "tipo": "leitura",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-03-como-usar",
+            "titulo": "Como usar este protocolo",
+            "tipo": "leitura",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-04-informado-demais",
+            "titulo": "Informado demais, organizado de menos",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-05-a-cozinha",
+            "titulo": "A cozinha",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-06-construcao",
+            "titulo": "Construção",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          }
+        ]
+      },
+      {
+        "id": "s01-primeira-vitoria",
+        "numero": 1,
+        "nome": "Sua primeira vitória",
+        "modulos": [
+          {
+            "id": "modulo-01-o-trato-dos-10-minutos",
+            "titulo": "O trato dos 10 minutos",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-02-mais-500-kcal-por-dia",
+            "titulo": "+500 kcal por dia",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-03-a-edicao-pontual",
+            "titulo": "A edição pontual",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-04-a-troca-de-hoje",
+            "titulo": "A troca de hoje",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-05-o-diagnostico-pela-foto",
+            "titulo": "O diagnóstico pela foto",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-06-faca-isto-hoje",
+            "titulo": "Faça isto hoje",
+            "tipo": "pratica",
+            "kit": false,
+            "acoes": [
+              "Confira na despensa: tem ovos, leite, pão e banana em casa? Se faltar algo, entra na próxima\n   compra.",
+              "Programe o dia da foto: amanhã, fotografe tudo o que comer e beber.",
+              "Aplique a troca no seu pior intervalo (ovos, vitamina ou sanduíche: escolha uma)."
+            ],
+            "acaoRegistro": null
+          }
+        ]
+      },
+      {
+        "id": "s02-a-hierarquia-do-que-importa",
+        "numero": 2,
+        "nome": "A hierarquia do que importa",
+        "modulos": [
+          {
+            "id": "modulo-01-tres-andares",
+            "titulo": "Três andares",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-02-o-predio",
+            "titulo": "O prédio",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-03-calorias-proteina-o-resto",
+            "titulo": "Calorias, proteína, o resto",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-04-mito-de-3-em-3-horas",
+            "titulo": "Mito: de 3 em 3 horas",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-05-o-campeonato-ja-foi-feito",
+            "titulo": "O campeonato já foi feito",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-06-faca-isto-hoje",
+            "titulo": "Faça isto hoje",
+            "tipo": "pratica",
+            "kit": false,
+            "acoes": [
+              "Escreva no topo da sua anotação de dieta: \"Andar 1: calorias. Andar 2: proteína. O resto é\n   acabamento.\"",
+              "Aposente oficialmente uma regra de cronômetro que você carregava: a de 3 em 3 horas ou a dos 30\n   minutos.",
+              "Reveja as fotos do seu dia (sessão 1) e marque: em quais momentos entrou proteína de verdade? Esses\n   são os andares 2 já prontos."
+            ],
+            "acaoRegistro": null
+          }
+        ]
+      },
+      {
+        "id": "s03-seus-numeros-do-dia",
+        "numero": 3,
+        "nome": "Seus números do dia",
+        "modulos": [
+          {
+            "id": "modulo-01-dois-numeros",
+            "titulo": "Dois números",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-02-a-ilusao-de-precisao",
+            "titulo": "A ilusão de precisão",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-03-a-sua-meta",
+            "titulo": "A sua meta",
+            "tipo": "leitura",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": "metas"
+          },
+          {
+            "id": "modulo-04-o-metodo-dos-blocos",
+            "titulo": "O método dos blocos",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-05-tracos-nao-gramas",
+            "titulo": "Traços, não gramas",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": "dieta"
+          },
+          {
+            "id": "modulo-06-o-superavit-dos-estudos",
+            "titulo": "O superávit dos estudos",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-07-a-regra-da-balanca",
+            "titulo": "A Regra da Balança",
+            "tipo": "leitura",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-08-o-que-nao-controlar",
+            "titulo": "O que não controlar",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-09-faca-isto-hoje",
+            "titulo": "Faça isto hoje",
+            "tipo": "pratica",
+            "kit": false,
+            "acoes": [
+              "Ache sua linha na tabela de peso e anote sua meta em blocos.",
+              "Conte os blocos de hoje pelos traços (vale reconstituir pelas fotos da sessão 1). Ficou longe da meta?\n   Normal: o sistema começa amanhã.",
+              "Defina o dia e a hora oficiais da pesagem semanal (sugestão: sexta de manhã) e coloque lembrete no\n   celular."
+            ],
+            "acaoRegistro": null
+          }
+        ]
+      },
+      {
+        "id": "s04-o-prato-da-casa",
+        "numero": 4,
+        "nome": "O prato da casa",
+        "modulos": [
+          {
+            "id": "modulo-01-a-fundacao-ja-esta-na-mesa",
+            "titulo": "A fundação já está na mesa",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-02-o-prato-ajustado",
+            "titulo": "O prato ajustado",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-03-antes-do-script",
+            "titulo": "Antes do script",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-04-o-script",
+            "titulo": "O script",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-05-menu-de-ajustes",
+            "titulo": "Menu de ajustes",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-06-o-dia-montado",
+            "titulo": "O dia montado",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-07-faca-isto-hoje",
+            "titulo": "Faça isto hoje",
+            "tipo": "pratica",
+            "kit": false,
+            "acoes": [
+              "Adicione à lista de compras da casa: ovos (bandeja grande), leite integral e a carne do \"curinga\n   proteico\".",
+              "Escolha seus 2 pedidos da tabela e marque a conversa com quem cozinha.",
+              "Aplique o prato ajustado na próxima refeição da casa, na hora de se servir: mistura de 1 palma e meia,\n   resto igual."
+            ],
+            "acaoRegistro": null
+          }
+        ]
+      },
+      {
+        "id": "s05-cardapio-de-estagiario",
+        "numero": 5,
+        "nome": "Cardápio de estagiário",
+        "modulos": [
+          {
+            "id": "modulo-01-decidir-uma-vez",
+            "titulo": "Decidir uma vez",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-02-o-ranking-da-proteina-barata",
+            "titulo": "O ranking da proteína barata",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-03-o-teste-de-bolso",
+            "titulo": "O teste de bolso",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-04-kit-estagio",
+            "titulo": "Kit estágio",
+            "tipo": "leitura",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-05-kit-casa",
+            "titulo": "Kit casa",
+            "tipo": "leitura",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-06-quando-o-delivery-vence",
+            "titulo": "Quando o delivery vence",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-07-faca-isto-hoje",
+            "titulo": "Faça isto hoje",
+            "tipo": "pratica",
+            "kit": false,
+            "acoes": [
+              "Salve as 5 regras do menos-pior num print: elas trabalham exatamente nos dias em que você não vai querer\n   abrir o app.",
+              "Escreva hoje a lista do kit estágio para a próxima ida ao mercado: bandeja de ovos, 2 latas de\n   sardinha, pão. Pouco dinheiro, e desarma a semana inteira.\n   · lista marcável (abaixo)",
+              "Escolha seus 3 lanches oficiais (2 do kit estágio, 1 do kit casa) e anote na sua ficha: essas são suas\n   decisões prontas."
+            ],
+            "acaoRegistro": null
+          }
+        ]
+      },
+      {
+        "id": "s06-suplementos-so-dois",
+        "numero": 6,
+        "nome": "Suplementos: só dois",
+        "modulos": [
+          {
+            "id": "modulo-01-so-dois",
+            "titulo": "Só dois",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-02-creatina",
+            "titulo": "Creatina",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-03-comida-em-po",
+            "titulo": "Comida em pó, e só isso",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-04-mito-creatina",
+            "titulo": "Mito: creatina é quase bomba",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-05-nao-obrigado",
+            "titulo": "Não, obrigado",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-06-faca-isto-hoje",
+            "titulo": "Faça isto hoje",
+            "tipo": "pratica",
+            "kit": false,
+            "acoes": [
+              "**A frase na ficha.** Escreva na ficha: \"Suplemento é acabamento. Bloco é fundação.\"",
+              "**A conta do pote.** Some quanto você gastaria (ou gasta) por mês com suplementos fora da dupla creatina\n   e whey, e realoque mentalmente para o ranking da proteína barata.",
+              "**O horário fixo.** Se você usa creatina, defina o horário fixo: 3 a 5 g junto do almoço, todo dia, com\n   um lembrete no celular por 2 semanas até virar automático."
+            ],
+            "acaoRegistro": null
+          }
+        ]
+      },
+      {
+        "id": "s07-o-sabado-e-o-dia-seguinte",
+        "numero": 7,
+        "nome": "O sábado e o dia seguinte",
+        "modulos": [
+          {
+            "id": "modulo-01-a-balada-esta-no-plano",
+            "titulo": "A balada está no plano",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-02-a-dose-decide",
+            "titulo": "A dose decide",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-03-as-5-regras-do-sabado",
+            "titulo": "As 5 Regras do Sábado",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-04-a-regra-do-dia-seguinte",
+            "titulo": "A Regra do Dia Seguinte",
+            "tipo": "leitura",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-05-cinco-de-sete-e-vitoria",
+            "titulo": "5 de 7 é vitória",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-06-o-sistema-de-retomada",
+            "titulo": "O Sistema de Retomada",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-07-faca-isto-hoje",
+            "titulo": "Faça isto hoje",
+            "tipo": "pratica",
+            "kit": false,
+            "acoes": [
+              "Salve o card das 5 Regras do Sábado e deixe no álbum favorito. Ele trabalha à noite, quando o app está\n   fechado.",
+              "Escreva a Regra do Dia Seguinte na sua ficha: \"A próxima refeição volta ao normal.\"",
+              "Desenhe o placar da semana em qualquer papel: 7 quadradinhos, meta de 5. Cole onde você vê todo dia."
+            ],
+            "acaoRegistro": null
+          }
+        ]
+      },
+      {
+        "id": "s08-seu-arco-passa-pela-cozinha",
+        "numero": 8,
+        "nome": "Seu arco passa pela cozinha",
+        "modulos": [
+          {
+            "id": "modulo-01-cozinha",
+            "titulo": "Cozinha",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-02-a-objecao-desmontada",
+            "titulo": "A objeção, desmontada",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-03-traco",
+            "titulo": "Traço",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-04-o-triangulo-completo",
+            "titulo": "O triângulo completo",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-05-faca-isto-hoje",
+            "titulo": "Faça isto hoje",
+            "tipo": "pratica",
+            "kit": false,
+            "acoes": [
+              "Releia a objeção do início desta sessão em voz alta e risque-a da sua lista de desculpas.",
+              "Conte para alguém da casa qual é sua meta de blocos e seu dia de pesagem.",
+              "Confira se o Protocolo 01 já está rodando. Se ainda não, a sessão 1 dele te dá o primeiro treino em 10\n   minutos."
+            ],
+            "acaoRegistro": null
+          }
+        ]
+      },
+      {
+        "id": "s09-fechamento",
+        "numero": 9,
+        "nome": "Fechamento",
+        "modulos": [
+          {
+            "id": "modulo-01-a-mesa-posta",
+            "titulo": "A mesa posta",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-03-fontes-1-a-7",
+            "titulo": "Fontes 1 a 7",
+            "tipo": "consulta",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-04-fontes-8-a-14",
+            "titulo": "Fontes 8 a 14",
+            "tipo": "consulta",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          }
+        ]
+      }
+    ]
+  },
+  "sono": {
+    "protocolo": "sono",
+    "nome": "Cuidado com o sono",
+    "sessoes": [
+      {
+        "id": "s00-abertura",
+        "numero": 0,
+        "nome": "Abertura",
+        "modulos": [
+          {
+            "id": "modulo-01-fast-travel",
+            "titulo": "Fast travel",
+            "tipo": "consulta",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-02-como-usar",
+            "titulo": "Como usar este protocolo",
+            "tipo": "leitura",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-03-por-que-isto",
+            "titulo": "Por que isto e não mais um Reel",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-04-a-hora-invisivel",
+            "titulo": "A hora invisível",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-05-a-vantagem-desleal",
+            "titulo": "A vantagem desleal",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          }
+        ]
+      },
+      {
+        "id": "s01-primeira-vitoria",
+        "numero": 1,
+        "nome": "Sua primeira vitória",
+        "modulos": [
+          {
+            "id": "modulo-01-valor-antes-de-teoria",
+            "titulo": "Valor antes de teoria",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-02-o-retrato-da-sua-noite",
+            "titulo": "O retrato da sua noite",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-03-os-dois-alarmes",
+            "titulo": "Os dois alarmes",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-04-o-corte-de-amanha",
+            "titulo": "O corte de amanhã",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-05-o-que-esperar",
+            "titulo": "O que esperar",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-05-o-que-esperar-pratica",
+            "titulo": "Faça isto hoje à noite",
+            "tipo": "pratica",
+            "kit": false,
+            "acoes": [
+              "Crie os dois alarmes: \"Última chamada\" (00h00) e \"A Âncora\" (9h00), dias úteis.",
+              "Decida o corte de cafeína de amanhã: depois das 16h, nada.",
+              "Decida agora que amanhã você levanta no primeiro toque da Âncora: a primeira vitória do dia é não negociar com\n   a soneca."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "s02-a-vantagem-desleal",
+        "numero": 2,
+        "nome": "A vantagem desleal",
+        "modulos": [
+          {
+            "id": "modulo-01-a-obra-acontece-a-noite",
+            "titulo": "A obra acontece à noite",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-02-numero-1-testosterona",
+            "titulo": "Nº 1 · a testosterona despenca",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-03-numero-2-construcao",
+            "titulo": "Nº 2 · a construção muscular desliga",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-04-numero-3-particao",
+            "titulo": "Nº 3 · o corpo queima músculo em vez de gordura",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-05-numero-4-apetite",
+            "titulo": "Nº 4 · a fome do dia seguinte",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-06-o-bonus-do-desempenho",
+            "titulo": "O bônus do desempenho",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-07-mito-durmo-quando-morrer",
+            "titulo": "Mito: durmo quando morrer",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-08-voce-nao-esta-sozinho",
+            "titulo": "Você não está sozinho nessa",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-08-voce-nao-esta-sozinho-pratica",
+            "titulo": "Faça isto hoje à noite",
+            "tipo": "pratica",
+            "kit": false,
+            "acoes": [
+              "Confira: os dois alarmes da sessão 1 estão ativos? Hoje é a segunda noite deles.",
+              "Releia o Nº 3 dos quatro números e anote a frase na sua ficha: \"Dormir mal é segurar barriga e desmontar braço.\"",
+              "Conte a um amigo do treino o dado da testosterona, porque explicar é o jeito mais rápido de acreditar (e de\n   plantar a vantagem no grupo)."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "s03-a-ancora",
+        "numero": 3,
+        "nome": "A Âncora",
+        "modulos": [
+          {
+            "id": "modulo-01-uma-regra-sustenta-as-outras",
+            "titulo": "Uma regra sustenta as outras",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-02-o-predio-de-quatro-andares",
+            "titulo": "O prédio de quatro andares",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-03-a-regularidade-e-a-aposta",
+            "titulo": "A regularidade é a aposta",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-04-ancora",
+            "titulo": "Âncora",
+            "tipo": "leitura",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-05-o-plano-de-4-semanas",
+            "titulo": "O plano de 4 semanas",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-06-o-que-nunca-vai-te-pedir",
+            "titulo": "O que o protocolo nunca vai te pedir",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-07-faca-isto-hoje-a-noite",
+            "titulo": "Faça isto hoje à noite",
+            "tipo": "pratica",
+            "kit": false,
+            "acoes": [
+              "Salve o plano de 4 semanas nos favoritos (ele está no fast travel): você está na semana 1.",
+              "Ajuste o alarme da Âncora para tocar longe do alcance do braço, se a soneca costuma te vencer. (Spoiler da sessão\n   4: isso vai virar regra de qualquer jeito.)",
+              "Deixe o diário pronto ao lado da cama (papel ou o diário do app) para a primeira linha de amanhã: deitou,\n   levantou, como acordou de 1 a 5. A sessão 7 explica; começar não precisa de explicação."
+            ],
+            "acaoRegistro": null
+          }
+        ]
+      },
+      {
+        "id": "s04-do-jogo-a-cama",
+        "numero": 4,
+        "nome": "A noite: do jogo à cama",
+        "modulos": [
+          {
+            "id": "modulo-01-a-aterrissagem",
+            "titulo": "A aterrissagem",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-02-o-procedimento-de-descida",
+            "titulo": "O procedimento de descida",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-03-a-luz-avisa-o-relogio",
+            "titulo": "A luz avisa o relógio",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-04-mito-o-celular-me-relaxa",
+            "titulo": "Mito: o celular me relaxa",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-05-degrau-nao-penhasco",
+            "titulo": "Degrau, não penhasco",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-06-o-quarto-setup-em-modo-noite",
+            "titulo": "O quarto-setup em modo noite",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-07-faca-isto-hoje-a-noite",
+            "titulo": "Faça isto hoje à noite",
+            "tipo": "pratica",
+            "kit": false,
+            "acoes": [
+              "Ative o Não Perturbe programado da Última chamada até a Âncora (2 minutos nas configurações, dura para sempre).",
+              "Se você já está na semana 3, instale o degrau 1 agora, antes de deitar: timer de 20 minutos e brilho mínimo.",
+              "Rode a rotina de desligamento uma vez, hoje, cronometrada, mesmo que ainda esteja na semana 1 do plano. Ensaio\n   conta."
+            ],
+            "acaoRegistro": null
+          }
+        ]
+      },
+      {
+        "id": "s05-os-sabotadores",
+        "numero": 5,
+        "nome": "Os sabotadores",
+        "modulos": [
+          {
+            "id": "modulo-01-o-que-encolhe-a-noite",
+            "titulo": "O que encolhe a noite",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-02-cafeina-6-horas-de-alcance",
+            "titulo": "Cafeína: 6 horas de alcance",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-03-a-regra-do-corte",
+            "titulo": "A regra do corte",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-04-alcool-o-falso-amigo",
+            "titulo": "Álcool: o falso amigo do sono",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-05-os-suspeitos",
+            "titulo": "Os suspeitos",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-06-quando-procurar-avaliacao",
+            "titulo": "Quando procurar avaliação",
+            "tipo": "leitura",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-07-faca-isto-hoje-a-noite",
+            "titulo": "Faça isto hoje à noite",
+            "tipo": "pratica",
+            "kit": false,
+            "acoes": [
+              "Confira o horário da sua última cafeína de hoje. Passou das 16h? Sem culpa: anote no diário e observe a noite. O\n   protocolo adora um experimento involuntário.",
+              "Tire o pré-treino cafeinado da mochila do treino noturno, se usa. A partir de amanhã ele é item de treino de manhã, ou\n   aposentado.",
+              "Releia a tabela dos suspeitos e marque qual é o seu provável nº 1. É ele que seu diário vai vigiar esta semana."
+            ],
+            "acaoRegistro": null
+          }
+        ]
+      },
+      {
+        "id": "s06-o-fim-de-semana",
+        "numero": 6,
+        "nome": "O fim de semana",
+        "modulos": [
+          {
+            "id": "modulo-01-a-excecao-controlada",
+            "titulo": "A exceção controlada",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-02-a-viagem-de-toda-sexta",
+            "titulo": "A viagem de toda sexta",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-03-mito-dormir-ate-meio-dia",
+            "titulo": "Mito: dormir até meio-dia recupera",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-04-as-4-regras-do-sabado",
+            "titulo": "As 4 Regras do Sábado",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-05-a-regra-do-domingo",
+            "titulo": "A Regra do Domingo",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-06-a-segunda-feira",
+            "titulo": "A segunda-feira",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-07-faca-isto-hoje-a-noite",
+            "titulo": "Faça isto hoje à noite",
+            "tipo": "pratica",
+            "kit": false,
+            "acoes": [
+              "Salve o card das 4 Regras do Sábado no álbum favorito, ao lado do card irmão do Protocolo 02: os dois trabalham juntos na\n   mesma noite.",
+              "Ajuste o alarme do fim de semana agora: sábado e domingo às 11h (a Âncora + 2h). Um alarme a menos para lembrar depois.\n   · o horário mostrado é a Âncora do leitor mais 2 horas",
+              "Se hoje for domingo, capriche na rotina de desligamento: a noite de hoje é a mais importante da semana."
+            ],
+            "acaoRegistro": null
+          }
+        ]
+      },
+      {
+        "id": "s07-o-diario-e-a-noite-seguinte",
+        "numero": 7,
+        "nome": "O diário e a noite seguinte",
+        "modulos": [
+          {
+            "id": "modulo-01-um-minuto-por-manha",
+            "titulo": "Um minuto por manhã",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-02-diario-de-sono",
+            "titulo": "Diário de sono",
+            "tipo": "leitura",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": "sono"
+          },
+          {
+            "id": "modulo-03-os-tres-marcos",
+            "titulo": "Os três marcos",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-04-a-regra-da-noite-seguinte",
+            "titulo": "A Regra da Noite Seguinte",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-05-o-sistema-de-retomada",
+            "titulo": "O Sistema de Retomada",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-06-faca-isto-hoje-a-noite",
+            "titulo": "Faça isto hoje à noite",
+            "tipo": "pratica",
+            "kit": false,
+            "acoes": [
+              "Escreva a Regra da Noite Seguinte na última linha do diário: \"Noite ruim → Âncora normal. Ponto.\"",
+              "Monte o diário da semana (copie a tabela ou desenhe 4 colunas no papel, ou use o diário do app) e deixe ao lado da cama, junto\n   da caneta.",
+              "Marque no calendário os check-ins das semanas 4 e 12: são os dias de reler os três marcos e conferir onde você chegou.\n   · as duas datas calculadas a partir da primeira linha do diário, para copiar"
+            ],
+            "acaoRegistro": null
+          }
+        ]
+      },
+      {
+        "id": "s08-o-treino-de-olhos-fechados",
+        "numero": 8,
+        "nome": "O treino de olhos fechados",
+        "modulos": [
+          {
+            "id": "modulo-01-descansar-nao-e-fraqueza",
+            "titulo": "Descansar não é fraqueza",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-02-tinha-mecanismo",
+            "titulo": "Tinha mecanismo, não defeito de caráter",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-03-descanso-renomeado",
+            "titulo": "Descanso renomeado",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-04-as-pecas-do-triangulo",
+            "titulo": "As peças do triângulo",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-05-faca-isto-hoje-a-noite",
+            "titulo": "Faça isto hoje à noite",
+            "tipo": "pratica",
+            "kit": false,
+            "acoes": [
+              "Escreva na primeira página do diário: \"Dormir é a metade invisível do treino.\"",
+              "Identifique a sua próxima volta do ciclo culpa e fuga (todo mundo tem uma chegando) e decida agora a resposta: Regra da Noite\n   Seguinte, sem julgamento.",
+              "Confira se os três protocolos estão rodando. Se algum ainda não, a sessão 1 dele leva 10 minutos, que é o padrão da casa."
+            ],
+            "acaoRegistro": null
+          }
+        ]
+      },
+      {
+        "id": "s09-fechamento",
+        "numero": 9,
+        "nome": "Fechamento",
+        "modulos": [
+          {
+            "id": "modulo-01-a-madrugada-de-quem-constroi",
+            "titulo": "A madrugada de quem constrói",
+            "tipo": "leitura",
+            "kit": false,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-02-checklist-semanal",
+            "titulo": "Checklist semanal",
+            "tipo": "leitura",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-03-fontes-1-a-9",
+            "titulo": "Fontes 1 a 9",
+            "tipo": "consulta",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          },
+          {
+            "id": "modulo-04-fontes-10-a-17",
+            "titulo": "Fontes 10 a 17",
+            "tipo": "consulta",
+            "kit": true,
+            "acoes": [],
+            "acaoRegistro": null
+          }
+        ]
+      }
+    ]
+  }
+}
