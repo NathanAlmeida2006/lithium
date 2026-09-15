@@ -53,12 +53,11 @@ DS_BUNDLE=/caminho/para/.design-sync/ds-bundle npm run sync:ds
 Vite, React, anime.js e Lenis. Build estático, sem CDN em tempo de execução,
 sem backend. **Três diferenças**, e cada uma tem motivo.
 
-**Multipágina, e não roteador.** O briefing pede navegação por rolagem, com o
-índice virando fast travel para a sessão (LG-30), que é âncora dentro do próprio
-documento. Cada protocolo é um documento longo; `index.html` escolhe entre os
-três. Roteador não entra: a landing já o dispensou pelo mesmo motivo, e aqui ele
-só somaria peso para resolver o que a âncora resolve de graça. Trocar por
-roteador depois é mudar `vite.config.js`, não a arquitetura das sessões.
+**Quatro documentos, um app, e nenhum roteador.** `index.html` e os endereços
+curtos de cada protocolo montam a mesma entrada; o `data-protocolo` do body só
+escolhe a jornada que abre. A navegação interna é por hash (`#/jornada/dieta`),
+lida em `src/app/rotas.js`: funciona offline, sem servidor que conheça os
+caminhos, e sem biblioteca.
 
 **PWA.** `vite-plugin-pwa` gera o manifesto e o service worker. O precache cobre
 HTML, JavaScript, CSS, fonte e ícone: **o protocolo abre inteiro sem rede**, que
@@ -70,23 +69,22 @@ HTML, JavaScript, CSS, fonte e ícone: **o protocolo abre inteiro sem rede**, qu
 um JSON por protocolo agrupado por SESSÃO, não por página. Nada de conteúdo é
 digitado aqui: a base continua sendo a fonte, e refazer é um comando.
 
-**Estado por dispositivo, em `localStorage`.** É o mecanismo de LG-26, e é o
-único do app: uma chave por campo, `lithium:<protocolo>:<sessao>:<campo>`. Não
-sincroniza, não sobe para lugar nenhum, e some se o leitor limpar os dados do
-navegador. Prometer mais que isso exige backend, que não é deste escopo.
+**Estado por dispositivo, em IndexedDB.** Um documento só, alterado por
+transação, com as abas abertas se avisando por BroadcastChannel
+(`src/dados/repositorio.js`). As chaves `lithium:*` da versão anterior, em
+`localStorage`, são lidas uma vez e guardadas como legado. Não sincroniza, não
+sobe para lugar nenhum, e some se o leitor limpar os dados do navegador: por
+isso o Kit exporta e restaura uma cópia local. Prometer mais que isso exige
+backend, que não é deste escopo.
 
 ## Segurança
 
-**CSP por meta tag, só no build.** A política é injetada em
-`transformIndexHtml` e não existe em desenvolvimento, porque quebraria o HMR do
-Vite. `default-src 'self'` com `object-src 'none'` e `form-action 'none'`:
-nenhuma origem externa, nem para script, nem para fonte, nem para conexão.
-
-**O que meta tag não entrega vai em `public/_headers`.** `frame-ancestors` é
-ignorada quando chega por meta, e o navegador avisa no console; `nosniff`,
-`Referrer-Policy`, `Permissions-Policy` e HSTS só existem como cabeçalho. O
-formato do arquivo é o da Netlify e do Cloudflare Pages, que o leem direto. Em
-outra hospedagem o conteúdo é o mesmo e o lugar muda:
+**Segurança por cabeçalho, nunca por meta tag.** A CSP e o resto vivem em
+`public/_headers`: `frame-ancestors` é ignorada quando chega por meta, e
+`nosniff`, `Referrer-Policy`, `Permissions-Policy` e HSTS só existem como
+cabeçalho. Manter a política em dois lugares só criaria a chance de eles
+divergirem. O formato do arquivo é o da Netlify e do Cloudflare Pages, que o
+leem direto. Em outra hospedagem o conteúdo é o mesmo e o lugar muda:
 
 - **Nginx** → `add_header` no bloco `server`
 - **Apache** → `Header set` no `.htaccess`
@@ -131,19 +129,28 @@ app-lithium/
 │   ├── check-size.mjs    o guarda-corpo de orçamento
 │   └── verificar.mjs     confere o ambiente nos quatro documentos
 └── src/
-    ├── config.js         o que muda de um protocolo para outro, e só isso
-    ├── App.jsx           a casca: folha, rolagem e persistência ligadas
-    ├── Protocolo.jsx     o documento de um protocolo
-    ├── entradas/         uma por documento HTML
-    ├── componentes/      um por layout global (vazio)
-    ├── layouts/          um CSS por layout global (só LG-01)
-    ├── motion/           tokens de tempo e o Lenis
-    ├── estado/           anotação persistida (LG-26)
-    ├── protocolos/       o conteúdo das sessões (vazio)
-    └── styles/           tokens ← sync:ds, fontes, base e a folha do app
+    ├── entradas/         principal.jsx: a única montagem do React
+    ├── app/              a composição: rotas, casca, cortina, estado offline
+    ├── telas/            uma por rota (Hoje, Registros, Jornada, Sessao, Kit) e os diálogos
+    ├── componentes/      peças de interface reusadas por mais de uma tela
+    ├── motion/           tokens de tempo, Lenis e o vocabulário de revelação
+    ├── dados/            o repositório em IndexedDB e a cópia local
+    ├── dominio/          regras puras: progresso, indicadores, validação
+    ├── conteudo/         catálogo, JSON gerado dos protocolos e revisões
+    └── styles/           tokens ← sync:ds, fontes, interface e movimento
 ```
 
-Cada diretório tem o próprio `README.md` dizendo o que entra nele.
+**A regra de dependência** é o que mantém a organização de pé: cada camada só
+importa as de baixo.
+
+```
+entradas → app → telas → componentes, motion → dados → dominio, conteudo
+```
+
+`dominio/` não conhece React, IndexedDB nem tela, e é por isso que a bateria
+de testes o importa direto. `componentes/` não sabe de rota nem de
+armazenamento: recebe por prop e desenha. Regra nova de negócio entra em
+`dominio/`; tela nova entra em `telas/` e ganha uma linha em `app/Aplicativo.jsx`.
 
 ## O que não entra aqui
 
@@ -184,19 +191,17 @@ exatamente a lista acima.
 Os campos de anotação de cada protocolo são exatamente os que o aprovado declara
 em "O que vira estado no cache", com a chave que ele declara: 17, 3 e 5.
 
-`npm run verificar` roda **149 checagens e todas passam**, nos três documentos: a
-bateria descobre os protocolos por `src/conteudo/*.json` e cobra de cada um o que
-o próprio JSON diz que ele tem.
+`npm run verificar` roda **195 checagens e todas passam**, nos três protocolos: a
+bateria lê o catálogo de `src/conteudo/catalogo.json` e cobra de cada protocolo o
+que o próprio catálogo diz que ele tem.
 
-**O teto de JavaScript passou a valer por documento**, e não pela soma dos quatro.
-O leitor abre UM protocolo e leva o compartilhado mais o dele; a soma não é o peso
-de sessão de ninguém e cresceria a cada protocolo sem que o custo por leitor
-mudasse. O pior documento é a hipertrofia, com 112,5 KB dos 180 KB - o sono não
-custou nada ao orçamento por leitor.
+**O teto de JavaScript vale por documento**, e não pela soma dos quatro. O leitor
+abre um documento e leva o que ele declara; a soma não é o peso de sessão de
+ninguém.
 
 ## A bateria de testes
 
-`npm run verificar` sobe o `dist` em `vite preview` e faz quatro perguntas:
+`npm run verificar` serve o `dist` com os cabeçalhos de `public/_headers` e faz quatro perguntas:
 
 1. **Responsividade.** Cinco aparelhos, de 320px a 1440px, na raiz e em cada
    protocolo com conteúdo:

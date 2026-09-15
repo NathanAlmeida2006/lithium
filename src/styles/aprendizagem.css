@@ -1,0 +1,164 @@
+/* Interações do aprendizado. Paleta e famílias vêm do mestre visual. */
+.aprendizado { --leitura-espaco: var(--space-5); min-width: 0; }
+.aprendizado-barra { display: flex; justify-content: space-between; align-items: center; gap: var(--space-3); border-block: var(--fio); margin-bottom: var(--space-5); }
+.aprendizado-barra > span { display: flex; align-items: center; gap: var(--space-3); font-size: var(--texto-pequeno); }
+.aprendizado-barra .botao-texto { text-align: right; color: var(--silver); }
+.aprendizado-instrucao { color: var(--silver); font-size: var(--texto-pequeno); margin-bottom: var(--space-5); }
+.aprendizado .texto-modulo { max-width: 65ch; }
+.aprendizado .texto-modulo p { line-height: 1.7; }
+.aprendizado .texto-modulo > * + * { margin-top: var(--space-4); }
+.aprendizado .texto-modulo blockquote { font-family: var(--font-secundaria); font-size: 26px; line-height: 1.35; }
+
+/* Dossiê de cuidados: nenhuma condição depende de interação para aparecer. */
+.aprendizado--cuidados .aprendizado-barra { min-height: 56px; }
+.cuidados-dossie { display: grid; grid-template-columns: 132px minmax(0, 1fr); gap: var(--space-6); align-items: start; }
+.cuidados-selo { display: grid; justify-items: center; gap: var(--space-4); padding: var(--space-5) var(--space-3); border: var(--fio); background: var(--surface-2); }
+.cuidados-selo svg { width: 88px; stroke: var(--bone); stroke-width: 2; }
+.cuidados-selo span { text-align: center; font-family: var(--font-secundaria); font-size: 24px; line-height: 1.1; }
+.cuidado-grupo { padding-block: var(--space-5); border-bottom: var(--fio); }
+.cuidado-grupo:first-child { padding-top: 0; }
+.cuidado-grupo:last-child { border-bottom: 0; padding-bottom: 0; }
+.cuidado-grupo h3 { color: var(--silver); font: 500 var(--texto-pequeno)/1.5 var(--font-terciaria); margin-bottom: var(--space-3); }
+.cuidado-grupo .texto-modulo ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-2); padding: 0; list-style: none; }
+.cuidado-grupo .texto-modulo li { margin: 0; padding: var(--space-3); border: var(--fio); border-left: 2px solid var(--silver); background: var(--surface-2); font-size: var(--texto-normal); }
+.cuidado-grupo:last-child:has(p) { background: var(--surface-2); padding: var(--space-4); margin-top: var(--space-4); }
+
+/* Trechos com trilho de navegação e uma posição explícita. */
+.trechos-trilho { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-4); }
+.trechos-trilho button { display: flex; align-items: center; gap: var(--space-3); min-width: var(--alvo); min-height: var(--alvo); border: var(--fio); background: transparent; padding: var(--space-3); text-align: left; color: var(--silver); }
+.trechos-trilho button[aria-current] { background: var(--bone); color: var(--void); border-color: var(--bone); }
+.trechos-trilho button > span:first-child { font: 650 24px/1 var(--font-secundaria); }
+.trecho-nome { font-size: var(--texto-pequeno); max-width: 23ch; }
+.trecho-conteudo { position: relative; background: var(--surface-2); padding: var(--space-6); border: var(--fio); min-height: 300px; }
+.trecho-folio { display: flex; align-items: center; justify-content: space-between; border-bottom: var(--fio); margin-bottom: var(--space-5); padding-bottom: var(--space-4); color: var(--silver); }
+.trecho-folio > span { font: 700 64px/.9 var(--font-secundaria); letter-spacing: -.03em; }
+.trecho-folio svg { opacity: .6; }
+.trechos-rodape { display: flex; justify-content: space-between; align-items: center; gap: var(--space-3); margin-top: var(--space-4); }
+.trechos-rodape > span { font-size: var(--texto-pequeno); color: var(--silver); }
+.trechos-rodape > div { display: flex; gap: var(--space-2); }
+.trechos-rodape .botao { min-width: var(--alvo); }
+.exploracao-retorno { display: flex; gap: var(--space-3); align-items: center; font-size: var(--texto-pequeno); margin-top: var(--space-5); padding-top: var(--space-4); border-top: var(--fio); }
+.leitura-guiada--cenas .trecho-conteudo { background: var(--bone); color: var(--void); padding-block: var(--space-7); }
+.leitura-guiada--cenas .trecho-folio { color: inherit; border-color: currentColor; }
+.leitura-guiada--cenas .texto-modulo > p:first-child { font-family: var(--font-secundaria); font-size: clamp(26px, 3vw, 36px); line-height: 1.25; }
+.leitura-guiada--cenas .texto-modulo blockquote { background: transparent; border-color: currentColor; }
+.leitura-guiada--passos .trechos-trilho { border-left: var(--fio); padding-left: var(--space-3); }
+
+/* Mito: a explicação e as ressalvas abrem juntas. */
+.mito-afirmacao { position: relative; background: var(--surface-2); border: var(--fio); padding: var(--space-6); overflow: hidden; }
+.mito-sinal { display: block; font: 700 100px/.9 var(--font-secundaria); color: var(--silver); margin-bottom: var(--space-5); }
+.mito-afirmacao .sobretitulo { margin-bottom: var(--space-4); }
+.mito-afirmacao .texto-modulo ul { padding-left: var(--space-4); }
+.mito-afirmacao .texto-modulo li { font-family: var(--font-secundaria); font-size: 28px; line-height: 1.3; }
+.mito-revelar { width: 100%; margin-top: var(--space-3); justify-content: space-between; }
+.mito-explicacao { border-left: 2px solid var(--bone); margin-top: var(--space-5); padding: var(--space-4) var(--space-5); }
+.mito-explicacao > p { margin-bottom: var(--space-4); }
+
+/* Mesa de exploração: seletor + ficha, sem arrastar e sem depender de hover. */
+.explorador > * + * { margin-top: var(--space-5); }
+.explorador > .texto-modulo:first-child p { font: 600 26px/1.3 var(--font-secundaria); }
+.tabela-exploravel { border: var(--fio); }
+.tabela-comando { display: flex; justify-content: space-between; align-items: center; gap: var(--space-3); padding: var(--space-2) var(--space-4); border-bottom: var(--fio); font-size: var(--texto-pequeno); }
+.tabela-estacao { display: grid; grid-template-columns: minmax(130px, .8fr) minmax(0, 1.5fr); }
+.tabela-seletor { padding: var(--space-3); display: flex; flex-direction: column; gap: var(--space-2); border-right: var(--fio); }
+.tabela-seletor button { display: flex; align-items: center; gap: var(--space-3); min-height: 56px; min-width: 0; padding: var(--space-3); text-align: left; background: transparent; border: var(--fio); font-size: var(--texto-pequeno); overflow-wrap: anywhere; }
+.tabela-seletor button[aria-pressed="true"] { background: var(--bone); color: var(--void); border-color: var(--bone); }
+.tabela-seletor button > svg { margin-left: auto; }
+.tabela-numero { font: 650 24px/1 var(--font-secundaria); }
+.tabela-ficha { padding: var(--space-5); background: var(--surface-2); overflow-wrap: anywhere; }
+.tabela-ficha h3 { font-size: 30px; margin-top: var(--space-3); }
+.tabela-ficha dl { margin: var(--space-5) 0 0; }
+.tabela-ficha dl > div { padding-block: var(--space-3); border-top: var(--fio); }
+.tabela-ficha dt { font-size: var(--texto-pequeno); color: var(--silver); margin-bottom: var(--space-2); }
+.tabela-ficha dd { margin: 0; font-size: var(--texto-normal); }
+.tabela-exploravel > .texto-modulo { max-width: none; padding: var(--space-3); }
+
+/* Diagramas conceituais: a forma demonstra a relação entre as partes. */
+.mapa-conceito { margin-bottom: var(--space-6); border: var(--fio); padding: var(--space-5); background: var(--void); }
+.mapa-conceito-titulo { font: 600 26px/1.2 var(--font-secundaria); margin-bottom: var(--space-5); }
+.mapa-conceito-pecas { display: flex; gap: var(--space-2); }
+.mapa-conceito-pecas button { flex: 1; min-height: 96px; min-width: 0; border: var(--fio); background: var(--surface-1); padding: var(--space-4); text-align: left; }
+.mapa-conceito-pecas button[aria-pressed="true"] { color: var(--void); background: var(--bone); border-color: var(--bone); }
+.mapa-conceito-pecas span { display: block; font-size: var(--texto-pequeno); margin-bottom: var(--space-3); }
+.mapa-conceito-pecas strong { font: 650 30px/1 var(--font-secundaria); }
+.mapa-conceito-legenda { font-size: var(--texto-pequeno); min-height: 3.2em; margin-top: var(--space-4); }
+.conceito-desafio { border: 0; border-top: var(--fio); margin: var(--space-5) 0 0; padding: var(--space-4) 0 0; min-width: 0; }
+.conceito-desafio legend { padding: 0 var(--space-2) 0 0; font-size: var(--texto-pequeno); }
+.conceito-desafio > div { display: grid; gap: var(--space-2); }
+.conceito-desafio button { min-height: var(--alvo); border: var(--fio); background: var(--surface-1); padding: var(--space-3); text-align: left; font-size: var(--texto-pequeno); }
+.conceito-desafio button[aria-pressed="true"] { border-color: var(--bone); background: var(--surface-2); }
+.conceito-desafio > p { margin-top: var(--space-4); font-size: var(--texto-pequeno); }
+.mapa-conceito--andares .mapa-conceito-pecas { flex-direction: column-reverse; align-items: center; padding-bottom: var(--space-3); border-bottom: 3px solid var(--silver); }
+.mapa-conceito--andares .mapa-conceito-pecas button { min-height: 64px; width: 100%; display: flex; justify-content: space-between; align-items: center; gap: var(--space-3); }
+.mapa-conceito--andares .mapa-conceito-pecas button span { margin: 0; }
+.mapa-conceito--andares .mapa-conceito-pecas button:nth-child(2) { width: 86%; }
+.mapa-conceito--andares .mapa-conceito-pecas button:nth-child(3) { width: 72%; }
+.mapa-conceito--prato .mapa-conceito-pecas { border: 2px solid var(--silver); border-radius: 50%; aspect-ratio: 1; max-width: 290px; margin: auto; padding: var(--space-5); display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2); overflow: hidden; }
+.mapa-conceito--prato .mapa-conceito-pecas button { min-height: 0; padding: var(--space-3); text-align: center; border: 0; }
+.mapa-conceito--prato .mapa-conceito-pecas button:first-child { border-top-left-radius: 100%; padding-top: var(--space-5); padding-left: var(--space-5); }
+.mapa-conceito--prato .mapa-conceito-pecas button:last-child { border-bottom-left-radius: 100%; padding-bottom: var(--space-5); padding-left: var(--space-5); }
+.mapa-conceito--prato .mapa-conceito-pecas button:nth-child(2) { grid-row: 1 / 3; grid-column: 2; border-radius: 0 100% 100% 0; }
+.mapa-conceito--prato strong { font-size: 24px; }
+.mapa-conceito--prato span { font-size: 11px; }
+
+/* Progresso da sessão, missões e revisão aproveitam o estado já persistido. */
+.sessao-medidor { margin: calc(-1 * var(--space-3)) 0 var(--space-6); }
+.sessao-medidor progress, .missao-progresso progress { width: 100%; height: 4px; display: block; appearance: none; border: 0; background: var(--line); }
+progress::-webkit-progress-bar { background: var(--line); }
+progress::-webkit-progress-value { background: var(--bone); }
+progress::-moz-progress-bar { background: var(--bone); }
+.missao-progresso { display: grid; grid-template-columns: auto 1fr; gap: var(--space-5); align-items: center; padding: var(--space-5); background: var(--surface-2); margin-bottom: var(--space-5); border: var(--fio); }
+.missao-progresso > strong { font: 700 54px/1 var(--font-secundaria); }
+.missao-progresso > div > p { margin-bottom: var(--space-3); }
+.missao-progresso small { color: var(--silver); font-size: var(--texto-pequeno); }
+.tarefa { position: relative; border-left: 3px solid var(--line-strong); }
+.tarefa[data-estado="feita"] { border-left-color: var(--bone); background: var(--surface-2); }
+.tarefa-cabeca { display: flex; gap: var(--space-3); align-items: center; justify-content: space-between; margin-bottom: var(--space-4); }
+.tarefa-cabeca strong { font: 600 24px/1 var(--font-secundaria); }
+.tarefa-cabeca span { color: var(--silver); font-size: var(--texto-pequeno); }
+.revisao .opcao { display: flex; align-items: center; gap: var(--space-3); }
+.opcao-letra { display: grid; place-items: center; min-width: 36px; height: 36px; border: var(--fio); font: 600 24px/1 var(--font-secundaria); }
+.opcao.selecionada .opcao-letra { background: var(--bone); color: var(--void); }
+.desafio-cabeca { display: flex; align-items: center; gap: var(--space-4); border-bottom: var(--fio); padding-bottom: var(--space-5); margin-bottom: var(--space-5); }
+.desafio-cabeca > svg { width: 44px; height: 44px; }
+.desafio-cabeca p { margin-bottom: var(--space-2); }
+.trecho-entrada { animation: abrir-trecho 180ms ease-out; }
+@keyframes abrir-trecho { from { opacity: .3; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+@media (max-width: 1100px) {
+  .cuidados-dossie { grid-template-columns: 1fr; gap: var(--space-5); }
+  .cuidados-selo { display: flex; padding: var(--space-4); }
+  .cuidados-selo svg { width: 48px; }
+  .cuidados-selo span { text-align: left; }
+  .tabela-estacao { grid-template-columns: 1fr; }
+  .tabela-seletor { flex-direction: row; flex-wrap: wrap; border-right: 0; border-bottom: var(--fio); }
+  .tabela-seletor button { flex: 1 1 120px; }
+  .trecho-nome { display: none; }
+}
+@media (max-width: 600px) {
+  .aprendizado-barra { flex-wrap: wrap; padding-block: var(--space-2); gap: 0 var(--space-3); }
+  .aprendizado-barra > span { min-height: var(--alvo); }
+  .cuidado-grupo .texto-modulo ul { grid-template-columns: 1fr; }
+  .trecho-conteudo, .mito-afirmacao { padding: var(--space-4); min-height: 0; }
+  .trecho-folio > span { font-size: 48px; }
+  .trechos-rodape { flex-wrap: wrap; }
+  .trechos-rodape > div { width: 100%; }
+  .trechos-rodape > div button:last-child { flex: 1; }
+  .mapa-conceito { padding: var(--space-4); }
+  .mapa-conceito--elos .mapa-conceito-pecas { flex-direction: column; }
+  .mapa-conceito-pecas button { min-height: var(--alvo); }
+  .mapa-conceito--prato .mapa-conceito-pecas { padding: var(--space-3); }
+  .mapa-conceito--prato .mapa-conceito-pecas button { padding: var(--space-2); }
+  .mapa-conceito--prato strong { font-size: 20px; }
+  .mapa-conceito--andares .mapa-conceito-pecas button { padding: var(--space-3); }
+  .mapa-conceito--andares strong { font-size: 24px; }
+  .mapa-conceito--andares .mapa-conceito-pecas button:nth-child(3) { width: 82%; }
+  .mito-explicacao { padding: var(--space-3); }
+  .tabela-ficha { padding: var(--space-4); }
+  .tabela-comando { flex-wrap: wrap; }
+  .missao-progresso { gap: var(--space-3); padding: var(--space-4); }
+  .opcao-letra { min-width: 28px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .trecho-entrada { animation: none; }
+  .aprendizado *, .tarefa { transition: none; }
+}

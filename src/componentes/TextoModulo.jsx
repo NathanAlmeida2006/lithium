@@ -1,29 +1,79 @@
 import { Fragment } from "react";
+
+/**
+ * O texto das sessões chega do pipeline em markdown mínimo, e vira elemento
+ * aqui. Sem `dangerouslySetInnerHTML`: o conteúdo nunca é interpretado como HTML.
+ */
+
+// Negrito, itálico e código. A nota numerada `[12]` sai do card: a fonte segue no Kit.
+const MARCAS_EM_LINHA = /(\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)/g;
+const NOTA = /\s*\[\d{1,2}\]/g;
+const INICIO_DE_ITEM = /^\s*(?:\d+\.|[-·])\s/;
+const QUEBRA_ENTRE_ITENS = /\n(?=\s*(?:\d+\.|[-·])\s)/;
+const SEPARADOR_DE_TABELA = /^\|[\s:|\-]+\|?$/;
+
 export function EmLinha({ texto, pilar }) {
-  const partes = String(texto).split(/(\*\*[^*]+\*\*|\*[^*]+\*|\x60[^\x60]+\x60|\[\d{1,2}\])/g);
-  return partes.map((p, i) => {
-    if (p.startsWith("**")) return <strong key={i}>{p.slice(2, -2)}</strong>;
-    if (p.startsWith("*")) return <em key={i}>{p.slice(1, -1)}</em>;
-    if (p.charCodeAt(0) === 96) return <span key={i}>{p.slice(1, -1)}</span>;
-    if (/^\[\d+\]$/.test(p)) return <a key={i} className="referencia" href={"#/kit/" + pilar + "/fontes/" + p.slice(1, -1)} aria-label={"Consultar fonte " + p.slice(1, -1)}>{p}</a>;
-    return <Fragment key={i}>{p}</Fragment>;
+  return String(texto).replace(NOTA, "").split(MARCAS_EM_LINHA).map((parte, i) => {
+    if (parte.startsWith("**")) return <strong key={i}>{parte.slice(2, -2)}</strong>;
+    if (parte.startsWith("*")) return <em key={i}>{parte.slice(1, -1)}</em>;
+    if (parte.startsWith("`")) return <span key={i}>{parte.slice(1, -1)}</span>;
+    return <Fragment key={i}>{parte}</Fragment>;
   });
 }
+
+function Tabela({ linhas, pilar }) {
+  const [cabecalho = [], ...corpo] = linhas
+    .filter((linha) => !SEPARADOR_DE_TABELA.test(linha))
+    .map((linha) => linha.split("|").slice(1, -1).map((celula) => celula.trim()));
+  return (
+    <div className="tabela-adaptada">
+      <table role="table">
+        <thead role="rowgroup">
+          <tr role="row">{cabecalho.map((celula, j) => <th role="columnheader" scope="col" key={j}><EmLinha texto={celula} pilar={pilar} /></th>)}</tr>
+        </thead>
+        <tbody role="rowgroup">
+          {corpo.map((linha, k) => (
+            <tr role="row" key={k}>
+              {linha.map((celula, j) => <td role="cell" key={j} data-rotulo={cabecalho[j]?.replace(/\*/g, "")}><EmLinha texto={celula} pilar={pilar} /></td>)}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+/** Lista numerada começa no número escrito, e cada item vira âncora `fonte-N` para o link da nota. */
+function Lista({ parte, pilar }) {
+  const itens = parte.split(QUEBRA_ENTRE_ITENS).map((item) => item.replace(INICIO_DE_ITEM, "").replace(/\n/g, " "));
+  if (!/^\d/.test(parte)) return <ul>{itens.map((item, j) => <li key={j}><EmLinha texto={item} pilar={pilar} /></li>)}</ul>;
+  const inicio = Number(/^\d+/.exec(parte)[0]);
+  return <ol start={inicio}>{itens.map((item, j) => <li key={j} id={"fonte-" + (inicio + j)}><EmLinha texto={item} pilar={pilar} /></li>)}</ol>;
+}
+
+function Bloco({ parte, pilar }) {
+  const linhas = parte.trim().split("\n");
+  if (linhas[0].startsWith("|")) return <Tabela linhas={linhas} pilar={pilar} />;
+  if (INICIO_DE_ITEM.test(parte)) return <Lista parte={parte} pilar={pilar} />;
+  if (linhas[0].startsWith(">")) return <blockquote><EmLinha texto={linhas.map((l) => l.replace(/^>\s?/, "")).join(" ")} pilar={pilar} /></blockquote>;
+  return <p><EmLinha texto={parte.replace(/\n/g, " ")} pilar={pilar} /></p>;
+}
+
 export function TextoModulo({ texto = "", pilar }) {
-  const partes = texto.split(/\n\s*\n/).filter(Boolean);
-  return <div className="texto-modulo">{partes.map((parte, i) => {
-    const linhas = parte.trim().split("\n");
-    if (linhas[0].startsWith("|")) {
-      const rows = linhas.filter((l) => !/^\|[\s:|\-]+\|?$/.test(l)).map((l) => l.split("|").slice(1, -1).map((c) => c.trim()));
-      return <div className="tabela-adaptada" key={i}><table role="table"><thead role="rowgroup"><tr role="row">{rows[0]?.map((c, j) => <th role="columnheader" scope="col" key={j}><EmLinha texto={c} pilar={pilar} /></th>)}</tr></thead><tbody role="rowgroup">{rows.slice(1).map((row, k) => <tr role="row" key={k}>{row.map((c, j) => <td role="cell" key={j} data-rotulo={rows[0][j]?.replace(/\*/g, "")}><EmLinha texto={c} pilar={pilar} /></td>)}</tr>)}</tbody></table></div>;
-    }
-    if (/^\s*(?:\d+\.|[-·])\s/.test(parte)) {
-      const itens = parte.split(/\n(?=\s*(?:\d+\.|[-·])\s)/).map((l) => l.replace(/^\s*(?:\d+\.|[-·])\s/, "").replace(/\n/g, " "));
-      const Tag = /^\d/.test(parte) ? "ol" : "ul";
-      const inicio = /^\d+/.exec(parte)?.[0];
-      return <Tag key={i} start={Tag === "ol" ? Number(inicio) : undefined}>{itens.map((t, j) => <li key={j} id={Tag === "ol" ? "fonte-" + (Number(inicio) + j) : undefined}><EmLinha texto={t} pilar={pilar} /></li>)}</Tag>;
-    }
-    if (linhas[0].startsWith(">")) return <blockquote key={i}><EmLinha texto={linhas.map((l) => l.replace(/^>\s?/, "")).join(" ")} pilar={pilar} /></blockquote>;
-    return <p key={i}><EmLinha texto={parte.replace(/\n/g, " ")} pilar={pilar} /></p>;
-  })}</div>;
+  return (
+    <div className="texto-modulo">
+      {texto.split(/\n\s*\n/).filter(Boolean).map((parte, i) => <Bloco key={i} parte={parte} pilar={pilar} />)}
+    </div>
+  );
+}
+
+/** Enquanto o conteúdo do protocolo não chega, ou quando ele falha em chegar. */
+export function EstadoConteudo({ carregado }) {
+  if (carregado.conteudo) return null;
+  return (
+    <p role="status">
+      {carregado.erro || "Preparando conteúdo…"}
+      {carregado.erro && <button className="botao-texto" onClick={carregado.tentar}>Tentar novamente</button>}
+    </p>
+  );
 }

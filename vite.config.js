@@ -1,21 +1,18 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
-import { resolve, dirname } from "node:path";
-import { fileURLToPath } from "node:url";
+import { resolve } from "node:path";
 /**
  * Mesma stack da `fluor-landing`: Vite, React, anime.js e Lenis. Build
  * estatico, sem CDN em tempo de execucao, sem backend.
  *
  * TRES DIFERENCAS, e cada uma tem motivo.
  *
- * 1. MULTIPAGINA, e nao roteador. O briefing pede navegacao por rolagem e o
- *    indice virando fast travel para a sessao (LG-30), que e ancora dentro do
- *    proprio documento. Cada protocolo e um documento longo; o indice da raiz
- *    escolhe entre os tres. Roteador nao entra: a landing ja o dispensou pelo
- *    mesmo motivo, e aqui ele so somaria peso para resolver o que a ancora
- *    resolve de graca. Trocar por roteador depois e mudar este arquivo, nao a
- *    arquitetura das sessoes.
+ * 1. QUATRO DOCUMENTOS, UM APP. `index.html` e os enderecos curtos de cada
+ *    protocolo montam a mesma entrada (`src/entradas/principal.jsx`); o
+ *    `data-protocolo` do body so escolhe a jornada que abre. A navegacao
+ *    interna e por hash (`src/app/rotas.js`): funciona offline e dispensa
+ *    roteador.
  *
  * 2. PWA. `vite-plugin-pwa` gera o manifesto e o service worker, e o precache
  *    cobre HTML, JS, CSS, fonte e icone: o protocolo abre inteiro sem rede, que
@@ -32,10 +29,7 @@ import { fileURLToPath } from "node:url";
 // cabeçalho (X-Content-Type-Options, Referrer-Policy, Permissions-Policy,
 // HSTS) vivem em `public/_headers`, que a hospedagem aplica.
 
-// `import.meta.dirname` so existe do Node 20.11 em diante, e a maquina roda
-// 18.19: o caminho sai da URL do proprio modulo.
-const raiz = dirname(fileURLToPath(import.meta.url));
-const pagina = (nome) => resolve(raiz, `${nome}.html`);
+const pagina = (nome) => resolve(import.meta.dirname, `${nome}.html`);
 
 export default defineConfig({
   plugins: [

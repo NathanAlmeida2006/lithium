@@ -3,8 +3,9 @@ import { readFile, mkdir } from 'node:fs/promises';
 import { createServer } from 'node:http';
 import { resolve, extname } from 'node:path';
 import { chromium } from 'playwright-core';
-import { estadoSessao, concluirSessao, chaveSessao, modulosDaJornada } from '../src/estado/progresso.js';
-import { dataLocal, resumir, tempoNaCama, inicioSemana, diasDoPeriodo } from '../src/estado/indicadores.js';
+import { estadoSessao, concluirSessao, chaveSessao, modulosDaJornada } from '../src/dominio/progresso.js';
+import { dataLocal, resumir, tempoNaCama, inicioSemana, diasDoPeriodo, serieDiaria } from '../src/dominio/indicadores.js';
+import { validarRegistro } from '../src/dominio/registros.js';
 import { revisao } from '../src/conteudo/revisoes.js';
 
 let verificacoes = 0;
@@ -34,6 +35,13 @@ conferir(inicioSemana('2026-09-13') === '2026-09-07', 'domingo pertence à seman
 conferir(diasDoPeriodo(7, '2026-01-03')[0] === '2025-12-28', 'período atravessa o ano');
 const vazio = resumir({ registros: [] }, 7, '2026-09-14');
 conferir(vazio.blocosHoje === null && vazio.tempoNaCama === null, 'ausência não vira zero de alimentação ou sono');
+assert.throws(() => validarRegistro({ id: 'x', tipo: 'constructor', data: '2026-01-02' }), /Tipo de registro desconhecido/);
+conferir(true, 'tipo herdado do protótipo é recusado na validação');
+const serie = serieDiaria([
+  { tipo: 'treino', data: '2026-01-01', exercicios: [{ nome: 'Remada', carga: 20 }, { nome: 'Remada', carga: 30 }] },
+  { tipo: 'dieta', data: '2026-01-01', blocos: 3 },
+], ['2026-01-01', '2026-01-02'], 'treino', 'Remada');
+conferir(serie[0] === 30 && serie[1] === null, 'série do gráfico usa a maior carga e deixa lacuna onde não houve registro');
 
 const raiz = resolve('dist');
 const mime = { '.html': 'text/html', '.js': 'application/javascript', '.css': 'text/css', '.svg': 'image/svg+xml', '.png': 'image/png', '.woff2': 'font/woff2', '.webmanifest': 'application/manifest+json', '.json': 'application/json' };
