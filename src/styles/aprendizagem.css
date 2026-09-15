@@ -31,7 +31,6 @@
 .trecho-nome { font-size: var(--texto-pequeno); max-width: 23ch; }
 .trecho-conteudo { position: relative; background: var(--surface-2); padding: var(--space-6); border: var(--fio); min-height: 300px; }
 .trecho-folio { display: flex; align-items: center; justify-content: space-between; border-bottom: var(--fio); margin-bottom: var(--space-5); padding-bottom: var(--space-4); color: var(--silver); }
-.trecho-folio > span { font: 700 64px/.9 var(--font-secundaria); letter-spacing: -.03em; }
 .trecho-folio svg { opacity: .6; }
 .trechos-rodape { display: flex; justify-content: space-between; align-items: center; gap: var(--space-3); margin-top: var(--space-4); }
 .trechos-rodape > span { font-size: var(--texto-pequeno); color: var(--silver); }
@@ -122,8 +121,90 @@ progress::-moz-progress-bar { background: var(--bone); }
 .desafio-cabeca { display: flex; align-items: center; gap: var(--space-4); border-bottom: var(--fio); padding-bottom: var(--space-5); margin-bottom: var(--space-5); }
 .desafio-cabeca > svg { width: 44px; height: 44px; }
 .desafio-cabeca p { margin-bottom: var(--space-2); }
-.trecho-entrada { animation: abrir-trecho 180ms ease-out; }
-@keyframes abrir-trecho { from { opacity: .3; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+/* ============================================================================
+   A linguagem da fluor-landing nos cards
+   ----------------------------------------------------------------------------
+   Os dois idiomas de `motion/revelacao.js`: o que e marca corta em `steps()`
+   (troca de estado, carimbo, palavra que acende), o que e layout desliza em
+   expo-out (recorte que abre, fio que se desenha, ornamento na rolagem). A
+   entrada por rolagem e JS; a troca de trecho, ficha e legenda e CSS, porque o
+   `key` do React ja remonta o no e a animacao recomeca sozinha.
+
+   Um acento por superficie, como na landing: `--acento-interface`, na marca
+   do trecho atual, na fronteira da manchete e no fio da explicacao.
+   ========================================================================== */
+@keyframes fio-abre { from { transform: scaleX(0); } }
+@keyframes recorte-sobe { from { transform: translateY(24px); clip-path: inset(0 0 100% 0); } }
+
+/* A barra: o rotulo entre parenteses da landing e o fio que abre da esquerda. */
+.aprendizado-barra { position: relative; border-bottom-color: transparent; animation: corte-sobe var(--motion-base) var(--ease-corte-2) backwards; }
+.aprendizado-barra::after { content: ""; position: absolute; inset: auto 0 -1px; height: 1px; background: var(--line-strong); transform-origin: left; animation: fio-abre 900ms var(--ease-expo) 120ms backwards; }
+.aprendizado-barra > span { color: var(--silver); letter-spacing: .08em; text-transform: lowercase; }
+.aprendizado-rotulo::before { content: "("; }
+.aprendizado-rotulo::after { content: ")"; }
+
+/* Manchete: as palavras do manifesto. Apagada e opacidade, nunca cor. */
+.aprendizado .texto-modulo .manchete { font: 600 clamp(22px, 2.3vw, 30px)/1.25 var(--font-secundaria); letter-spacing: -.005em; hyphens: manual; }
+.leitura-guiada--cenas .texto-modulo .manchete { font-size: clamp(26px, 3vw, 36px); }
+.manchete .palavra { transition: opacity var(--motion-fast) var(--ease-corte-2), color var(--motion-fast) var(--ease-corte-2); }
+.manchete[data-acendendo] .palavra:not(.palavra--acesa) { opacity: .16; }
+.manchete .palavra.palavra--atual { color: var(--acento-interface); }
+
+/* Os cantos da dobra, desenhados por `desenhar`. O conteudo pinta por cima. */
+.moldura-card { position: absolute; inset: var(--space-2); color: var(--line-strong); pointer-events: none; }
+.moldura-card svg { position: absolute; }
+.moldura-card svg:nth-child(1) { top: 0; left: 0; }
+.moldura-card svg:nth-child(2) { top: 0; right: 0; }
+.moldura-card svg:nth-child(3) { bottom: 0; right: 0; }
+.moldura-card svg:nth-child(4) { bottom: 0; left: 0; }
+.trecho-conteudo > :not(.moldura-card) { position: relative; }
+
+/* O trilho vira a regua das doze semanas: fio vazio, visto cheio, atual no acento.
+   Numero ainda nao aberto em contorno (`.vazado` da landing): forma, nao so tom. */
+.trechos-trilho button { position: relative; transition: background-color var(--motion-fast) var(--ease-corte-2), color var(--motion-fast) var(--ease-corte-2), border-color var(--motion-fast) var(--ease-corte-2); }
+.trechos-trilho button::after { content: ""; position: absolute; inset: auto -1px -1px; height: 3px; transition: background-color var(--motion-fast) var(--ease-corte-2); }
+.trechos-trilho button[data-visto]::after { background: var(--line-strong); }
+.trechos-trilho button[aria-current]::after { background: var(--acento-interface); }
+.trechos-trilho button:not([data-visto]) > span:first-child { color: transparent; -webkit-text-stroke: 1px var(--silver); }
+
+/* O numero do trecho e a capa do slide: escala de cartaz, em contorno, carimbando
+   a cada troca e deslizando dentro do proprio recorte com a rolagem. */
+.trecho-conteudo { --traco: var(--bone); }
+.trecho-folio { overflow: clip; }
+.trecho-numero { display: block; will-change: transform; }
+.trecho-numero > span { display: block; font: var(--peso-black) clamp(64px, 8vw, 112px)/.86 var(--font-secundaria); letter-spacing: -.02em; color: transparent; -webkit-text-stroke: 1.5px var(--traco); padding-top: .06em; animation: carimbo var(--motion-celebracao) var(--ease-corte-3) backwards; transform-origin: left bottom; }
+.trecho-entrada { animation: recorte-sobe 560ms var(--ease-expo) backwards; }
+.leitura-guiada--cenas .trecho-conteudo { --traco: var(--void); }
+.leitura-guiada--cenas .moldura-card { color: currentColor; }
+
+/* Mito: o dialogo das objecoes. O sinal gigante fica atras, como as aspas; a
+   explicacao e a fala do parceiro, com o fio no acento. */
+.mito-afirmacao { overflow: clip; }
+.mito-afirmacao > :not(.mito-sinal) { position: relative; }
+.mito-afirmacao .mito-sinal { position: absolute; top: -.1em; right: var(--space-5); margin: 0; font: var(--peso-black) clamp(160px, 20vw, 260px)/1 var(--font-secundaria); color: var(--line); pointer-events: none; user-select: none; }
+.mito-explicacao { border-left-color: var(--acento-interface); background: var(--surface-1); animation: corte-sobe var(--motion-base) var(--ease-corte-2); }
+.mito-explicacao .texto-modulo > * { animation: corte-sobe var(--motion-base) var(--ease-corte-2) backwards; }
+.mito-explicacao .texto-modulo > :nth-child(2) { animation-delay: 60ms; }
+.mito-explicacao .texto-modulo > :nth-child(3) { animation-delay: 120ms; }
+.mito-explicacao .texto-modulo > :nth-child(n + 4) { animation-delay: 180ms; }
+
+/* Textura de marca, a mesma camada da landing: atras do conteudo, nunca por cima. */
+.grao::before { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: var(--grain-opacity); background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23g)' opacity='0.55'/%3E%3C/svg%3E"); mix-blend-mode: overlay; }
+
+/* Diagrama: troca de peca em corte seco, a legenda nova sobe, o retorno carimba. */
+.mapa-conceito-pecas button { transition: background-color var(--motion-fast) var(--ease-corte-2), color var(--motion-fast) var(--ease-corte-2), border-color var(--motion-fast) var(--ease-corte-2); }
+.mapa-conceito-legenda > span { display: block; animation: corte-sobe var(--motion-base) var(--ease-corte-2); }
+.conceito-desafio button { transition: background-color var(--motion-fast) var(--ease-corte-2), border-color var(--motion-fast) var(--ease-corte-2); }
+.conceito-desafio > p { border-left: 2px solid var(--acento-interface); padding-left: var(--space-3); animation: carimbo var(--motion-celebracao) var(--ease-corte-3); transform-origin: left center; }
+
+/* A ficha e o recibo da oferta: fios tracejados, e cada troca entra de novo. */
+.tabela-seletor button { transition: background-color var(--motion-fast) var(--ease-corte-2), color var(--motion-fast) var(--ease-corte-2), box-shadow var(--motion-fast) var(--ease-corte-2); }
+.tabela-seletor button[aria-pressed="true"] { box-shadow: inset 3px 0 0 var(--acento-interface); }
+.tabela-ficha .ficha-entrada h3 { animation: recorte-sobe 520ms var(--ease-expo) backwards; }
+.tabela-ficha .ficha-entrada dl > div { border-top: 1px dashed var(--line-strong); animation: corte-sobe var(--motion-base) var(--ease-corte-2) backwards; }
+.tabela-ficha .ficha-entrada dl > div:nth-child(2) { animation-delay: 60ms; }
+.tabela-ficha .ficha-entrada dl > div:nth-child(3) { animation-delay: 120ms; }
+.tabela-ficha .ficha-entrada dl > div:nth-child(n + 4) { animation-delay: 180ms; }
 @media (max-width: 1100px) {
   .cuidados-dossie { grid-template-columns: 1fr; gap: var(--space-5); }
   .cuidados-selo { display: flex; padding: var(--space-4); }
@@ -139,7 +220,7 @@ progress::-moz-progress-bar { background: var(--bone); }
   .aprendizado-barra > span { min-height: var(--alvo); }
   .cuidado-grupo .texto-modulo ul { grid-template-columns: 1fr; }
   .trecho-conteudo, .mito-afirmacao { padding: var(--space-4); min-height: 0; }
-  .trecho-folio > span { font-size: 48px; }
+  .trecho-numero > span { font-size: 56px; }
   .trechos-rodape { flex-wrap: wrap; }
   .trechos-rodape > div { width: 100%; }
   .trechos-rodape > div button:last-child { flex: 1; }

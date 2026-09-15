@@ -20,7 +20,7 @@
  * Um titulo que o React atualiza depois de fatiado continuaria mostrando o
  * texto velho, e o defeito seria silencioso.
  */
-import { animate, createDrawable, stagger, steps, utils } from "animejs";
+import { animate, createDrawable, onScroll, stagger, steps, utils } from "animejs";
 import { duracao, semMovimento } from "./tokens.js";
 
 // A curva do Lenis (1.001 - 2^(-10t)), para rolagem e revelacao pesarem igual.
@@ -120,12 +120,12 @@ export function revelarEmCascata(alvos, { atraso = 0, intervalo = 60, lado = fal
  * nao tocar nos filhos que o React controla. Limpa o recorte no fim: `inset`
  * zero comeria acento e haste.
  */
-export function subirTitulo(alvo, { atraso = 0 } = {}) {
+export function subirTitulo(alvo, { atraso = 0, imediato = true } = {}) {
   if (!alvo) return;
-  if (semMovimento()) return revelar(alvo, { atraso, deslocamento: 0, imediato: true });
+  if (semMovimento()) return revelar(alvo, { atraso, deslocamento: 0, imediato });
   alvo.dataset.revelar = "";
   utils.set(alvo, { opacity: 1, y: "0.6em", clipPath: "inset(0% 0% 100% 0%)" });
-  animate(alvo, {
+  const tocar = () => animate(alvo, {
     y: ["0.6em", "0em"],
     clipPath: ["inset(0% 0% 100% 0%)", "inset(-30% -5% -30% -5%)"],
     duration: 780,
@@ -133,6 +133,7 @@ export function subirTitulo(alvo, { atraso = 0 } = {}) {
     ease: EXPO,
     onComplete: () => { alvo.style.clipPath = ""; },
   });
+  imediato ? tocar() : aoEntrar(alvo, tocar);
 }
 
 /** O carimbo: tres degraus na duracao de celebracao. Reservado a numero e conquista. */
@@ -220,7 +221,85 @@ export function garantirVisibilidade(prazo = 2500) {
         el.style.clipPath = "";
       }
     }
+    // Manchete na tela sem nenhuma palavra acesa: o gatilho falhou, e ela acende inteira.
+    for (const el of document.querySelectorAll("[data-acendendo]")) {
+      const caixa = el.getBoundingClientRect();
+      if (caixa.top < window.innerHeight && caixa.bottom > 0 && !el.querySelector(".palavra--acesa")) el.removeAttribute("data-acendendo");
+    }
   }, prazo);
+}
+
+/* -------------------------------------------------------------------------
+   Movimento ligado a rolagem
+   ------------------------------------------------------------------------- */
+
+/**
+ * O `parallaxe` da landing, com teto menor: no card o ornamento desliza dentro
+ * do proprio recorte, e o recorte e pequeno. Movimento de layout, entao
+ * continuo. Ornamento que nao anima continua no lugar; por isso a rolagem
+ * pode ser o gatilho aqui, e nunca numa revelacao.
+ */
+export function parallaxe(alvo, { fator = 0.06, teto = 28 } = {}) {
+  if (!alvo || semMovimento()) return;
+  const curso = Math.min(Math.round(window.innerHeight * fator), teto);
+  return animate(alvo, {
+    y: [curso, -curso],
+    ease: "linear",
+    autoplay: onScroll({ enter: "bottom top", leave: "top bottom", sync: 0.35 }),
+  });
+}
+
+/* -------------------------------------------------------------------------
+   Os cards de aprendizado
+   ------------------------------------------------------------------------- */
+
+/**
+ * A manchete que acende: as palavras do manifesto da landing, uma a uma, com a
+ * da fronteira no acento. Dispara quando entra na tela, nunca antes; sob
+ * movimento reduzido nasce inteira acesa.
+ */
+export function acenderManchetes(raiz) {
+  if (!raiz || semMovimento()) return;
+  for (const manchete of raiz.querySelectorAll(".manchete")) {
+    const palavras = manchete.querySelectorAll(".palavra");
+    if (!palavras.length) continue;
+    manchete.setAttribute("data-acendendo", "");
+    aoEntrar(manchete, () => acenderEmSequencia(palavras, {
+      atraso: 160,
+      passo: Math.max(30, Math.min(90, 1400 / palavras.length)),
+      classeAtual: "palavra--atual",
+      raiz: manchete,
+    }));
+  }
+  garantirVisibilidade(4000);
+}
+
+// Grupo disjunto do `LINHAS` de `animarTela`: blockquote e linha de tabela sao dela.
+const PECAS_DO_CARD = [
+  ".aprendizado-instrucao", ".mapa-conceito-pecas > button", ".conceito-desafio > div > button",
+  ".trechos-trilho > button", ".trecho-conteudo", ".trechos-rodape", ".tabela-comando", ".tabela-seletor > button",
+  ".mito-mesa > :not(.mito-explicacao)", ".cuidado-grupo", ".cuidados-selo",
+  ".aprendizado-conteudo > .texto-modulo > :is(p, ul, ol)", ".explorador > .texto-modulo > :is(p:not(.manchete), ul, ol)",
+].join(",");
+
+/**
+ * A coreografia de um card, na ordem de `abrirPainel`: o titulo do diagrama
+ * sobe do recorte, as pecas entram em cascata conforme a rolagem as alcanca,
+ * os cantos da moldura se desenham e a manchete acende. Os ornamentos grandes
+ * (numero do trecho, sinal do mito) ficam ligados a rolagem. Devolve a limpeza
+ * do que segue a rolagem.
+ */
+export function animarCard(raiz) {
+  if (!raiz) return;
+  const q = (s) => raiz.querySelectorAll(s);
+  subirTitulo(raiz.querySelector(".mapa-conceito-titulo"), { imediato: false });
+  revelarEmCascata(q(PECAS_DO_CARD), { intervalo: 50 });
+  desenhar(q(".moldura-card path"), { atraso: 240, tempo: 620 });
+  desenhar(q(".cuidados-selo path"), { atraso: 120 });
+  acenderManchetes(raiz);
+  const lacos = [...q(".trecho-numero, .mito-sinal")].map((el) => parallaxe(el)).filter(Boolean);
+  garantirVisibilidade();
+  return () => { for (const laco of lacos) laco.revert(); };
 }
 
 /* -------------------------------------------------------------------------

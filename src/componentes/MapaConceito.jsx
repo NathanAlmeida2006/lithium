@@ -31,7 +31,7 @@ export function MapaConceito({ modulo }) {
         <span>{legenda}</span><strong>{nome}</strong>
       </button>)}
     </div>
-    <p className="mapa-conceito-legenda" aria-live="polite">{mapa.itens[ativo][2]}</p>
+    <p className="mapa-conceito-legenda" aria-live="polite"><span key={ativo}>{mapa.itens[ativo][2]}</span></p>
     <fieldset className="conceito-desafio">
       <legend>{mapa.pergunta}</legend>
       <div>{mapa.opcoes.map((opcao, i) => <button type="button" key={opcao} aria-pressed={resposta === i} onClick={() => setResposta(i)}>{opcao}</button>)}</div>

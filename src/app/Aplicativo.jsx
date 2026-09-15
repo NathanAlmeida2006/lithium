@@ -34,7 +34,7 @@ export function Aplicativo() {
   useEffect(() => ligarLenis(), []);
   // O toque no botão responde com um degrau, em qualquer tela (o `pulsar` da landing).
   useEffect(() => {
-    const aoTocar = (e) => pulsar(e.target.closest?.(".botao:not(:disabled)"));
+    const aoTocar = (e) => pulsar(e.target.closest?.(".botao:not(:disabled), .aprendizado button:not(:disabled)"));
     document.addEventListener("pointerdown", aoTocar);
     return () => document.removeEventListener("pointerdown", aoTocar);
   }, []);

@@ -12,12 +12,17 @@ const INICIO_DE_ITEM = /^\s*(?:\d+\.|[-·])\s/;
 const QUEBRA_ENTRE_ITENS = /\n(?=\s*(?:\d+\.|[-·])\s)/;
 const SEPARADOR_DE_TABELA = /^\|[\s:|\-]+\|?$/;
 
-export function EmLinha({ texto, pilar }) {
+// Uma `.palavra` por palavra, com o espaço fora dela: a justificação continua valendo.
+const emPalavras = (texto, chave) => texto.split(/(\s+)/).map((p, j) => (p.trim() ? <span className="palavra" key={chave + "-" + j}>{p}</span> : p));
+
+/** `palavras` fatia o texto para a manchete acender; quem fatia é o React, então nada reescreve o nó por fora. */
+export function EmLinha({ texto, palavras = false }) {
+  const corpo = (t, i) => (palavras ? emPalavras(t, i) : t);
   return String(texto).replace(NOTA, "").split(MARCAS_EM_LINHA).map((parte, i) => {
-    if (parte.startsWith("**")) return <strong key={i}>{parte.slice(2, -2)}</strong>;
-    if (parte.startsWith("*")) return <em key={i}>{parte.slice(1, -1)}</em>;
+    if (parte.startsWith("**")) return <strong key={i}>{corpo(parte.slice(2, -2), i)}</strong>;
+    if (parte.startsWith("*")) return <em key={i}>{corpo(parte.slice(1, -1), i)}</em>;
     if (parte.startsWith("`")) return <span key={i}>{parte.slice(1, -1)}</span>;
-    return <Fragment key={i}>{parte}</Fragment>;
+    return <Fragment key={i}>{corpo(parte, i)}</Fragment>;
   });
 }
 
@@ -51,18 +56,23 @@ function Lista({ parte, pilar }) {
   return <ol start={inicio}>{itens.map((item, j) => <li key={j} id={"fonte-" + (inicio + j)}><EmLinha texto={item} pilar={pilar} /></li>)}</ol>;
 }
 
-function Bloco({ parte, pilar }) {
+// Acima disto o parágrafo é leitura, não manchete: acender palavra a palavra cansaria.
+const MANCHETE_MAXIMA = 180;
+
+function Bloco({ parte, pilar, manchete }) {
   const linhas = parte.trim().split("\n");
   if (linhas[0].startsWith("|")) return <Tabela linhas={linhas} pilar={pilar} />;
   if (INICIO_DE_ITEM.test(parte)) return <Lista parte={parte} pilar={pilar} />;
   if (linhas[0].startsWith(">")) return <blockquote><EmLinha texto={linhas.map((l) => l.replace(/^>\s?/, "")).join(" ")} pilar={pilar} /></blockquote>;
+  if (manchete && parte.length <= MANCHETE_MAXIMA) return <p className="manchete"><EmLinha texto={parte.replace(/\n/g, " ")} palavras /></p>;
   return <p><EmLinha texto={parte.replace(/\n/g, " ")} pilar={pilar} /></p>;
 }
 
-export function TextoModulo({ texto = "", pilar }) {
+/** `manchete`: o primeiro parágrafo curto abre o texto em escala de título, e acende. */
+export function TextoModulo({ texto = "", pilar, manchete = false }) {
   return (
     <div className="texto-modulo">
-      {texto.split(/\n\s*\n/).filter(Boolean).map((parte, i) => <Bloco key={i} parte={parte} pilar={pilar} />)}
+      {texto.split(/\n\s*\n/).filter(Boolean).map((parte, i) => <Bloco key={i} parte={parte} pilar={pilar} manchete={manchete && i === 0} />)}
     </div>
   );
 }

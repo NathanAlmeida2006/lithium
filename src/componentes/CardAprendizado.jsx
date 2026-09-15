@@ -1,8 +1,9 @@
-import { useId, useRef, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import { EmLinha, TextoModulo } from "./TextoModulo.jsx";
 import { Icone } from "./Icone.jsx";
 import { MapaConceito } from "./MapaConceito.jsx";
 import { formatoDoModulo, lerTabela, nomeDoTrecho, partesDoTexto, textoLimpo, trechosDeEstudo } from "../conteudo/experiencias.js";
+import { acenderManchetes, animarCard } from "../motion/revelacao.js";
 
 const FORMATOS = {
   cuidados: ["Cuidados para começar", "Leia todos os avisos antes de seguir.", "cadeado"],
@@ -12,6 +13,14 @@ const FORMATOS = {
   cenas: ["Entre nesta cena", "Uma história curta para ligar a ideia à sua rotina.", "sono"],
   conceito: ["Monte o raciocínio", "Explore os trechos e conecte as ideias.", "alvo"],
 };
+
+// Os quatro cantos da dobra da landing (`Moldura.jsx`), um SVG de tamanho fixo por canto.
+const CANTOS = ["M1 20V1h19", "M1 1h19v19", "M20 1v19H1", "M20 20H1V1"];
+function Moldura() {
+  return <div className="moldura-card" aria-hidden="true">
+    {CANTOS.map((d) => <svg key={d} viewBox="0 0 21 21" width="21" height="21" fill="none" stroke="currentColor" strokeWidth="1.5"><path d={d} /></svg>)}
+  </div>;
+}
 
 export function CardAprendizado({ modulo, pilar, consulta = false }) {
   // O catálogo chega antes do texto ao trocar de protocolo após uma recarga.
@@ -24,13 +33,15 @@ export function CardAprendizado({ modulo, pilar, consulta = false }) {
 function Experiencia({ modulo, pilar, formato, consulta }) {
   const [integral, setIntegral] = useState(consulta);
   const [nome, instrucao, icone] = FORMATOS[formato] || FORMATOS.conceito;
-  const id = useId();
-  return <div className={"aprendizado aprendizado--" + formato} data-formato={formato}>
+  const id = useId(), raiz = useRef(null);
+  // Trocar entre partes e texto inteiro monta outro miolo, e ele entra de novo.
+  useEffect(() => animarCard(raiz.current), [integral]);
+  return <div className={"aprendizado aprendizado--" + formato} data-formato={formato} ref={raiz}>
     <div className="aprendizado-barra">
-      <span><Icone nome={icone} tamanho={20} />{nome}</span>
+      <span><Icone nome={icone} tamanho={20} /><span className="aprendizado-rotulo">{nome}</span></span>
       {formato !== "cuidados" && <button type="button" className="botao-texto" aria-pressed={integral} aria-controls={id} onClick={() => setIntegral(!integral)}>{integral ? "Explorar por partes" : "Ver conteúdo inteiro"}</button>}
     </div>
-    <div id={id}>
+    <div id={id} className="aprendizado-conteudo">
       {formato === "cuidados" ? <Cuidados texto={modulo.texto} pilar={pilar} />
         : integral ? <TextoModulo texto={modulo.texto} pilar={pilar} />
         : <>
@@ -73,6 +84,12 @@ function Trechos({ texto, pilar, formato }) {
   const trechos = trechosDeEstudo(texto);
   const [indice, setIndice] = useState(0), [vistos, setVistos] = useState([0]);
   const conteudo = useRef(null), id = useId();
+  // O trecho novo abre com a manchete acendendo; o primeiro, `animarCard` já cobre.
+  const primeiro = useRef(true);
+  useEffect(() => {
+    if (primeiro.current) { primeiro.current = false; return; }
+    acenderManchetes(conteudo.current);
+  }, [indice]);
   function ir(i, focar = false) {
     setIndice(i); setVistos((v) => [...new Set([...v, i])]);
     if (focar) requestAnimationFrame(() => conteudo.current?.focus({ preventScroll: true }));
@@ -80,13 +97,14 @@ function Trechos({ texto, pilar, formato }) {
   const unidade = formato === "cenas" ? "Cena" : formato === "passos" ? "Parte" : "Trecho";
   return <div className={"leitura-guiada leitura-guiada--" + formato}>
     <div className="trechos-trilho" aria-label="Escolher trecho">
-      {trechos.map((t, i) => <button type="button" key={i} aria-label={unidade + " " + (i + 1) + ": " + nomeDoTrecho(t, i)} aria-current={indice === i ? "step" : undefined} aria-controls={id} onClick={() => ir(i)}>
+      {trechos.map((t, i) => <button type="button" key={i} data-visto={vistos.includes(i) || undefined} aria-label={unidade + " " + (i + 1) + ": " + nomeDoTrecho(t, i)} aria-current={indice === i ? "step" : undefined} aria-controls={id} onClick={() => ir(i)}>
         <span>{String(i + 1).padStart(2, "0")}</span><span className="trecho-nome">{nomeDoTrecho(t, i)}</span>{vistos.includes(i) && <span className="sr-only">, aberto</span>}
       </button>)}
     </div>
     <div className="trecho-conteudo" id={id} tabIndex={-1} ref={conteudo}>
-      <div className="trecho-folio" aria-hidden="true"><span>{String(indice + 1).padStart(2, "0")}</span><Icone nome={formato === "passos" ? "jornada" : "alvo"} tamanho={30} /></div>
-      <div key={indice} className="trecho-entrada"><TextoModulo texto={trechos[indice]} pilar={pilar} /></div>
+      <Moldura />
+      <div className="trecho-folio" aria-hidden="true"><span className="trecho-numero"><span key={indice}>{String(indice + 1).padStart(2, "0")}</span></span><Icone nome={formato === "passos" ? "jornada" : "alvo"} tamanho={30} /></div>
+      <div key={indice} className="trecho-entrada"><TextoModulo texto={trechos[indice]} pilar={pilar} manchete /></div>
     </div>
     <div className="trechos-rodape">
       <span role="status">{unidade} {indice + 1} de {trechos.length}</span>
@@ -106,7 +124,7 @@ function Mito({ texto, pilar }) {
   const frente = corte > 0 ? texto.slice(0, corte) : partes[0];
   const verso = corte > 0 ? texto.slice(corte) : partes.slice(1).join("\n\n");
   return <div className="mito-mesa">
-    <div className="mito-afirmacao"><span className="mito-sinal" aria-hidden="true">?</span><p className="sobretitulo">A afirmação em discussão</p><TextoModulo texto={frente} pilar={pilar} /></div>
+    <div className="mito-afirmacao grao"><span className="mito-sinal" aria-hidden="true">?</span><p className="sobretitulo">A afirmação em discussão</p><TextoModulo texto={frente} pilar={pilar} manchete /></div>
     <button type="button" className="botao secundario mito-revelar" aria-expanded={aberto} aria-controls={id} onClick={() => setAberto(!aberto)}>{aberto ? "Recolher explicação" : "O que explica isso?"}<Icone nome={aberto ? "fechar" : "mais"} /></button>
     <div id={id} hidden={!aberto} className="mito-explicacao"><p className="sobretitulo">Conecte a explicação à sua rotina</p><TextoModulo texto={verso} pilar={pilar} /></div>
   </div>;
@@ -122,7 +140,7 @@ function Explorador({ texto, pilar }) {
   return <div className="explorador">{grupos.map(({ parte, tabela }, i) => {
     return tabela ? <TabelaExploravel key={i} tabela={tabela} parte={parte} pilar={pilar} />
       : parte.length > 650 ? <Trechos key={i} texto={parte} pilar={pilar} formato="conceito" />
-      : <TextoModulo key={i} texto={parte} pilar={pilar} />;
+      : <TextoModulo key={i} texto={parte} pilar={pilar} manchete={i === 0} />;
   })}</div>;
 }
 
@@ -136,7 +154,11 @@ function TabelaExploravel({ tabela, parte, pilar }) {
     <div className="tabela-comando"><span>{itens.length} itens para explorar</span><button className="botao-texto" type="button" aria-pressed={comparar} onClick={() => setComparar(!comparar)}>{comparar ? "Explorar itens" : "Comparar todos"}</button></div>
     {comparar ? <TextoModulo texto={parte} pilar={pilar} /> : <div className="tabela-estacao">
       <div className="tabela-seletor" aria-label="Escolher item">{itens.map((linha, i) => <button type="button" key={i} aria-pressed={indice === i} aria-controls={id} onClick={() => setIndice(i)}>{numerada && <span className="tabela-numero">{linha[0]}</span>}<span>{nome(linha)}</span><Icone nome="seta" tamanho={16} /></button>)}</div>
-      <div className="tabela-ficha" id={id} aria-live="polite"><p className="sobretitulo">Item {indice + 1} de {itens.length}</p><h3>{nome(itens[indice])}</h3><dl>{colunas.map((coluna, i) => <div key={i}><dt><EmLinha texto={coluna} pilar={pilar} /></dt><dd><EmLinha texto={itens[indice][i] || ""} pilar={pilar} /></dd></div>)}</dl></div>
+      {/* A região viva fica; só o miolo troca, para a ficha nova entrar de novo. */}
+      <div className="tabela-ficha" id={id} aria-live="polite"><div key={indice} className="ficha-entrada">
+        <p className="sobretitulo">Item {indice + 1} de {itens.length}</p><h3>{nome(itens[indice])}</h3>
+        <dl>{colunas.map((coluna, i) => <div key={i}><dt><EmLinha texto={coluna} pilar={pilar} /></dt><dd><EmLinha texto={itens[indice][i] || ""} pilar={pilar} /></dd></div>)}</dl>
+      </div></div>
     </div>}
   </section>;
 }
