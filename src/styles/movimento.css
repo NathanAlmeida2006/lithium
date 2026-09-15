@@ -33,7 +33,7 @@
   flex-direction: column;
   justify-content: flex-end;
   padding: 0 var(--space-5) var(--space-6);
-  background: var(--rubro);
+  background: var(--acento-interface, var(--bone));
   color: var(--void);
   overflow: clip;
   pointer-events: none;
@@ -55,25 +55,12 @@
 .cortina--sair .cortina__letra { transition: transform 1.5s var(--ease-expo); transition-delay: calc(var(--index) * 75ms); transform: none; }
 @media (min-width: 1024px) { .cortina { padding: 0 var(--space-8) var(--space-8); } }
 
-/* ---- TEMPLATE 03 · A headline que acende -------------------------------
-   Palavra apagada e opacidade, nunca cor; a da fronteira no acento, a unica
-   ocorrencia dele no cartao. Sem o atributo, tudo aceso. */
-.hero-texto h2 .palavra { transition: opacity var(--motion-fast) var(--ease-corte-2), color var(--motion-fast) var(--ease-corte-2); }
-.hero-texto h2 > .palavra { color: inherit; }
-.hero-texto[data-acendendo] .palavra:not(.palavra--acesa) { opacity: 0.16; }
-.hero-texto h2 .palavra.palavra--atual { color: var(--rubro); }
 
-/* A barra de acento do cartao desce junto com a headline. */
-.proxima-acao::before { transform-origin: top; animation: fio-desce 900ms var(--ease-expo) 200ms both; }
 @keyframes fio-desce { from { transform: scaleY(0); } }
 
 /* ---- TEMPLATE 06 · O caminho --------------------------------------------
-   O fio do roadmap desce do topo; a etapa atual pisca como a seta do painel. */
+   O fio do roadmap desce do topo. Nada pisca sem parar: atencao presa em laco vira ruido. */
 .roadmap::before { transform-origin: top; animation: fio-desce 1100ms var(--ease-expo) 150ms both; }
-.roadmap-passo:is(.disponivel, .andamento) .roadmap-no > svg { animation: seta-pisca 1.8s ease-in-out 1.2s infinite; }
-@keyframes seta-pisca { 50% { transform: translateX(var(--space-1)); opacity: 0.4; } }
-.mini-caminho .mini-atual { animation: marca-atual 1.6s var(--ease-corte-2) infinite; }
-@keyframes marca-atual { 50% { border-color: var(--line-strong); } }
 
 /* ---- Estado em corte seco ----------------------------------------------
    A troca de aba e de selecao e carimbo, nunca esmaecimento (regua12, T06). */
@@ -89,6 +76,36 @@
 :is(.botao, .botao-texto, .kit-lista a, .roadmap-no, .nav-principal a) > svg:last-child { transition: transform var(--motion-fast) var(--ease-default); }
 :is(.botao:not(:disabled), .botao-texto, .kit-lista a, .roadmap-no):hover > svg:last-child { transform: translateX(var(--space-1)); }
 .nav-principal a:hover > svg { transform: translateY(-2px); }
+
+/* ---- Botoes que pedem o toque --------------------------------------------
+   Tres sinais, nenhum deles sombra (RF-G19, elevacao e fio): o fio deslocado
+   atras, como a segunda impressao fora de registro do cartaz; a seta que
+   aponta para onde o toque leva; e o afundar em
+   corte seco quando o dedo desce, com o fio ficando no lugar. */
+.botao { position: relative; }
+.botao::before { content: ""; position: absolute; top: 5px; left: 5px; right: -6px; bottom: -6px; border-right: 1px solid var(--line-strong); border-bottom: 1px solid var(--line-strong); pointer-events: none; transition: transform var(--motion-fast) var(--ease-corte-2); }
+.primario::before { border-color: var(--bone); }
+.botao:disabled::before { border-color: var(--line); }
+.botao:not(:disabled):hover::before { transform: translate(-2px, -2px); }
+.botao:not(:disabled):active { transform: translate(4px, 4px); }
+.botao:not(:disabled):active::before { transform: translate(-4px, -4px); }
+.botao:not(:has(> svg))::after { content: "→"; font: 400 16px/1 var(--font-terciaria); transition: transform var(--motion-fast) var(--ease-default); }
+.botao[data-seta="voltar"]::after { content: "←"; order: -1; }
+.botao[data-seta="nenhuma"]::after { content: none; }
+/* Acao destrutiva nao ganha a seta de avancar. */
+.botao.perigo::after { content: none; }
+.botao:not(:disabled):hover::after { transform: translateX(var(--space-1)); }
+.botao[data-seta="voltar"]:not(:disabled):hover::after { transform: translateX(calc(-1 * var(--space-1))); }
+.botao-texto { text-decoration: underline 1px var(--line-strong); text-underline-offset: 5px; }
+.botao-texto:hover { text-decoration-color: currentColor; }
+.botao-texto:not(:has(> svg))::after { content: "→"; display: inline-block; transition: transform var(--motion-fast) var(--ease-default); }
+.botao-texto:hover::after { transform: translateX(var(--space-1)); }
+@media (hover: none) {
+  .botao:not(:disabled):hover::before, .botao:not(:disabled):hover::after, .botao-texto:hover::after,
+  :is(.botao:not(:disabled), .botao-texto, .kit-lista a, .roadmap-no):hover > svg:last-child, .nav-principal a:hover > svg { transform: none; }
+}
+.botao-icone { border: var(--fio); }
+.botao-icone:hover { border-color: var(--line-strong); }
 .roadmap-no:hover .roadmap-indice { color: var(--bone); transition: color var(--motion-fast) var(--ease-corte-2); }
 
 /* ---- TEMPLATE 18 · Painel de consulta ----------------------------------

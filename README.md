@@ -74,7 +74,7 @@ transação, com as abas abertas se avisando por BroadcastChannel
 (`src/dados/repositorio.js`). As chaves `lithium:*` da versão anterior, em
 `localStorage`, são lidas uma vez e guardadas como legado. Não sincroniza, não
 sobe para lugar nenhum, e some se o leitor limpar os dados do navegador: por
-isso o Kit exporta e restaura uma cópia local. Prometer mais que isso exige
+isso a tela Registros exporta e restaura uma cópia local. Prometer mais que isso exige
 backend, que não é deste escopo.
 
 ## Segurança

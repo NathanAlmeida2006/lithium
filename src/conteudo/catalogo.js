@@ -15,7 +15,7 @@ export function useConteudo(pilar) {
   return { conteudo: resultado.pilar === pilar ? resultado.conteudo : null, erro: resultado.pilar === pilar ? resultado.erro : "", tentar: () => setTentativa((v) => v + 1) };
 }
 export const PILARES = [
-  { id: "hipertrofia", nome: "Treino", icone: "treino", descricao: "Construa uma base. Repita. Evolua." },
+  { id: "hipertrofia", nome: "Hipertrofia", icone: "treino", descricao: "Construa uma base. Repita. Evolua." },
   { id: "dieta", nome: "Dieta", icone: "dieta", descricao: "O básico que cabe na sua rotina." },
   { id: "sono", nome: "Sono", icone: "sono", descricao: "Dê espaço para a recuperação." },
 ];

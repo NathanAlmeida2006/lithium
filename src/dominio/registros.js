@@ -99,6 +99,9 @@ export function validarBackup(copia, catalogo) {
   validarRegistrosDaCopia(d.registros);
   for (const [chave, valor] of Object.entries(d.anotacoes)) if (!texto(chave, 250) || !texto(valor)) recusar("Anotação inválida.");
   for (const valor of Object.values(d.acoes)) if (!["feita", "nao-aplicavel", ""].includes(valor)) recusar("Ação inválida.");
+  // Marcas dos desafios: opcional, porque cópias anteriores a elas continuam válidas.
+  if (d.dominio != null && (typeof d.dominio !== "object" || Array.isArray(d.dominio))) recusar("Cópia incompleta: dominio");
+  for (const [chave, marcas] of Object.entries(d.dominio || {})) if (!texto(chave, 250) || !inteiroEntre(marcas, 1, 3)) recusar("Marca inválida.");
   validarMetas(d.metas);
   validarProgresso(d.progresso, catalogo);
   return d;

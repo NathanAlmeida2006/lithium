@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { link } from "../componentes/formato.js";
 import { Icone } from "../componentes/Icone.jsx";
 import { semMovimento } from "../motion/tokens.js";
+import { alternarSom, somLigado } from "../motion/som.js";
 import { EstadoOffline } from "./EstadoOffline.jsx";
 import { NAVEGACAO, TELAS_POR_PILAR } from "./rotas.js";
 
@@ -14,7 +15,6 @@ export function NavegacaoLateral({ tela, pilar }) {
       <a className="assinatura" href="#/hoje" aria-label="Lithium, início">
         <span className="wordmark-grupo"><img className="wordmark" src="/lithium-wordmark.svg" alt="Lithium" width="142" height="38" /><small>PROTOCOLOS</small></span>
       </a>
-      <p className="sobretitulo nav-rotulo">SEU ESPAÇO</p>
       <nav className="nav-principal" aria-label="Navegação principal">
         {NAVEGACAO.map(([id, nome]) => (
           <a key={id} href={link(id, TELAS_POR_PILAR.includes(id) && pilar)} aria-current={tela === id ? "page" : undefined}>
@@ -22,25 +22,26 @@ export function NavegacaoLateral({ tela, pilar }) {
           </a>
         ))}
       </nav>
-      <div className="lateral-rodape">
-        <div className="marca-lateral" aria-hidden="true">LI<span>03</span></div>
-        <p>Um sistema.<br />Três pilares.</p>
-        <span className="registro-pequeno">FEITO PARA A SUA ROTINA</span>
-      </div>
     </aside>
   );
 }
 
-export function BarraSuperior({ tela, ocupado }) {
+/**
+ * A barra de cima: a marca só no celular (no monitor ela já está na lateral), o
+ * estado offline, o tour da tela aberta e as preferências.
+ */
+export function BarraSuperior({ ocupado, ajuda }) {
   const [tema, alternarTema] = useTema();
   const cartaz = tema === "cartaz";
+  const [som, setSom] = useState(somLigado);
   return (
     <header className="barra-superior">
-      <span className="caminho-topo">LITHIUM <span>/</span> {NAVEGACAO.find(([id]) => id === tela)?.[1] || "Início"}</span>
+      <a className="marca-topo" href="#/hoje" aria-label="Lithium, início"><img className="wordmark" src="/lithium-wordmark.svg" alt="" width="104" height="28" /></a>
       <div className="barra-acoes">
         <EstadoOffline ocupado={ocupado} />
-        <button className="botao-icone" onClick={alternarTema} aria-label={cartaz ? "Ativar tema escuro" : "Ativar tema claro"}><Icone nome={cartaz ? "sono" : "alvo"} tamanho={19} /></button>
-        <span className="perfil-local" aria-label="Perfil local">EU</span>
+        {ajuda && <button className="botao-icone" onClick={ajuda} aria-label="Tour desta tela" title="Tour desta tela"><Icone nome="ajuda" tamanho={19} /></button>}
+        <button className="botao-icone" data-som onClick={() => setSom(alternarSom())} aria-pressed={som} aria-label="Efeitos sonoros"><Icone nome={som ? "som" : "mudo"} tamanho={19} /></button>
+        <button className="botao-icone" onClick={alternarTema} aria-label={cartaz ? "Ativar tema escuro" : "Ativar tema claro"}><Icone nome={cartaz ? "sono" : "sol"} tamanho={19} /></button>
       </div>
     </header>
   );

@@ -50,6 +50,7 @@ function Tabela({ linhas, pilar }) {
 
 /** Lista numerada começa no número escrito, e cada item vira âncora `fonte-N` para o link da nota. */
 function Lista({ parte, pilar }) {
+  parte = parte.trim(); // Quebra antes do primeiro item virava um item vazio.
   const itens = parte.split(QUEBRA_ENTRE_ITENS).map((item) => item.replace(INICIO_DE_ITEM, "").replace(/\n/g, " "));
   if (!/^\d/.test(parte)) return <ul>{itens.map((item, j) => <li key={j}><EmLinha texto={item} pilar={pilar} /></li>)}</ul>;
   const inicio = Number(/^\d+/.exec(parte)[0]);

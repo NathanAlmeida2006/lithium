@@ -4,7 +4,7 @@ import { createServer } from 'node:http';
 import { resolve, extname } from 'node:path';
 import { chromium } from 'playwright-core';
 import { estadoSessao, concluirSessao, chaveSessao, modulosDaJornada } from '../src/dominio/progresso.js';
-import { dataLocal, resumir, tempoNaCama, inicioSemana, diasDoPeriodo, serieDiaria } from '../src/dominio/indicadores.js';
+import { dataLocal, resumir, tempoNaCama, inicioSemana, diasDoPeriodo, serieDiaria, exerciciosRegistrados } from '../src/dominio/indicadores.js';
 import { validarRegistro } from '../src/dominio/registros.js';
 import { revisao } from '../src/conteudo/revisoes.js';
 
@@ -42,6 +42,13 @@ const serie = serieDiaria([
   { tipo: 'dieta', data: '2026-01-01', blocos: 3 },
 ], ['2026-01-01', '2026-01-02'], 'treino', 'Remada');
 conferir(serie[0] === 30 && serie[1] === null, 'série do gráfico usa a maior carga e deixa lacuna onde não houve registro');
+const noiteAntiga = resumir({ registros: [{ tipo: 'sono', data: '2026-08-01', deitou: '2026-07-31T23:00', levantou: '2026-08-01T07:00', sensacao: 3 }] }, 7, '2026-09-14');
+conferir(noiteAntiga.tempoNaCama === 8, 'o último registro de sono vale mesmo fora do período do gráfico');
+const grafias = [{ tipo: 'treino', data: '2026-01-01', exercicios: [{ nome: 'Supino  reto ', carga: 40 }, { nome: 'supino reto', carga: 42 }] }];
+conferir(serieDiaria(grafias, ['2026-01-01'], 'treino', 'Supino reto')[0] === 42 && exerciciosRegistrados(grafias).length === 1, 'outra grafia do mesmo exercício não parte a série');
+conferir(serieDiaria([{ tipo: 'peso', data: '2026-01-01', kg: 70 }], ['2026-01-01', '2026-01-02'], 'peso').join() === '70,', 'peso entra no gráfico com lacuna');
+const posicoes = new Set(Object.keys(catalogo).flatMap((p) => catalogo[p].sessoes.map((s) => revisao(p, s.numero).correta)));
+conferir(posicoes.size === 3, 'a resposta certa das revisões não fica presa a uma posição');
 
 const raiz = resolve('dist');
 const mime = { '.html': 'text/html', '.js': 'application/javascript', '.css': 'text/css', '.svg': 'image/svg+xml', '.png': 'image/png', '.woff2': 'font/woff2', '.webmanifest': 'application/manifest+json', '.json': 'application/json' };
@@ -69,6 +76,8 @@ try {
   pg.on('pageerror', (e) => erros.push(e.message));
   pg.on('console', (m) => { if (m.type() === 'error') erros.push(m.text()); });
   await pg.addInitScript(() => {
+    // O convite do tour é de primeiro acesso e cobriria estes fluxos; `verificar-aprendizagem` testa o convite.
+    localStorage.setItem('lithium-tour', 'visto');
     if (!localStorage.getItem('teste-inicializado')) {
       localStorage.setItem('lithium:hipertrofia:s01-sua-primeira-vitoria:anotacao', JSON.stringify({ v: 'Anotação anterior preservada', em: 123 }));
       localStorage.setItem('lithium:hipertrofia:s01-sua-primeira-vitoria:visitada', JSON.stringify({ v: true, em: 123 }));
@@ -76,40 +85,55 @@ try {
     }
   });
   const ir = async (hash) => { await pg.goto(BASE + '/#/' + hash); await pg.waitForFunction((rota) => document.querySelector('main')?.dataset.rota === rota, hash); await pg.locator('main h1').waitFor(); };
+  // A tela entra por revelação ligada à rolagem: percorre a página e espera tudo assentar antes de fotografar.
+  // Sem isso a captura saía no instante da montagem, com o conteúdo ainda invisível.
+  const fotografar = async (path) => {
+    await pg.evaluate(async () => {
+      for (let y = 0; y < document.documentElement.scrollHeight; y += innerHeight / 2) { scrollTo(0, y); await new Promise((r) => setTimeout(r, 80)); }
+      scrollTo(0, 0);
+    });
+    await pg.waitForFunction(() => !document.querySelector('.cortina') && [...document.querySelectorAll('[data-revelar]')].every((el) => Number(getComputedStyle(el).opacity) >= .99), null, { timeout: 10000 });
+    await pg.screenshot({ path, fullPage: true });
+  };
   await ir('hoje');
   await pg.getByRole('heading', { name: 'Seu ritmo, hoje.' }).waitFor();
   conferir(await pg.locator('.indicadores').getByText('Sem registro', { exact: true }).count() === 2, 'dashboard começa sem dados fictícios');
-  await pg.screenshot({ path: 'test-results/dashboard-desktop.png', fullPage: true });
-  await ir('kit/hipertrofia');
+  conferir((await pg.locator('.proxima-acao').innerText()).includes('COMECE POR AQUI'), 'aparelho novo não ouve "continue de onde parou"');
+  await fotografar('test-results/dashboard-desktop.png');
+  await ir('registros');
   await pg.getByText('Anotações da versão anterior', { exact: true }).waitFor();
   conferir(await pg.getByText('Anotação anterior preservada', { exact: true }).count() === 1, 'anotação legada preservada');
   for (const [pilar, c] of Object.entries(catalogo)) {
     const primeira = c.sessoes[0], segunda = c.sessoes[1];
     await ir('jornada/' + pilar + '/' + segunda.id);
-    await pg.getByText('ETAPA BLOQUEADA', { exact: true }).waitFor();
-    await pg.reload(); await pg.getByText('ETAPA BLOQUEADA', { exact: true }).waitFor();
+    await pg.getByText('SESSÃO BLOQUEADA', { exact: true }).waitFor();
+    await pg.reload(); await pg.getByText('SESSÃO BLOQUEADA', { exact: true }).waitFor();
     conferir(await pg.locator('.atividade').count() === 0, pilar + ': link direto e recarga respeitam bloqueio');
     await ir('jornada/' + pilar + '/' + primeira.id + '/revisao');
-    conferir(await pg.getByRole('button', { name: 'Concluir e liberar próxima etapa' }).isDisabled(), pilar + ': não conclui sem atividades');
+    conferir(await pg.getByRole('button', { name: 'Concluir e liberar a próxima sessão' }).isDisabled(), pilar + ': não conclui sem atividades');
     await ir('jornada/' + pilar + '/' + primeira.id);
     for (const m of modulosDaJornada(primeira)) {
       await pg.getByRole('heading', { name: m.titulo, exact: true }).waitFor();
       conferir(await pg.locator('section[data-sessao]').count() === 1, pilar + ': apenas uma atividade montada');
       await pg.getByRole('button', { name: /Entendi, continuar|Plano revisado, continuar/ }).click();
     }
-    await pg.getByRole('heading', { name: 'O que fica desta etapa?' }).waitFor();
-    await pg.getByRole('radio').nth(1).check();
-    conferir(await pg.getByRole('button', { name: 'Concluir e liberar próxima etapa' }).isDisabled(), pilar + ': revisão incorreta não conclui');
-    await pg.getByRole('radio').nth(revisao(pilar, 0).correta).check();
+    await pg.getByRole('heading', { name: 'O que fica desta sessão?' }).waitFor();
+    const questao = revisao(pilar, 0);
+    await pg.getByRole('radio').nth((questao.correta + 1) % questao.opcoes.length).check();
+    await pg.getByRole('button', { name: 'Conferir resposta' }).click();
+    conferir(await pg.getByRole('button', { name: 'Concluir e liberar a próxima sessão' }).isDisabled(), pilar + ': revisão incorreta não conclui');
+    await pg.getByRole('radio').nth(questao.correta).check();
+    conferir(await pg.getByRole('button', { name: 'Concluir e liberar a próxima sessão' }).isDisabled(), pilar + ': escolher sem conferir não conclui');
+    await pg.getByRole('button', { name: 'Conferir resposta' }).click();
     await pg.getByLabel('Seu próximo passo (opcional)').fill('Uma ação possível nesta semana.');
     await pg.getByText('Salvo neste aparelho.', { exact: true }).waitFor();
-    await pg.getByRole('button', { name: 'Concluir e liberar próxima etapa' }).click();
-    await pg.getByRole('heading', { name: 'Etapa concluída.' }).waitFor();
-    await pg.getByRole('link', { name: 'Próxima etapa', exact: true }).click();
+    await pg.getByRole('button', { name: 'Concluir e liberar a próxima sessão' }).click();
+    await pg.getByRole('heading', { name: 'Sessão concluída.' }).waitFor();
+    await pg.getByRole('link', { name: 'Próxima sessão', exact: true }).click();
     await pg.getByRole('heading', { name: segunda.nome, exact: true }).waitFor();
     await pg.reload();
     await pg.locator('.atividade').waitFor();
-    conferir(await pg.getByText('ETAPA BLOQUEADA', { exact: true }).count() === 0, pilar + ': desbloqueio sobrevive à recarga');
+    conferir(await pg.getByText('SESSÃO BLOQUEADA', { exact: true }).count() === 0, pilar + ': desbloqueio sobrevive à recarga');
   }
   await ir('hoje');
   await pg.getByRole('button', { name: 'Planejar minha semana', exact: true }).click();
@@ -133,7 +157,6 @@ try {
   const ontem = new Date(); ontem.setDate(ontem.getDate() - 1);
   const antes = new Date(ontem); antes.setDate(antes.getDate() - 1);
   await pg.getByRole('button', { name: 'Registrar noite', exact: true }).click();
-  await pg.getByLabel('Data em que acordou', { exact: true }).fill(dataLocal(ontem));
   await pg.getByLabel('Deitou em', { exact: true }).fill(dataLocal(antes) + 'T23:30');
   await pg.getByLabel('Levantou em', { exact: true }).fill(dataLocal(ontem) + 'T07:00');
   await pg.getByLabel('Como acordou?', { exact: true }).selectOption('4');
@@ -148,7 +171,7 @@ try {
   await pg.getByRole('dialog').waitFor({ state: 'hidden' });
   conferir(await pg.locator('.lista-registros li').filter({ hasText: 'Almoço' }).count() === 1, 'editar refeição não duplica contribuições');
   conferir((await pg.locator('.lista-registros li').filter({ hasText: 'Almoço' }).innerText()).includes('3 blocos'), 'edição recalcula a contribuição');
-  await ir('kit/dieta');
+  await ir('registros');
   const [download] = await Promise.all([pg.waitForEvent('download'), pg.getByRole('button', { name: 'Exportar cópia local' }).click()]);
   if (download) await download.saveAs('test-results/copia.json');
   conferir(!!download, 'exporta cópia local');
@@ -175,12 +198,12 @@ try {
     }
   }
   await pg.setViewportSize({ width: 390, height: 844 });
-  await ir('hoje'); await pg.screenshot({ path: 'test-results/dashboard-mobile.png', fullPage: true });
-  await ir('jornada/hipertrofia'); await pg.screenshot({ path: 'test-results/mapa-mobile.png', fullPage: true });
+  await ir('hoje'); await fotografar('test-results/dashboard-mobile.png');
+  await ir('jornada/hipertrofia'); await fotografar('test-results/mapa-mobile.png');
   await pg.setViewportSize({ width: 1440, height: 1000 });
   await pg.evaluate(() => document.documentElement.dataset.theme = '');
-  await ir('jornada/hipertrofia'); await pg.screenshot({ path: 'test-results/mapa-desktop.png', fullPage: true });
-  await ir('hoje'); await pg.screenshot({ path: 'test-results/dashboard-dados-desktop.png', fullPage: true });
+  await ir('jornada/hipertrofia'); await fotografar('test-results/mapa-desktop.png');
+  await ir('hoje'); await fotografar('test-results/dashboard-dados-desktop.png');
   await pg.evaluate(() => navigator.serviceWorker.ready);
   await pg.waitForFunction(() => !!navigator.serviceWorker.controller);
   await ctx.setOffline(true);

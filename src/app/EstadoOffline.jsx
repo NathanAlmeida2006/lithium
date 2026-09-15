@@ -84,7 +84,7 @@ export function EstadoOffline({ ocupado }) {
   return (
     <div className="estado-offline">
       <span title={explicacao}><Icone nome={rede ? "salvo" : "offline"} tamanho={16} />{rotulo}</span>
-      {nova && <button className="botao-texto" disabled={ocupado} onClick={instalarVersaoNova}>Atualizar app</button>}
+      {nova && <button className="botao primario botao-atualizar" data-seta="nenhuma" disabled={ocupado} onClick={instalarVersaoNova}>Atualizar app</button>}
       {erro && <span role="alert">{erro}</span>}
     </div>
   );

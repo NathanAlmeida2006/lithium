@@ -16,23 +16,15 @@ import Lenis from "lenis";
  *   - `respectReducedMotion` é da própria biblioteca: ela força o `lerp` para
  *     1 e mantém a instância viva. Não desligue o Lenis para isso.
  *
- * Expõe a velocidade em `--scroll-velocity` (px por quadro), que a marquise
- * consome em CSS.
  */
 let instancia = null;
 
 export function ligarLenis() {
   if (typeof window === "undefined") return () => {};
   const lenis = instancia = new Lenis({ autoRaf: true, lerp: 0.1 });
-  const raiz = document.documentElement;
-  lenis.on("scroll", ({ velocity }) => {
-    const v = Math.max(-18, Math.min(18, velocity));
-    raiz.style.setProperty("--scroll-velocity", v.toFixed(2));
-  });
   return () => {
     lenis.destroy();
     if (instancia === lenis) instancia = null;
-    raiz.style.removeProperty("--scroll-velocity");
   };
 }
 
@@ -41,6 +33,14 @@ export function ligarLenis() {
  * `window.scrollTo` no meio de uma inércia de roda seria desfeito no quadro
  * seguinte, com o Lenis voltando ao alvo antigo.
  */
+export function rolarAte(alvo) {
+  // Cabe na tela: fica no meio. Mais alto que ela: o topo aparece, com folga.
+  const altura = alvo.getBoundingClientRect().height;
+  const offset = altura < window.innerHeight * 0.6 ? -(window.innerHeight - altura) / 2 : -24;
+  if (instancia) instancia.scrollTo(alvo, { offset, force: true });
+  else alvo.scrollIntoView({ block: altura < window.innerHeight * 0.6 ? "center" : "start" });
+}
+
 export function rolarParaTopo() {
   if (instancia) instancia.scrollTo(0, { immediate: true, force: true });
   else window.scrollTo({ top: 0, behavior: "instant" });

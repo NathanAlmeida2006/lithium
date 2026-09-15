@@ -46,6 +46,33 @@ Avisos de saúde ficam abertos por inteiro. A interface não oferece triagem, di
 - 10 módulos de consulta preservam listas de fontes e navegação.
 - Diagramas e pequenos desafios próprios em três conceitos: gatilho, três andares e prato ajustado.
 
+## Desafios do módulo (15/09/2026)
+
+A jornada seguia repetitiva: todo módulo terminava em "Entendi, continuar". Agora cada módulo de leitura fecha num desafio gerado do próprio texto por `src/conteudo/desafios.js` e jogado em `src/componentes/Desafio.jsx`.
+
+| Jogo | Fonte no texto |
+| --- | --- |
+| Complete a ideia | termo em negrito, ou a palavra mais longa, some da frase |
+| Crave o número | número com unidade some da frase |
+| Detector de troca | frases do módulo, algumas com um termo trocado por outro da sessão |
+| Ponha em ordem | lista numerada de 3 a 6 itens |
+| Remonte a frase | uma frase do módulo em 3 ou 4 blocos |
+| Ligue os pares | as 4 primeiras linhas de uma tabela, primeira coluna com a seguinte |
+
+Regras: nunca o mesmo jogo do módulo anterior; entre os possíveis vence o menos usado na sessão. Cuidados, fontes e missões não viram jogo. Marcas: 3 de primeira, 2 com um erro, 1 depois; guarda a melhor partida em `dominio`, jogar de novo não tira marca e marca não bloqueia conclusão. Nos mitos, a explicação abre com a aposta do leitor. Cobertura: 152 de 155 módulos de leitura.
+
+## Pente fino (15/09/2026)
+
+Correções do pente fino de design e experiência, validadas contra o canon da base.
+
+- **Leitura.** A capa decorativa ("Monte a ideia."), a faixa de termos rolando e a moldura saíram: o módulo começa no texto. Nenhum parágrafo fica apagado esperando a rolagem. No celular a régua grudada sai e cada parte mantém o rótulo. A unidade de leitura é sempre "parte".
+- **Vocabulário.** Protocolo, sessão, atividade e parte, como no conteúdo gerado ("00 Abertura"). "Etapa" e "módulo" deixaram a interface. A aba do protocolo 01 é Hipertrofia, não Treino.
+- **Diagramas.** A pergunta vem antes das peças, que abrem com qualquer resposta. Tabela de diagramação (colunas Esquerda e Direita) vira lista, sem virar "itens para explorar" nem par de desafio.
+- **Desafios.** Lacuna e detector de troca só usam termos em negrito, na resposta e nas alternativas: palavra comum trocada por outra podia continuar verdadeira.
+- **Revisão.** Escolher não é responder: a resposta conta depois de "Conferir resposta". A ordem das opções é embaralhada por sessão, e a abertura pergunta pelo conteúdo, não pelo app.
+- **Acento.** Um por tela (mestre visual, RNF-I07): no card, só o fio do desafio. Marcas, selo, régua, vaga e placar passaram ao osso. Nada pisca em laço.
+- **Composição.** O justificado ficou só no texto corrido do protocolo (D-7, RF-P10), com hifenização de no mínimo 3 letras de cada lado; interface, tabela e lista de referências seguem à esquerda. Texto de apoio subiu de 13 para 14px, e nenhum rótulo fica abaixo de 12px.
+
 ## Ferramental
 
 `AGENTS.md` aponta para o `CLAUDE.md` canônico. Foram instaladas as skills `frontend-design` (anthropics/skills), `playwright` e `screenshot` (openai/skills). O plugin Product Design foi oferecido pela interface, mas sua instalação não foi confirmada. Hooks do Claude não foram apresentados como ativos no Codex.

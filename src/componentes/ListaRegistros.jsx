@@ -13,7 +13,7 @@ const TITULO = {
 };
 
 const DETALHE = {
-  treino: (r) => r.exercicios.length + " grupos de séries",
+  treino: (r) => r.exercicios.length + (r.exercicios.length === 1 ? " grupo de séries" : " grupos de séries"),
   dieta: (r) => formatarNumero(r.blocos, 1) + " blocos",
   sono: (r) => formatarNumero(tempoNaCama(r), 1) + " h na cama · sensação " + r.sensacao + "/5",
   peso: (r) => formatarNumero(r.kg, 1) + " kg",
@@ -22,13 +22,13 @@ const DETALHE = {
 /** Mais recentes primeiro; na mesma data, o último editado primeiro. */
 const maisRecentePrimeiro = (a, b) => b.data.localeCompare(a.data) || b.updatedAt.localeCompare(a.updatedAt);
 
-export function ListaRegistros({ registros, editar, limite }) {
+export function ListaRegistros({ registros, editar, limite, vazio = "Nenhum registro neste período." }) {
   const lista = [...registros].sort(maisRecentePrimeiro).slice(0, limite);
   if (!lista.length) {
     return (
       <div className="estado-vazio">
         <Icone nome="registros" />
-        <p>Nenhum registro neste período.</p>
+        <p>{vazio}</p>
         <span className="texto-secundario">Comece pelo que aconteceu hoje.</span>
       </div>
     );

@@ -1,8 +1,10 @@
+import { embaralhar } from "./desafios.js";
+
 // Revisões do aprendizado, sem prescrever metas de saúde ou avaliar o usuário.
-// Cada questão retoma conteúdo dos módulos da sessão indicada.
-const geral = ["O que acontece com seus registros?", ["Ficam salvos neste aparelho", "São publicados para outros usuários", "Somem ao fechar o app"], 0, "Os registros ficam neste aparelho. Você pode exportar uma cópia no Kit."];
+// Cada questão retoma conteúdo dos módulos da sessão indicada. A abertura de cada
+// protocolo pergunta pelo que o módulo "como usar" dele diz, e não pelo app.
 const treino = [
-  geral,
+  ["Como termina cada sessão do protocolo?", ["Com uma prova que exige nota mínima para seguir", "Com o card Faça isto hoje: a menor ação concreta do mesmo dia", "Com uma lista de leituras obrigatórias"], 1, "Se você só fizer o que está nesses cards, o protocolo já está funcionando."],
   ["O que anotar para comparar suas próximas sessões?", ["Só se o treino cansou", "Peso usado e repetições de cada série", "A carga de outra pessoa"], 1, "O registro do próprio treino permite comparar as próximas sessões."],
   ["O que permite comparar sua evolução?", ["Trocar todos os exercícios", "Usar a dor como placar", "Repetir exercícios e registrar os números"], 2, "A comparação começa com exercícios fixos e números registrados."],
   ["Quando mudar a fase do programa?", ["Nas transições e condições previstas no programa", "Sempre que surgir um treino novo no feed", "A cada sessão"], 0, "Consulte as fases e as condições do programa antes de mudar."],
@@ -14,7 +16,7 @@ const treino = [
   ["O que continua disponível ao terminar?", ["O Kit, os registros e a revisão das sessões", "Somente a tela final", "Apenas o primeiro treino"], 0, "A trilha termina; suas ferramentas continuam disponíveis."],
 ];
 const dieta = [
-  geral,
+  ["Como termina cada sessão do protocolo?", ["Com uma prova que exige nota mínima para seguir", "Com uma lista de alimentos proibidos", "Com o card Faça isto hoje: a menor ação alimentar concreta do mesmo dia"], 2, "Só de seguir os cards, o protocolo já está rodando."],
   ["Como começar a registrar a alimentação no app?", ["Registrar os blocos da refeição", "Inventar valores para preencher o painel", "Comparar seu prato com o de outra pessoa"], 0, "Registre o que aconteceu usando o método de blocos do protocolo."],
   ["Como o protocolo organiza o aprendizado?", ["Começando por suplementos", "Priorizando o básico da alimentação", "Mudando todas as refeições a cada dia"], 1, "A hierarquia do protocolo coloca o básico antes dos detalhes."],
   ["De onde deve vir sua meta de blocos?", ["De um número aleatório", "Da meta de outro usuário", "Da tabela do protocolo e da sua confirmação"], 2, "Consulte a tabela antes de confirmar a meta. O dashboard não inventa um valor."],
@@ -26,7 +28,7 @@ const dieta = [
   treino[9],
 ];
 const sono = [
-  geral,
+  ["Como termina cada sessão do protocolo?", ["Com o card Faça isto hoje à noite: a menor ação concreta", "Com um horário fixo obrigatório para dormir", "Com uma prova que exige nota mínima para seguir"], 0, "Toda sessão termina com o card Faça isto hoje à noite: a menor ação concreta."],
   ["O que registrar sobre a sua noite?", ["Apenas uma nota inventada", "A rotina de outra pessoa", "Os horários reais e como você acordou"], 2, "O diário usa seus horários e sua percepção ao acordar."],
   ["Onde conferir as referências do protocolo?", ["No Kit, com as fontes disponíveis offline", "Somente depois de concluir tudo", "Nos registros de outro usuário"], 0, "As fontes podem ser consultadas a qualquer momento."],
   ["Como o plano de sono introduz mudanças?", ["Todas de uma vez", "Por etapas previstas no protocolo", "Uma rotina diferente toda noite"], 1, "O plano organiza mudanças por etapas."],
@@ -37,7 +39,9 @@ const sono = [
   ["Qual comparação faz sentido no diário?", ["Sua rotina atual com suas próprias semanas", "Sua noite com a de um influencer", "Só a noite mais perfeita"], 0, "A comparação é com seu próprio histórico."],
   treino[9],
 ];
+/** A ordem das opções é embaralhada por sessão, sempre igual: a certa não segue um rodízio de posição. */
 export function revisao(pilar, numero) {
   const [pergunta, opcoes, correta, retorno] = ({ hipertrofia: treino, dieta, sono })[pilar][numero];
-  return { pergunta, opcoes, correta, retorno };
+  const ordem = embaralhar(opcoes.map((_, i) => i), "revisao:" + pilar + ":" + numero);
+  return { pergunta, opcoes: ordem.map((i) => opcoes[i]), correta: ordem.indexOf(correta), retorno };
 }

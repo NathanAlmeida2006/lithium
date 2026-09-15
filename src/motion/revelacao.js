@@ -20,11 +20,26 @@
  * Um titulo que o React atualiza depois de fatiado continuaria mostrando o
  * texto velho, e o defeito seria silencioso.
  */
-import { animate, createDrawable, onScroll, stagger, steps, utils } from "animejs";
+import { animate, createDrawable, cubicBezier, onScroll, stagger, steps, utils } from "animejs";
 import { duracao, semMovimento } from "./tokens.js";
 
 // A curva do Lenis (1.001 - 2^(-10t)), para rolagem e revelacao pesarem igual.
-const EXPO = "cubicBezier(0.16, 1, 0.3, 1)";
+// Funcao, e nao texto: o anime.js 4.5 descarta a curva escrita como string.
+const EXPO = cubicBezier(0.16, 1, 0.3, 1);
+
+/**
+ * O estado final garantido por relogio. O anime.js 4.5 as vezes perde o ultimo
+ * quadro de uma animacao curta, e o elemento fica preso no meio: medido em
+ * 14/09/2026, a data da tela Hoje parada em opacidade 0,5 em tres de quatro
+ * aberturas. Revelacao que falha esconde o texto, entao o fim nao depende do motor.
+ */
+function assentar(alvo, estado, ms, depois) {
+  setTimeout(() => {
+    if (!alvo?.isConnected) return;
+    utils.set(alvo, estado);
+    depois?.();
+  }, ms + 80);
+}
 
 /* -------------------------------------------------------------------------
    Gatilho
@@ -78,13 +93,17 @@ export function revelar(alvo, { atraso = 0, deslocamento = 12, imediato = false 
   const reduzido = semMovimento();
   utils.set(alvo, { opacity: 0, y: reduzido ? 0 : deslocamento });
   alvo.dataset.revelar = "";
-  const tocar = () => animate(alvo, {
-    opacity: [0, 1],
-    y: reduzido ? 0 : [deslocamento, 0],
-    duration: duracao(reduzido ? "--motion-fast" : "--motion-base"),
-    delay: atraso,
-    ease: reduzido ? "linear" : steps(2),
-  });
+  const tempo = duracao(reduzido ? "--motion-fast" : "--motion-base");
+  const tocar = () => {
+    animate(alvo, {
+      opacity: [0, 1],
+      y: reduzido ? 0 : [deslocamento, 0],
+      duration: tempo,
+      delay: atraso,
+      ease: reduzido ? "linear" : steps(2),
+    });
+    assentar(alvo, { opacity: 1, y: 0 }, atraso + tempo);
+  };
   imediato ? tocar() : aoEntrar(alvo, tocar);
 }
 
@@ -110,6 +129,7 @@ export function revelarEmCascata(alvos, { atraso = 0, intervalo = 60, lado = fal
         y: { to: 0, ease: EXPO, duration: 640 },
         delay: inicio,
       });
+      assentar(item, { opacity: 1, x: 0, y: 0 }, inicio + 640);
     });
   }
 }
@@ -133,7 +153,11 @@ export function subirTitulo(alvo, { atraso = 0, imediato = true } = {}) {
     ease: EXPO,
     onComplete: () => { alvo.style.clipPath = ""; },
   });
-  imediato ? tocar() : aoEntrar(alvo, tocar);
+  const tocarEAssentar = () => {
+    tocar();
+    assentar(alvo, { y: "0em" }, atraso + 780, () => { alvo.style.clipPath = ""; });
+  };
+  imediato ? tocarEAssentar() : aoEntrar(alvo, tocarEAssentar);
 }
 
 /** O carimbo: tres degraus na duracao de celebracao. Reservado a numero e conquista. */
@@ -143,14 +167,18 @@ export function carimbar(alvo, { atraso = 0, imediato = false, girar = 0 } = {})
   // Carimbo nunca cai reto: entra torto e assenta (selo de garantia, T09).
   utils.set(alvo, { opacity: 0, scale: reduzido ? 1 : 1.14, rotate: reduzido ? 0 : girar });
   alvo.dataset.revelar = "";
-  const tocar = () => animate(alvo, {
-    opacity: [0, 1],
-    scale: reduzido ? 1 : [1.14, 1],
-    rotate: reduzido ? 0 : [girar, 0],
-    duration: duracao(reduzido ? "--motion-fast" : "--motion-celebracao"),
-    delay: atraso,
-    ease: reduzido ? "linear" : steps(3),
-  });
+  const tempo = duracao(reduzido ? "--motion-fast" : "--motion-celebracao");
+  const tocar = () => {
+    animate(alvo, {
+      opacity: [0, 1],
+      scale: reduzido ? 1 : [1.14, 1],
+      rotate: reduzido ? 0 : [girar, 0],
+      duration: tempo,
+      delay: atraso,
+      ease: reduzido ? "linear" : steps(3),
+    });
+    assentar(alvo, { opacity: 1, scale: 1, rotate: 0 }, atraso + tempo);
+  };
   imediato ? tocar() : aoEntrar(alvo, tocar);
 }
 
@@ -198,6 +226,11 @@ export function acenderEmSequencia(alvos, { atraso = 0, passo = 110, classe = "p
       if (classeAtual) for (const el of lista) el.classList.remove(classeAtual);
     },
   });
+  // Se o ultimo quadro se perder, a frase termina acesa do mesmo jeito.
+  setTimeout(() => {
+    raiz?.removeAttribute("data-acendendo");
+    for (const el of lista) { el.classList.add(classe); if (classeAtual) el.classList.remove(classeAtual); }
+  }, atraso + (lista.length + 1) * passo + 120);
 }
 
 /** Resposta ao toque. Um degrau: e confirmacao, nao animacao. */
@@ -277,29 +310,53 @@ export function acenderManchetes(raiz) {
 // Grupo disjunto do `LINHAS` de `animarTela`: blockquote e linha de tabela sao dela.
 const PECAS_DO_CARD = [
   ".aprendizado-instrucao", ".mapa-conceito-pecas > button", ".conceito-desafio > div > button",
-  ".trechos-trilho > button", ".trecho-conteudo", ".trechos-rodape", ".tabela-comando", ".tabela-seletor > button",
+  ".palco-trecho .texto-modulo li", ".palco-fim", ".tabela-comando", ".tabela-seletor > button",
   ".mito-mesa > :not(.mito-explicacao)", ".cuidado-grupo", ".cuidados-selo",
   ".aprendizado-conteudo > .texto-modulo > :is(p, ul, ol)", ".explorador > .texto-modulo > :is(p:not(.manchete), ul, ol)",
 ].join(",");
 
 /**
  * A coreografia de um card, na ordem de `abrirPainel`: o titulo do diagrama
- * sobe do recorte, as pecas entram em cascata conforme a rolagem as alcanca,
- * os cantos da moldura se desenham e a manchete acende. Os ornamentos grandes
- * (numero do trecho, sinal do mito) ficam ligados a rolagem. Devolve a limpeza
- * do que segue a rolagem.
+ * sobe do recorte, as pecas entram em cascata conforme a rolagem as alcanca e a
+ * manchete acende. O sinal do mito fica ligado a rolagem. Devolve a limpeza do
+ * que segue a rolagem.
  */
 export function animarCard(raiz) {
   if (!raiz) return;
   const q = (s) => raiz.querySelectorAll(s);
   subirTitulo(raiz.querySelector(".mapa-conceito-titulo"), { imediato: false });
   revelarEmCascata(q(PECAS_DO_CARD), { intervalo: 50 });
-  desenhar(q(".moldura-card path"), { atraso: 240, tempo: 620 });
   desenhar(q(".cuidados-selo path"), { atraso: 120 });
   acenderManchetes(raiz);
-  const lacos = [...q(".trecho-numero, .mito-sinal")].map((el) => parallaxe(el)).filter(Boolean);
+  const lacos = [...q(".mito-sinal")].map((el) => parallaxe(el)).filter(Boolean);
   garantirVisibilidade();
   return () => { for (const laco of lacos) laco.revert(); };
+}
+
+/**
+ * O palco de leitura: a secao da prova da landing aplicada ao texto corrido.
+ * A regua gruda e acompanha a parte que cruza o meio da tela. Nada apaga: o
+ * texto fica inteiro visivel desde o inicio, porque ler adiantado nao e erro.
+ */
+export function ligarPalco(palco, aoMudar) {
+  if (!palco || !("IntersectionObserver" in window)) return;
+  // A régua informa, não revela: aqui a rolagem pode medir. Um observador perdia o
+  // salto de uma ponta à outra da página (o trecho nunca cruzava a faixa do meio)
+  // e a régua ficava no último trecho com a leitura de volta ao topo.
+  const trechos = [...palco.querySelectorAll(".palco-trecho")];
+  let quadro = 0;
+  const medir = () => {
+    quadro = 0;
+    const meio = window.innerHeight / 2;
+    let atual = 0;
+    for (const [i, trecho] of trechos.entries()) if (trecho.getBoundingClientRect().top <= meio) atual = i;
+    aoMudar(atual);
+  };
+  const agendar = () => { quadro ||= requestAnimationFrame(medir); };
+  window.addEventListener("scroll", agendar, { passive: true });
+  window.addEventListener("resize", agendar, { passive: true });
+  medir();
+  return () => { cancelAnimationFrame(quadro); window.removeEventListener("scroll", agendar); window.removeEventListener("resize", agendar); };
 }
 
 /* -------------------------------------------------------------------------
@@ -310,7 +367,7 @@ export function animarCard(raiz) {
 const CARTOES = [
   ".carregando", ".proxima-acao", ".indicador", ".dashboard-grade > .painel", ".registro-atalhos > .botao",
   ".resumo-peso", "main > .painel", ".mapa-painel", ".jornada-aside > *", ".atividades-nav > a",
-  ".atividade", ".kit-grade > .painel", ".kit-grade > aside > .painel", ".consulta", ".legado", ".etapa-bloqueada",
+  ".atividade", ".consulta", ".legado", ".etapa-bloqueada",
 ].join(",");
 const LINHAS = ".lista-registros > li, .kit-lista > li, .tarefa, .opcao, .tabela-adaptada tbody tr, .texto-modulo blockquote";
 
@@ -352,14 +409,12 @@ export function animarTela(main, { atraso = 0, soAtividade = false } = {}) {
   // A regua da semana (T06): os dias registrados acendem em sequencia.
   for (const pontos of q(".semana-pontos")) {
     const acesos = pontos.querySelectorAll(".preenchido");
+    if (!acesos.length) continue;
     utils.set(acesos, { opacity: semMovimento() ? 1 : 0.16 });
     aoEntrar(pontos, () => animate(acesos, {
       opacity: [0.16, 1], duration: duracao("--motion-fast"), delay: stagger(70, { start: atraso + 640 }), ease: steps(2),
     }));
   }
-
-  const hero = main.querySelector(".hero-texto");
-  if (hero) acenderEmSequencia(hero.querySelectorAll(".palavra"), { atraso: atraso + 240, classeAtual: "palavra--atual", raiz: hero });
 
   desenhar(document.querySelectorAll(".nav-principal a[aria-current] path"), { imediato: true, atraso: atraso + 100 });
   garantirVisibilidade(atraso + 2500);

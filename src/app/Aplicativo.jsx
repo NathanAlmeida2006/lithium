@@ -13,6 +13,7 @@ import { Sessao } from "../telas/Sessao.jsx";
 import { BarraSuperior, NavegacaoLateral } from "./Casca.jsx";
 import { Cortina, esperaDaCortina } from "./Cortina.jsx";
 import { NAVEGACAO, TELAS_POR_PILAR, useRota } from "./rotas.js";
+import { ConviteTour, Tour, chaveDoTour, conviteVisto, tourDaTela, tourGeral } from "./Tour.jsx";
 
 const PILAR_PADRAO = "hipertrofia";
 
@@ -29,15 +30,24 @@ export function Aplicativo() {
   const pilar = Object.hasOwn(CATALOGO, candidato || "") ? candidato : PILAR_PADRAO;
   const invalida = (candidato && !Object.hasOwn(CATALOGO, candidato) && TELAS_POR_PILAR.includes(tela)) || !NAVEGACAO.some(([id]) => id === tela);
   const ultimaAnimada = useRef(null);
+  const [tour, setTour] = useState(null), [convite, setConvite] = useState(() => !conviteVisto());
+  const telaDoTour = chaveDoTour(tela, sessao);
 
   useEffect(() => { iniciar(); }, []);
   useEffect(() => ligarLenis(), []);
   // O toque no botão responde com um degrau, em qualquer tela (o `pulsar` da landing).
+  // Sem clique sonoro genérico: som fica para o que significa algo (acerto, erro, carimbo).
   useEffect(() => {
     const aoTocar = (e) => pulsar(e.target.closest?.(".botao:not(:disabled), .aprendizado button:not(:disabled)"));
     document.addEventListener("pointerdown", aoTocar);
     return () => document.removeEventListener("pointerdown", aoTocar);
   }, []);
+  // O aviso é confirmação, não tarefa: some sozinho.
+  useEffect(() => {
+    if (!aviso) return;
+    const relogio = setTimeout(() => setAviso(""), 5000);
+    return () => clearTimeout(relogio);
+  }, [aviso]);
 
   useEffect(() => {
     if (!dados) return;
@@ -64,13 +74,13 @@ export function Aplicativo() {
     if (!dados) return <Carregando erro={erro} />;
     if (invalida) return <CaminhoInvalido />;
     if (tela === "hoje") return <Hoje dados={dados} abrirRegistro={abrirRegistro} abrirMetas={abrirMetas} editar={editar} />;
-    if (tela === "registros") return <Registros dados={dados} abrirRegistro={abrirRegistro} editar={editar} />;
+    if (tela === "registros") return <Registros dados={dados} abrirRegistro={abrirRegistro} editar={editar} importar={() => setDialogo({ tipo: "importar" })} />;
     if (tela === "jornada") {
       return sessao
         ? <Sessao key={pilar + sessao} dados={dados} pilar={pilar} id={sessao} moduloId={modulo} registrar={abrirRegistro} />
         : <Jornada dados={dados} pilar={pilar} />;
     }
-    return <Kit dados={dados} pilar={pilar} destino={sessao} referencia={modulo} retorno={retorno} registrar={abrirRegistro} importar={() => setDialogo({ tipo: "importar" })} />;
+    return <Kit pilar={pilar} destino={sessao} referencia={modulo} retorno={retorno} registrar={abrirRegistro} />;
   }
 
   return (
@@ -79,16 +89,20 @@ export function Aplicativo() {
       <a className="pular" href="#conteudo" onClick={pularParaConteudo}>Pular para o conteúdo</a>
       <NavegacaoLateral tela={tela} pilar={pilar} />
       <div className="app-corpo">
-        <BarraSuperior tela={tela} ocupado={Boolean(dialogo)} />
+        <BarraSuperior ocupado={Boolean(dialogo)} ajuda={dados && !invalida && telaDoTour ? () => setTour(tourDaTela(telaDoTour)) : null} />
         <main id="conteudo" tabIndex="-1" data-rota={rota.join("/")}>
           {telaDaRota()}
-          <footer className="rodape-app"><span>LITHIUM / PROTOCOLOS</span><span>O progresso é seu. O ritmo também.</span></footer>
+          <footer className="rodape-app">
+            <span>LITHIUM / PROTOCOLOS</span><span>O progresso é seu. O ritmo também.</span>
+          </footer>
         </main>
       </div>
       <div className="aviso-flutuante" role="status">
         {aviso && <span><Icone nome="check" tamanho={18} />{aviso}<button className="botao-icone" onClick={() => setAviso("")} aria-label="Fechar mensagem"><Icone nome="fechar" tamanho={16} /></button></span>}
       </div>
       {dialogo && dados && <DialogoAberto dialogo={dialogo} dados={dados} fechar={fechar} />}
+      {convite && dados && !dialogo && <ConviteTour responder={(aceitou) => { setConvite(false); if (aceitou) setTour(tourGeral()); }} />}
+      {tour && <Tour tour={tour} pilar={pilar} rota={rota} mudar={(i) => setTour({ ...tour, i })} fechar={() => setTour(null)} />}
     </div>
   );
 }
@@ -129,7 +143,7 @@ function CaminhoInvalido() {
   return (
     <section className="painel">
       <h1 tabIndex="-1">Caminho não encontrado.</h1>
-      <a href="#/hoje" className="botao primario">Voltar para hoje</a>
+      <a href="#/hoje" className="botao primario" data-seta="voltar">Voltar para hoje</a>
     </section>
   );
 }
@@ -137,5 +151,5 @@ function CaminhoInvalido() {
 function DialogoAberto({ dialogo, dados, fechar }) {
   if (dialogo.tipo === "metas") return <DialogoMetas dados={dados} fechar={fechar} />;
   if (dialogo.tipo === "importar") return <DialogoImportar fechar={fechar} />;
-  return <DialogoRegistro tipo={dialogo.tipo} registro={dialogo.registro} fechar={fechar} />;
+  return <DialogoRegistro tipo={dialogo.tipo} registro={dialogo.registro} registros={dados.registros} fechar={fechar} />;
 }

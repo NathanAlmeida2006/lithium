@@ -30,9 +30,11 @@ export function esperaDaCortina() {
   return Math.max(0, fimPrevisto - performance.now());
 }
 
+// Uma vez por aparelho, e não por visita: no app a volta é rotina (voltar do
+// treino, abrir de novo no dia seguinte), e cortina a cada volta vira pedágio.
 function deveMostrar() {
   if (semMovimento()) return false;
-  try { return !sessionStorage.getItem(CHAVE); } catch { return false; }
+  try { return !localStorage.getItem(CHAVE); } catch { return false; }
 }
 
 export function Cortina() {
@@ -44,7 +46,7 @@ export function Cortina() {
 
   useEffect(() => {
     if (fase === "fim") return;
-    try { sessionStorage.setItem(CHAVE, "1"); } catch { /* Sem armazenamento, ela so repete. */ }
+    try { localStorage.setItem(CHAVE, "1"); } catch { /* Sem armazenamento, ela so repete. */ }
     const relogios = [
       setTimeout(() => setFase("mostrar"), MOSTRAR_EM),
       setTimeout(() => setFase("sair"), SAIR_EM),

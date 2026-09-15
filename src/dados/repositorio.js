@@ -15,7 +15,7 @@ const escritas = new Set();
 let conexao, iniciando, canal;
 let instantaneo = { dados: null, erro: "" };
 
-const estadoVazio = () => ({ schemaVersion: VERSAO_DADOS, revision: 0, progresso: {}, anotacoes: {}, acoes: {}, metas: {}, registros: [], legado: {}, migrado: false });
+const estadoVazio = () => ({ schemaVersion: VERSAO_DADOS, revision: 0, progresso: {}, anotacoes: {}, acoes: {}, dominio: {}, metas: {}, registros: [], legado: {}, migrado: false });
 
 function publicar(dados, erro = "") {
   // Uma leitura atrasada de outra aba não desfaz uma escrita mais nova.
@@ -89,7 +89,8 @@ function lerLegado() {
   try {
     for (let i = 0; i < localStorage.length; i++) {
       const chave = localStorage.key(i);
-      if (!chave?.startsWith("lithium:")) continue;
+      // Preferência do app atual não é anotação antiga: o tema é gravado antes desta leitura no primeiro acesso.
+      if (!chave?.startsWith("lithium:") || /^lithium:(tema|som|cortina)$/.test(chave)) continue;
       const bruto = localStorage.getItem(chave);
       try { legado[chave] = JSON.parse(bruto); } catch { legado[chave] = { v: bruto }; }
     }
@@ -153,17 +154,42 @@ export function importarBackup(copia) {
   const dadosDaCopia = validarCopia(copia);
   return alterar((dados) => {
     const revision = dados.revision;
-    Object.assign(dados, dadosDaCopia, { revision, migrado: true });
+    // Cópia de antes das marcas não traz `dominio`: as marcas locais não sobrevivem a outra trilha.
+    Object.assign(dados, { dominio: {} }, dadosDaCopia, { revision, migrado: true });
   });
+}
+
+/**
+ * O reset total: o documento volta ao estado vazio e as preferências `lithium`
+ * saem do aparelho (tema, som, aviso do tour). Sem cópia exportada, não tem volta.
+ * `migrado` fica marcado para as chaves antigas não voltarem como anotação.
+ */
+export async function apagarTudo() {
+  await aguardarEscritas();
+  await alterar((dados) => {
+    const revision = dados.revision;
+    for (const campo of Object.keys(dados)) delete dados[campo];
+    Object.assign(dados, estadoVazio(), { revision, migrado: true });
+  });
+  try {
+    for (const chave of Object.keys(localStorage)) if (/^lithium[:-]/.test(chave)) localStorage.removeItem(chave);
+    sessionStorage.clear();
+  } catch { /* Sem armazenamento, só os dados do IndexedDB existiam. */ }
 }
 
 /** Baixa a cópia local em JSON, no formato que `importarBackup` aceita de volta. */
 export function baixarCopia(dados) {
   const copia = { produto: "lithium", schemaVersion: VERSAO_DADOS, exportadoEm: new Date().toISOString(), dados };
-  const url = URL.createObjectURL(new Blob([JSON.stringify(copia, null, 2)], { type: "application/json" }));
+  const texto = JSON.stringify(copia, null, 2), nome = "lithium-" + dataLocal() + ".json";
+  // O app instalado na tela inicial do iPhone ignora `download`: lá a cópia sai pela folha de compartilhar.
+  if (navigator.standalone) {
+    const arquivo = new File([texto], nome, { type: "application/json" });
+    if (navigator.canShare?.({ files: [arquivo] })) return navigator.share({ files: [arquivo] }).catch(() => {});
+  }
+  const url = URL.createObjectURL(new Blob([texto], { type: "application/json" }));
   const ancora = document.createElement("a");
   ancora.href = url;
-  ancora.download = "lithium-" + dataLocal() + ".json";
+  ancora.download = nome;
   ancora.click();
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
